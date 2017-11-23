@@ -7,7 +7,8 @@ export default StyleSheet.create({
     width: undefined,
     height: undefined,
     flexDirection: 'column',
-    justifyContent: 'space-between',
     backgroundColor: 'transparent',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

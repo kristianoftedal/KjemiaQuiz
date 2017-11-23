@@ -1,51 +1,51 @@
+/* @flow */
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Main application component, handles the routing.
  */
 
 import React, { Component } from 'react';
-import { ImageBackground, Platform, StyleSheet, StatusBar, Text } from 'react-native';
-import { Image, View } from 'react-native-animatable';
+import { StatusBar, ImageBackground } from 'react-native';
+import { View } from 'react-native-animatable';
+import { inject, observer } from 'mobx-react/native';
 import backgroundImg from '../../images/bg.png';
+import playgroundImg from '../../images/background2.jpg';
+import Playground from '../Playground';
+import Home from '../Home';
+//import Endgame from 'src/containers/Endgame';
 import styles from './index.style';
-import Button from 'apsl-react-native-button';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' + 'Shake or press menu button for dev menu',
-});
-
+@inject(allStores => ({
+  currentScreen: allStores.router.currentScreen,
+}))
+@observer
 export default class App extends Component {
+  static defaultProps = {
+    currentScreen: 'HOME',
+  };
+
   render() {
+    let content;
+    let bgImg = backgroundImg;
+    switch (this.props.currentScreen) {
+      case 'HOME':
+        content = <Home />;
+        break;
+      case 'PLAYGROUND':
+        bgImg = playgroundImg;
+        content = <Playground />;
+        break;
+      // case 'ENDGAME':
+      //   content = <Endgame />;
+      //   break;
+      default:
+        content = <View />;
+        break;
+    }
     return (
-      <ImageBackground source={backgroundImg} style={styles.container}>
+      <ImageBackground source={bgImg} style={styles.container}>
         <StatusBar hidden={true} />
-        <Text style={inlineStyle.welcome}>Velkommen til kjemia-appen!!!</Text>
-        <Button>To get started, edit App.js</Button>
-        <Text style={inlineStyle.instructions}>{instructions}</Text>
+        {content}
       </ImageBackground>
     );
   }
 }
-
-const inlineStyle = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: undefined,
-    height: undefined,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});

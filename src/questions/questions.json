@@ -1,0 +1,195 @@
+[
+    {
+      "questionText": "hva er grovest?",
+      "questionMedia": {
+        "url": "",
+        "base64": "948y4334"
+      },
+      "answers": [
+        {
+          "key": "a",
+          "value": "loff"
+        },
+        {
+          "key": "b",
+          "value": "baguette"
+        },
+        {
+          "key": "c",
+          "value": "grovbrød"
+        },
+        {
+          "key": "d",
+          "value": "rugbrød"
+        }
+      ],
+      "solution": "a",
+      "lang": "no"
+    },
+    {
+      "questionText": "Hvilken matvare inneholder mest protein?",
+      "questionMedia": {
+        "url": "",
+        "base64": "948y4334"
+      },
+      "answers": [
+        {
+          "key": "a",
+          "value": "Kylling"
+        },
+        {
+          "key": "b",
+          "value": "Baguette"
+        },
+        {
+          "key": "c",
+          "value": "Eple"
+        },
+        {
+          "key": "d",
+          "value": "Olivenolje"
+        }
+      ],
+      "difficulty": "easy",
+      "shortAnswers": true,
+      "category": "",
+      "solution": "a",
+      "lang": "no"
+    },
+    {
+      "questionText": "hvilket sukker er det mest vanlige monosakkaridet?",
+      "questionMedia": {
+        "url": "",
+        "base64": "948y4334"
+      },
+      "answers": [
+        {
+          "key": "a",
+          "value": "glukose"
+        },
+        {
+          "key": "b",
+          "value": "fruktose"
+        },
+        {
+          "key": "c",
+          "value": "stivelse"
+        },
+        {
+          "key": "d",
+          "value": "amylopektin"
+        }
+      ],
+      "solution": "a",
+      "lang": "no"
+    },
+    {
+      "questionText": "Hva heter bindingen mellom to aminosyrer?",
+      "questionMedia": {
+        "url": "",
+        "base64": "948y4334"
+      },
+      "answers": [
+        {
+          "key": "a",
+          "value": "Petidbinding"
+        },
+        {
+          "key": "b",
+          "value": "Esterbinding"
+        },
+        {
+          "key": "c",
+          "value": "Eterbinding"
+        },
+        {
+          "key": "d",
+          "value": "Fosfolipider"
+        }
+      ],
+      "solution": "a",
+      "lang": "no"
+    },
+    {
+      "questionText": "Hvor mange aminosyrer er det i et dipeptid?",
+      "questionMedia": {
+        "url": "",
+        "base64": "948y4334"
+      },
+      "answers": [
+        {
+          "key": "a",
+          "value": "2"
+        },
+        {
+          "key": "b",
+          "value": "3"
+        },
+        {
+          "key": "c",
+          "value": "4"
+        },
+        {
+          "key": "d",
+          "value": "5"
+        }
+      ],
+      "solution": "a",
+      "lang": "no"
+    },
+    {
+      "questionText": "hva er enzymet som opererer i magesekken?",
+      "questionMedia": {
+        "url": "",
+        "base64": "948y4334"
+      },
+      "answers": [
+        {
+          "key": "a",
+          "value": "pepsin"
+        },
+        {
+          "key": "b",
+          "value": "trypsin"
+        },
+        {
+          "key": "c",
+          "value": "lipase"
+        },
+        {
+          "key": "d",
+          "value": "amylase"
+        }
+      ],
+      "solution": "a",
+      "lang": "no"
+    },
+    {
+      "questionText": "Hvor i fordøyelsen foregår fordøyingen av proteiner?",
+      "questionMedia": {
+        "url": "",
+        "base64": "948y4334"
+      },
+      "answers": [
+        {
+          "key": "a",
+          "value": "Magesekken og tynntarmen"
+        },
+        {
+          "key": "b",
+          "value": "Munnen og tykktarmen"
+        },
+        {
+          "key": "c",
+          "value": "Leveren og bukspyttkjertlen"
+        },
+        {
+          "key": "d",
+          "value": "Munnen"
+        }
+      ],
+      "solution": "a",
+      "lang": "no"
+    }
+  ]
+  

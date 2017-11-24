@@ -22,8 +22,7 @@ export default class BoardTile extends Component {
     borderRadius: metrics.TILE_BORDER_RADIUS,
     backgroundColor: 'red',
     text: '1',
-    isEnabled: true,
-    singlePressOnly: true,
+    singlePressOnly: false,
     playSound: audioService.playSuccessSound,
   };
 
@@ -37,8 +36,7 @@ export default class BoardTile extends Component {
   getContainerRef = () => this._containerRef;
 
   _handlePressIn = () => {
-    const { isEnabled, singlePressOnly, onPressIn, playSound } = this.props;
-    if (!isEnabled) return;
+    const { singlePressOnly, onPressIn, playSound } = this.props;
     if (singlePressOnly && this.state.hasBeenPressed) return; // Prevent double presses
     playSound();
     LayoutAnimation.spring(); // Animate the tile Press
@@ -50,8 +48,7 @@ export default class BoardTile extends Component {
   };
 
   _handlePressOut = () => {
-    const { isEnabled, singlePressOnly, onPressOut } = this.props;
-    if (!isEnabled) return;
+    const { singlePressOnly, onPressOut } = this.props;
     if (singlePressOnly && this.state.hasBeenPressed) return; // Prevent double presses
     if (onPressOut) {
       onPressOut();

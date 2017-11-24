@@ -12,7 +12,7 @@ export default StyleSheet.create({
   text: {
     color: 'white',
     fontWeight: 'bold',
-    fontFamily: 'Permanent Marker',
+    //fontFamily: 'Permanent Marker',
     fontSize: 39,
   },
 });

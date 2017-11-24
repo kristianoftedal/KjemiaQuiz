@@ -2,15 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   wrapper: {
-    justifyContent: 'center',
+    flex: 1,
     alignItems: 'center',
-    backgroundColor: '#2980b9',
+    backgroundColor: '#34495e',
     zIndex: 2,
-    marginBottom: 10,
-    borderColor: '#2980b9',
-    borderWidth: 2,
-    borderRadius: 20,
-    margin: 20,
   },
   depth: {
     zIndex: 1,
@@ -20,6 +15,7 @@ export default StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     //fontFamily: 'Permanent Marker',
-    fontSize: 30,
+    fontSize: 10,
+    height: 30,
   },
 });

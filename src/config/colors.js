@@ -1,4 +1,4 @@
-const TILES = ['#f1c40f', '#e67e22', '#e74c3c', '#3498db'];
+const TILES = ['#2ecc71', '#f1c40f', '#e67e22', '#e74c3c'];
 
 export default {
   TILES,

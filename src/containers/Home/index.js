@@ -9,6 +9,7 @@ import { Platform, StyleSheet, StatusBar, Text, LayoutAnimation } from 'react-na
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
+import style from './index.style';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -31,7 +32,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     if (this._headerRef) {
-      this._headerRef.bounceInRight(1000).then(() => {
+      this._headerRef.fadeInRight(1000).then(() => {
         LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
       });
@@ -48,7 +49,7 @@ export default class Home extends Component {
   render() {
     const { hasHeaderAppeared, hasPressedButton } = this.state;
     return (
-      <View>
+      <View style={style.body}>
         <StatusBar hidden={true} />
         <View
           ref={ref => {

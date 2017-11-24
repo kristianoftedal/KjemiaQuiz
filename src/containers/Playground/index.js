@@ -8,13 +8,15 @@ import { Text } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
-import { filter, find, orderBy, times } from 'lodash';
+import { times } from 'lodash';
 import QuestionText from '../../components/QuestionText';
 import ScoreText from '../../components/ScoreText';
 import style from './index.style';
 import answersUtils from '../../utils/answersUtils';
 import AnswerTile from './AnswerTile';
-import AnimateNumber from 'react-native-animate-number'
+import AnimateNumber from 'react-native-animate-number';
+import audioService from '../../services/audio';
+import { Footer } from 'native-base';
 
 @inject(allStores => ({
   navigateToEndgame: allStores.router.navigateToEndgame,
@@ -24,6 +26,7 @@ import AnimateNumber from 'react-native-animate-number'
   currentQuestion: allStores.game.currentQuestion,
   currentIndex: allStores.game.currentIndex,
   questions: allStores.game.questions,
+  isCorrectAnswer: allStores.game.isCorrectAnswer,
 }))
 @observer
 export default class Playground extends Component {
@@ -36,6 +39,7 @@ export default class Playground extends Component {
     score: 0,
     startGame: () => null,
     handleAnswerPress: () => null,
+    isCorrectAnswer: false,
   };
 
   componentDidMount() {
@@ -45,6 +49,11 @@ export default class Playground extends Component {
   componentDidUpdate(prevProps) {
     if (prevProps.currentIndex !== this.props.currentIndex) {
       this._questionRef.bounceInRight();
+      if (this.props.isCorrectAnswer) {
+        audioService.playSuccessSound();
+      } else {
+        audioService.playFailureSound();
+      }
     }
   }
 
@@ -81,7 +90,9 @@ export default class Playground extends Component {
               );
             })}
         </View>
-        <ScoreText>{'Score: '}<AnimateNumber value={score} interval={5} timing="easeOut" countBy={3}/></ScoreText>
+        <View style={style.scoreWrapper}>
+          <ScoreText>{'Score: '}<AnimateNumber value={score} interval={5} timing="easeOut" countBy={3}/></ScoreText>
+        </View>
       </View>
     );
   }

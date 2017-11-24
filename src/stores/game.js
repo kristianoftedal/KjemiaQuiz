@@ -12,6 +12,7 @@ export default class GameStore {
   @observable score = 0;
   @observable questions = [];
   @observable currentIndex = 0;
+  @observable isCorrectAnswer = false;
   //@observable currentQuestion;
 
   @action
@@ -30,8 +31,10 @@ export default class GameStore {
 
   @action
   handleAnswerPress = async answerKey => {
+    this.isCorrectAnswer = false;
     if (this.currentQuestion.solution === answerKey) {
       this.score += 100;
+      this.isCorrectAnswer = true;
     }
     if (this.currentIndex < this.questions.length) {
       this.currentIndex++;

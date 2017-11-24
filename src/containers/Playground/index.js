@@ -70,7 +70,7 @@ export default class Playground extends Component {
       alreadyPickedColors.push(color);
     });
     return (
-      <View style={style.container}>
+      <View style={style.container} animation={'fadeIn'}>
         <View
           style={style.questionsWrapper}
           ref={ref => {
@@ -91,7 +91,7 @@ export default class Playground extends Component {
             })}
         </View>
         <View style={style.scoreWrapper}>
-          <ScoreText>{'Score: '}<AnimateNumber value={score} interval={5} timing="easeOut" countBy={3}/></ScoreText>
+          <ScoreText key={score}>{'Score: '}<AnimateNumber key={score} value={score} interval={5} timing="easeOut" countBy={7}/></ScoreText>
         </View>
       </View>
     );

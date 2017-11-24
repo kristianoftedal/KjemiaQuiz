@@ -9,13 +9,16 @@ import env from '../../config/env';
 const TouchableView = props => {
   const { isRippleDisabled, rippleColor, children, style } = props;
   if (env.IS_MATERIAL_DESIGN_SUPPORTED && !isRippleDisabled) {
+    console.warn('is ripple?' + isRippleDisabled);
     const background = TouchableNativeFeedback.Ripple(rippleColor, false);
+    console.warn('is style?' + style);
     return (
       <TouchableNativeFeedback background={background}>
         <View style={style}>{children}</View>
       </TouchableNativeFeedback>
     );
   } else {
+    console.warn('is ripple?' + isRippleDisabled);
     return <TouchableOpacity style={style}>{children}</TouchableOpacity>;
   }
 };

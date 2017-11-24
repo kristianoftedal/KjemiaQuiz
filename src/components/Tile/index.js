@@ -1,8 +1,8 @@
 /* @flow */
-/** 
- * The Tile base component (used in HomeScreen and in Playground).  
- * It renders a square (the depth), and of top of it another square (the Tile itself) with a bit of 
- * space on bottom that get's halved when pressed.  
+/**
+ * The Tile base component (used in HomeScreen and in Playground).
+ * It renders a square (the depth), and of top of it another square (the Tile itself) with a bit of
+ * space on bottom that get's halved when pressed.
  */
 import React, { Component } from 'react';
 import { View } from 'react-native-animatable';
@@ -16,14 +16,14 @@ import audioService from '../../services/audio';
 import styles from './index.style';
 
 @observer
-export default class BoardTile extends Component {
+export default class Tile extends Component {
   static defaultProps = {
     depth: metrics.TILE_SHADOW_DEPTH,
     borderRadius: metrics.TILE_BORDER_RADIUS,
     backgroundColor: 'red',
     text: '1',
     singlePressOnly: false,
-    playSound: audioService.playSuccessSound,
+    playSound: audioService.playButtonSound,
   };
 
   state = {
@@ -36,8 +36,8 @@ export default class BoardTile extends Component {
   getContainerRef = () => this._containerRef;
 
   _handlePressIn = () => {
-    const { singlePressOnly, onPressIn, playSound } = this.props;
-    if (singlePressOnly && this.state.hasBeenPressed) return; // Prevent double presses
+    const { onPressIn, playSound } = this.props;
+    if (this.state.hasBeenPressed) return; // Prevent double presses
     playSound();
     LayoutAnimation.spring(); // Animate the tile Press
     this.setState({ isTouched: true });
@@ -48,8 +48,8 @@ export default class BoardTile extends Component {
   };
 
   _handlePressOut = () => {
-    const { singlePressOnly, onPressOut } = this.props;
-    if (singlePressOnly && this.state.hasBeenPressed) return; // Prevent double presses
+    const { onPressOut } = this.props;
+    if (this.state.hasBeenPressed) return; // Prevent double presses
     if (onPressOut) {
       onPressOut();
     }
@@ -57,15 +57,7 @@ export default class BoardTile extends Component {
   };
 
   render() {
-    const {
-      depth,
-      borderRadius,
-      backgroundColor,
-      text,
-      textStyle,
-      style,
-      ...otherProps
-    } = this.props;
+    const { depth, borderRadius, backgroundColor, text, textStyle, style } = this.props;
     const { isTouched } = this.state;
     const halfDepth = depth / 2; // The bottom gap, needed to shop the the depth
     const tileStyle = {
@@ -90,7 +82,6 @@ export default class BoardTile extends Component {
           ref={ref => {
             this._containerRef = ref;
           }}
-          {...otherProps}
         >
           <View style={[styles.tile, tileStyle, style]}>
             <CustomText style={[styles.text, textStyle]} withShadow={true}>

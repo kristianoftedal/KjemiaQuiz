@@ -4,14 +4,18 @@ import metrics from '../../config/metrics';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
+    flexDirection: 'column',
   },
   questionSize: {
     width: metrics.TILE_SIZE,
     height: metrics.TILE_SIZE,
   },
   questionsWrapper: {
+    flex: 1,
     padding: 10,
     marginBottom: 40,
+  },
+  scoreWrapper: {
+    flexDirection: 'column',
   },
 });

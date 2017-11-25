@@ -4,19 +4,17 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
-import { Text } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
-import Button from 'apsl-react-native-button';
+import { Header } from 'react-native-elements';
 import { times } from 'lodash';
-import QuestionText from '../../components/QuestionText';
+import QuestionWrapper from '../../components/QuestionWrapper';
 import ScoreText from '../../components/ScoreText';
 import style from './index.style';
 import answersUtils from '../../utils/answersUtils';
 import AnswerTile from './AnswerTile';
-import AnimateNumber from 'react-native-animate-number';
+import AnimateNumber from '../../components/AnimateNumber';
 import audioService from '../../services/audio';
-import { Footer } from 'native-base';
 
 @inject(allStores => ({
   navigateToEndgame: allStores.router.navigateToEndgame,
@@ -27,22 +25,25 @@ import { Footer } from 'native-base';
   currentIndex: allStores.game.currentIndex,
   questions: allStores.game.questions,
   isCorrectAnswer: allStores.game.isCorrectAnswer,
+  previousScore: allStores.game.previousScore,
 }))
 @observer
 export default class Playground extends Component {
   _questionRef = null;
-
+  _playRef = null;
   static defaultProps = {
     navigateToEndgame: () => null,
     currentQuestion: {},
     isGameRunning: false,
     score: 0,
+    previousScore: 0,
     startGame: () => null,
     handleAnswerPress: () => null,
     isCorrectAnswer: false,
   };
 
   componentDidMount() {
+    this._playRef.fadeIn(1000);
     this.props.startGame();
   }
 
@@ -58,40 +59,61 @@ export default class Playground extends Component {
   }
 
   _handleAnswerPress = answerKey => {
-    this._questionRef.fadeOutLeft();
+    this._questionRef.fadeOutLeft(500);
     this.props.handleAnswerPress(answerKey);
   };
 
   render() {
-    const { isGameRunning, score, currentQuestion } = this.props;
+    const { isGameRunning, previousScore, score, currentQuestion } = this.props;
+    let questionImage = null;
+    if (currentQuestion.image) {
+      questionImage = currentQuestion.image;
+    }
     const alreadyPickedColors = [];
     times(4, n => {
       const color = answersUtils.getRandomTileColor(alreadyPickedColors);
       alreadyPickedColors.push(color);
     });
     return (
-      <View style={style.container} animation={'fadeIn'}>
+      <View
+        style={style.container}
+        ref={ref => {
+          this._playRef = ref;
+        }}
+      >
         <View
           style={style.questionsWrapper}
           ref={ref => {
             this._questionRef = ref;
           }}
         >
-          <QuestionText>{currentQuestion.questionText}</QuestionText>
-          {currentQuestion.answers &&
-            currentQuestion.answers.map((e, i) => {
-              return (
-                <AnswerTile
-                  backgroundColor={alreadyPickedColors[i]}
-                  key={e.key}
-                  text={`${e.key}. ${e.value}`}
-                  onTilePress={() => this._handleAnswerPress(e.key)}
-                />
-              );
-            })}
+          <QuestionWrapper image={questionImage}>{currentQuestion.questionText}</QuestionWrapper>
+          <View style={style.answerWrapper}>
+            {currentQuestion.answers &&
+              currentQuestion.answers.map((e, i) => {
+                return (
+                  <AnswerTile
+                    backgroundColor={alreadyPickedColors[i]}
+                    key={e.key}
+                    text={`${e.key}. ${e.value}`}
+                    onTilePress={() => this._handleAnswerPress(e.key)}
+                  />
+                );
+              })
+            }
+          </View>
         </View>
         <View style={style.scoreWrapper}>
-          <ScoreText key={score}>{'Score: '}<AnimateNumber key={score} value={score} interval={5} timing="easeOut" countBy={7}/></ScoreText>
+          <ScoreText key={score}>
+            {'Score: '}
+            <AnimateNumber
+              initial={previousScore}
+              value={score}
+              interval={1}
+              timing="easeOut"
+              countBy={5}
+            />
+          </ScoreText>
         </View>
       </View>
     );

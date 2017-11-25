@@ -18,7 +18,7 @@ export default class ScoreText extends Component {
   animate() {
     Animated.timing(this.state.animatedValue, {
       toValue: 1,
-      duration: 1000,
+      duration: 600,
       easing: Easing.linear,
     }).start(() => this.animate());
   }

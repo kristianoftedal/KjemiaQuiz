@@ -10,6 +10,7 @@ export default class GameStore {
   @observable isEndgame = false;
   @observable level = 1;
   @observable score = 0;
+  @observable previousScore = 0;
   @observable questions = [];
   @observable currentIndex = 0;
   @observable isCorrectAnswer = false;
@@ -17,8 +18,6 @@ export default class GameStore {
 
   @action
   startGame = () => {
-    this.level = 1;
-    this.score = 0;
     this.isGameRunning = true;
     this.buildQuiz();
   };
@@ -26,12 +25,12 @@ export default class GameStore {
   @action
   buildQuiz = () => {
     this.questions = getQuestionsSet();
-    this.currentIndex = 0;
   };
 
   @action
   handleAnswerPress = async answerKey => {
     this.isCorrectAnswer = false;
+    this.previousScore = this.score;
     if (this.currentQuestion.solution === answerKey) {
       this.score += 100;
       this.isCorrectAnswer = true;

@@ -1,53 +1,47 @@
 [
     {
-      "questionText": "hva er grovest?",
-      "questionMedia": {
-        "url": "",
-        "base64": "948y4334"
-      },
+      "questionText": "hva er det som gjør et eller annet om klorgass?",
+      "imageId": "8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
       "answers": [
         {
           "key": "a",
-          "value": "loff"
+          "value": "svar 1"
         },
         {
           "key": "b",
-          "value": "baguette"
+          "value": "svar 2"
         },
         {
           "key": "c",
-          "value": "grovbrød"
+          "value": "svar 3"
         },
         {
           "key": "d",
-          "value": "rugbrød"
+          "value": "svar 4"
         }
       ],
-      "solution": "a",
+      "solution": "c",
       "lang": "no"
     },
     {
-      "questionText": "Hvilken matvare inneholder mest protein?",
-      "questionMedia": {
-        "url": "",
-        "base64": "948y4334"
-      },
+      "questionText": "spørsmål om løsning?",
+      "imageId": "0dc589a0-3ec3-45fb-8383-e226a92b0e2a",
       "answers": [
         {
           "key": "a",
-          "value": "Kylling"
+          "value": "svar 1"
         },
         {
           "key": "b",
-          "value": "Baguette"
+          "value": "svar 2"
         },
         {
           "key": "c",
-          "value": "Eple"
+          "value": "svar 3"
         },
         {
           "key": "d",
-          "value": "Olivenolje"
+          "value": "svar 4"
         }
       ],
       "difficulty": "easy",
@@ -58,10 +52,6 @@
     },
     {
       "questionText": "hvilket sukker er det mest vanlige monosakkaridet?",
-      "questionMedia": {
-        "url": "",
-        "base64": "948y4334"
-      },
       "answers": [
         {
           "key": "a",
@@ -85,10 +75,6 @@
     },
     {
       "questionText": "Hva heter bindingen mellom to aminosyrer?",
-      "questionMedia": {
-        "url": "",
-        "base64": "948y4334"
-      },
       "answers": [
         {
           "key": "a",
@@ -112,10 +98,6 @@
     },
     {
       "questionText": "Hvor mange aminosyrer er det i et dipeptid?",
-      "questionMedia": {
-        "url": "",
-        "base64": "948y4334"
-      },
       "answers": [
         {
           "key": "a",
@@ -139,10 +121,6 @@
     },
     {
       "questionText": "hva er enzymet som opererer i magesekken?",
-      "questionMedia": {
-        "url": "",
-        "base64": "948y4334"
-      },
       "answers": [
         {
           "key": "a",
@@ -166,10 +144,6 @@
     },
     {
       "questionText": "Hvor i fordøyelsen foregår fordøyingen av proteiner?",
-      "questionMedia": {
-        "url": "",
-        "base64": "948y4334"
-      },
       "answers": [
         {
           "key": "a",
@@ -189,6 +163,30 @@
         }
       ],
       "solution": "a",
+      "lang": "no"
+    },
+    {
+      "questionText": "Hvilket molekyl er dette?",
+      "imageId": "4fba9b78-6efd-4654-a25f-2a81f5067fd2",
+      "answers": [
+        {
+          "key": "a",
+          "value": "molekyl1"
+        },
+        {
+          "key": "b",
+          "value": "molekyl2"
+        },
+        {
+          "key": "c",
+          "value": "molekyl13"
+        },
+        {
+          "key": "d",
+          "value": "molekyl4"
+        }
+      ],
+      "solution": "d",
       "lang": "no"
     }
   ]

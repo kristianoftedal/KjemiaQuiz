@@ -16,8 +16,7 @@ const playSound = sound => {
     if (currentTime === 0) {
       sound.play();
     } else {
-      sound.stop();
-      sound.play();
+      sound.stop(() => sound.play());
     }
   });
 };
@@ -30,4 +29,9 @@ export default {
   playSuccessSound: () => playSound(successSound),
   playButtonSound: () => playSound(buttonSound),
   playFailureSound: () => playSound(failureSound),
+  initSounds: () => {
+    initializeSound('success.wav');
+    initializeSound('button.wav');
+    initializeSound('failure.wav');
+  },
 };

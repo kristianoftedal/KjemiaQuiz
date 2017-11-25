@@ -9,13 +9,14 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    alignSelf: 'stretch',
   },
   header: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    fontFamily: 'Permanent Marker',
+    color: 'white',
+    fontSize: 50,
+    textAlign: 'center',
+    margin: 10,
   },
   tile: {
     width: tileSize,
@@ -36,10 +37,16 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   button: {
-    paddingHorizontal: 24,
-    paddingVertical: 8,
+    backgroundColor: 'transparent',
+    borderColor: 'white',
+    borderWidth: 2,
+    borderRadius: 22,
+    marginLeft: 20,
+    marginRight: 20,
+    minHeight: 50,
   },
   buttonText: {
-    fontSize: 36,
+    color: 'white',
+    fontSize: 20,
   },
 });

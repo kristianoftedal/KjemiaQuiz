@@ -11,10 +11,13 @@ export default StyleSheet.create({
     width: metrics.TILE_SIZE,
     height: metrics.TILE_SIZE,
   },
+  answerWrapper: {
+    padding: 10,
+  },
   questionsWrapper: {
     flex: 1,
-    padding: 10,
     marginBottom: 40,
+    // flexDirection: 'column',
   },
   scoreWrapper: {
     flexDirection: 'column',

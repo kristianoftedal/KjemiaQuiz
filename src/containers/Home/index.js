@@ -5,11 +5,12 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, StatusBar, Text, LayoutAnimation } from 'react-native';
+import { Platform, StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
+import audioService from '../../services/audio';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -35,40 +36,50 @@ export default class Home extends Component {
       this._headerRef.fadeInRight(1000).then(() => {
         LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
+        audioService.initSounds();
       });
     }
   }
 
-  _handleButtonPress = async () => {
+  _handleStartPress = async () => {
     this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
     this.props.navigateToPlayground();
   };
+
+  _handleOpenKjemia = async () => {
+    Linking.openURL('http://kjemia.no');
+  };
+
   render() {
     const { hasHeaderAppeared, hasPressedButton } = this.state;
     return (
-      <View style={style.container}>
+      <View style={style.body}>
         <StatusBar hidden={true} />
         <View
           ref={ref => {
             this._headerRef = ref;
           }}
         >
-          <Text style={inlineStyle.welcome}> Velkommen til kjemia-appen!!!</Text>
+          <Text style={style.header}>Kjemia's naturfag - eksamensquiz!</Text>
         </View>
         {hasHeaderAppeared && (
           <View
+            style={style.container}
             ref={ref => {
               this._bodyRef = ref;
             }}
           >
-            <Button style={inlineStyle.button} onPressOut={this._handleButtonPress}>
-              <Text style={inlineStyle.buttonText}>Hurtigstart</Text>
+            <Button style={style.button} onPressOut={this._handleStartPress}>
+              <Text style={style.buttonText}>Hurtigstart</Text>
             </Button>
-            <Button style={inlineStyle.button} onPressOut={this._handleButtonPress}>
-              <Text style={inlineStyle.buttonText}>Velg selv</Text>
+            <Button style={style.button} onPressOut={this._handleButtonPress}>
+              <Text style={style.buttonText}>Velg selv</Text>
+            </Button>
+            <Button style={style.button} onPressOut={this._handleOpenKjemia}>
+              <Text style={style.buttonText}>Kjemia.no</Text>
             </Button>
             <Text style={inlineStyle.instructions}>{instructions}</Text>
           </View>
@@ -86,23 +97,6 @@ const inlineStyle = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'transparent',
-  },
-  button: {
-    backgroundColor: 'transparent',
-    borderColor: 'white',
-    borderWidth: 2,
-    borderRadius: 22,
-    marginLeft: 20,
-    marginRight: 20,
-  },
-  buttonText: {
-    color: 'white',
-  },
-  welcome: {
-    color: 'white',
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
   },
   instructions: {
     textAlign: 'center',

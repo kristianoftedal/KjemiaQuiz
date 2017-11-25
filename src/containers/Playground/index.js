@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
-import { Header } from 'react-native-elements';
+import { Header } from 'react-native-elements';
 import { times } from 'lodash';
 import QuestionWrapper from '../../components/QuestionWrapper';
 import ScoreText from '../../components/ScoreText';
@@ -26,6 +26,7 @@ import audioService from '../../services/audio';
   questions: allStores.game.questions,
   isCorrectAnswer: allStores.game.isCorrectAnswer,
   previousScore: allStores.game.previousScore,
+  isEndgame: allStores.game.isEndgame,
 }))
 @observer
 export default class Playground extends Component {
@@ -40,6 +41,7 @@ export default class Playground extends Component {
     startGame: () => null,
     handleAnswerPress: () => null,
     isCorrectAnswer: false,
+    isEndgame: false,
   };
 
   componentDidMount() {
@@ -49,6 +51,9 @@ export default class Playground extends Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.currentIndex !== this.props.currentIndex) {
+      if (this.props.isEndgame) {
+        this.props.navigateToEndgame();
+      }
       this._questionRef.bounceInRight();
       if (this.props.isCorrectAnswer) {
         audioService.playSuccessSound();
@@ -99,8 +104,7 @@ export default class Playground extends Component {
                     onTilePress={() => this._handleAnswerPress(e.key)}
                   />
                 );
-              })
-            }
+              })}
           </View>
         </View>
         <View style={style.scoreWrapper}>

@@ -11,7 +11,7 @@ import backgroundImg from '../../images/bg.png';
 import playgroundImg from '../../images/background2.jpg';
 import Playground from '../Playground';
 import Home from '../Home';
-//import Endgame from 'src/containers/Endgame';
+import Endgame from '../Endgame';
 import styles from './index.style';
 
 @inject(allStores => ({
@@ -34,9 +34,9 @@ export default class App extends Component {
         bgImg = playgroundImg;
         content = <Playground />;
         break;
-      // case 'ENDGAME':
-      //   content = <Endgame />;
-      //   break;
+      case 'ENDGAME':
+        content = <Endgame />;
+        break;
       default:
         content = <View />;
         break;

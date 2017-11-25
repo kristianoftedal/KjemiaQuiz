@@ -50,7 +50,7 @@ export default class AnimateNumber extends Component {
    * @type {number}
    */
   endWith;
-
+  timer;
   constructor(props) {
     super(props);
     // default values of state and non-state variables
@@ -68,6 +68,10 @@ export default class AnimateNumber extends Component {
     this.endWith = this.props.value;
     this.dirty = true;
     this.startAnimate();
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
   }
 
   componentWillUpdate(nextProps, nextState) {

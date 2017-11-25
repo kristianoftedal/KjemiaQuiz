@@ -18,7 +18,12 @@ export default class GameStore {
 
   @action
   startGame = () => {
+    this.score = 0;
+    this.currentIndex = 0;
+    this.isEndgame = false;
+    this.previousScore = 0;
     this.isGameRunning = true;
+    this.isCorrectAnswer = false;
     this.buildQuiz();
   };
 
@@ -38,11 +43,17 @@ export default class GameStore {
     if (this.currentIndex < this.questions.length) {
       this.currentIndex++;
     }
+    if (this.currentIndex === this.questions.length) {
+      this.isEndgame = true;
+    }
   };
 
   @computed
   get currentQuestion() {
     if (this.questions.length === 0) {
+      return {};
+    }
+    if (this.isEndgame) {
       return {};
     }
     return this.questions[this.currentIndex];

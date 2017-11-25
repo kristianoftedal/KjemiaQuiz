@@ -4,7 +4,8 @@ import metrics from '../../config/metrics';
 
 export default StyleSheet.create({
   container: {
-    flexDirection: 'column',
+    flex: 1,
+    alignSelf: 'stretch',
   },
   questionSize: {
     width: metrics.TILE_SIZE,

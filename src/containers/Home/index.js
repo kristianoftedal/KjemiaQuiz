@@ -49,7 +49,7 @@ export default class Home extends Component {
   render() {
     const { hasHeaderAppeared, hasPressedButton } = this.state;
     return (
-      <View style={style.body}>
+      <View style={style.container}>
         <StatusBar hidden={true} />
         <View
           ref={ref => {

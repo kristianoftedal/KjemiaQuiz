@@ -2,20 +2,18 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   wrapper: {
-    flexDirection: 'column',
+    flexDirection: 'row',
+    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#34495e',
-    zIndex: 2,
-    alignSelf: 'stretch',
-  },
-  depth: {
-    zIndex: 1,
+    height: 60,
   },
   text: {
+    marginTop: 20,
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Permanent Marker',
     fontSize: 20,
-    height: 30,
+    height: 50,
   },
 });

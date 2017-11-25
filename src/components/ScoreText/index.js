@@ -11,6 +11,9 @@ export default class ScoreText extends Component {
   state = {
     animatedValue: new Animated.Value(0),
   };
+  static defaultProps = {
+    score: 0,
+  };
 
   animate() {
     Animated.timing(this.state.animatedValue, {
@@ -20,11 +23,6 @@ export default class ScoreText extends Component {
     }).start(() => this.animate());
   }
 
-  componentDidUpdate(prevProps) {
-    debugger;
-    this.animate();
-  }
-
   render() {
     const textSize = this.state.animatedValue.interpolate({
       inputRange: [0, 0.5, 1],
@@ -32,6 +30,7 @@ export default class ScoreText extends Component {
     });
     const { children, score, ...otherProps } = this.props;
     styles.text.fontSize = textSize;
+    this.animate();
     const text = (
       <Animated.Text
         style={{
@@ -39,7 +38,6 @@ export default class ScoreText extends Component {
           color: 'white',
           fontWeight: 'bold',
           fontFamily: 'Permanent Marker',
-          height: 30,
         }}
         {...otherProps}
       >

@@ -12,9 +12,10 @@ export default StyleSheet.create({
     borderColor: '#2980b9',
     borderWidth: 2,
     borderRadius: 20,
-    marginTop: 20,
+    marginTop: 10,
     padding: 10,
     width: width,
+    alignItems: 'center',
   },
   text: {
     color: 'white',

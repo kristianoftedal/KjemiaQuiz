@@ -11,16 +11,13 @@ import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
 import audioService from '../../services/audio';
-
+import categories from '../../questions/categories'
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
-  navigateToHome: allStores.router.navigateToHome,
-  score: allStores.game.score,
-  correctCount: allStores.game.correctCount,
-  quizLength: allStores.game.quizLength,
+  navigateToEndgame: allStores.router.navigateToEndgame,
 }))
 @observer
-export default class Home extends Component {
+export default class Selection extends Component {
   _headerRef;
   _bodyRef;
 
@@ -39,14 +36,7 @@ export default class Home extends Component {
     }
   }
 
-  _handleBackPress = async () => {
-    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
-    if (this._headerRef && this._bodyRef) {
-      await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
-    }
-    this.props.navigateToHome();
-  };
-  _handleReplayPress = async () => {
+  _handleStartPress = async () => {
     this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
@@ -60,6 +50,7 @@ export default class Home extends Component {
 
   render() {
     const { hasHeaderAppeared, hasPressedButton } = this.state;
+    
     return (
       <View style={style.body}>
         <StatusBar hidden={true} />
@@ -68,7 +59,7 @@ export default class Home extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Din score: {this.props.score}</Text>
+          <Text style={style.header}>Velg vanskelighetsgrad og kategorier</Text>
         </View>
         {hasHeaderAppeared && (
           <View
@@ -77,19 +68,28 @@ export default class Home extends Component {
               this._bodyRef = ref;
             }}
           >
-            <View>
-              <Text>
-                Du klarte {this.props.correctCount} av {this.props.quizLength}
-              </Text>
-            </View>
-            <Button style={style.button} onPressOut={this._handleBackPress}>
-              <Text style={style.buttonText}>Tilbake til start</Text>
-            </Button>
-            <Button style={style.button} onPressOut={this._handleReplayPress}>
-              <Text style={style.buttonText}>spill igjen</Text>
+          <CustomMultiPicker
+            options={categories}
+            search={false} // should show search bar?
+            multiple={true} //
+            placeholderTextColor={'#757575'}
+            returnValue={"label"} // label or value
+            callback={(res)=>{ console.log(res) }} // callback, array of selected items
+            rowBackgroundColor={"#eee"}
+            rowHeight={40}
+            rowRadius={5}
+            iconColor={"#00a2dd"}
+            iconSize={30}
+            selectedIconName={"ios-checkmark-circle-outline"}
+            unselectedIconName={"ios-radio-button-off-outline"}
+            scrollViewHeight={130}
+            selected={[1,2]} // list of options which are selected by default
+          />
+            <Button style={style.button} onPressOut={this._handleButtonPress}>
+              <Text style={style.buttonText}>Velg selv</Text>
             </Button>
             <Button style={style.button} onPressOut={this._handleOpenKjemia}>
-              <Text style={style.buttonText}>Bestill time på Kjemia.no</Text>
+              <Text style={style.buttonText}>Kjemia.no</Text>
             </Button>
           </View>
         )}

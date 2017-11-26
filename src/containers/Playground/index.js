@@ -15,6 +15,7 @@ import answersUtils from '../../utils/answersUtils';
 import AnswerTile from './AnswerTile';
 import AnimateNumber from '../../components/AnimateNumber';
 import audioService from '../../services/audio';
+import ProgressBar from './ProgressBar';
 
 @inject(allStores => ({
   navigateToEndgame: allStores.router.navigateToEndgame,
@@ -86,6 +87,7 @@ export default class Playground extends Component {
           this._playRef = ref;
         }}
       >
+        <ProgressBar />
         <View
           style={style.questionsWrapper}
           ref={ref => {

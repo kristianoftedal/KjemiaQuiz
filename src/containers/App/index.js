@@ -12,6 +12,7 @@ import playgroundImg from '../../images/background2.jpg';
 import Playground from '../Playground';
 import Home from '../Home';
 import Endgame from '../Endgame';
+import Selection from '../Selection';
 import styles from './index.style';
 
 @inject(allStores => ({
@@ -36,6 +37,9 @@ export default class App extends Component {
         break;
       case 'ENDGAME':
         content = <Endgame />;
+        break;
+      case 'SELECTION':
+        content = <Selection />;
         break;
       default:
         content = <View />;

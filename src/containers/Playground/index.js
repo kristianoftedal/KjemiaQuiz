@@ -4,7 +4,7 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, Alert } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
@@ -19,6 +19,7 @@ import audioService from '../../services/audio';
 import ProgressBar from './ProgressBar';
 
 @inject(allStores => ({
+  navigateToHome: allStores.router.navigateToHome,
   navigateToEndgame: allStores.router.navigateToEndgame,
   score: allStores.game.score,
   startGame: allStores.game.startGame,
@@ -36,6 +37,7 @@ export default class Playground extends Component {
   _playRef = null;
   static defaultProps = {
     navigateToEndgame: () => null,
+    navigateToHome: () => null,
     currentQuestion: {},
     isGameRunning: false,
     score: 0,
@@ -68,6 +70,25 @@ export default class Playground extends Component {
   _handleAnswerPress = answerKey => {
     this._questionRef.fadeOutLeft(500);
     this.props.handleAnswerPress(answerKey);
+  };
+
+  _handleBackPress = () => {
+    const onYes = () => {
+      this._questionRef.fadeOutLeft(500);
+      this.props.navigateToHome();
+    };
+    Alert.alert(
+      'Sikker på at du ønsker å avslutte?',
+      'My Alert Msg',
+      [
+        { text: 'Nei', onPress: () => console.log('Cancel Pressed'), style: 'cancel' },
+        {
+          text: 'Ja',
+          onPress: onYes,
+        },
+      ],
+      { cancelable: false }
+    );
   };
 
   render() {
@@ -112,7 +133,9 @@ export default class Playground extends Component {
         </View>
         <View style={style.footerWrapper}>
           <View style={style.footerLayout}>
-            <Button style={style.backButton}><Text style={style.buttonText}>&lt;</Text></Button>
+            <Button onPress={this._handleBackPress} style={style.backButton}>
+              <Text style={style.buttonText}>&lt;</Text>
+            </Button>
             <ScoreText key={score}>
               {'Score: '}
               <AnimateNumber

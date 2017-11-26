@@ -20,6 +20,7 @@ const instructions = Platform.select({
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
   navigateToEndgame: allStores.router.navigateToEndgame,
+  navigateToSelection: allStores.router.navigateToSelection,
 }))
 @observer
 export default class Home extends Component {
@@ -48,6 +49,13 @@ export default class Home extends Component {
     }
     this.props.navigateToPlayground();
   };
+  _handleSelectionPress = async () => {
+    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
+    if (this._headerRef && this._bodyRef) {
+      await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
+    }
+    this.props.navigateToSelection();
+  };
 
   _handleOpenKjemia = async () => {
     Linking.openURL('http://kjemia.no');
@@ -75,7 +83,7 @@ export default class Home extends Component {
             <Button style={style.button} onPressOut={this._handleStartPress}>
               <Text style={style.buttonText}>Hurtigstart</Text>
             </Button>
-            <Button style={style.button} onPressOut={this._handleButtonPress}>
+            <Button style={style.button} onPressOut={this._handleSelectionPress}>
               <Text style={style.buttonText}>Velg selv</Text>
             </Button>
             <Button style={style.button} onPressOut={this._handleOpenKjemia}>

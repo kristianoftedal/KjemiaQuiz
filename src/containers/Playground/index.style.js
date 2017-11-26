@@ -16,10 +16,39 @@ export default StyleSheet.create({
   },
   questionsWrapper: {
     flex: 1,
-    marginBottom: 40,
-    // flexDirection: 'column',
+    marginBottom: 20,
   },
-  scoreWrapper: {
+  footerWrapper: {
     flexDirection: 'column',
+    backgroundColor: '#34495e',
+  },
+  backButton: {
+    flex: 1,
+    alignSelf: 'flex-start',
+    width: 10,
+    borderColor: '#34495e',
+    margin: 0,
+    marginBottom: 0,
+    marginTop: 4,
+    marginRight: 20,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 35,
+    fontFamily: 'Permanent Marker',
+  },
+  footerLayout: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#34495e',
+  },
+  text: {
+    marginTop: 20,
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Permanent Marker',
+    fontSize: 20,
+    height: 50,
   },
 });

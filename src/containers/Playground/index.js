@@ -4,10 +4,11 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
+import { Text } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
-import { Header } from 'react-native-elements';
 import { times } from 'lodash';
+import Button from 'apsl-react-native-button';
 import QuestionWrapper from '../../components/QuestionWrapper';
 import ScoreText from '../../components/ScoreText';
 import style from './index.style';
@@ -109,17 +110,20 @@ export default class Playground extends Component {
               })}
           </View>
         </View>
-        <View style={style.scoreWrapper}>
-          <ScoreText key={score}>
-            {'Score: '}
-            <AnimateNumber
-              initial={previousScore}
-              value={score}
-              interval={1}
-              timing="easeOut"
-              countBy={5}
-            />
-          </ScoreText>
+        <View style={style.footerWrapper}>
+          <View style={style.footerLayout}>
+            <Button style={style.backButton}><Text style={style.buttonText}>&lt;</Text></Button>
+            <ScoreText key={score}>
+              {'Score: '}
+              <AnimateNumber
+                initial={previousScore}
+                value={score}
+                interval={1}
+                timing="easeOut"
+                countBy={5}
+              />
+            </ScoreText>
+          </View>
         </View>
       </View>
     );

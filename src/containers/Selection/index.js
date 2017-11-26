@@ -11,7 +11,7 @@ import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
 import audioService from '../../services/audio';
-import categories from '../../questions/categories'
+import categories from '../../questions/categories';
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
   navigateToEndgame: allStores.router.navigateToEndgame,
@@ -68,23 +68,6 @@ export default class Selection extends Component {
               this._bodyRef = ref;
             }}
           >
-          <CustomMultiPicker
-            options={categories}
-            search={false} // should show search bar?
-            multiple={true} //
-            placeholderTextColor={'#757575'}
-            returnValue={"label"} // label or value
-            callback={(res)=>{ console.log(res) }} // callback, array of selected items
-            rowBackgroundColor={"#eee"}
-            rowHeight={40}
-            rowRadius={5}
-            iconColor={"#00a2dd"}
-            iconSize={30}
-            selectedIconName={"ios-checkmark-circle-outline"}
-            unselectedIconName={"ios-radio-button-off-outline"}
-            scrollViewHeight={130}
-            selected={[1,2]} // list of options which are selected by default
-          />
             <Button style={style.button} onPressOut={this._handleButtonPress}>
               <Text style={style.buttonText}>Velg selv</Text>
             </Button>

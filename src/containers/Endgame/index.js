@@ -100,18 +100,11 @@ export default class Home extends Component {
                 }
               })}
             </View>
-            <View>
-              <Text>
-              </Text>
-            </View>
+            <Button style={style.button} onPressOut={this._handleReplayPress}>
+              <Text style={style.buttonText}>Spill igjen!</Text>
+            </Button>
             <Button style={style.button} onPressOut={this._handleBackPress}>
               <Text style={style.buttonText}>Tilbake til start</Text>
-            </Button>
-            <Button style={style.button} onPressOut={this._handleReplayPress}>
-              <Text style={style.buttonText}>spill igjen</Text>
-            </Button>
-            <Button style={style.button} onPressOut={this._handleOpenKjemia}>
-              <Text style={style.buttonText}>Bestill time på Kjemia.no</Text>
             </Button>
           </View>
         )}

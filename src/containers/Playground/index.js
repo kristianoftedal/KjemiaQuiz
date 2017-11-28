@@ -30,6 +30,7 @@ import ProgressBar from './ProgressBar';
   isCorrectAnswer: allStores.game.isCorrectAnswer,
   previousScore: allStores.game.previousScore,
   isEndgame: allStores.game.isEndgame,
+  isCustomizedGame: allStores.game.isCustomizedGame,
 }))
 @observer
 export default class Playground extends Component {
@@ -46,11 +47,14 @@ export default class Playground extends Component {
     handleAnswerPress: () => null,
     isCorrectAnswer: false,
     isEndgame: false,
+    isCustomizedGame: false,
   };
 
   componentDidMount() {
-    this._playRef.fadeIn(1000);
-    this.props.startGame();
+    this._playRef.fadeIn(1500);
+    if (!this.props.isCustomizedGame) {
+      this.props.startGame();
+    }
   }
 
   componentDidUpdate(prevProps) {
@@ -58,7 +62,7 @@ export default class Playground extends Component {
       if (this.props.isEndgame) {
         this.props.navigateToEndgame();
       }
-      this._questionRef.bounceInRight();
+      this._questionRef.bounceInRight(1000);
       if (this.props.isCorrectAnswer) {
         audioService.playSuccessSound();
       } else {
@@ -79,7 +83,7 @@ export default class Playground extends Component {
     };
     Alert.alert(
       'Sikker på at du ønsker å avslutte?',
-      'My Alert Msg',
+      '',
       [
         { text: 'Nei', onPress: () => console.log('Cancel Pressed'), style: 'cancel' },
         {
@@ -141,7 +145,7 @@ export default class Playground extends Component {
               <AnimateNumber
                 initial={previousScore}
                 value={score}
-                interval={1}
+                interval={10}
                 timing="easeOut"
                 countBy={5}
               />

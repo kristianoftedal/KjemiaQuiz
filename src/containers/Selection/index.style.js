@@ -10,43 +10,66 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignSelf: 'stretch',
+    justifyContent: 'center',
+    padding: 20,
   },
   header: {
     fontFamily: 'Permanent Marker',
     color: 'white',
-    fontSize: 30,
+    fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  tile: {
-    width: tileSize,
-    height: tileSize,
-  },
-  tileText: {
-    fontSize: 40,
-  },
-  logo: {
-    flex: 1,
-    marginLeft: metrics.DEVICE_WIDTH * 0.05,
-    height: null,
-    width: logoWidth,
   },
   body: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  toggleWrapper: {
+    flexDirection: 'row',
+    borderBottomColor: 'white',
+    borderBottomWidth: 1,
+  },
+  toggleLabel: {
+    fontFamily: 'Permanent Marker',
+    color: 'white',
+    flex: 1,
+    flexGrow: 9,
+    alignSelf: 'center',
+  },
+  toggleSwitch: {
+    flex: 2,
+    marginBottom: 5,
+    marginTop: 5,
+    alignSelf: 'flex-end',
+  },
+  categoryWrapper: {
+    marginBottom: 20,
+  },
+  picker: {
+    color: 'white',
+  },
   button: {
     backgroundColor: 'transparent',
     borderColor: 'white',
     borderWidth: 2,
     borderRadius: 22,
-    marginLeft: 20,
-    marginRight: 20,
     minHeight: 50,
+    marginTop: 10,
   },
   buttonText: {
     color: 'white',
     fontSize: 20,
+  },
+  difficultyWrapper: {
+    marginBottom: 20,
+    flexDirection: 'row',
+  },
+  radioButtonLabel: {
+    fontFamily: 'Permanent Marker',
+    color: 'white',
+    marginRight: 5,
+  },
+  radioButton: {
   },
 });

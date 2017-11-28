@@ -20,9 +20,10 @@
           "value": "svar 4"
         }
       ],
+      "difficulty": "Lett",
       "solution": "c",
       "lang": "no",
-      "category": "Ernæring og helse",
+      "category": "Ernæring og helse"
     },
     {
       "questionText": "spørsmål om løsning?",
@@ -45,9 +46,9 @@
           "value": "svar 4"
         }
       ],
-      "difficulty": "easy",
+      "difficulty": "Lett",
       "shortAnswers": true,
-      "category": "",
+      "category": "Bærekraftig utvikling",
       "solution": "a",
       "lang": "no"
     },
@@ -72,7 +73,8 @@
         }
       ],
       "solution": "a",
-      "lang": "no"
+      "lang": "no",
+      "category": "Elektromagnetisk stråling"
     },
     {
       "questionText": "Hva heter bindingen mellom to aminosyrer?",
@@ -94,8 +96,10 @@
           "value": "Fosfolipider"
         }
       ],
+      "difficulty": "Middels",
       "solution": "a",
-      "lang": "no"
+      "lang": "no",
+      "category": "Radioaktiv stråling"
     },
     {
       "questionText": "Hvor mange aminosyrer er det i et dipeptid?",
@@ -117,8 +121,10 @@
           "value": "5"
         }
       ],
+      "difficulty": "Middels",
       "solution": "a",
-      "lang": "no"
+      "lang": "no",
+      "category": "Redoksreaksjoner"
     },
     {
       "questionText": "hva er enzymet som opererer i magesekken?",
@@ -140,8 +146,10 @@
           "value": "amylase"
         }
       ],
+      "difficulty": "Middels",
       "solution": "a",
-      "lang": "no"
+      "lang": "no",
+      "category": "Energi for fremtiden"
     },
     {
       "questionText": "Hvor i fordøyelsen foregår fordøyingen av proteiner?",
@@ -163,8 +171,10 @@
           "value": "Munnen"
         }
       ],
+      "difficulty": "Vanskelig",
       "solution": "a",
-      "lang": "no"
+      "lang": "no",
+      "category": "Arv og bioteknologi"
     },
     {
       "questionText": "Hvilket molekyl er dette?",
@@ -187,8 +197,10 @@
           "value": "molekyl4"
         }
       ],
+      "difficulty": "Vanskelig",
       "solution": "d",
-      "lang": "no"
+      "lang": "no",
+      "category": "Forskning"
     }
   ]
   

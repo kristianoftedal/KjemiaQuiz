@@ -38,7 +38,7 @@ export default class ProgressBar extends Component {
 
   componentWillReceiveProps(nextProps) {
     this.animateTo(nextProps.progress);
-    if (this.props.progress / metrics.DEVICE_WIDTH * 100 >= 80) {
+    if (80 * metrics.DEVICE_WIDTH / 100 >= this._width) {
       Animated.timing(this.state.animateValue, {
         toValue: metrics.DEVICE_WIDTH,
       }).start();

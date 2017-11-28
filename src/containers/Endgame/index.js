@@ -5,12 +5,13 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
+import { StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
 import audioService from '../../services/audio';
+import categories from '../../questions/categories';
 
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
@@ -18,6 +19,8 @@ import audioService from '../../services/audio';
   score: allStores.game.score,
   correctCount: allStores.game.correctCount,
   quizLength: allStores.game.quizLength,
+  correctPercentage: allStores.game.correctPercentage,
+  correctByCategory: allStores.game.correctByCategory,
 }))
 @observer
 export default class Home extends Component {
@@ -60,6 +63,7 @@ export default class Home extends Component {
 
   render() {
     const { hasHeaderAppeared, hasPressedButton } = this.state;
+    const radiusMinusBorder = 50 - 2;
     return (
       <View style={style.body}>
         <StatusBar hidden={true} />
@@ -78,8 +82,26 @@ export default class Home extends Component {
             }}
           >
             <View>
+              <Text style={style.subHeader}>Du klarte {this.props.correctPercentage}%</Text>
+            </View>
+            <View>
+              <Text style={style.resultHeader}>Per kategori:</Text>
+              {categories.map(e => {
+                const category = e.value;
+                const result = this.props.correctByCategory[category];
+                if (result) {
+                  return (
+                    <View key={category} style={style.resultWrapper}>
+                      <Text style={style.resultLabel}>{category}: </Text>
+                      <Text style={style.resultPercentage}>{result.correct / result.total * 100}&#37;
+                      </Text>
+                    </View>
+                  );
+                }
+              })}
+            </View>
+            <View>
               <Text>
-                Du klarte {this.props.correctCount} av {this.props.quizLength}
               </Text>
             </View>
             <Button style={style.button} onPressOut={this._handleBackPress}>

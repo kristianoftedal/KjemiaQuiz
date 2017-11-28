@@ -5,30 +5,38 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
+import { StatusBar, Text, LayoutAnimation, Switch } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
 import audioService from '../../services/audio';
 import categories from '../../questions/categories';
+import RadioButton from '../../components/RadioButton';
+
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
   navigateToEndgame: allStores.router.navigateToEndgame,
+  setCustomizedGame: allStores.game.setCustomizedGame,
 }))
 @observer
 export default class Selection extends Component {
   _headerRef;
   _bodyRef;
-
-  state = {
-    hasHeaderAppeared: false,
-    hasPressedButton: false,
-  };
+  constructor(props) {
+    super();
+    this.state = {
+      difficulty: '',
+      categories: categories,
+      hasHeaderAppeared: false,
+      hasPressedButton: false,
+      count: 0,
+    };
+  }
 
   componentDidMount() {
     if (this._headerRef) {
-      this._headerRef.fadeInRight(1000).then(() => {
+      this._headerRef.fadeInRight(600).then(() => {
         LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
@@ -41,16 +49,13 @@ export default class Selection extends Component {
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
+    this.props.setCustomizedGame(this.state.categories, this.state.difficulty, this.state.count);
     this.props.navigateToPlayground();
-  };
-
-  _handleOpenKjemia = async () => {
-    Linking.openURL('http://kjemia.no');
   };
 
   render() {
     const { hasHeaderAppeared, hasPressedButton } = this.state;
-    
+
     return (
       <View style={style.body}>
         <StatusBar hidden={true} />
@@ -68,11 +73,76 @@ export default class Selection extends Component {
               this._bodyRef = ref;
             }}
           >
-            <Button style={style.button} onPressOut={this._handleButtonPress}>
-              <Text style={style.buttonText}>Velg selv</Text>
-            </Button>
-            <Button style={style.button} onPressOut={this._handleOpenKjemia}>
-              <Text style={style.buttonText}>Kjemia.no</Text>
+            <View style={style.difficultyWrapper}>
+              <Text style={style.radioButtonLabel}>Lett</Text>
+              <RadioButton
+                isSelected={this.state.difficulty === 'Lett'}
+                onPress={() => this.setState({ difficulty: 'Lett' })}
+                innerColor="white"
+                outerColor="white"
+              />
+              <Text style={style.radioButtonLabel}>Middels</Text>
+              <RadioButton
+                isSelected={this.state.difficulty === 'Middels'}
+                onPress={() => this.setState({ difficulty: 'Middels' })}
+                innerColor="white"
+                outerColor="white"
+              />
+              <Text style={style.radioButtonLabel}>Vanskelig</Text>
+              <RadioButton
+                isSelected={this.state.difficulty === 'Vanskelig'}
+                onPress={() => this.setState({ difficulty: 'Vanskelig' })}
+                innerColor="white"
+                outerColor="white"
+              />
+            </View>
+            <View style={style.categoryWrapper}>
+              {this.state.categories.map((e, i) => {
+                return (
+                  <View key={e.value} style={style.toggleWrapper}>
+                    <Text style={style.toggleLabel}>{e.value}</Text>
+                    <Switch
+                      style={style.toggleSwitch}
+                      onTintColor={'#3498db'}
+                      value={e.isSelected}
+                      onValueChange={value => {
+                        const categories = this.state.categories;
+                        categories[i].isSelected = value;
+                        this.setState(categories);
+                      }}
+                    />
+                  </View>
+                );
+              })}
+            </View>
+
+            <View style={style.difficultyWrapper}>
+              <Text style={style.radioButtonLabel}>Antall: </Text>
+              <Text style={style.radioButtonLabel}>30</Text>
+              <RadioButton
+                isSelected={this.state.count === 30}
+                onPress={() => this.setState({ count: 30 })}
+                innerColor="white"
+                outerColor="white"
+              />
+              <Text style={style.radioButtonLabel}>50</Text>
+              <RadioButton
+                isSelected={this.state.count === 50}
+                onPress={() => this.setState({ count: 50 })}
+                innerColor="white"
+                outerColor="white"
+              />
+              <Text style={style.radioButtonLabel}>80</Text>
+              <RadioButton
+                style={style.radioButton}
+                isSelected={this.state.count === 80}
+                onPress={() => this.setState({ count: 80 })}
+                innerColor="white"
+                outerColor="white"
+              />
+            </View>
+            <Button style={style.button} onPressOut={this._handleStartPress}>
+              <Text style={style.buttonText}>Start</Text>
             </Button>
           </View>
         )}
@@ -80,19 +150,3 @@ export default class Selection extends Component {
     );
   }
 }
-
-const inlineStyle = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: undefined,
-    height: undefined,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});

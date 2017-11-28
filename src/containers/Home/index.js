@@ -34,7 +34,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     if (this._headerRef) {
-      this._headerRef.fadeInRight(1000).then(() => {
+      this._headerRef.fadeInRight(1200).then(() => {
         LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
@@ -45,14 +45,14 @@ export default class Home extends Component {
   _handleStartPress = async () => {
     this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
     if (this._headerRef && this._bodyRef) {
-      await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
+      await Promise.all([this._headerRef.fadeOutLeft(500), this._bodyRef.fadeOutRight(400)]);
     }
     this.props.navigateToPlayground();
   };
   _handleSelectionPress = async () => {
     this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
     if (this._headerRef && this._bodyRef) {
-      await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
+      await Promise.all([this._headerRef.fadeOutLeft(500), this._bodyRef.fadeOutRight(400)]);
     }
     this.props.navigateToSelection();
   };
@@ -98,14 +98,6 @@ export default class Home extends Component {
 }
 
 const inlineStyle = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: undefined,
-    height: undefined,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-  },
   instructions: {
     textAlign: 'center',
     color: '#333333',

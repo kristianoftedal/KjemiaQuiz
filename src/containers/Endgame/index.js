@@ -12,6 +12,7 @@ import Button from 'apsl-react-native-button';
 import style from './index.style';
 import audioService from '../../services/audio';
 import categories from '../../questions/categories';
+import AnimateNumber from '../../components/AnimateNumber';
 
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
@@ -72,7 +73,16 @@ export default class Home extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Din score: {this.props.score}</Text>
+          <Text style={style.header}>
+            Din score:{' '}
+            <AnimateNumber
+              inital={0}
+              value={this.props.score}
+              interval={10}
+              timing="easeOut"
+              countBy={13}
+            />
+          </Text>
         </View>
         {hasHeaderAppeared && (
           <View
@@ -82,7 +92,17 @@ export default class Home extends Component {
             }}
           >
             <View>
-              <Text style={style.subHeader}>Du klarte {this.props.correctPercentage}%</Text>
+              <Text style={style.subHeader}>
+                Du klarte: 
+                <AnimateNumber
+                  initial={0}
+                  value={this.props.correctPercentage}
+                  timing="easeOut"
+                  interval={10}
+                  countBy={5}
+                />
+                %
+              </Text>
             </View>
             <View>
               <Text style={style.resultHeader}>Per kategori:</Text>
@@ -93,7 +113,15 @@ export default class Home extends Component {
                   return (
                     <View key={category} style={style.resultWrapper}>
                       <Text style={style.resultLabel}>{category}: </Text>
-                      <Text style={style.resultPercentage}>{result.correct / result.total * 100}&#37;
+                      <Text style={style.resultPercentage}>
+                        <AnimateNumber
+                          inital={0}
+                          value={result.correct / result.total * 100}
+                          interval={10}
+                          timing="easeOut"
+                          countBy={5}
+                        />
+                        &#37;
                       </Text>
                     </View>
                   );

@@ -9,6 +9,7 @@ import { Platform, StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
+import LevelProgress from '../../components/LevelProgress';
 import style from './index.style';
 import audioService from '../../services/audio';
 
@@ -21,6 +22,7 @@ const instructions = Platform.select({
   navigateToPlayground: allStores.router.navigateToPlayground,
   navigateToEndgame: allStores.router.navigateToEndgame,
   navigateToSelection: allStores.router.navigateToSelection,
+  progress: allStores.game.getLevelUpProgresss,
 }))
 @observer
 export default class Home extends Component {
@@ -71,7 +73,7 @@ export default class Home extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Kjemia's naturfag - eksamensquiz!</Text>
+          <Text style={style.header}>Kjemias naturfag - eksamensquiz!</Text>
         </View>
         {hasHeaderAppeared && (
           <View
@@ -80,6 +82,9 @@ export default class Home extends Component {
               this._bodyRef = ref;
             }}
           >
+            <View>
+              <LevelProgress progress={this.props.progress} />
+            </View>
             <Button style={style.button} onPressOut={this._handleStartPress}>
               <Text style={style.buttonText}>Hurtigstart</Text>
             </Button>

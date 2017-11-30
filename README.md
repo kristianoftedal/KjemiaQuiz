@@ -1,7 +1,7 @@
 # KjemiaQuiz
 Quiz app i naturfag
 
-##Installation
+## Installation
 yarn || npm install
 
 

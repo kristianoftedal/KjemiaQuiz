@@ -4,7 +4,7 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
-import { Text, Alert, AsyncStorage } from 'react-native';
+import { Text, Alert } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
@@ -48,7 +48,6 @@ export default class Playground extends Component {
     isCorrectAnswer: false,
     isEndgame: false,
     isCustomizedGame: false,
-    currentLevel: 0,
   };
 
   componentDidMount() {
@@ -97,7 +96,7 @@ export default class Playground extends Component {
   };
 
   render() {
-    const { isGameRunning, previousScore, score, currentQuestion } = this.props;
+    const { previousScore, score, currentQuestion } = this.props;
     let questionImage = null;
     if (currentQuestion.image) {
       questionImage = currentQuestion.image;

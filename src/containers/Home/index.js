@@ -22,7 +22,9 @@ const instructions = Platform.select({
   navigateToPlayground: allStores.router.navigateToPlayground,
   navigateToEndgame: allStores.router.navigateToEndgame,
   navigateToSelection: allStores.router.navigateToSelection,
-  progress: allStores.game.getLevelUpProgresss,
+  progress: allStores.game.getLevelUpProgress,
+  level: allStores.game.currentLevel,
+  initPlayer: allStores.game.initPlayer,
 }))
 @observer
 export default class Home extends Component {
@@ -35,6 +37,7 @@ export default class Home extends Component {
   };
 
   componentDidMount() {
+    this.props.initPlayer();
     if (this._headerRef) {
       this._headerRef.fadeInRight(1200).then(() => {
         LayoutAnimation.spring();
@@ -64,7 +67,7 @@ export default class Home extends Component {
   };
 
   render() {
-    const { hasHeaderAppeared, hasPressedButton } = this.state;
+    const { hasHeaderAppeared } = this.state;
     return (
       <View style={style.body}>
         <StatusBar hidden={true} />
@@ -83,7 +86,7 @@ export default class Home extends Component {
             }}
           >
             <View>
-              <LevelProgress progress={this.props.progress} />
+              <LevelProgress level={this.props.level} progress={this.props.progress} />
             </View>
             <Button style={style.button} onPressOut={this._handleStartPress}>
               <Text style={style.buttonText}>Hurtigstart</Text>

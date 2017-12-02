@@ -13,6 +13,7 @@ export default class LevelProgress extends Component {
   static defaultProps = {
     score: 0,
     progress: 0,
+    level: '',
   };
 
   animate() {
@@ -26,15 +27,15 @@ export default class LevelProgress extends Component {
   render() {
     const { score, ...otherProps } = this.props;
     const progressStyle = {
-      width: 100 // this.props.progress; 
+      width: this.props.progress,
     };
     return (
-      <View>
+      <View style={style.container}>
         <View>
-          <Text>Ditt nivå: </Text>
+          <Text style={style.text}>Ditt nivå: {this.props.level}</Text>
         </View>
         <View key={score} style={[style.wrapper]}>
-          <View style={[style.levelBar]} />
+          <View style={[style.levelBar, progressStyle]} />
         </View>
       </View>
     );

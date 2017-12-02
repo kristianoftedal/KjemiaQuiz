@@ -1,14 +1,20 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  container: {
+    margin: 20,
+  },
   wrapper: {
     flexDirection: 'row',
     alignSelf: 'stretch',
     borderColor: 'white',
     borderWidth: 1,
-    margin: 20,
     borderRadius: 20,
     height: 25,
+  },
+  text: {
+    color: 'white',
+    fontFamily: 'Permanent Marker',
   },
   levelBar: {
     marginTop: 4,

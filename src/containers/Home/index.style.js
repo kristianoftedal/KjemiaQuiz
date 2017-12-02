@@ -18,13 +18,6 @@ export default StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  tile: {
-    width: tileSize,
-    height: tileSize,
-  },
-  tileText: {
-    fontSize: 40,
-  },
   logo: {
     flex: 1,
     marginLeft: metrics.DEVICE_WIDTH * 0.05,

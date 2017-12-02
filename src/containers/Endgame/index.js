@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
+import { StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
@@ -21,10 +21,10 @@ import AnimateNumber from '../../components/AnimateNumber';
   correctCount: allStores.game.correctCount,
   quizLength: allStores.game.quizLength,
   correctPercentage: allStores.game.correctPercentage,
-  correctByCategory: allStores.game.correctByCategory,
+  totalByCategory: allStores.game.totalByCategory,
 }))
 @observer
-export default class Home extends Component {
+export default class Endgame extends Component {
   _headerRef;
   _bodyRef;
 
@@ -63,8 +63,7 @@ export default class Home extends Component {
   };
 
   render() {
-    const { hasHeaderAppeared, hasPressedButton } = this.state;
-    const radiusMinusBorder = 50 - 2;
+    const { hasHeaderAppeared } = this.state;
     return (
       <View style={style.body}>
         <StatusBar hidden={true} />
@@ -93,7 +92,7 @@ export default class Home extends Component {
           >
             <View>
               <Text style={style.subHeader}>
-                Du klarte: 
+                Du klarte:&nbsp;
                 <AnimateNumber
                   initial={0}
                   value={this.props.correctPercentage}
@@ -107,8 +106,9 @@ export default class Home extends Component {
             <View>
               <Text style={style.resultHeader}>Per kategori:</Text>
               {categories.map(e => {
+                debugger;
                 const category = e.value;
-                const result = this.props.correctByCategory[category];
+                const result = this.props.totalByCategory[category];
                 if (result) {
                   return (
                     <View key={category} style={style.resultWrapper}>
@@ -140,19 +140,3 @@ export default class Home extends Component {
     );
   }
 }
-
-const inlineStyle = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: undefined,
-    height: undefined,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});

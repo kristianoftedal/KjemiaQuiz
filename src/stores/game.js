@@ -3,10 +3,10 @@
  * Here you can find the entire logic of the game.
  */
 import { action, computed, observable } from 'mobx';
-import { AsyncStorage } from 'react-native';
 import { getQuestionsSet, getQuestionsSetByCriterias } from '../questions/questionService';
 import metrics from '../config/metrics';
 import levels from '../questions/levels';
+import { getXp, getLevelIndex, setXp, setLevelIndex } from '../questions/xpService';
 
 export default class GameStore {
   @observable isGameRunning = false;
@@ -23,6 +23,7 @@ export default class GameStore {
   @observable currentLevelXp = 0;
   @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
+  @observable currentLevel = '';
 
   setBaseline() {
     this.score = 0;
@@ -32,9 +33,12 @@ export default class GameStore {
     this.isGameRunning = true;
     this.isCorrectAnswer = false;
     this.totalByCategory = {};
-    this.currentLevelXp = JSON.parse(AsyncStorage.getItem('currentLevelXp') || 0);
-    this.currentLevelIndex = JSON.parse(AsyncStorage.getItem('currentLevelIndex') || 0);
   }
+
+  getLevels = async () => {
+    this.currentLevelXp = await getXp();
+    this.currentLevelIndex = await getLevelIndex();
+  };
 
   @action
   startGame = () => {
@@ -42,6 +46,18 @@ export default class GameStore {
     this.isCustomizedGame = false;
     this.correctCount = 0;
     this.buildQuiz();
+  };
+
+  @action
+  initPlayer = () => {
+    debugger;
+    this.getLevels().then(() => {
+      if (this.currentLevelXp >= levels[this.currentLevelIndex]) {
+        this.currentLevelIndex++;
+      }
+      console.log(this.currentLevelXp);
+      console.log(this.currentLevelIndex);
+    });
   };
 
   @action
@@ -59,6 +75,7 @@ export default class GameStore {
   @action
   handleAnswerPress = async answerKey => {
     this.isCorrectAnswer = false;
+    debugger;
     this.previousScore = this.score;
     let totalByCategory = this.totalByCategory[this.currentQuestion.category];
     if (!totalByCategory) {
@@ -79,7 +96,9 @@ export default class GameStore {
         this.currentLevelXp += 100;
       }
       if (this.currentLevelXp >= levels[this.currentLevelIndex + 1].score) {
+        debugger;
         this.currentLevelIndex++;
+        this.currentLevel = levels[this.currentLevelIndex].value;
       }
       this.isCorrectAnswer = true;
       this.correctCount++;
@@ -95,6 +114,8 @@ export default class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
+    setLevelIndex(this.currentLevelIndex).then(() => console.log('ok'));
+    setXp(this.currentLevelXp).then(() => console.log('ok'));
   };
 
   @computed
@@ -121,20 +142,22 @@ export default class GameStore {
     return quizProgress * metrics.DEVICE_WIDTH / 100;
   }
 
+  nextLevelThreshold = () => {
+    debugger;
+    const nextLevelThreshold = levels[this.currentLevelIndex + 1].score;
+    return nextLevelThreshold;
+  };
+
+  @computed
   get getLevelUpProgress() {
+    debugger;
     const levelUpProgress = this.currentLevelXp / this.nextLevelThreshold() * 100;
     return levelUpProgress * metrics.DEVICE_WIDTH / 100;
   }
 
   @computed
   get correctPercentage() {
-    const correctPercentage = this.correctCount / this.questions.length * 100 || 0;
+    const correctPercentage = this.correctCount / this.questions.length * 100 || 0;
     return correctPercentage;
-  }
-
-  @computed
-  get nextLevelThreshold() {
-    const nextLevelThreshold = levels[this.currentLevelIndex + 1].score;
-    return nextLevelThreshold;
   }
 }

@@ -134,9 +134,11 @@ export default class Selection extends Component {
               />
               <Text style={style.radioButtonLabel}>80</Text>
               <RadioButton
-                style={style.radioButton}
                 isSelected={this.state.count === 80}
-                onPress={() => this.setState({ count: 80 })}
+                onPress={() => {
+                  debugger;
+                  this.setState({ count: 80 });
+                }}
                 innerColor="white"
                 outerColor="white"
               />

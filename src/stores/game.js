@@ -23,7 +23,6 @@ export default class GameStore {
   @observable currentLevelXp = 0;
   @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
-  @observable currentLevel = '';
 
   setBaseline() {
     this.score = 0;
@@ -50,7 +49,6 @@ export default class GameStore {
 
   @action
   initPlayer = () => {
-    debugger;
     this.getLevels().then(() => {
       if (this.currentLevelXp >= levels[this.currentLevelIndex]) {
         this.currentLevelIndex++;
@@ -75,7 +73,6 @@ export default class GameStore {
   @action
   handleAnswerPress = async answerKey => {
     this.isCorrectAnswer = false;
-    debugger;
     this.previousScore = this.score;
     let totalByCategory = this.totalByCategory[this.currentQuestion.category];
     if (!totalByCategory) {
@@ -96,9 +93,7 @@ export default class GameStore {
         this.currentLevelXp += 100;
       }
       if (this.currentLevelXp >= levels[this.currentLevelIndex + 1].score) {
-        debugger;
         this.currentLevelIndex++;
-        this.currentLevel = levels[this.currentLevelIndex].value;
       }
       this.isCorrectAnswer = true;
       this.correctCount++;
@@ -134,6 +129,10 @@ export default class GameStore {
   }
 
   @computed
+  get currentLevel() {
+    return levels[this.currentLevelIndex];
+  }
+  @computed
   get getProgress() {
     if (this.questions.length === 0) {
       return 0;
@@ -143,14 +142,12 @@ export default class GameStore {
   }
 
   nextLevelThreshold = () => {
-    debugger;
     const nextLevelThreshold = levels[this.currentLevelIndex + 1].score;
     return nextLevelThreshold;
   };
 
   @computed
   get getLevelUpProgress() {
-    debugger;
     const levelUpProgress = this.currentLevelXp / this.nextLevelThreshold() * 100;
     return levelUpProgress * metrics.DEVICE_WIDTH / 100;
   }

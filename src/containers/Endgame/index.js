@@ -106,7 +106,6 @@ export default class Endgame extends Component {
             <View>
               <Text style={style.resultHeader}>Per kategori:</Text>
               {categories.map(e => {
-                debugger;
                 const category = e.value;
                 const result = this.props.totalByCategory[category];
                 if (result) {
@@ -114,13 +113,7 @@ export default class Endgame extends Component {
                     <View key={category} style={style.resultWrapper}>
                       <Text style={style.resultLabel}>{category}: </Text>
                       <Text style={style.resultPercentage}>
-                        <AnimateNumber
-                          inital={0}
-                          value={result.correct / result.total * 100}
-                          interval={10}
-                          timing="easeOut"
-                          countBy={5}
-                        />
+                        {result.correct / result.total * 100}
                         &#37;
                       </Text>
                     </View>

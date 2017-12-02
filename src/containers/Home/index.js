@@ -5,18 +5,13 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
+import { StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import LevelProgress from '../../components/LevelProgress';
 import style from './index.style';
 import audioService from '../../services/audio';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' + 'Shake or press menu button for dev menu',
-});
 
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
@@ -86,7 +81,7 @@ export default class Home extends Component {
             }}
           >
             <View>
-              <LevelProgress level={this.props.level} progress={this.props.progress} />
+              <LevelProgress level={this.props.level.value} progress={this.props.progress} />
             </View>
             <Button style={style.button} onPressOut={this._handleStartPress}>
               <Text style={style.buttonText}>Hurtigstart</Text>
@@ -97,7 +92,6 @@ export default class Home extends Component {
             <Button style={style.button} onPressOut={this._handleOpenKjemia}>
               <Text style={style.buttonText}>Kjemia.no</Text>
             </Button>
-            <Text style={inlineStyle.instructions}>{instructions}</Text>
           </View>
         )}
       </View>

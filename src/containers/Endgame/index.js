@@ -72,16 +72,7 @@ export default class Endgame extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>
-            Din score:{' '}
-            <AnimateNumber
-              inital={0}
-              value={this.props.score}
-              interval={10}
-              timing="easeOut"
-              countBy={13}
-            />
-          </Text>
+          <Text style={style.header}>Din score: {this.props.score}</Text>
         </View>
         {hasHeaderAppeared && (
           <View
@@ -91,17 +82,7 @@ export default class Endgame extends Component {
             }}
           >
             <View>
-              <Text style={style.subHeader}>
-                Du klarte:&nbsp;
-                <AnimateNumber
-                  initial={0}
-                  value={this.props.correctPercentage}
-                  timing="easeOut"
-                  interval={10}
-                  countBy={5}
-                />
-                %
-              </Text>
+              <Text style={style.subHeader}>Du klarte:&nbsp; {this.props.correctPercentage}%</Text>
             </View>
             <View>
               <Text style={style.resultHeader}>Per kategori:</Text>

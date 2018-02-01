@@ -4,7 +4,6 @@
  */
 import React, { Component } from 'react';
 import { View, Animated, Easing } from 'react-native';
-import { Text } from 'react-native-animatable';
 import styles from './index.style';
 
 export default class ScoreText extends Component {
@@ -37,7 +36,7 @@ export default class ScoreText extends Component {
           fontSize: textSize,
           color: 'white',
           fontWeight: 'bold',
-          fontFamily: 'Permanent Marker',
+          fontFamily: 'Raleway-Regular',
         }}
         {...otherProps}
       >

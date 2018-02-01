@@ -60,6 +60,7 @@ export default class GameStore {
 
   @action
   setCustomizedGame = (categories, difficulty, count) => {
+    debugger;
     this.setBaseline();
     this.isCustomizedGame = true;
     this.questions = getQuestionsSetByCriterias(categories, difficulty, count);
@@ -149,7 +150,7 @@ export default class GameStore {
   @computed
   get getLevelUpProgress() {
     const levelUpProgress = this.currentLevelXp / this.nextLevelThreshold() * 100;
-    return levelUpProgress * metrics.DEVICE_WIDTH / 100;
+    return levelUpProgress * metrics.DEVICE_WIDTH / 100 - 10 * metrics.DEVICE_WIDTH / 100;
   }
 
   @computed

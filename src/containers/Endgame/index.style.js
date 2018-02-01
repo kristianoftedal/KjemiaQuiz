@@ -13,14 +13,14 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   header: {
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
     fontSize: 40,
     textAlign: 'center',
     margin: 10,
   },
   subHeader: {
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
     fontSize: 25,
     textAlign: 'center',
@@ -64,13 +64,13 @@ export default StyleSheet.create({
     marginBottom: 10,
   },
   resultHeader: {
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
     fontSize: 15,
     margin: 1,
   },
   resultLabel: {
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
     flex: 1,
     flexGrow: 9,
@@ -81,10 +81,10 @@ export default StyleSheet.create({
     marginBottom: 2,
     marginTop: 2,
     alignSelf: 'flex-end',
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
   },
-  circle: {    
+  circle: {
     width: 100,
     height: 100,
     borderWidth: 2,

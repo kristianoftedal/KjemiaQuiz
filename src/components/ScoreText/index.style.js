@@ -12,7 +12,7 @@ export default StyleSheet.create({
     marginTop: 20,
     color: 'white',
     fontWeight: 'bold',
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     fontSize: 40,
     height: 50,
   },

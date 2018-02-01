@@ -136,7 +136,6 @@ export default class Selection extends Component {
               <RadioButton
                 isSelected={this.state.count === 80}
                 onPress={() => {
-                  debugger;
                   this.setState({ count: 80 });
                 }}
                 innerColor="white"

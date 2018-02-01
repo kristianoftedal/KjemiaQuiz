@@ -14,7 +14,7 @@ export default StyleSheet.create({
   },
   text: {
     color: 'white',
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
   },
   levelBar: {
     marginTop: 4,
@@ -23,7 +23,6 @@ export default StyleSheet.create({
     marginBottom: 6,
     height: 15,
     alignSelf: 'flex-start',
-    width: 90,
     borderTopLeftRadius: 20,
     borderBottomLeftRadius: 20,
     backgroundColor: 'white',

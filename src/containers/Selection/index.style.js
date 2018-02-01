@@ -1,9 +1,5 @@
 /* @flow */
 import { StyleSheet } from 'react-native';
-import metrics from '../../config/metrics';
-
-const tileSize = metrics.DEVICE_WIDTH * 0.26;
-const logoWidth = metrics.DEVICE_WIDTH * 0.5;
 
 export default StyleSheet.create({
   container: {
@@ -14,7 +10,7 @@ export default StyleSheet.create({
     padding: 20,
   },
   header: {
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
     fontSize: 20,
     textAlign: 'center',
@@ -31,7 +27,7 @@ export default StyleSheet.create({
     borderBottomWidth: 1,
   },
   toggleLabel: {
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
     flex: 1,
     flexGrow: 9,
@@ -66,10 +62,9 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   radioButtonLabel: {
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     color: 'white',
     marginRight: 5,
   },
-  radioButton: {
-  },
+  radioButton: {},
 });

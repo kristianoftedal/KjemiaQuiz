@@ -35,7 +35,7 @@ export default StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 35,
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
   },
   footerLayout: {
     flexDirection: 'row',
@@ -47,7 +47,7 @@ export default StyleSheet.create({
     marginTop: 20,
     color: 'white',
     fontWeight: 'bold',
-    fontFamily: 'Permanent Marker',
+    fontFamily: 'Raleway-Regular',
     fontSize: 20,
     height: 50,
   },

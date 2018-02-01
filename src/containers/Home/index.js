@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
+import { StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
@@ -98,11 +98,3 @@ export default class Home extends Component {
     );
   }
 }
-
-const inlineStyle = StyleSheet.create({
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});

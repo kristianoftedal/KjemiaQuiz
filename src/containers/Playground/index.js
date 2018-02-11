@@ -4,12 +4,16 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
-import { Text, Alert } from 'react-native';
+import { Text, Alert, Image } from 'react-native';
 import { View } from 'react-native-animatable';
+import PopupDialog from 'react-native-popup-dialog';
 import { inject, observer } from 'mobx-react/native';
+import PhotoView from 'react-native-photo-view';
 import { times } from 'lodash';
 import Button from 'apsl-react-native-button';
+import DropdownAlert from 'react-native-dropdownalert';
 import QuestionWrapper from '../../components/QuestionWrapper';
+import LevelUp from '../../components/LevelUp';
 import ScoreText from '../../components/ScoreText';
 import style from './index.style';
 import answersUtils from '../../utils/answersUtils';
@@ -17,6 +21,9 @@ import AnswerTile from './AnswerTile';
 import AnimateNumber from '../../components/AnimateNumber';
 import audioService from '../../services/audio';
 import ProgressBar from './ProgressBar';
+import periodicIcon from '../../images/periodicIcon.png';
+import periodicTable from '../../images/periodicTable.png';
+import metrics from '../../config/metrics';
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
@@ -31,6 +38,7 @@ import ProgressBar from './ProgressBar';
   previousScore: allStores.game.previousScore,
   isEndgame: allStores.game.isEndgame,
   isCustomizedGame: allStores.game.isCustomizedGame,
+  currentLevelIndex: allStores.game.currentLevelIndex
 }))
 @observer
 export default class Playground extends Component {
@@ -48,6 +56,7 @@ export default class Playground extends Component {
     isCorrectAnswer: false,
     isEndgame: false,
     isCustomizedGame: false,
+    currentLevelIndex: 0,
   };
 
   componentDidMount() {
@@ -65,8 +74,16 @@ export default class Playground extends Component {
       this._questionRef.bounceInRight(1000);
       if (this.props.isCorrectAnswer) {
         audioService.playSuccessSound();
+        this.dropdown.alertWithType('success', 'Riktig', '');
       } else {
         audioService.playFailureSound();
+        this.dropdown.alertWithType('error', 'Feil', '');
+      }
+      if (prevProps.currentLevelIndex !== this.props.currentLevelIndex) {
+        const opacity = this.animatedValue.interpolate({
+          inputRange: [0, 0.5, 1],
+          outputRange: [0, 1, 0]
+        })
       }
     }
   }
@@ -98,6 +115,9 @@ export default class Playground extends Component {
   render() {
     const { previousScore, score, currentQuestion } = this.props;
     let questionImage = null;
+
+    const imageWidth = metrics.DEVICE_WIDTH * 0.95;
+    const imageHeight = metrics.DEVICE_HEIGHT * 0.85;
     if (currentQuestion.image) {
       questionImage = currentQuestion.image;
     }
@@ -121,6 +141,7 @@ export default class Playground extends Component {
           }}
         >
           <QuestionWrapper image={questionImage}>{currentQuestion.questionText}</QuestionWrapper>
+          
           <View style={style.answerWrapper}>
             {currentQuestion.answers &&
               currentQuestion.answers.map((e, i) => {
@@ -150,8 +171,38 @@ export default class Playground extends Component {
                 countBy={5}
               />
             </ScoreText>
+            <Button
+              title="Periodisk tabell"
+              onPress={() => {
+                this.popupDialog.show();
+              }}
+              style={style.periodicButton}>
+              <Image style={style.periodicIcon} source={periodicIcon}/>
+            </Button>
           </View>
         </View>
+        <PopupDialog
+          width={0.95}
+          height={0.80}
+          ref={(popupDialog) => { this.popupDialog = popupDialog; }}
+        >
+          <View>
+            <PhotoView
+              source={periodicTable}
+              minimumZoomScale={0.5}
+              maximumZoomScale={3}
+              androidScaleType="center"
+              onLoad={() => console.log("Image loaded!")}
+              style={{width: imageWidth, height: imageHeight}} />
+          </View>
+        </PopupDialog>
+        <DropdownAlert
+          ref={ref => this.dropdown = ref}
+          closeInterval={1000}
+          imageStyle={null}
+          successColor="#2ecc71"
+          errorColor="#e74c3c"
+        />
       </View>
     );
   }

@@ -32,6 +32,20 @@ export default StyleSheet.create({
     marginTop: 4,
     marginRight: 20,
   },
+  periodicButton: {
+    flex: 1,
+    alignSelf: 'flex-end',
+    width: 10,
+    borderColor: '#34495e',
+    margin: 0,
+    marginBottom: 5,
+    marginTop: 0,
+    marginRight: 5,
+  },
+  periodicIcon: {
+    width: 70,
+    height: 70
+  },
   buttonText: {
     color: 'white',
     fontSize: 35,

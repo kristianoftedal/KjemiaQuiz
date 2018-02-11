@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   wrapper: {
     justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#34495e',
     height: 60,
     flex: 2,
@@ -10,6 +11,7 @@ export default StyleSheet.create({
   },
   text: {
     marginTop: 20,
+    marginRight: 10,
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',

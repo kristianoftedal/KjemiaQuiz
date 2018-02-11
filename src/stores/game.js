@@ -53,14 +53,11 @@ export default class GameStore {
       if (this.currentLevelXp >= levels[this.currentLevelIndex]) {
         this.currentLevelIndex++;
       }
-      console.log(this.currentLevelXp);
-      console.log(this.currentLevelIndex);
     });
   };
 
   @action
   setCustomizedGame = (categories, difficulty, count) => {
-    debugger;
     this.setBaseline();
     this.isCustomizedGame = true;
     this.questions = getQuestionsSetByCriterias(categories, difficulty, count);

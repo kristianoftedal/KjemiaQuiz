@@ -23,6 +23,7 @@ export default class GameStore {
   @observable currentLevelXp = 0;
   @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
+  @observable isAdTime = false;
 
   setBaseline() {
     this.score = 0;
@@ -109,6 +110,12 @@ export default class GameStore {
     }
     setLevelIndex(this.currentLevelIndex).then(() => console.log('ok'));
     setXp(this.currentLevelXp).then(() => console.log('ok'));
+
+    if (this.currentIndex !== 0 && this.currentIndex % 5 === 0) {
+      this.isAdTime = true;
+    } else {
+      this.isAdTime = false;
+    }
   };
 
   @computed

@@ -17,7 +17,12 @@ export default class RouterStore {
   navigateToEndgame = () => {
     this.currentScreen = 'ENDGAME';
   };
+
   navigateToSelection = () => {
     this.currentScreen = 'SELECTION';
+  };
+
+  navigateToAbout = () => {
+    this.currentScreen = 'ABOUT';
   };
 }

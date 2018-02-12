@@ -14,11 +14,11 @@ const CustomText = props => {
   const fontSize = 25;
   const scaledFontSize = Math.round(fontSize * metrics.DEVICE_WIDTH / 375);
   const shadowStyle = {
-    textShadowColor: 'rgba(0, 0, 0, 0.2)',
+    textShadowColor: 'rgba(0, 0, 0, 0.3)',
     textShadowRadius: 0,
     textShadowOffset: {
-      height: 4,
-      width: 4,
+      height: 2,
+      width: 2,
     },
   };
   const textStyle = [styles.text, withShadow ? shadowStyle : {}, style];

@@ -57,31 +57,4 @@ export default StyleSheet.create({
     color: 'white',
     fontSize: 20,
   },
-  resultWrapper: {
-    flexDirection: 'row',
-    borderBottomColor: 'white',
-    borderBottomWidth: 1,
-    marginBottom: 10,
-  },
-  resultHeader: {
-    fontFamily: 'Raleway-Regular',
-    color: 'white',
-    fontSize: 15,
-    margin: 1,
-  },
-  resultLabel: {
-    fontFamily: 'Raleway-Regular',
-    color: 'white',
-    flex: 1,
-    flexGrow: 9,
-    alignSelf: 'center',
-  },
-  resultPercentage: {
-    flex: 2,
-    marginBottom: 2,
-    marginTop: 2,
-    alignSelf: 'flex-end',
-    fontFamily: 'Raleway-Regular',
-    color: 'white',
-  },
 });

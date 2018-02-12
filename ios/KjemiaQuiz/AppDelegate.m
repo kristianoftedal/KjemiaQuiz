@@ -11,6 +11,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+@import GoogleMobileAds;
 
 @implementation AppDelegate
 
@@ -29,6 +30,7 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
+  [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544~1458002511  "];
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;

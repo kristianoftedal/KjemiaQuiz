@@ -4,6 +4,7 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Text, Alert, Image } from 'react-native';
 import { View } from 'react-native-animatable';
 import PopupDialog from 'react-native-popup-dialog';
@@ -24,6 +25,9 @@ import ProgressBar from './ProgressBar';
 import periodicIcon from '../../images/periodicIcon.png';
 import periodicTable from '../../images/periodicTable.png';
 import metrics from '../../config/metrics';
+import {
+  AdMobInterstitial,
+} from 'react-native-admob'
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
@@ -38,7 +42,8 @@ import metrics from '../../config/metrics';
   previousScore: allStores.game.previousScore,
   isEndgame: allStores.game.isEndgame,
   isCustomizedGame: allStores.game.isCustomizedGame,
-  currentLevelIndex: allStores.game.currentLevelIndex
+  currentLevelIndex: allStores.game.currentLevelIndex,
+  isAdTime: allStores.game.isAdTime,
 }))
 @observer
 export default class Playground extends Component {
@@ -57,6 +62,7 @@ export default class Playground extends Component {
     isEndgame: false,
     isCustomizedGame: false,
     currentLevelIndex: 0,
+    isAdTime: false,
   };
 
   componentDidMount() {
@@ -67,23 +73,23 @@ export default class Playground extends Component {
   }
 
   componentDidUpdate(prevProps) {
+    if (this.props.isAdTime) {
+      AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
+      // AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/2934735716');
+      AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
+      AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+    }
     if (prevProps.currentIndex !== this.props.currentIndex) {
       if (this.props.isEndgame) {
         this.props.navigateToEndgame();
       }
       this._questionRef.bounceInRight(1000);
       if (this.props.isCorrectAnswer) {
-        audioService.playSuccessSound();
         this.dropdown.alertWithType('success', 'Riktig', '');
+        audioService.playSuccessSound();
       } else {
-        audioService.playFailureSound();
         this.dropdown.alertWithType('error', 'Feil', '');
-      }
-      if (prevProps.currentLevelIndex !== this.props.currentLevelIndex) {
-        const opacity = this.animatedValue.interpolate({
-          inputRange: [0, 0.5, 1],
-          outputRange: [0, 1, 0]
-        })
+        audioService.playFailureSound();
       }
     }
   }
@@ -115,7 +121,7 @@ export default class Playground extends Component {
   render() {
     const { previousScore, score, currentQuestion } = this.props;
     let questionImage = null;
-
+    
     const imageWidth = metrics.DEVICE_WIDTH * 0.95;
     const imageHeight = metrics.DEVICE_HEIGHT * 0.85;
     if (currentQuestion.image) {

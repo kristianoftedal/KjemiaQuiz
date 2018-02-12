@@ -13,6 +13,7 @@ import Playground from '../Playground';
 import Home from '../Home';
 import Endgame from '../Endgame';
 import Selection from '../Selection';
+import About from '../About';
 import styles from './index.style';
 
 @inject(allStores => ({
@@ -40,6 +41,9 @@ export default class App extends Component {
         break;
       case 'SELECTION':
         content = <Selection />;
+        break;
+      case 'ABOUT':
+        content = <About />;
         break;
       default:
         content = <View />;

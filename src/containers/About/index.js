@@ -59,8 +59,19 @@ export default class Endgame extends Component {
               this._bodyRef = ref;
             }}
           >
-            <View>
-              <Text style={style.subHeader}>Bla bla bla klarte:&nbsp; {this.props.correctPercentage}%</Text>
+            <View style={style.textPart}>
+              <View>
+                <Text style={style.subHeader}>Vi er blablalblalba</Text>
+                <Text style={style.text}>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat.</Text>
+              </View>
+              <View>
+                <Text style={style.subHeader}>Vi er blablalblalba</Text>
+                <Text style={style.text}>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+              </View>
             </View>
             <Button style={style.button} onPressOut={this._handleOpenKjemia}>
               <Text style={style.buttonText}>Kjemia.no</Text>

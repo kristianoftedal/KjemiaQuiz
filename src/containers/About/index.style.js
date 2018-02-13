@@ -26,18 +26,15 @@ export default StyleSheet.create({
     textAlign: 'center',
     margin: 5,
   },
-  tile: {
-    width: tileSize,
-    height: tileSize,
+  text: {
+    fontFamily: 'Raleway-Regular',
+    color: 'white',
+    fontSize: 18,
+    textAlign: 'center',
+    margin: 5,
   },
-  tileText: {
-    fontSize: 40,
-  },
-  logo: {
-    flex: 1,
-    marginLeft: metrics.DEVICE_WIDTH * 0.05,
-    height: null,
-    width: logoWidth,
+  textPart: {
+    marginBottom: 10,
   },
   body: {
     flex: 1,

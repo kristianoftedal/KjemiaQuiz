@@ -14,10 +14,8 @@ import Button from 'apsl-react-native-button';
 import style from './index.style';
 import ScoreText from '../../../components/ScoreText';
 import AnimateNumber from '../../../components/AnimateNumber';
-import periodicIcon from '../../../images/periodicIcon.png';
-import periodicTable from '../../../images/periodicTable.png';
 import GoBackButton from './GoBackButton';
-import metrics from '../../../config/metrics';
+import periodicIcon from '../../../images/periodicIcon.png';
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
@@ -30,13 +28,13 @@ import metrics from '../../../config/metrics';
 @observer
 export default class Playground extends Component {
 
-  componentDidMount() {
-  }
+
+  static defaultProps = {
+    dialog: null
+  };
 
   render() {
-    const { previousScore, score } = this.props;
-    const imageWidth = metrics.DEVICE_WIDTH * 0.95;
-    const imageHeight = metrics.DEVICE_HEIGHT * 0.85;
+    const { previousScore, score, dialog } = this.props;
     return (
       <View style={style.footerWrapper}>
         <View style={style.footerLayout}>
@@ -54,26 +52,12 @@ export default class Playground extends Component {
           <Button
             title="Periodisk tabell"
             onPress={() => {
-              this.popupDialog.show();
+              dialog.show();
             }}
             style={style.periodicButton}>
             <Image style={style.periodicIcon} source={periodicIcon}/>
           </Button>
         </View>
-        <PopupDialog
-          width={0.95}
-          height={0.80}
-          ref={(popupDialog) => { this.popupDialog = popupDialog; }}
-        >
-          <View>
-            <PhotoView
-              source={periodicTable}
-              minimumZoomScale={0.5}
-              maximumZoomScale={3}
-              androidScaleType="center"
-              style={{width: imageWidth, height: imageHeight}} />
-          </View>
-        </PopupDialog>
       </View>
     );
   }

@@ -18,7 +18,6 @@ export default class GoBackButton extends Component {
 
   _handleBackPress = () => {
     const onYes = () => {
-      this._questionRef.fadeOutLeft(500);
       this.props.navigateToHome();
     };
     Alert.alert(

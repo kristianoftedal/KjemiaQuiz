@@ -39,7 +39,7 @@ export default class Tile extends Component {
     const { onPressIn, playSound } = this.props;
     if (this.state.hasBeenPressed) return; // Prevent double presses
     playSound();
-    LayoutAnimation.spring(); // Animate the tile Press
+    // LayoutAnimation.spring(); // Animate the tile Press
     this.setState({ isTouched: true });
     if (onPressIn) {
       onPressIn();

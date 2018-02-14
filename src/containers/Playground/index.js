@@ -19,26 +19,22 @@ import answersUtils from '../../utils/answersUtils';
 import AnswerTile from './AnswerTile';
 import audioService from '../../services/audio';
 import ProgressBar from './ProgressBar';
-import metrics from '../../config/metrics';
 import Footer from './Footer';
+import PeriodicTable from './PeriodicTable';
 import {
   AdMobInterstitial,
 } from 'react-native-admob'
 
 @inject(allStores => ({
-  navigateToHome: allStores.router.navigateToHome,
   navigateToEndgame: allStores.router.navigateToEndgame,
-  score: allStores.game.score,
   startGame: allStores.game.startGame,
   handleAnswerPress: allStores.game.handleAnswerPress,
   currentQuestion: allStores.game.currentQuestion,
   currentIndex: allStores.game.currentIndex,
   questions: allStores.game.questions,
   isCorrectAnswer: allStores.game.isCorrectAnswer,
-  previousScore: allStores.game.previousScore,
   isEndgame: allStores.game.isEndgame,
   isCustomizedGame: allStores.game.isCustomizedGame,
-  currentLevelIndex: allStores.game.currentLevelIndex,
   isAdTime: allStores.game.isAdTime,
 }))
 @observer
@@ -81,7 +77,7 @@ export default class Playground extends Component {
   };
 
   render() {
-    const { previousScore, score, currentQuestion } = this.props;
+    const { currentQuestion } = this.props;
     let questionImage = null;
     
     if (currentQuestion.image) {
@@ -117,7 +113,7 @@ export default class Playground extends Component {
               })}
           </View>
         </View>
-        <Footer/>
+        <Footer dialog={this.popupDialog}/>
         <DropdownAlert
           ref={ref => this.dropdown = ref}
           closeInterval={1000}
@@ -125,6 +121,13 @@ export default class Playground extends Component {
           successColor="#2ecc71"
           errorColor="#e74c3c"
         />
+        <PopupDialog
+          width={0.95}
+          height={0.80}
+          ref={(popupDialog) => { this.popupDialog = popupDialog; }}
+        >
+          <PeriodicTable />
+        </PopupDialog>
       </View>
     );
   }

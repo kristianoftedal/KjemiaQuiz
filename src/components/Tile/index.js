@@ -7,7 +7,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native-animatable';
 import { observer } from 'mobx-react/native';
-import { LayoutAnimation } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native';
 import CustomText from '../CustomText';
 import colorUtils from '../../utils/colorUtils';
@@ -39,7 +38,6 @@ export default class Tile extends Component {
     const { onPressIn, playSound } = this.props;
     if (this.state.hasBeenPressed) return; // Prevent double presses
     playSound();
-    // LayoutAnimation.spring(); // Animate the tile Press
     this.setState({ isTouched: true });
     if (onPressIn) {
       onPressIn();

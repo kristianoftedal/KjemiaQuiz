@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { StatusBar, Text, LayoutAnimation, Linking } from 'react-native';
+import { StatusBar, Text, Linking } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
@@ -37,7 +37,6 @@ export default class Home extends Component {
     this.props.initPlayer();
     if (this._headerRef) {
       this._headerRef.fadeInRight(1200).then(() => {
-        LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
       });

@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { StatusBar, Text, LayoutAnimation, Switch } from 'react-native';
+import { StatusBar, Text, Switch } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
@@ -37,7 +37,6 @@ export default class Selection extends Component {
   componentDidMount() {
     if (this._headerRef) {
       this._headerRef.fadeInRight(600).then(() => {
-        LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
       });

@@ -36,6 +36,7 @@ import {
   isEndgame: allStores.game.isEndgame,
   isCustomizedGame: allStores.game.isCustomizedGame,
   isAdTime: allStores.game.isAdTime,
+  isLevelUp: allStores.game.isLevelUp,
 }))
 @observer
 export default class Playground extends Component {
@@ -88,6 +89,7 @@ export default class Playground extends Component {
       const color = answersUtils.getRandomTileColor(alreadyPickedColors);
       alreadyPickedColors.push(color);
     });
+
     return (
       <View
         style={style.container}

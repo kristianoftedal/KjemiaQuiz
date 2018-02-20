@@ -41,4 +41,11 @@ export default StyleSheet.create({
     fontSize: 20,
     height: 50,
   },
+  questionFeedback: {
+    textAlign: 'center',
+    color: 'white',
+    fontSize: 20, 
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+  }
 });

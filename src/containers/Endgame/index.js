@@ -83,7 +83,7 @@ export default class Endgame extends Component {
             <View>
               <Text style={style.subHeader}>Du klarte:&nbsp; {this.props.correctPercentage}%</Text>
             </View>
-            <View>
+            <View style={style.categoriesWrapper}>
               <Text style={style.resultHeader}>Per kategori:</Text>
               {categories.map(e => {
                 const category = e.value;

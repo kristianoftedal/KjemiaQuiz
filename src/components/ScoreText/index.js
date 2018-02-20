@@ -25,7 +25,7 @@ export default class ScoreText extends Component {
   render() {
     const textSize = this.state.animatedValue.interpolate({
       inputRange: [0, 0.5, 1],
-      outputRange: [20, 42, 20],
+      outputRange: [18, 36, 18],
     });
     const { children, score, ...otherProps } = this.props;
     styles.text.fontSize = textSize;

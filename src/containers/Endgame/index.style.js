@@ -10,7 +10,6 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignSelf: 'stretch',
-    justifyContent: 'center',
   },
   header: {
     fontFamily: 'Raleway-Regular',
@@ -18,6 +17,7 @@ export default StyleSheet.create({
     fontSize: 40,
     textAlign: 'center',
     margin: 10,
+    marginBottom: 20,
   },
   subHeader: {
     fontFamily: 'Raleway-Regular',
@@ -25,6 +25,10 @@ export default StyleSheet.create({
     fontSize: 25,
     textAlign: 'center',
     margin: 5,
+    marginBottom: 20,
+  },
+  categoriesWrapper: {
+    margin: 10,
   },
   tile: {
     width: tileSize,

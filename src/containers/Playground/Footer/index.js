@@ -44,9 +44,9 @@ export default class Playground extends Component {
             <AnimateNumber
               initial={previousScore}
               value={score}
-              interval={10}
+              interval={8}
               timing="easeOut"
-              countBy={5}
+              countBy={7}
             />
           </ScoreText>
           <Button

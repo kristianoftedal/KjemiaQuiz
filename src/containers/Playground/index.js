@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import { Text, Alert, Image } from 'react-native';
 import { View } from 'react-native-animatable';
 import PopupDialog from 'react-native-popup-dialog';
-import Overlay from 'react-native-modal-overlay';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
 import Button from 'apsl-react-native-button';
@@ -44,13 +43,6 @@ export default class Playground extends Component {
   _questionRef = null;
   _playRef = null;
 
-  constructor(props) {
-    super(props);
-    // default values of state and non-state variables
-    this.state = {
-      displayLevelUp: false,
-    };
-  }
   componentDidMount() {
     this._playRef.fadeIn(1500);
     if (!this.props.isCustomizedGame) {
@@ -65,12 +57,9 @@ export default class Playground extends Component {
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     }
-    if (false) {
-      this.setState({ displayLevelUp: true });
-      setTimeout(() => this.setState({displayLevelUp: false}), 2000);
-    } else {
-
-    }
+    if (this.props.isLevelUp) {
+      this.dropdown.alertWithType('info', '🔥🔥🔥 LEVEL UP!!! 🔥🔥🔥', '');
+    } 
     if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
       if (this.props.isEndgame) {
         this.props.navigateToEndgame();
@@ -145,13 +134,6 @@ export default class Playground extends Component {
         >
           <PeriodicTable />
         </PopupDialog>
-        <Overlay visible={this.state.displayLevelUp}
-            closeOnTouchOutside animationType="zoomIn"
-            containerStyle={{backgroundColor: '#f1c40f'}}
-            childrenWrapperStyle={{backgroundColor: '#2c3e50'}}
-            animationDuration={500}>
-          <Text>Level up!</Text>
-        </Overlay>
       </View>
     );
   }

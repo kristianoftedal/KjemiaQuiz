@@ -79,20 +79,23 @@ export default class GameStore {
     }
     if (this.currentQuestion.solution === answerKey) {
       if (this.currentQuestion.difficulty === 'Lett') {
+        this.score += 50;
+        this.currentLevelXp += 50;
+      } else if (this.currentQuestion.difficulty === 'Middels') {
         this.score += 100;
         this.currentLevelXp += 100;
-      } else if (this.currentQuestion.difficulty === 'Middels') {
+      } else if (this.currentQuestion.difficulty === 'Vanskelig') {
         this.score += 200;
         this.currentLevelXp += 200;
-      } else if (this.currentQuestion.difficulty === 'Vanskelig') {
-        this.score += 300;
-        this.currentLevelXp += 300;
       } else {
-        this.score += 100;
-        this.currentLevelXp += 100;
+        this.score += 50;
+        this.currentLevelXp += 50;
       }
       if (this.currentLevelXp >= levels[this.currentLevelIndex + 1].score) {
         this.currentLevelIndex++;
+        this.isLevelUp = true;
+      } else {
+        this.isLevelUp = false;
       }
       this.isCorrectAnswer = true;
       this.correctCount++;
@@ -108,8 +111,8 @@ export default class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-    setLevelIndex(this.currentLevelIndex).then(() => console.log('ok'));
-    setXp(this.currentLevelXp).then(() => console.log('ok'));
+    setLevelIndex(this.currentLevelIndex);
+    setXp(this.currentLevelXp);
 
     if (this.currentIndex !== 0 && this.currentIndex % 5 === 0) {
       this.isAdTime = true;

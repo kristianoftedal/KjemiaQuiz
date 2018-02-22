@@ -1,9 +1,17 @@
 const levels = [
-  { value: 'Noob', score: 1000 },
-  { value: 'Noob_level_up', score: 2000 },
-  { value: 'Mediocore', score: 4000 },
-  { value: 'Smartass', score: 10000 },
-  { value: 'Genius', score: 50000 },
+  { value: 'Foton', score: 1000 },
+  { value: 'Elektron', score: 3000 },
+  { value: 'Proton', score: 6000 },
+  { value: 'Atomkjerne', score: 10000 },
+  { value: 'Atom', score: 20000 },
+  { value: 'Molekyl', score: 40000 },
+  { value: 'Celle', score: 80000 },
+  { value: 'Organ', score: 150000 },
+  { value: 'Menneske', score: 300000 },
+  { value: 'Planet', score: 500000 },
+  { value: 'Stjerne', score: 700000 },
+  { value: 'Galakse', score: 1500000 },
+  { value: 'b0$$', score: 30000000000000 },
 ];
 
 export default levels;

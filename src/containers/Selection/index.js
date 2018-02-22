@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { StatusBar, Text, Switch } from 'react-native';
+import { StatusBar, Text, Switch, Platform, UIManager, LayoutAnimation } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
@@ -16,6 +16,7 @@ import RadioButton from '../../components/RadioButton';
 
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
+  navigateToHome: allStores.router.navigateToHome,
   navigateToEndgame: allStores.router.navigateToEndgame,
   setCustomizedGame: allStores.game.setCustomizedGame,
 }))
@@ -37,6 +38,11 @@ export default class Selection extends Component {
   componentDidMount() {
     if (this._headerRef) {
       this._headerRef.fadeInRight(600).then(() => {
+        if (Platform.OS === 'android') {
+          UIManager.setLayoutAnimationEnabledExperimental &&
+            UIManager.setLayoutAnimationEnabledExperimental(true);
+          LayoutAnimation.spring();
+        }
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
       });
@@ -50,6 +56,13 @@ export default class Selection extends Component {
     }
     this.props.setCustomizedGame(this.state.categories, this.state.difficulty, this.state.count);
     this.props.navigateToPlayground();
+  };
+  _handleBackPress = async () => {
+    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
+    if (this._headerRef && this._bodyRef) {
+      await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
+    }
+    this.props.navigateToHome();
   };
 
   render() {
@@ -143,6 +156,9 @@ export default class Selection extends Component {
             </View>
             <Button style={style.button} onPressOut={this._handleStartPress}>
               <Text style={style.buttonText}>Start</Text>
+            </Button>
+            <Button style={style.button} onPressOut={this._handleBackPress}>
+              <Text style={style.buttonText}>Tilbake til start</Text>
             </Button>
           </View>
         )}

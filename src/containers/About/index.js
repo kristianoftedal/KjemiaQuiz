@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StatusBar, Text, Linking } from 'react-native';
+import { StatusBar, Text, Linking, Platform, UIManager, LayoutAnimation } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
@@ -22,6 +22,11 @@ export default class Endgame extends Component {
   componentDidMount() {
     if (this._headerRef) {
       this._headerRef.fadeInRight(1000).then(() => {
+        if (Platform.OS === 'android') {
+          UIManager.setLayoutAnimationEnabledExperimental &&
+            UIManager.setLayoutAnimationEnabledExperimental(true);
+          LayoutAnimation.spring();
+        }
         this.setState({ hasHeaderAppeared: true });
       });
     }

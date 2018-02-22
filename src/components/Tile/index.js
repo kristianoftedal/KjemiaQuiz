@@ -7,7 +7,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native-animatable';
 import { observer } from 'mobx-react/native';
-import { TouchableWithoutFeedback } from 'react-native';
+import { TouchableWithoutFeedback, LayoutAnimation, UIManager, Platform } from 'react-native';
 import CustomText from '../CustomText';
 import colorUtils from '../../utils/colorUtils';
 import metrics from '../../config/metrics';
@@ -38,6 +38,11 @@ export default class Tile extends Component {
     const { onPressIn, playSound } = this.props;
     if (this.state.hasBeenPressed) return; // Prevent double presses
     playSound();
+    if (Platform.OS === 'android') {
+      UIManager.setLayoutAnimationEnabledExperimental &&
+        UIManager.setLayoutAnimationEnabledExperimental(true);
+      LayoutAnimation.spring();
+    }
     this.setState({ isTouched: true });
     if (onPressIn) {
       onPressIn();

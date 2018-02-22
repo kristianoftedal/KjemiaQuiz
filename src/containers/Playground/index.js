@@ -58,7 +58,7 @@ export default class Playground extends Component {
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     }
     if (this.props.isLevelUp) {
-      this.dropdown.alertWithType('info', '🔥🔥🔥 LEVEL UP!!! 🔥🔥🔥', '');
+      this.levelup.alertWithType('info', '🔥🔥🔥 LEVEL UP!!! 🔥🔥🔥', '');
     } 
     if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
       if (this.props.isEndgame) {
@@ -122,6 +122,14 @@ export default class Playground extends Component {
         <DropdownAlert
           ref={ref => this.dropdown = ref}
           closeInterval={1000}
+          titleStyle={style.questionFeedback}
+          imageStyle={{display: 'none'}}
+          successColor="#2ecc71"
+          errorColor="#e74c3c"
+        />
+        <DropdownAlert
+          ref={ref => this.levelup = ref}
+          closeInterval={2000}
           titleStyle={style.questionFeedback}
           imageStyle={{display: 'none'}}
           successColor="#2ecc71"

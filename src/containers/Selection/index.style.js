@@ -3,11 +3,10 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: 'column',
     alignSelf: 'stretch',
     justifyContent: 'center',
-    padding: 20,
+    padding: 10,
   },
   header: {
     fontFamily: 'Raleway-Regular',
@@ -15,9 +14,9 @@ export default StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    marginTop: 30,
   },
   body: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -58,8 +57,11 @@ export default StyleSheet.create({
     fontSize: 20,
   },
   difficultyWrapper: {
+    marginTop: 10,
     marginBottom: 20,
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   radioButtonLabel: {
     fontFamily: 'Raleway-Regular',

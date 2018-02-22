@@ -18,6 +18,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     margin: 10,
     marginBottom: 20,
+    marginTop: 30,
   },
   subHeader: {
     fontFamily: 'Raleway-Regular',

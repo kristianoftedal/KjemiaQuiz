@@ -21,14 +21,8 @@ export default class Endgame extends Component {
 
   componentDidMount() {
     if (this._headerRef) {
-      this._headerRef.fadeInRight(1000).then(() => {
-        if (Platform.OS === 'android') {
-          UIManager.setLayoutAnimationEnabledExperimental &&
-            UIManager.setLayoutAnimationEnabledExperimental(true);
-          LayoutAnimation.spring();
-        }
+        LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
-      });
     }
   }
 

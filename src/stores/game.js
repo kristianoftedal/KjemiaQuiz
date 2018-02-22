@@ -20,7 +20,7 @@ export default class GameStore {
   @observable correctCount = 0;
   @observable isCustomizedGame = false;
   @observable totalByCategory = {};
-  @observable currentLevelXp = 0;
+  @observable currentXp = 0;
   @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
   @observable isAdTime = false;
@@ -36,7 +36,7 @@ export default class GameStore {
   }
 
   getLevels = async () => {
-    this.currentLevelXp = await getXp();
+    this.currentXp = await getXp();
     this.currentLevelIndex = await getLevelIndex();
   };
 
@@ -51,7 +51,7 @@ export default class GameStore {
   @action
   initPlayer = () => {
     this.getLevels().then(() => {
-      if (this.currentLevelXp >= levels[this.currentLevelIndex]) {
+      if (this.currentXp >= levels[this.currentLevelIndex]) {
         this.currentLevelIndex++;
       }
     });
@@ -80,18 +80,18 @@ export default class GameStore {
     if (this.currentQuestion.solution === answerKey) {
       if (this.currentQuestion.difficulty === 'Lett') {
         this.score += 50;
-        this.currentLevelXp += 50;
+        this.currentXp += 50;
       } else if (this.currentQuestion.difficulty === 'Middels') {
         this.score += 100;
-        this.currentLevelXp += 100;
+        this.currentXp += 100;
       } else if (this.currentQuestion.difficulty === 'Vanskelig') {
         this.score += 200;
-        this.currentLevelXp += 200;
+        this.currentXp += 200;
       } else {
         this.score += 50;
-        this.currentLevelXp += 50;
+        this.currentXp += 50;
       }
-      if (this.currentLevelXp >= levels[this.currentLevelIndex + 1].score) {
+      if (this.currentXp >= levels[this.currentLevelIndex + 1].score) {
         this.currentLevelIndex++;
         this.isLevelUp = true;
       } else {
@@ -112,7 +112,8 @@ export default class GameStore {
       this.isEndgame = true;
     }
     setLevelIndex(this.currentLevelIndex);
-    setXp(this.currentLevelXp);
+
+    setXp(this.currentXp);
 
     if (this.currentIndex !== 0 && this.currentIndex % 5 === 0) {
       this.isAdTime = true;
@@ -150,13 +151,17 @@ export default class GameStore {
   }
 
   nextLevelThreshold = () => {
+    if (this.currentLevelIndex + 1 > levels.length) {
+      return levels[this.currentLevelIndex].score;
+    }
     const nextLevelThreshold = levels[this.currentLevelIndex + 1].score;
     return nextLevelThreshold;
   };
 
   @computed
   get getLevelUpProgress() {
-    const levelUpProgress = this.currentLevelXp / this.nextLevelThreshold() * 100;
+    debugger;
+    const levelUpProgress = this.currentXp / this.nextLevelThreshold() * 100;
     return levelUpProgress * metrics.DEVICE_WIDTH / 100 - 10 * metrics.DEVICE_WIDTH / 100;
   }
 

@@ -35,13 +35,14 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.props.initPlayer();
+    debugger;
     if (this._headerRef) {
       this._headerRef.fadeInRight(1200).then(() => {
         if (Platform.OS === 'android') {
           UIManager.setLayoutAnimationEnabledExperimental &&
             UIManager.setLayoutAnimationEnabledExperimental(true);
-          LayoutAnimation.spring();
         }
+        LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
       });

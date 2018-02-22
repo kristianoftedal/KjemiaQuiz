@@ -41,8 +41,8 @@ export default class Tile extends Component {
     if (Platform.OS === 'android') {
       UIManager.setLayoutAnimationEnabledExperimental &&
         UIManager.setLayoutAnimationEnabledExperimental(true);
-      LayoutAnimation.spring();
     }
+    LayoutAnimation.spring();
     this.setState({ isTouched: true });
     if (onPressIn) {
       onPressIn();

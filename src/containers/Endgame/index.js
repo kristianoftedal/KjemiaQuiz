@@ -39,8 +39,8 @@ export default class Endgame extends Component {
         if (Platform.OS === 'android') {
           UIManager.setLayoutAnimationEnabledExperimental &&
             UIManager.setLayoutAnimationEnabledExperimental(true);
-          LayoutAnimation.spring();
         }
+        LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
       });

@@ -16,6 +16,7 @@ export default StyleSheet.create({
     fontSize: 50,
     textAlign: 'center',
     margin: 10,
+    marginTop: 30,
   },
   logo: {
     flex: 1,

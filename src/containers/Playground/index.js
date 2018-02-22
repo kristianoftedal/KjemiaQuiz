@@ -75,6 +75,10 @@ export default class Playground extends Component {
     }
   }
 
+  componentWillUnmount() {
+    this.dropdown.close();
+  }  
+
   _handleAnswerPress = answerKey => {
     this._questionRef.fadeOutLeft(500);
     this.props.handleAnswerPress(answerKey);

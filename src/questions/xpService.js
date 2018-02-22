@@ -1,7 +1,8 @@
 import { AsyncStorage } from 'react-native';
 
 export const getXp = async () => {
-  const responseXp = await AsyncStorage.getItem('currentLevelXp');
+  debugger;
+  const responseXp = await AsyncStorage.getItem('currentXp');
   const xp = JSON.parse(responseXp) || 0;
   return xp;
 };
@@ -16,5 +17,5 @@ export const setLevelIndex = async index => {
   await AsyncStorage.setItem('currentLevelIndex', JSON.stringify(index));
 };
 export const setXp = async xp => {
-  await AsyncStorage.setItem('currentLevelXp', JSON.stringify(xp));
+  await AsyncStorage.setItem('currentXp', JSON.stringify(xp));
 };

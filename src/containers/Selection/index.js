@@ -37,15 +37,13 @@ export default class Selection extends Component {
 
   componentDidMount() {
     if (this._headerRef) {
-      this._headerRef.fadeInRight(600).then(() => {
         if (Platform.OS === 'android') {
           UIManager.setLayoutAnimationEnabledExperimental &&
             UIManager.setLayoutAnimationEnabledExperimental(true);
-          LayoutAnimation.spring();
         }
+        LayoutAnimation.spring();
         this.setState({ hasHeaderAppeared: true });
         audioService.initSounds();
-      });
     }
   }
 
@@ -70,7 +68,6 @@ export default class Selection extends Component {
 
     return (
       <View style={style.body}>
-        <StatusBar hidden={true} />
         <View
           ref={ref => {
             this._headerRef = ref;

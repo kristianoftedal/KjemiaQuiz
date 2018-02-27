@@ -1,206 +1,920 @@
-[
-    {
-      "questionText": "hva er det som gjør et eller annet om klorgass?",
-      "imageId": "8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
-      "answers": [
-        {
-          "key": "a",
-          "value": "svar 1"
+[  
+  {  
+     "id":"485721e0-1b9f-11e8-9382-03818ed0d137",
+     "questionText":"Hvilken farge i det synlige spektret har lengst bølgelengde?",
+     "imageId":"",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Rød"
         },
-        {
-          "key": "b",
-          "value": "svar 2"
+        {  
+           "key":"b",
+           "value":"Gul"
         },
-        {
-          "key": "c",
-          "value": "svar 3"
+        {  
+           "key":"c",
+           "value":"Grønn"
         },
-        {
-          "key": "d",
-          "value": "svar 4"
+        {  
+           "key":"d",
+           "value":"Fiolett"
         }
-      ],
-      "difficulty": "Lett",
-      "solution": "c",
-      "lang": "no",
-      "category": "Ernæring og helse"
-    },
-    {
-      "questionText": "spørsmål om løsning?",
-      "imageId": "0dc589a0-3ec3-45fb-8383-e226a92b0e2a",
-      "answers": [
-        {
-          "key": "a",
-          "value": "svar 1"
+     ],
+     "difficulty":"Lett",
+     "solution":"a",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"7a76b4b0-1b9f-11e8-b931-4b88a279dc75",
+     "questionText":"Hvilken farge i det synlige spektret har kortest bølgelengde?",
+     "imageId":"",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Rød"
         },
-        {
-          "key": "b",
-          "value": "svar 2"
+        {  
+           "key":"b",
+           "value":"Gul"
         },
-        {
-          "key": "c",
-          "value": "svar 3"
+        {  
+           "key":"c",
+           "value":"Grønn"
         },
-        {
-          "key": "d",
-          "value": "svar 4"
+        {  
+           "key":"d",
+           "value":"Fiolett"
         }
-      ],
-      "difficulty": "Lett",
-      "shortAnswers": true,
-      "category": "Bærekraftig utvikling",
-      "solution": "a",
-      "lang": "no"
-    },
-    {
-      "questionText": "hvilket sukker er det mest vanlige monosakkaridet?",
-      "answers": [
-        {
-          "key": "a",
-          "value": "glukose"
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"9782ec90-1b9f-11e8-a2ca-218b0959cd51",
+     "questionText":"Hvilken kategori elektromagnetiske bølger finner du helt til venstre i det elektromagnetiske spektret?",
+     "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
         },
-        {
-          "key": "b",
-          "value": "fruktose"
+        {  
+           "key":"b",
+           "value":"Mikrobølger"
         },
-        {
-          "key": "c",
-          "value": "stivelse"
+        {  
+           "key":"c",
+           "value":"UV-bølger"
         },
-        {
-          "key": "d",
-          "value": "amylopektin"
+        {  
+           "key":"d",
+           "value":"Gammabølger"
         }
-      ],
-      "solution": "a",
-      "lang": "no",
-      "category": "Elektromagnetisk stråling"
-    },
-    {
-      "questionText": "Hva heter bindingen mellom to aminosyrer?",
-      "answers": [
-        {
-          "key": "a",
-          "value": "Petidbinding"
+     ],
+     "difficulty":"Lett",
+     "solution":"a",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"c8872ee0-1ba0-11e8-b644-bd76ecfef5f1",
+     "questionText":"Hvilken kategori elektromagnetiske bølger finner du helt til høyre i det elektromagnetiske spektret?",
+     "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
         },
-        {
-          "key": "b",
-          "value": "Esterbinding"
+        {  
+           "key":"b",
+           "value":"Mikrobølger"
         },
-        {
-          "key": "c",
-          "value": "Eterbinding"
+        {  
+           "key":"c",
+           "value":"UV-bølger"
         },
-        {
-          "key": "d",
-          "value": "Fosfolipider"
+        {  
+           "key":"d",
+           "value":"Gammabølger"
         }
-      ],
-      "difficulty": "Middels",
-      "solution": "a",
-      "lang": "no",
-      "category": "Radioaktiv stråling"
-    },
-    {
-      "questionText": "Hvor mange aminosyrer er det i et dipeptid?",
-      "answers": [
-        {
-          "key": "a",
-          "value": "2"
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"f16a1a20-1ba0-11e8-9622-a5f2fc601c4a",
+     "questionText":"Hvilken kategori elektromagnetiske bølger har lengst bølgelengde?",
+     "imageId":"",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
         },
-        {
-          "key": "b",
-          "value": "3"
+        {  
+           "key":"b",
+           "value":"Infrarødt"
         },
-        {
-          "key": "c",
-          "value": "4"
+        {  
+           "key":"c",
+           "value":"Røntgenstråling"
         },
-        {
-          "key": "d",
-          "value": "5"
+        {  
+           "key":"d",
+           "value":"Gammabølger"
         }
-      ],
-      "difficulty": "Middels",
-      "solution": "a",
-      "lang": "no",
-      "category": "Redoksreaksjoner"
-    },
-    {
-      "questionText": "hva er enzymet som opererer i magesekken?",
-      "answers": [
-        {
-          "key": "a",
-          "value": "pepsin"
+     ],
+     "difficulty":"Lett",
+     "solution":"a",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"9a280a00-1ba1-11e8-891f-1b65800773f8",
+     "questionText":"Hvilken kategori elektromagnetiske bølger har kortest bølgelengde?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
         },
-        {
-          "key": "b",
-          "value": "trypsin"
+        {  
+           "key":"b",
+           "value":"Infrarødt"
         },
-        {
-          "key": "c",
-          "value": "lipase"
+        {  
+           "key":"c",
+           "value":"Røntgenstråling"
         },
-        {
-          "key": "d",
-          "value": "amylase"
+        {  
+           "key":"d",
+           "value":"Gammabølger"
         }
-      ],
-      "difficulty": "Middels",
-      "solution": "a",
-      "lang": "no",
-      "category": "Energi for fremtiden"
-    },
-    {
-      "questionText": "Hvor i fordøyelsen foregår fordøyingen av proteiner?",
-      "answers": [
-        {
-          "key": "a",
-          "value": "Magesekken og tynntarmen"
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"fb29b7e0-1ba1-11e8-a786-bdde853fe8cf",
+     "questionText":"Hvilken kategori elektromagnetiske bølger har høyest energi?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
         },
-        {
-          "key": "b",
-          "value": "Munnen og tykktarmen"
+        {  
+           "key":"b",
+           "value":"Infrarødt"
         },
-        {
-          "key": "c",
-          "value": "Leveren og bukspyttkjertlen"
+        {  
+           "key":"c",
+           "value":"Røntgenstråling"
         },
-        {
-          "key": "d",
-          "value": "Munnen"
+        {  
+           "key":"d",
+           "value":"Gammastråling"
         }
-      ],
-      "difficulty": "Vanskelig",
-      "solution": "a",
-      "lang": "no",
-      "category": "Arv og bioteknologi"
-    },
-    {
-      "questionText": "Hvilket molekyl er dette?",
-      "imageId": "4fba9b78-6efd-4654-a25f-2a81f5067fd2",
-      "answers": [
-        {
-          "key": "a",
-          "value": "molekyl1"
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"2824ea80-1ba2-11e8-9178-418600f8b318",
+     "questionText":"Hvilken kategori elektromagnetiske bølger har lavest energi?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
         },
-        {
-          "key": "b",
-          "value": "molekyl2"
+        {  
+           "key":"b",
+           "value":"Mikrobølger"
         },
-        {
-          "key": "c",
-          "value": "molekyl13"
+        {  
+           "key":"c",
+           "value":"UV-stråling"
         },
-        {
-          "key": "d",
-          "value": "molekyl4"
+        {  
+           "key":"d",
+           "value":"Gammastråling"
         }
-      ],
-      "difficulty": "Vanskelig",
-      "solution": "d",
-      "lang": "no",
-      "category": "Forskning"
-    }
-  ]
-  
+     ],
+     "difficulty":"Lett",
+     "solution":"a",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"4493a9e0-1ba2-11e8-a195-c356cdedc63b",
+     "questionText":"Hvor mange definerte farger består regnbuen av?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"5"
+        },
+        {  
+           "key":"b",
+           "value":"6"
+        },
+        {  
+           "key":"c",
+           "value":"7"
+        },
+        {  
+           "key":"d",
+           "value":"8"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"9468ace0-1ba2-11e8-91e5-25b59218f8f3",
+     "questionText":"Hvilken kategori elektromagnetiske bølger finner du rett til venstre for synlig lys i det elektromagnetiske spektret?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
+        },
+        {  
+           "key":"b",
+           "value":"Infrarødt"
+        },
+        {  
+           "key":"c",
+           "value":"UV-stråling"
+        },
+        {  
+           "key":"d",
+           "value":"Gammastråling"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"c92ef5b0-1ba2-11e8-9163-cf262794ba18",
+     "questionText":"Hvilken kategori elektromagnetiske bølger finner du rett til høyre for synlig lys i det elektromagnetiske spektret?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
+        },
+        {  
+           "key":"b",
+           "value":"Mikrobølger"
+        },
+        {  
+           "key":"c",
+           "value":"Infrarødt"
+        },
+        {  
+           "key":"d",
+           "value":"Røntgenstråler"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"ee9cb760-1ba2-11e8-8087-7364ea1ae70a",
+     "questionText":"Hvor mange kategorier av elektromagnetiske bølger oppererer vi med i Naturfag?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"6"
+        },
+        {  
+           "key":"b",
+           "value":"7"
+        },
+        {  
+           "key":"c",
+           "value":"8"
+        },
+        {  
+           "key":"d",
+           "value":"9"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"b",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"d885bd30-1ba4-11e8-aab9-ed356d552f69",
+     "questionText":"Hvilken kategori elektromagnetiske bølger har høyest frekvens?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
+        },
+        {  
+           "key":"b",
+           "value":"UV-stråling"
+        },
+        {  
+           "key":"c",
+           "value":"Røntegnstråling"
+        },
+        {  
+           "key":"d",
+           "value":"Gammastråling"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"2b9e5270-1ba5-11e8-ba1d-814633ca26a4",
+     "questionText":"Hvilken kategori elektromagnetiske bølger har lavest frekvens?",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Radiobølger"
+        },
+        {  
+           "key":"b",
+           "value":"Mikrobølger"
+        },
+        {  
+           "key":"c",
+           "value":"Infrarødt"
+        },
+        {  
+           "key":"d",
+           "value":"UV-stråler"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"a",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"7465c2e0-1ba5-11e8-9187-1d46a0fef5c4",
+     "questionText":"Hvilken type UV-stråling har høyest energi",
+     "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"UV-A"
+        },
+        {  
+           "key":"b",
+           "value":"UV-B"
+        },
+        {  
+           "key":"c",
+           "value":"UV-C"
+        },
+        {  
+           "key":"d",
+           "value":"UV-D"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Elektromagnetisk stråling"
+  },
+  {  
+     "id":"852e2fe0-1bb4-11e8-894b-ad0c982cd667",
+     "questionText":"Hvilket stoff blir oksidert i dette forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Jern"
+        },
+        {  
+           "key":"b",
+           "value":"Nikkel"
+        },
+        {  
+           "key":"c",
+           "value":"Kobber"
+        },
+        {  
+           "key":"d",
+           "value":"Sink"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"a3bf3300-1bb4-11e8-954e-d5fe1490cea5",
+     "questionText":"Hvilket metall dannes i dette forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Sink"
+        },
+        {  
+           "key":"b",
+           "value":"Kobber"
+        },
+        {  
+           "key":"c",
+           "value":"Vann"
+        },
+        {  
+           "key":"d",
+           "value":"Sulfat"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"b",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"ca297d20-1bb4-11e8-b33b-cf9b37371ce8",
+     "questionText":"Hva er anoden i dette forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Jern"
+        },
+        {  
+           "key":"b",
+           "value":"Sink"
+        },
+        {  
+           "key":"c",
+           "value":"Kobbersulfat"
+        },
+        {  
+           "key":"d",
+           "value":"Vann"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"b",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"e35aebd0-1bb4-11e8-b724-13585e56fe69",
+     "questionText":"Hva er saltet i dette forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Sink"
+        },
+        {  
+           "key":"b",
+           "value":"Kobber"
+        },
+        {  
+           "key":"c",
+           "value":"Sinksulfat"
+        },
+        {  
+           "key":"d",
+           "value":"Kobbersulfat"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"17287cc0-1bb5-11e8-8e40-bf7e20138479",
+     "questionText":"Hvilken påstand er riktig til dette forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Sink dannes under forsøket."
+        },
+        {  
+           "key":"b",
+           "value":"Kobber dannes under forsøket."
+        },
+        {  
+           "key":"c",
+           "value":"Saltet er jernoksid."
+        },
+        {  
+           "key":"d",
+           "value":"Saltet er sinkjodid.."
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"b",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"81aed7b0-1bb5-11e8-b38d-95df4f97684e",
+     "questionText":"Hvilken påstand om forsøket er feil?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Kobber vil dannes."
+        },
+        {  
+           "key":"b",
+           "value":"Saltet er kobbersulfat."
+        },
+        {  
+           "key":"c",
+           "value":"Vannet vil koke pga redoksreaksjonen."
+        },
+        {  
+           "key":"d",
+           "value":"Det skjer en redoksreaksjon."
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"27ee8120-1bb6-11e8-8af2-192dd34483eb",
+     "questionText":"Hva er navnet på det negative ionet i forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Kobber"
+        },
+        {  
+           "key":"b",
+           "value":"Sink"
+        },
+        {  
+           "key":"c",
+           "value":"Sulfat"
+        },
+        {  
+           "key":"d",
+           "value":"Vann"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"48d497d0-1bb6-11e8-a05c-bfd513522122",
+     "questionText":"Hva er fargen på saltet som brukes i forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Blå"
+        },
+        {  
+           "key":"b",
+           "value":"Rød"
+        },
+        {  
+           "key":"c",
+           "value":"Hvit"
+        },
+        {  
+           "key":"d",
+           "value":"Brun"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"a",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"92104de0-1bb6-11e8-8509-b9e539558d03",
+     "questionText":"Hvorfor blir kobber redusert i forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Det er en edelgass."
+        },
+        {  
+           "key":"b",
+           "value":"Kobber står høyere opp i spenningsrekken."
+        },
+        {  
+           "key":"c",
+           "value":"Kobber mangler alle elektronene sine."
+        },
+        {  
+           "key":"d",
+           "value":"Kobber blir ikke redusert, den blir oksidert."
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"b",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"259902f0-1bb7-11e8-841c-8372d3b9fd2c",
+     "questionText":"Hvilken farge har vannløsningen under forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Klar"
+        },
+        {  
+           "key":"b",
+           "value":"Brun"
+        },
+        {  
+           "key":"c",
+           "value":"Rød"
+        },
+        {  
+           "key":"d",
+           "value":"Lyseblå"
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"d",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"422bec20-1bb7-11e8-bf24-ddad5910a7ec",
+     "questionText":"Hvilken påstand om bildet er riktig?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Dette er en forbrenningsreaksjon."
+        },
+        {  
+           "key":"b",
+           "value":"Dette er en elektrolyse av vann."
+        },
+        {  
+           "key":"c",
+           "value":"Reaksjonen er spontan."
+        },
+        {  
+           "key":"d",
+           "value":"Dette er en brenselscelle."
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"0213e1f0-1bb8-11e8-bc2f-0f752555f980",
+     "questionText":"Hvilken påstand om forsøket er riktig?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Sink reduseres."
+        },
+        {  
+           "key":"b",
+           "value":"Kobber blir oksidert."
+        },
+        {  
+           "key":"c",
+           "value":"Det dannes metallisk kobber."
+        },
+        {  
+           "key":"d",
+           "value":"Sink er katoden."
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"c",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"c06b73c0-1bb8-11e8-b47a-63248ab9eaa7",
+     "questionText":"Hvilken påstand er korrekt?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Elektronene beveger seg fra sink til kobber."
+        },
+        {  
+           "key":"b",
+           "value":"Vann oksiderer og sink reduseres."
+        },
+        {  
+           "key":"c",
+           "value":"Kobber oksiderer og sink reduseres."
+        },
+        {  
+           "key":"d",
+           "value":"Vann oksiderer til både sink og kobber."
+        }
+     ],
+     "difficulty":"Lett",
+     "solution":"a",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"34771800-1bb9-11e8-a2ba-592fd0b0cfc2",
+     "questionText":"Dette forsøket kan sammenlignes med",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Et galvanisk element."
+        },
+        {  
+           "key":"b",
+           "value":"En elektrolyse."
+        },
+        {  
+           "key":"c",
+           "value":"En brenselscelle."
+        },
+        {  
+           "key":"d",
+           "value":"En forbrenningsreaksjon."
+        }
+     ],
+     "difficulty":"Middels",
+     "solution":"a",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"7ed87770-1bbb-11e8-a80f-7b968f0b66ea",
+     "questionText":"Hva vil skje med blåfargen på løsningen over tid?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Den blir svakere."
+        },
+        {  
+           "key":"b",
+           "value":"Den blir sterkere."
+        },
+        {  
+           "key":"c",
+           "value":"Ingenting skjer."
+        },
+        {  
+           "key":"d",
+           "value":"Løsningen blir oransje."
+        }
+     ],
+     "difficulty":"Middels",
+     "solution":"a",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"d35a1290-1bbb-11e8-8a5f-65a294214724",
+     "questionText":"Hvilken påstand er riktig?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Et kobberbelegg vil dannes rundt sinkmetallet."
+        },
+        {  
+           "key":"b",
+           "value":"Kobber blir oksidert i kontakt med sink."
+        },
+        {  
+           "key":"c",
+           "value":"Sink reduseres når kobbersulfat tilsettes."
+        },
+        {  
+           "key":"d",
+           "value":"Vannet oksiderer i dette forsøket."
+        }
+     ],
+     "difficulty":"Middels",
+     "solution":"",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"d7f408e0-1bc2-11e8-9b26-83221af6c5e6",
+     "questionText":"Hvorfor forsvinner blåfargen fra løsningen?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Kobber-ionene oksideres."
+        },
+        {  
+           "key":"b",
+           "value":"Kobber-ionene reduseres."
+        },
+        {  
+           "key":"c",
+           "value":"Zink-ionene reduseres."
+        },
+        {  
+           "key":"d",
+           "value":"Vann reduseres."
+        }
+     ],
+     "difficulty":"Middels",
+     "solution":"b",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"ef3534c0-1bcc-11e8-975e-bf716e1ec805",
+     "questionText":"Hvilket ion i dette forsøket vil være uforandret i forsøket?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Zink"
+        },
+        {  
+           "key":"b",
+           "value":"Kobber"
+        },
+        {  
+           "key":"c",
+           "value":"Sulfat"
+        },
+        {  
+           "key":"d",
+           "value":"Vann"
+        }
+     ],
+     "difficulty":"Middels",
+     "solution":"c",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  },
+  {  
+     "id":"0eb7eae0-1bcd-11e8-a56c-f538e4b30342",
+     "questionText":"Hvilken påstand er feil?",
+     "imageId":"4f63e580-1f4c-b83f-002e-38164e4b73b7",
+     "answers":[  
+        {  
+           "key":"a",
+           "value":"Kobber endrer seg fra ion til metall."
+        },
+        {  
+           "key":"b",
+           "value":"Sink avgir like mange elektroner som kobber mottar."
+        },
+        {  
+           "key":"c",
+           "value":"Vannet er ansvarlig for oppløsningen av saltet."
+        },
+        {  
+           "key":"d",
+           "value":"Forsøket viser dannelsen av kjemisk energi fra elektrisk energi."
+        }
+     ],
+     "difficulty":"Vanskelig",
+     "solution":"d",
+     "lang":"no",
+     "category":"Redoksreaksjoner"
+  }
+]

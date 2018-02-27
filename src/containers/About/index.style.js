@@ -2,8 +2,8 @@
 import { StyleSheet } from 'react-native';
 import metrics from '../../config/metrics';
 
-const tileSize = metrics.DEVICE_WIDTH * 0.26;
-const logoWidth = metrics.DEVICE_WIDTH * 0.5;
+const imageWidth = metrics.DEVICE_WIDTH;
+const imageHeight = metrics.DEVICE_HEIGHT * 0.25;
 
 export default StyleSheet.create({
   container: {
@@ -15,23 +15,14 @@ export default StyleSheet.create({
   header: {
     fontFamily: 'Raleway-Regular',
     color: 'white',
-    fontSize: 40,
+    fontSize: 30,
     textAlign: 'center',
-    margin: 10,
     marginTop: 30,
-  },
-  subHeader: {
-    fontFamily: 'Raleway-Regular',
-    color: 'white',
-    fontSize: 25,
-    textAlign: 'center',
-    margin: 5,
   },
   text: {
     fontFamily: 'Raleway-Regular',
     color: 'white',
-    fontSize: 18,
-    textAlign: 'center',
+    fontSize: 16,
     margin: 5,
   },
   textPart: {
@@ -46,13 +37,21 @@ export default StyleSheet.create({
     backgroundColor: 'transparent',
     borderColor: 'white',
     borderWidth: 2,
-    borderRadius: 22,
-    marginLeft: 20,
-    marginRight: 20,
-    minHeight: 50,
+    borderRadius: 11,
+    marginLeft: 10,
+    marginRight: 10,
+    minHeight: 20,
   },
   buttonText: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 15,
+  },
+  image: {
+    height: imageHeight,
+    width: imageWidth,
+  },
+  imageWrapper: {
+    justifyContent: 'center',
+    alignSelf: 'center',
   },
 });

@@ -35,7 +35,6 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.props.initPlayer();
-    debugger;
     if (this._headerRef) {
       this._headerRef.fadeInRight(1200).then(() => {
         if (Platform.OS === 'android') {

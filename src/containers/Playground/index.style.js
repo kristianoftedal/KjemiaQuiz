@@ -46,6 +46,6 @@ export default StyleSheet.create({
     color: 'white',
     fontSize: 20, 
     fontWeight: 'bold',
-    fontFamily: 'Raleway-Regular',
+    fontFamily: 'Permanent Marker',
   }
 });

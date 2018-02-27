@@ -1,7 +1,6 @@
 import { AsyncStorage } from 'react-native';
 
 export const getXp = async () => {
-  debugger;
   const responseXp = await AsyncStorage.getItem('currentXp');
   const xp = JSON.parse(responseXp) || 0;
   return xp;

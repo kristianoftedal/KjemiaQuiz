@@ -160,7 +160,6 @@ export default class GameStore {
 
   @computed
   get getLevelUpProgress() {
-    debugger;
     const levelUpProgress = this.currentXp / this.nextLevelThreshold() * 100;
     return levelUpProgress * metrics.DEVICE_WIDTH / 100 - 10 * metrics.DEVICE_WIDTH / 100;
   }

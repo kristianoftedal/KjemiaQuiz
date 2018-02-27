@@ -4069,6 +4069,12 @@ react-native-elements@^0.18.4:
     opencollective "^1.0.3"
     prop-types "^15.5.8"
 
+react-native-modal-overlay@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-modal-overlay/-/react-native-modal-overlay-1.2.3.tgz#e28ef249544c46e5ab1f292287efe9fca3cee4f1"
+  dependencies:
+    react-native-animatable "^1.2.4"
+
 react-native-multiple-select-list@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/react-native-multiple-select-list/-/react-native-multiple-select-list-1.0.4.tgz#59cdf6ea897b5ee47c7edbf313ea844bcde4abbe"

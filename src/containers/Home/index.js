@@ -18,6 +18,7 @@ import audioService from '../../services/audio';
   navigateToEndgame: allStores.router.navigateToEndgame,
   navigateToSelection: allStores.router.navigateToSelection,
   navigateToAbout: allStores.router.navigateToAbout,
+  navigateToChemForm: allStores.router.navigateToChemForm,
   progress: allStores.game.getLevelUpProgress,
   level: allStores.game.currentLevel,
   initPlayer: allStores.game.initPlayer,
@@ -72,6 +73,14 @@ export default class Home extends Component {
     this.props.navigateToAbout();
   };
 
+  _handleChemFormPress = async () => {
+    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
+    if (this._headerRef && this._bodyRef) {
+      await Promise.all([this._headerRef.fadeOutLeft(500), this._bodyRef.fadeOutRight(400)]);
+    }
+    this.props.navigateToChemForm();
+  };
+
   render() {
     const { hasHeaderAppeared } = this.state;
     return (
@@ -102,6 +111,9 @@ export default class Home extends Component {
             </Button>
             <Button style={style.button} onPressOut={this._handleAboutPress}>
               <Text style={style.buttonText}>Om Kjemia</Text>
+            </Button>
+            <Button style={style.button} onPressOut={this._handleChemFormPress}>
+              <Text style={style.buttonText}>CHEMICAL FORMULA TEST GROUNDS</Text>
             </Button>
           </View>
         )}

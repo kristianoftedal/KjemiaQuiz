@@ -7,6 +7,7 @@ import { View } from 'react-native';
 import { Text } from 'react-native-animatable';
 import styles from './index.style';
 import QuestionImage from '../QuestionImage';
+import questionParser from './questionParser';
 
 const QuestionWrapper = props => {
   const { children, image, ...otherProps } = props;
@@ -19,7 +20,9 @@ const QuestionWrapper = props => {
     const questionImage = <QuestionImage imageName={image} />;
     return (
       <View style={styles.wrapper}>
-        {text}
+        <View style={styles.textWrapper}>
+          {text}
+        </View>
         {questionImage}
       </View>
     );

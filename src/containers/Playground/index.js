@@ -57,7 +57,7 @@ export default class Playground extends Component {
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     }
-    if (true) {
+    if (this.isLevelUp) {
       this.levelup.alertWithType('info', '🔥🔥🔥 LEVEL UP!!! 🔥🔥🔥', '');
     } 
     if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {

@@ -17,6 +17,10 @@ export default StyleSheet.create({
     width: width,
     alignItems: 'center',
   },
+  textWrapper: {
+    flexDirection: 'row',
+    alignItems: 'flex-start'
+  },
   text: {
     color: 'white',
     //fontWeight: 'bold',
@@ -24,4 +28,19 @@ export default StyleSheet.create({
     fontSize: 25,
     lineHeight: 25,
   },
+  subscript: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    fontSize: 11,
+    lineHeight: 10,
+    marginTop: 12,
+  },
+  superscript: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    fontSize: 11,
+    lineHeight: 9,
+  }
 });

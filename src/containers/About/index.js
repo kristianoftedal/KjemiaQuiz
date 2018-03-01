@@ -66,11 +66,11 @@ export default class Endgame extends Component {
               <View>
                 <Text style={style.text}>
                   Kjemia er en utdanningsbedrift drevet av Carl-Joachim Isachsen (t.v.) og Håvard Ryan (t.h.) 
-                  som spesialiserer seg på undervisning i Kjemi 1, Kjemi 2, Naturfag, Biologi 1 og Biologi 2.
+                  som spesialiserer seg på undervisning i Naturfag, Kjemi 1, Kjemi 2, Biologi 1 & Biologi 2.
                   Carl-Joachim og Håvard har tilsammen over ti års undervisningserfaring og er fungerende skriftlige og 
                   muntlige sensorer i Kjemi 1, Kjemi 2 og Naturfag. I 2017 ga de ut, i samarbeid med Fagbokforlaget, 
                   to eksamensoppgavehefter i Kjemi 1 og Kjemi 2 med hundrevis av eksamensrelevante oppgaver 
-                  som kan fåes kjøpt her. Carl-Joachim og Håvard driver også én-til-én undervisning i Oslo-området.
+                  som kan fåes kjøpt her. Carl-Joachim og Håvard driver også privatundervisning i Oslo-området.
                   Ytterligere informasjon om Kjemia finner du på vår hjemmeside.
                 </Text>
               </View>

@@ -25,4 +25,7 @@ export default class RouterStore {
   navigateToAbout = () => {
     this.currentScreen = 'ABOUT';
   };
+  navigateToChemForm = () => {
+    this.currentScreen = 'CHEMFORM';
+  };
 }

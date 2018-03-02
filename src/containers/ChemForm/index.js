@@ -5,7 +5,8 @@ import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
 import about from '../../images/about.png'
-import questionParser from '../../utils/questionParser';
+import questionParser from '../../components/QuestionWrapper/questionParser';
+import answerParser from '../../components/Tile/answerParser';
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
@@ -25,6 +26,13 @@ export default class ChemForm extends Component {
     return question;
   }
 
+  printAnswer(answer) {
+    if (question.indexOf('*') > -1) {
+      return answerParser(answer);
+    }
+    return answer;
+  }
+
   render() {
     return (
     <View style={style.body}>
@@ -36,6 +44,9 @@ export default class ChemForm extends Component {
         >
         <View style={style.textPart}>
           <View>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            {this.printQuestion('hva er srsdfs blabla bla?')}
+          </View>
             <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
               {this.printQuestion('hva er *SO_4|^2-|* blabla bla?')}
             </View>
@@ -49,7 +60,21 @@ export default class ChemForm extends Component {
             <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
               {this.printQuestion('hva er *Cr_2|O_7|^2-|* blabla bla?')}
             </View>
+          </View><View>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            {this.printQuestion('A) *SO_4|^2-|*')}
           </View>
+        </View>
+        <View>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            {this.printQuestion('B) *NO_3|* ')}
+          </View>
+        </View>
+        <View>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            {this.printQuestion('C) *Cr_2|O_7|^2-|*')}
+          </View>
+        </View>
         </View>
         <Button style={style.button} onPressOut={this._handleBackPress}>
           <Text style={style.buttonText}>Tilbake til start</Text>

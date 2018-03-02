@@ -15,4 +15,19 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     fontSize: 39,
   },
+  subscript: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    fontSize: 15,
+    lineHeight: 18,
+    marginTop: 22,
+  },
+  superscript: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    fontSize: 15,
+    lineHeight: 18,
+  }
 });

@@ -26,24 +26,23 @@
       "category": "Ernæring og helse"
     },
     {
-      "questionText": "spørsmål om løsning?",
-      "imageId": "0dc589a0-3ec3-45fb-8383-e226a92b0e2a",
+      "questionText": "hva er *SO_4|^2-|* blabla bla?",
       "answers": [
         {
           "key": "a",
-          "value": "svar 1"
+          "value": "*SO_1|^1-|* "
         },
         {
           "key": "b",
-          "value": "svar 2"
+          "value": "*SO_2|^2-|* "
         },
         {
           "key": "c",
-          "value": "svar 3"
+          "value": "*SO_3|^3-|* "
         },
         {
           "key": "d",
-          "value": "svar 4"
+          "value": "*SO_4|^2-|* "
         }
       ],
       "difficulty": "Lett",

@@ -107,7 +107,7 @@ export default class Playground extends Component {
           style={style.questionsWrapper}
           ref={ref => {this._questionRef = ref;}}
         >
-          <QuestionWrapper image={questionImage}>{currentQuestion.questionText}</QuestionWrapper>     
+          <QuestionWrapper image={questionImage} text={currentQuestion.questionText} />    
           <View style={style.answerWrapper}>
             {currentQuestion.answers &&
               currentQuestion.answers.map((e, i) => {

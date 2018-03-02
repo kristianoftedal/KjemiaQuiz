@@ -13,6 +13,7 @@ import colorUtils from '../../utils/colorUtils';
 import metrics from '../../config/metrics';
 import audioService from '../../services/audio';
 import styles from './index.style';
+import answerParser from './answerParser';
 
 @observer
 export default class Tile extends Component {
@@ -59,6 +60,13 @@ export default class Tile extends Component {
     this.setState({ isTouched: false, hasBeenPressed: true });
   };
 
+  printAnswer(answer) {
+    if (answer.indexOf('*') > -1) {
+      return answerParser(answer);
+    }
+    return answer;
+  }
+
   render() {
     const { depth, borderRadius, backgroundColor, text, textStyle, style } = this.props;
     const { isTouched } = this.state;
@@ -88,7 +96,7 @@ export default class Tile extends Component {
         >
           <View style={[styles.tile, tileStyle, style]}>
             <CustomText style={[styles.text, textStyle]} withShadow={true}>
-              {text}
+              {this.printAnswer(text)}
             </CustomText>
           </View>
           <View style={[styles.depth, depthStyle]} />

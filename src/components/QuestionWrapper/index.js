@@ -9,11 +9,24 @@ import styles from './index.style';
 import QuestionImage from '../QuestionImage';
 import questionParser from './questionParser';
 
+const printQuestion = (question) => {
+  if (question == null) return (<Text/>);
+  if (question.indexOf('*') > -1) {
+    return questionParser(question);
+  }
+
+  return (
+    <Text style={styles.text}>
+      {question}
+    </Text>
+  );
+}
+
 const QuestionWrapper = props => {
-  const { children, image, ...otherProps } = props;
-  const text = (
+  const { children, image, text, ...otherProps } = props;
+  const prettyText = (
     <Text style={styles.text} {...otherProps}>
-      {children}
+      {printQuestion(text)}
     </Text>
   );
   if (image) {
@@ -21,13 +34,13 @@ const QuestionWrapper = props => {
     return (
       <View style={styles.wrapper}>
         <View style={styles.textWrapper}>
-          {text}
+          {prettyText}
         </View>
         {questionImage}
       </View>
     );
   }
-  return <View style={styles.wrapper}>{text}</View>;
+  return <View style={styles.wrapper}>{prettyText}</View>;
 };
 
 export default QuestionWrapper;

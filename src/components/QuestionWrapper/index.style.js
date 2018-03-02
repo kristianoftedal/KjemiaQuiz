@@ -41,6 +41,6 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     fontSize: 11,
-    lineHeight: 9,
+    lineHeight: 10,
   }
 });

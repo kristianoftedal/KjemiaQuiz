@@ -156,6 +156,7 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 50 });
                 }}
+                disabled={this.state.difficulty === 'Vanskelig'}
                 innerColor="white"
                 outerColor="white"
               />
@@ -165,6 +166,7 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 60 });
                 }}
+                disabled={this.state.difficulty === 'Vanskelig'}
                 innerColor="white"
                 outerColor="white"
               />

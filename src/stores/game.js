@@ -66,7 +66,7 @@ export default class GameStore {
 
   @action
   buildQuiz = () => {
-    this.questions = getQuestionsSet();
+    this.questions = getQuestionsSet(50);
   };
 
   @action
@@ -115,7 +115,7 @@ export default class GameStore {
 
     setXp(this.currentXp);
 
-    if (this.currentIndex !== 0 && this.currentIndex % 5 === 0) {
+    if (this.currentIndex !== 0 && this.currentIndex % 10 === 0) {
       this.isAdTime = true;
     } else {
       this.isAdTime = false;

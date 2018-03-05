@@ -25,8 +25,8 @@ export default StyleSheet.create({
     color: 'white',
     //fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 25,
-    lineHeight: 25,
+    fontSize: 22,
+    lineHeight: 22,
   },
   subscript: {
     color: 'white',

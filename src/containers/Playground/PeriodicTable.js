@@ -24,6 +24,7 @@ export default class PeriodicTable extends Component {
           source={periodicTable}
           minimumZoomScale={0.5}
           maximumZoomScale={3}
+          scale={2}
           androidScaleType="center"
           style={{width: imageWidth, height: imageHeight}} />
       </View>

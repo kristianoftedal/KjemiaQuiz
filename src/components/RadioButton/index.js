@@ -20,14 +20,15 @@ export default class RadioButton extends Component {
     size: 16,
     innerColor: 'dodgerblue',
     outerColor: 'dodgerblue',
+    disabled: false,
     isSelected: false,
     onPress: () => null,
   };
 
   render() {
-    const { size, innerColor, outerColor, isSelected, onPress } = this.props;
+    const { size, innerColor, outerColor, isSelected, onPress, disabled } = this.props;
     const outerStyle = {
-      borderColor: outerColor,
+      borderColor: disabled ? '#bdc3c7' : outerColor,
       width: size + size * DEFAULT_SIZE_MULTIPLIER,
       height: size + size * DEFAULT_SIZE_MULTIPLIER,
       borderRadius: (size + size * DEFAULT_SIZE_MULTIPLIER) / 2,
@@ -39,11 +40,11 @@ export default class RadioButton extends Component {
       width: size,
       height: size,
       borderRadius: size / 2,
-      backgroundColor: innerColor,
+      backgroundColor: disabled ? '#bdc3c7' : innerColor,
     };
 
     return (
-      <TouchableOpacity style={[style.radio, outerStyle]} onPress={onPress}>
+      <TouchableOpacity style={[style.radio, outerStyle]} onPress={onPress} disabled={disabled}>
         {isSelected ? <View style={innerStyle} {...this.props} /> : null}
       </TouchableOpacity>
     );

@@ -33,10 +33,13 @@ export const getQuestionsSet = max => {
     let question = questions[i];
     number = getRandomNumber(ceiling, alreadyPickedNumbers);
     alreadyPickedNumbers.push(number);
-    if (question.imageId) {
-      question.image = find(questionImages, { id: question.imageId }).image;
+    if (question.imageId && question.imageId !== '') {
+      const image = find(questionImages, { id: question.imageId });
+      if (image) {
+        question.image = image.src;
+      }
     }
-    questionsSet.push(questions[number]);
+    questionsSet.push(question);
   }
   return questionsSet;
 };

@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import metrics from '../../config/metrics';
 
 const imageWidth = metrics.DEVICE_WIDTH;
-const imageHeight = metrics.DEVICE_HEIGHT * 0.25;
+const imageHeight = metrics.DEVICE_HEIGHT * 0.30;
 
 export default StyleSheet.create({
   container: {
@@ -23,8 +23,11 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     color: 'white',
     textAlign: 'center',
-    fontSize: 20,
-    margin: 5,
+    fontSize: 12,
+    marginTop: 10,
+    marginLeft: 8,
+    marginRight: 8,
+    lineHeight: 22,
   },
   textPart: {
     marginBottom: 10,

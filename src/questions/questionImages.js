@@ -1,4 +1,5 @@
 import molekyl from './media/molekyl.jpg';
+import threeA from './media/3A.jpg';
 import threeB from './media/3B.jpg';
 import nineA from './media/9A.jpg';
 import nineB from './media/9B.jpg';

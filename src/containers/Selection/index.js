@@ -127,6 +127,13 @@ export default class Selection extends Component {
 
             <View style={style.difficultyWrapper}>
               <Text style={style.radioButtonLabel}>Antall: </Text>
+              <Text style={style.radioButtonLabel}>20</Text>
+              <RadioButton
+                isSelected={this.state.count === 20}
+                onPress={() => this.setState({ count: 20 })}
+                innerColor="white"
+                outerColor="white"
+              />
               <Text style={style.radioButtonLabel}>30</Text>
               <RadioButton
                 isSelected={this.state.count === 30}
@@ -134,18 +141,29 @@ export default class Selection extends Component {
                 innerColor="white"
                 outerColor="white"
               />
-              <Text style={style.radioButtonLabel}>50</Text>
+              <Text style={style.radioButtonLabel}>40</Text>
               <RadioButton
-                isSelected={this.state.count === 50}
-                onPress={() => this.setState({ count: 50 })}
+                isSelected={this.state.count === 40}
+                onPress={() => {
+                  this.setState({ count: 40 });
+                }}
                 innerColor="white"
                 outerColor="white"
               />
-              <Text style={style.radioButtonLabel}>80</Text>
+              <Text style={style.radioButtonLabel}>50</Text>
               <RadioButton
-                isSelected={this.state.count === 80}
+                isSelected={this.state.count === 50}
                 onPress={() => {
-                  this.setState({ count: 80 });
+                  this.setState({ count: 50 });
+                }}
+                innerColor="white"
+                outerColor="white"
+              />
+              <Text style={style.radioButtonLabel}>60</Text>
+              <RadioButton
+                isSelected={this.state.count === 60}
+                onPress={() => {
+                  this.setState({ count: 60 });
                 }}
                 innerColor="white"
                 outerColor="white"

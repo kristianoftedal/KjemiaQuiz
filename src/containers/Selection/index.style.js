@@ -49,12 +49,12 @@ export default StyleSheet.create({
     borderColor: 'white',
     borderWidth: 2,
     borderRadius: 22,
-    minHeight: 50,
-    marginTop: 10,
+    minHeight: 40,
+    marginTop: 5,
   },
   buttonText: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 16,
   },
   difficultyWrapper: {
     marginTop: 10,

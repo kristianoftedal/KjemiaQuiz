@@ -23,7 +23,7 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     color: 'white',
     textAlign: 'center',
-    fontSize: 16,
+    fontSize: 20,
     margin: 5,
   },
   textPart: {

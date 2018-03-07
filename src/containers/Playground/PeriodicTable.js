@@ -17,17 +17,14 @@ export default class PeriodicTable extends Component {
   render() {
     const { previousScore, score } = this.props;
     const imageWidth = metrics.DEVICE_WIDTH * 0.95;
-    const imageHeight = metrics.DEVICE_HEIGHT * 0.85;
+    const imageHeight = metrics.DEVICE_HEIGHT * 0.82;
     return (
-      <View>
-        <PhotoView
-          source={periodicTable}
-          minimumZoomScale={0.5}
-          maximumZoomScale={3}
-          scale={2}
-          androidScaleType="center"
-          style={{width: imageWidth, height: imageHeight}} />
-      </View>
+      <PhotoView style={{backgroundColor: 'white'}}
+        source={periodicTable}
+        minimumZoomScale={1}
+        maximumZoomScale={3}
+        androidScaleType="center"
+        style={{width: imageWidth, height: imageHeight}} />
     );
   }
 }

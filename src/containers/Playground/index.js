@@ -144,7 +144,7 @@ export default class Playground extends Component {
           height={0.80}
           ref={(popupDialog) => { this.popupDialog = popupDialog; }}
         >
-          <PeriodicTable />
+          <PeriodicTable style={style.periodicTable}/>
         </PopupDialog>
       </View>
     );

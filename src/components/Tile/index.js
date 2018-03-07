@@ -95,9 +95,11 @@ export default class Tile extends Component {
           }}
         >
           <View style={[styles.tile, tileStyle, style]}>
-            <CustomText style={[styles.text, textStyle]} withShadow={true}>
-              {this.printAnswer(text)}
-            </CustomText>
+            <View>
+              <CustomText style={[styles.text, textStyle]} withShadow={true}>
+                {this.printAnswer(text)}
+              </CustomText>
+            </View>
           </View>
           <View style={[styles.depth, depthStyle]} />
         </View>

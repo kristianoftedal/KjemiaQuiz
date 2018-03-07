@@ -46,7 +46,6 @@ export const getQuestionsSetByCriterias = (categories, difficulty, count) => {
   let questionsSet = [];
   let alreadyPickedNumbers = [];
   if (categories) {
-    debugger;
     for (let i = 0; i < selectedCategories.length; i++) {
       alreadyPickedNumbers = [];
       const selectedCategory = selectedCategories[i].value;
@@ -67,7 +66,6 @@ export const getQuestionsSetByCriterias = (categories, difficulty, count) => {
     }
     questionsSet = shuffle(questionsSet);
     return questionsSet;
-
   } else {
     let number = 0;
     for (let i = 0; i < ceiling; i++) {

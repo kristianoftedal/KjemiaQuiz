@@ -48,7 +48,7 @@ export default class ChemForm extends Component {
             {this.printQuestion('hva er srsdfs blabla bla?')}
           </View>
             <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-              {this.printQuestion('hva er *SO_4|^2-|* blabla bla?')}
+              {this.printQuestion('hva er → *SO_4|^2-| * blabla bla?')}
             </View>
           </View>
           <View>

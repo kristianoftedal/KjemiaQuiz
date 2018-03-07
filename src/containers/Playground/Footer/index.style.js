@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   footerWrapper: {
+    height: 60,
     flexDirection: 'column',
     backgroundColor: '#34495e',
   },

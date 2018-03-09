@@ -11,6 +11,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "SplashScreen.h"
 @import GoogleMobileAds;
 
 @implementation AppDelegate
@@ -33,6 +34,8 @@
   [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544~1458002511  "];
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  [SplashScreen show];
   return YES;
 }
 

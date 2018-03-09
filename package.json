@@ -29,6 +29,7 @@
 		"react-native-photo-view": "^1.5.2",
 		"react-native-popup-dialog": "^0.10.46",
 		"react-native-sound": "^0.10.4",
+		"react-native-splash-screen": "^3.0.6",
 		"react-native-vector-icons": "^4.4.2",
 		"uuid": "^3.1.0"
 	},

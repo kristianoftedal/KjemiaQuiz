@@ -3,18 +3,30 @@
  * This component does, and it also provides a nice interface for using custom fonts and style.
  */
 import React from 'react';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 import { Text } from 'react-native-animatable';
+import Overlay from 'react-native-modal-overlay';
 import styles from './index.style';
 
 const LevelUp = props => {
-  const { children, ...otherProps } = props;
-  const text = (
-    <Text style={styles.text} {...otherProps}>
-      Level up!U+2B06U+2B06
-    </Text>
+  const { level, visible } = props;
+  
+  return (
+    <Overlay visible={visible}
+      closeOnTouchOutside animationType="zoomIn"
+      containerStyle={styles.container}
+      childrenWrapperStyle={styles.overlayWrapper}
+      animationDuration={500}>
+      <View style={styles.wrapper}>
+        <Text style={styles.header}>🔥🔥 LEVEL UP!!! 🔥🔥</Text>
+        <Text style={styles.header}>{level.title}</Text>
+        <Image style={styles.image} source={level.imageSource} />
+        <Text style={styles.text}>
+          {level.text}
+        </Text>
+      </View>
+    </Overlay>
   );
-  return <View style={styles.wrapper}>{text}</View>;
 };
 
 export default LevelUp;

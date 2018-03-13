@@ -25,6 +25,8 @@ export default StyleSheet.create({
     alignSelf: 'flex-start',
     borderTopLeftRadius: 20,
     borderBottomLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderBottomRightRadius: 20,
     backgroundColor: 'white',
   },
 });

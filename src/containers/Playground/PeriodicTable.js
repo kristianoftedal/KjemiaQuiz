@@ -21,8 +21,8 @@ export default class PeriodicTable extends Component {
     return (
       <PhotoView style={{backgroundColor: 'white'}}
         source={periodicTable}
-        minimumZoomScale={1.2}
-        maximumZoomScale={3}
+        minimumZoomScale={2}
+        maximumZoomScale={6}
         androidScaleType="center"
         style={{width: imageWidth, height: imageHeight}} />
     );

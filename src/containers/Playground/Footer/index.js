@@ -28,7 +28,6 @@ import periodicIcon from '../../../images/periodicIcon.png';
 @observer
 export default class Playground extends Component {
 
-
   static defaultProps = {
     dialog: null
   };

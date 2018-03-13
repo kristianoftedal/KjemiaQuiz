@@ -1,5 +1,12 @@
+import photon from '../images/photon.png';
+
 const levels = [
-  { value: 'Foton', score: 1000 },
+  { 
+    value: 'Foton',
+    score: 1000,
+    title: 'du er foton',
+    imageSource: photon,
+    text: 'A photon is a type of elementary particle, the quantum of the electromagnetic field including electromagnetic radiation such as light, and the force carrier for the electromagnetic force (even when static via virtual particles). The photon has zero rest mass and always moves at the speed of light within a vacuum' },
   { value: 'Elektron', score: 3000 },
   { value: 'Proton', score: 6000 },
   { value: 'Atomkjerne', score: 10000 },

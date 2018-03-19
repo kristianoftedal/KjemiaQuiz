@@ -66,7 +66,7 @@ export default class GameStore {
 
   @action
   buildQuiz = () => {
-    this.questions = getQuestionsSet(50);
+    this.questions = getQuestionsSet(30);
   };
 
   @action

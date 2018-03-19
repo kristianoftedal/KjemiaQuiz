@@ -91,7 +91,7 @@ export default class Home extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Kjemias naturfag - eksamensquiz!</Text>
+          <Text style={style.header}>Naturfagsappen!</Text>
         </View>
         {hasHeaderAppeared && (
           <View
@@ -111,9 +111,6 @@ export default class Home extends Component {
             </Button>
             <Button style={style.button} onPressOut={this._handleAboutPress}>
               <Text style={style.buttonText}>Om Kjemia</Text>
-            </Button>
-            <Button style={style.button} onPressOut={this._handleChemFormPress}>
-              <Text style={style.buttonText}>CHEMICAL FORMULA TEST GROUNDS</Text>
             </Button>
           </View>
         )}

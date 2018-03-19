@@ -1484,13 +1484,14 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
 				INFOPLIST_FILE = KjemiaQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = KjemiaQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = no.kjemia.naturfagsappen;
 				PRODUCT_NAME = KjemiaQuiz;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1516,13 +1517,14 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
 				INFOPLIST_FILE = KjemiaQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = KjemiaQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = no.kjemia.naturfagsappen;
 				PRODUCT_NAME = KjemiaQuiz;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

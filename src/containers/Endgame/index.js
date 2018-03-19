@@ -86,7 +86,7 @@ export default class Endgame extends Component {
             }}
           >
             <View>
-              <Text style={style.subHeader}>Du klarte:&nbsp; {this.props.correctPercentage}%</Text>
+              <Text style={style.subHeader}>Du klarte:&nbsp; {Math.trunc(this.props.correctPercentage)}%</Text>
             </View>
             <View style={style.categoriesWrapper}>
               <Text style={style.resultHeader}>Per kategori:</Text>
@@ -98,7 +98,7 @@ export default class Endgame extends Component {
                     <View key={category} style={style.resultWrapper}>
                       <Text style={style.resultLabel}>{category}: </Text>
                       <Text style={style.resultPercentage}>
-                        {result.correct / result.total * 100}
+                        {Math.trunc(result.correct / result.total * 100)}
                         &#37;
                       </Text>
                     </View>

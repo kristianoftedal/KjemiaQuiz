@@ -59,7 +59,7 @@ export default class Playground extends Component {
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     }
     if (this.isLevelUp) {
-      this.levelup.alertWithType('info', '', '');
+      //this.levelup.alertWithType('info', '', '');
     } 
     if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
       if (this.props.isEndgame) {
@@ -104,7 +104,7 @@ export default class Playground extends Component {
         ref={ref => { this._playRef = ref;}}
       >
         <ProgressBar />
-        <LevelUp visible={true} level={this.props.level} />
+        <LevelUp visible={false} level={this.props.level} />
         <View
           style={style.questionsWrapper}
           ref={ref => {this._questionRef = ref;}}

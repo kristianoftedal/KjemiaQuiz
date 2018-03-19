@@ -49,7 +49,7 @@ export default class Endgame extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Om kjemia</Text>
+          <Text style={style.header}>Om Kjemia</Text>
         </View>
         {hasHeaderAppeared && (
           <View

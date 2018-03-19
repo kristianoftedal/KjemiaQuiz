@@ -13,9 +13,9 @@ export default StyleSheet.create({
   header: {
     fontFamily: 'Raleway-Regular',
     color: 'white',
-    fontSize: 50,
+    fontSize: 40,
     textAlign: 'center',
-    margin: 10,
+    marginBottom: 10,
     marginTop: 30,
   },
   logo: {

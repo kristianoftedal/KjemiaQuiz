@@ -1,10 +1,32 @@
 import molekyl from './media/molekyl.jpg';
 import threeA from './media/3A.jpg';
 import threeB from './media/3B.jpg';
+import threeD from './media/3D.jpg';
+import fourA from './media/4A.jpg';
+import fourB from './media/4B.jpg';
+import fourC from './media/4C.jpg';
+import fourE from './media/4E.jpg';
+import fiveA from './media/5A.png';
+import fiveB from './media/5B.jpg';
+import fiveC from './media/5C.png';
+import fiveD from './media/5D.png';
+import fiveF from './media/5F.bmp';
+import fiveH from  './media/5C.png';
+import eightA from './media/8A.jpg';
+import eightC from './media/8C.jpg';
 import nineA from './media/9A.jpg';
 import nineB from './media/9B.jpg';
 import nineC from './media/9C.jpg';
 import nineD from './media/9D.jpg';
+import nineE from './media/9E.jpg';
+import nineF from './media/9F.jpg';
+import nineG from './media/9G.jpg';
+import nineH from './media/9H.jpg';
+import nineI from './media/9I.png';
+import nineJ from './media/9J.png';
+import tenA from './media/10A.jpg';
+import tenD from './media/10D.png';
+import tenE from './media/10E.png';
 
 const images =
   [
@@ -69,6 +91,7 @@ const images =
     {
       id: 'e1c8c598-584e-e860-088f-30ba823f6b5d',
       image: '3D',
+      src: threeD,
     },
     {
       id: '9959b98f-fe61-7ae4-b1a9-32036bf6c202',
@@ -85,14 +108,17 @@ const images =
     {
       id: '3abc4bed-5bef-0a1f-f1fa-e05572d19cf2',
       image: '4A',
+      src: fourA,
     },
     {
       id: 'e59ebf96-f9d4-3497-3151-a57990e34cd9',
       image: '4B',
+      src: fourB,
     },
     {
       id: 'cbf1e124-a1f8-dfd8-1b31-2b7b7b56f94d',
       image: '4C',
+      src: fourC,
     },
     {
       id: '40d456ee-7ab7-1c7f-a551-0a8b9eeed40b',
@@ -100,23 +126,28 @@ const images =
     },
     {
       id: '7aa57515-ed58-30ef-e9fb-13bb415f1e68',
-      image: '4C',
+      image: '4E',
+      src: fourE,
     },
     {
       id: '4bec8672-4b8e-83a6-cec0-b982d3fc66b2',
       image: '5A',
+      src: fiveA,
     },
     {
       id: 'cf7f11cb-faa8-9e56-f6f5-3b6a7294e14e',
       image: '5B',
+      src: fiveB,
     },
     {
       id: '7a290b4d-3620-d838-0603-c4a6a78a54d9',
       image: '5C',
+      src: fiveC,
     },
     {
       id: '1a74ab6b-eab8-9e2f-e633-84cf0e61d299',
       image: '5D',
+      src: fiveD,
     },
     {
       id: '830cbf73-6553-7c02-0888-e6a2bfbefbe3',
@@ -161,6 +192,7 @@ const images =
     {
       id: '094c0bcb-b950-90fc-d89b-3642bb03befd',
       image: '8A',
+      src: eightA,
     },
     {
       id: '3e9b02a4-1291-432f-a9aa-70dd8d41e3a4',
@@ -169,6 +201,7 @@ const images =
     {
       id: 'e64dee49-981b-345f-ec76-e2462d35b41a',
       image: '8C',
+      src: eightC,
     },
     {
       id: '889598d1-0081-5f83-73f5-8de0bead676e',
@@ -201,14 +234,37 @@ const images =
     {
       id: 'ee333f8d-cfba-e69c-eb7e-897e98a5b79d',
       image: '9E',
+      src: nineE,
     },
     {
       id: '31aa1951-537c-45ad-63b1-b19ddd85790a',
       image: '9F',
+      src: nineF,
+    },
+    {
+      id: '4050b3ca-6035-4ffd-957d-e6987a73c4fa',
+      image: '9G',
+      src: nineG,
+    },
+    {
+      id: '4a37cd15-fe6d-4fc8-a27b-42387cfb2c1f',
+      image: '9H',
+      src: nineH,
+    },
+    {
+      id: 'fb342078-1be5-45c0-878e-f46134d84eaa',
+      image: '9I',
+      src: nineI,
+    },
+    {
+      id: '6b38fc0d-9f8e-462c-8ba9-6ab07a20a457',
+      image: '9J',
+      src: nineJ,
     },
     {
       id: '1f579906-455f-27da-0385-d34677e4abf6',
       image: '10A',
+      src: tenA,
     },
     {
       id: '78e0db0f-ebcd-3c85-f4b3-3017190d5ab4',
@@ -221,10 +277,12 @@ const images =
     {
       id: '93f63388-4499-f062-d22e-768de2c0acfb',
       image: '10D',
+      src: tenD,
     },
     {
       id: '6d1db61d-5344-064f-d831-35b1d9498796',
       image: '10E',
+      src: tenE,
     },
     {
       id: '538b9631-9295-48c4-40df-cf604e549954',

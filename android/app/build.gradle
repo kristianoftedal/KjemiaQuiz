@@ -137,6 +137,13 @@ android {
 }
 
 dependencies {
+    compile(project(':react-native-firebase')) {
+        transitive = false
+    }
+    // Firebase dependencies
+    compile "com.google.android.gms:play-services-base:11.8.0"
+    compile "com.google.firebase:firebase-core:11.8.0"
+    compile "com.google.firebase:firebase-database:11.8.0"
     compile project(':react-native-splash-screen')
     compile project(':react-native-admob')
     compile project(':react-native-photo-view')
@@ -153,3 +160,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+apply plugin: 'com.google.gms.google-services'

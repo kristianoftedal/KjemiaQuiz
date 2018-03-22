@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import { inject, observer } from 'mobx-react/native';
 import { Text, Alert, Image } from 'react-native';
 import { View } from 'react-native-animatable';
-import PopupDialog from 'react-native-popup-dialog';
 import PhotoView from 'react-native-photo-view';
 import Button from 'apsl-react-native-button';
 import PeriodicTable from '../../../components/PeriodicTable';

@@ -7,7 +7,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Text, Alert, Image } from 'react-native';
 import { View } from 'react-native-animatable';
-import PopupDialog from 'react-native-popup-dialog';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
 import Button from 'apsl-react-native-button';
@@ -20,7 +19,6 @@ import AnswerTile from './AnswerTile';
 import audioService from '../../services/audio';
 import ProgressBar from './ProgressBar';
 import Footer from './Footer';
-import PeriodicTable from './PeriodicTable';
 import {
   AdMobInterstitial,
 } from 'react-native-admob'

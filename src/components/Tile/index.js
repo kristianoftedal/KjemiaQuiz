@@ -20,7 +20,6 @@ export default class Tile extends Component {
   static defaultProps = {
     depth: metrics.TILE_SHADOW_DEPTH,
     borderRadius: metrics.TILE_BORDER_RADIUS,
-    backgroundColor: 'red',
     text: '1',
     singlePressOnly: false,
     playSound: audioService.playButtonSound,
@@ -95,7 +94,7 @@ export default class Tile extends Component {
           }}
         >
           <View style={[styles.tile, tileStyle, style]}>
-            <View>
+            <View style={styles.textWrapper}>
               <CustomText style={[styles.text, textStyle]} withShadow={true}>
                 {this.printAnswer(text)}
               </CustomText>

@@ -5,6 +5,11 @@ import metrics from '../../config/metrics';
 const logoWidth = metrics.DEVICE_WIDTH * 0.5;
 
 export default StyleSheet.create({
+  body: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   container: {
     flex: 1,
     flexDirection: 'column',

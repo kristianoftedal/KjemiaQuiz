@@ -2,12 +2,13 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   tile: {
-    justifyContent: 'center',
-    alignItems: 'center',
     zIndex: 2,
   },
   depth: {
     zIndex: 1,
+  },
+  textWrapper: {
+    justifyContent: 'flex-start',
   },
   text: {
     color: 'white',

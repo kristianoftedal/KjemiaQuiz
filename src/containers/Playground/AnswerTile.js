@@ -9,7 +9,7 @@ import Tile from '../../components/Tile';
 import { observer } from 'mobx-react/native';
 import metrics from '../../config/metrics';
 import uuid from 'uuid';
-
+import styles from './index.style';
 @observer
 export default class AnswerTile extends Component {
   _tileRef = null;
@@ -33,7 +33,7 @@ export default class AnswerTile extends Component {
   render() {
     const { left, bottom, backgroundColor, text } = this.props;
     return (
-      <View key={uuid.v4()}>
+      <View key={uuid.v4()} >
         <Tile
           ref={ref => {
             this._tileRef = ref;

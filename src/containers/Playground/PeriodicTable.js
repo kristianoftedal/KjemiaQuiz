@@ -15,7 +15,6 @@ import metrics from '../../config/metrics';
 export default class PeriodicTable extends Component {
 
   render() {
-    const { previousScore, score } = this.props;
     const imageWidth = metrics.DEVICE_WIDTH * 0.95;
     const imageHeight = metrics.DEVICE_HEIGHT * 0.82;
     return (

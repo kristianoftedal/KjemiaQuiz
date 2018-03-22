@@ -5,11 +5,13 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import { Text } from 'react-native-animatable';
+import PhotoView from 'react-native-photo-view';
 import Overlay from 'react-native-modal-overlay';
 import styles from './index.style';
+import metrics from '../../config/metrics';
+import periodicTable from '../../images/periodicTable.png';
 
-
-export default class SeleLevelUpction extends Component {
+export default class PeriodicTable extends Component {
   constructor(props) {
     super();
     this.state = {
@@ -17,7 +19,14 @@ export default class SeleLevelUpction extends Component {
       level: props.level,
     };
   }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({visible: nextProps.visible});
+  }
+
   render() {
+    const imageWidth = metrics.DEVICE_WIDTH * 0.95;
+    const imageHeight = metrics.DEVICE_HEIGHT * 0.82;
     return (
       <Overlay visible={this.state.visible}
         closeOnTouchOutside animationType="zoomIn"
@@ -26,12 +35,12 @@ export default class SeleLevelUpction extends Component {
         animationDuration={500}
         onClose={() => this.setState({visible: false})}>
         <View style={styles.wrapper}>
-          <Text style={styles.header}>🔥🔥 LEVEL UP!!! 🔥🔥</Text>
-          <Text style={styles.header}>{this.state.level.title}</Text>
-          <Image style={styles.image} source={this.state.level.imageSource} />
-          <Text style={styles.text}>
-            {this.state.level.text}
-          </Text>
+          <PhotoView style={{backgroundColor: 'white'}}
+            source={periodicTable}
+            minimumZoomScale={2}
+            maximumZoomScale={6}
+            androidScaleType="center"
+            style={{width: imageWidth, height: imageHeight}} />
         </View>
       </Overlay>
     );

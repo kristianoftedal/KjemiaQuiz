@@ -58,9 +58,6 @@ export default class Playground extends Component {
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     }
-    if (this.isLevelUp) {
-      //this.levelup.alertWithType('info', '', '');
-    } 
     if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
       if (this.props.isEndgame) {
         this.props.navigateToEndgame();
@@ -104,7 +101,7 @@ export default class Playground extends Component {
         ref={ref => { this._playRef = ref;}}
       >
         <ProgressBar />
-        <LevelUp visible={false} level={this.props.level} />
+        <LevelUp visible={this.props.isLevelUp} level={this.props.level} />
         <View
           style={style.questionsWrapper}
           ref={ref => {this._questionRef = ref;}}
@@ -141,13 +138,6 @@ export default class Playground extends Component {
           successColor="#2ecc71"
           errorColor="#e74c3c"
         />
-        <PopupDialog
-          width={0.95}
-          height={0.80}
-          ref={(popupDialog) => { this.popupDialog = popupDialog; }}
-        >
-          <PeriodicTable style={style.periodicTable}/>
-        </PopupDialog>
       </View>
     );
   }

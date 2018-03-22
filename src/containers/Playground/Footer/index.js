@@ -11,6 +11,7 @@ import { View } from 'react-native-animatable';
 import PopupDialog from 'react-native-popup-dialog';
 import PhotoView from 'react-native-photo-view';
 import Button from 'apsl-react-native-button';
+import PeriodicTable from '../../../components/PeriodicTable';
 import style from './index.style';
 import ScoreText from '../../../components/ScoreText';
 import AnimateNumber from '../../../components/AnimateNumber';
@@ -27,10 +28,19 @@ import periodicIcon from '../../../images/periodicIcon.png';
 }))
 @observer
 export default class Playground extends Component {
+  
+  constructor(props) {
+    super();
+    this.state = {
+      visible: false,
+      level: props.level,
+    };
+  }
 
-  static defaultProps = {
-    dialog: null
-  };
+  _togglePeriodicTable = () => {
+    const visible = !this.state.visible;
+    this.setState({visible: visible});
+  }
 
   render() {
     const { previousScore, score, dialog } = this.props;
@@ -50,13 +60,12 @@ export default class Playground extends Component {
           </ScoreText>
           <Button
             title="Periodisk tabell"
-            onPress={() => {
-              dialog.show();
-            }}
+            onPress={() => this._togglePeriodicTable()}
             style={style.periodicButton}>
             <Image style={style.periodicIcon} source={periodicIcon}/>
           </Button>
         </View>
+        <PeriodicTable visible={this.state.visible}/>
       </View>
     );
   }

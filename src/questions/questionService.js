@@ -2,8 +2,15 @@ import { find } from 'lodash';
 import questionImages from './questionImages';
 import shuffle from '../utils/shuffle';
 
-import db from '../config/db';
 let questions = require('./questions.json');
+
+const snapshotToArray = (snapshot) => {
+  var returnArr = [];
+  db.ref('/naturfagQuestions').on('value', snapshot => {
+    returnArr = snapshot.val();
+  });
+  return returnArr;
+};
 
 const getRandomNumber = (max, blackList) => {
   const randomNumber = Math.floor(Math.random() * max);
@@ -12,6 +19,7 @@ const getRandomNumber = (max, blackList) => {
 
 export const getQuestionsSet = max => {
   const ceiling = max || questions.length;
+  
   let questionsSet = [];
   const alreadyPickedNumbers = [];
   let number = 0;

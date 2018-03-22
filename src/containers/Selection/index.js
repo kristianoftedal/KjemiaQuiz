@@ -28,7 +28,7 @@ export default class Selection extends Component {
     super();
     this.state = {
       difficulty: '',
-      categories: categories,
+      categories: categories.slice(),
       hasHeaderAppeared: false,
       hasPressedButton: false,
       count: 0,
@@ -49,6 +49,7 @@ export default class Selection extends Component {
 
   _handleStartPress = async () => {
     this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
+    if (!this.state.difficulty || this.state.count === 0 || this.state.categories.filter(x => x.isSelected).length === 0) return;
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
@@ -138,6 +139,7 @@ export default class Selection extends Component {
               <RadioButton
                 isSelected={this.state.count === 30}
                 onPress={() => this.setState({ count: 30 })}
+                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length < 2}
                 innerColor="white"
                 outerColor="white"
               />
@@ -147,6 +149,8 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 40 });
                 }}
+
+                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
                 innerColor="white"
                 outerColor="white"
               />
@@ -156,7 +160,7 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 50 });
                 }}
-                disabled={this.state.difficulty === 'Vanskelig'}
+                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
                 innerColor="white"
                 outerColor="white"
               />
@@ -166,7 +170,7 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 60 });
                 }}
-                disabled={this.state.difficulty === 'Vanskelig'}
+                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 3}
                 innerColor="white"
                 outerColor="white"
               />

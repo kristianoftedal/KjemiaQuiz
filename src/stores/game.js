@@ -26,12 +26,14 @@ export default class GameStore {
   @observable isAdTime = false;
 
   setBaseline() {
+    this.questions = [];
     this.score = 0;
     this.currentIndex = 0;
     this.isEndgame = false;
     this.previousScore = 0;
     this.isGameRunning = true;
     this.isCorrectAnswer = false;
+    this.correctCount = 0;
     this.totalByCategory = {};
   }
 
@@ -44,7 +46,6 @@ export default class GameStore {
   startGame = () => {
     this.setBaseline();
     this.isCustomizedGame = false;
-    this.correctCount = 0;
     this.buildQuiz();
   };
 
@@ -61,6 +62,7 @@ export default class GameStore {
   setCustomizedGame = (categories, difficulty, count) => {
     this.setBaseline();
     this.isCustomizedGame = true;
+    this.correctCount = 0;
     this.questions = getQuestionsSetByCriterias(categories, difficulty, count);
   };
 

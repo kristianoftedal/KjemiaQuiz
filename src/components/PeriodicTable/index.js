@@ -20,7 +20,7 @@ export default periodicTable = props => {
       containerStyle={styles.container}
       childrenWrapperStyle={styles.overlayWrapper}
       animationDuration={500}
-      onClose={() => {debugger; props.onClose()}}>
+      onClose={() => props.onClose()}>
       <View style={styles.wrapper}>
         <PhotoView style={{backgroundColor: 'white'}}
           source={periodicTableImg}

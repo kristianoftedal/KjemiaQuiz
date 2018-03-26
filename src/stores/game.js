@@ -5,7 +5,7 @@
 import { action, computed, observable } from 'mobx';
 import { getQuestionsSet, getQuestionsSetByCriterias } from '../questions/questionService';
 import metrics from '../config/metrics';
-import levels from '../questions/levels';
+import levels from '../config/levels';
 import { getXp, getLevelIndex, setXp, setLevelIndex } from '../questions/xpService';
 
 export default class GameStore {
@@ -25,6 +25,7 @@ export default class GameStore {
   @observable isLevelUp = false;
   @observable isAdTime = false;
 
+  @action
   setBaseline() {
     this.questions = [];
     this.score = 0;
@@ -33,6 +34,7 @@ export default class GameStore {
     this.previousScore = 0;
     this.isGameRunning = true;
     this.isCorrectAnswer = false;
+    this.isCustomizedGame = false;
     this.correctCount = 0;
     this.totalByCategory = {};
   }
@@ -41,6 +43,12 @@ export default class GameStore {
     this.currentXp = await getXp();
     this.currentLevelIndex = await getLevelIndex();
   };
+
+  @action
+  resetGame = () => {
+    this.setBaseline();
+    this.isCustomizedGame = false;
+  }
 
   @action
   startGame = () => {
@@ -52,7 +60,7 @@ export default class GameStore {
   @action
   initPlayer = () => {
     this.getLevels().then(() => {
-      if (this.currentXp >= levels[this.currentLevelIndex]) {
+      if (this.currentXp >= levels[this.currentLevelIndex].score) {
         this.currentLevelIndex++;
       }
     });
@@ -94,7 +102,9 @@ export default class GameStore {
         this.currentXp += 50;
       }
       if (this.currentXp >= levels[this.currentLevelIndex + 1].score) {
+        debugger;
         this.currentLevelIndex++;
+        setLevelIndex(this.currentLevelIndex);
         this.isLevelUp = true;
       } else {
         this.isLevelUp = false;
@@ -102,10 +112,9 @@ export default class GameStore {
       this.isCorrectAnswer = true;
       this.correctCount++;
       totalByCategory.correct++;
-      totalByCategory.total++;
-    } else {
-      totalByCategory.total++;
+      setXp(this.currentXp);
     }
+    totalByCategory.total++;
     this.totalByCategory[this.currentQuestion.category] = totalByCategory;
     if (this.currentIndex < this.questions.length) {
       this.currentIndex++;
@@ -113,9 +122,6 @@ export default class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-    setLevelIndex(this.currentLevelIndex);
-
-    setXp(this.currentXp);
 
     if (this.currentIndex !== 0 && this.currentIndex % 10 === 0) {
       this.isAdTime = true;

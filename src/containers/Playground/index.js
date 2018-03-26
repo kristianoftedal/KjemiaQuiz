@@ -93,6 +93,10 @@ export default class Playground extends Component {
       alreadyPickedColors.push(color);
     });
 
+    if (this.props.isLevelUp) {
+      debugger;
+    }
+
     return (
       <View
         style={style.container}

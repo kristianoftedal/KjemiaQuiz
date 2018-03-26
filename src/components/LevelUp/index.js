@@ -9,7 +9,7 @@ import Overlay from 'react-native-modal-overlay';
 import styles from './index.style';
 
 
-export default class SeleLevelUpction extends Component {
+export default class LevelUp extends Component {
   constructor(props) {
     super();
     this.state = {

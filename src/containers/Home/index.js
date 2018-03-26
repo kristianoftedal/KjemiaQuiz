@@ -21,6 +21,7 @@ import audioService from '../../services/audio';
   progress: allStores.game.getLevelUpProgress,
   level: allStores.game.currentLevel,
   initPlayer: allStores.game.initPlayer,
+  resetGame: allStores.game.resetGame,
 }))
 
 @observer
@@ -35,6 +36,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.props.initPlayer();
+    this.props.resetGame();
     if (this._headerRef) {
       this._headerRef.fadeInRight(1200).then(() => {
         if (Platform.OS === 'android') {

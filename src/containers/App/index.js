@@ -16,6 +16,7 @@ import Selection from '../Selection';
 import About from '../About';
 import ChemForm from '../ChemForm';
 import styles from './index.style';
+import questionList from '../../config/db';
 
 @inject(allStores => ({
   currentScreen: allStores.router.currentScreen,

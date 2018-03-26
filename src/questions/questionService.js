@@ -1,7 +1,7 @@
 import { find } from 'lodash';
 import questionImages from './questionImages';
 import shuffle from '../utils/shuffle';
-
+import questionList from '../config/db';
 let questions = require('./questions.json');
 
 const snapshotToArray = (snapshot) => {
@@ -18,6 +18,7 @@ const getRandomNumber = (max, blackList) => {
 };
 
 export const getQuestionsSet = max => {
+  let test = questionList;
   const ceiling = max || questions.length;
   
   let questionsSet = [];
@@ -41,6 +42,7 @@ export const getQuestionsSet = max => {
 };
 
 export const getQuestionsSetByCriterias = (categories, difficulty, count) => {
+  questions = require('./questions.json');
   if (difficulty) {
     questions = questions.filter(e => e.difficulty === difficulty);
   }

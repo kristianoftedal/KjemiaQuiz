@@ -22,6 +22,7 @@ import AnimateNumber from '../../components/AnimateNumber';
   quizLength: allStores.game.quizLength,
   correctPercentage: allStores.game.correctPercentage,
   totalByCategory: allStores.game.totalByCategory,
+  resetGame: allStores.game.resetGame,
 }))
 @observer
 export default class Endgame extends Component {
@@ -45,6 +46,10 @@ export default class Endgame extends Component {
         audioService.initSounds();
       });
     }
+  }
+
+  componentWillUnmount() {
+    this.props.resetGame();
   }
 
   _handleBackPress = async () => {

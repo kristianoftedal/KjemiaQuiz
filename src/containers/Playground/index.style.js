@@ -18,8 +18,6 @@ export default StyleSheet.create({
   },
   questionsWrapper: {
     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
     alignSelf: 'stretch',
     marginBottom: 10,
   },

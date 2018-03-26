@@ -28,9 +28,8 @@ export default class Selection extends Component {
     super();
     this.state = {
       difficulty: '',
-      categories: categories.slice(),
+      categories: categories.map(e => ({...e})),
       hasHeaderAppeared: false,
-      hasPressedButton: false,
       count: 0,
     };
   }
@@ -48,24 +47,25 @@ export default class Selection extends Component {
   }
 
   _handleStartPress = async () => {
-    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
     if (!this.state.difficulty || this.state.count === 0 || this.state.categories.filter(x => x.isSelected).length === 0) return;
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
     this.props.setCustomizedGame(this.state.categories, this.state.difficulty, this.state.count);
+    this.setState({ categories: categories.map(e => ({...e}))});
     this.props.navigateToPlayground();
   };
+
   _handleBackPress = async () => {
-    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
+    this.setState({ categories: categories.map(e => ({...e}))});
     this.props.navigateToHome();
   };
 
   render() {
-    const { hasHeaderAppeared, hasPressedButton } = this.state;
+    const { hasHeaderAppeared } = this.state;
 
     return (
       <View style={style.body}>

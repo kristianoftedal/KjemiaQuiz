@@ -102,7 +102,6 @@ export default class GameStore {
         this.currentXp += 50;
       }
       if (this.currentXp >= levels[this.currentLevelIndex + 1].score) {
-        debugger;
         this.currentLevelIndex++;
         setLevelIndex(this.currentLevelIndex);
         this.isLevelUp = true;

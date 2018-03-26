@@ -60,7 +60,6 @@ export default class Playground extends Component {
       if (this.props.isEndgame) {
         this.props.navigateToEndgame();
       }
-      this._questionRef.bounceInRight(1000);
       if (this.props.isCorrectAnswer) {
         this.dropdown.alertWithType('success', 'Riktig 😀', '');
         audioService.playSuccessSound();
@@ -68,6 +67,7 @@ export default class Playground extends Component {
         this.dropdown.alertWithType('error', 'Feil 😮', '');
         audioService.playFailureSound();
       }
+      this._questionRef.bounceInRight(1000);
     }
   }
 
@@ -93,17 +93,13 @@ export default class Playground extends Component {
       alreadyPickedColors.push(color);
     });
 
-    if (this.props.isLevelUp) {
-      debugger;
-    }
-
     return (
       <View
         style={style.container}
         ref={ref => { this._playRef = ref;}}
       >
         <ProgressBar />
-        <LevelUp visible={this.props.isLevelUp} level={this.props.level} />
+        <LevelUp visible={this.props.isLevelUp} level={this.props.level} key={currentQuestion.id} />
         <View
           style={style.questionsWrapper}
           ref={ref => {this._questionRef = ref;}}

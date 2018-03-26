@@ -64,7 +64,7 @@ export default class Playground extends Component {
             <Image style={style.periodicIcon} source={periodicIcon}/>
           </Button>
         </View>
-        <PeriodicTable visible={this.state.visible}/>
+        <PeriodicTable visible={this.state.visible} onClose={this._togglePeriodicTable}/>
       </View>
     );
   }

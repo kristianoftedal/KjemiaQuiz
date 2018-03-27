@@ -52,7 +52,7 @@ export default class Playground extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.isAdTime) {
       AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-      // AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/2934735716');
+      // AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     }

@@ -33,7 +33,7 @@ export default class RadioButton extends Component {
       height: size + size * DEFAULT_SIZE_MULTIPLIER,
       borderRadius: (size + size * DEFAULT_SIZE_MULTIPLIER) / 2,
       borderWidth: size * DEFAULT_OUTER_BORDER_WIDTH_MULTIPLIER,
-      marginRight: 10,
+      marginRight: 5,
     };
 
     const innerStyle = {

@@ -1,19 +1,19 @@
 /* @flow */
 import { StyleSheet } from 'react-native';
+import metrics from '../../config/metrics';
 
 export default StyleSheet.create({
   container: {
     flexDirection: 'column',
-    alignSelf: 'stretch',
     justifyContent: 'center',
-    padding: 10,
+    padding: 5,
+    width: metrics.DEVICE_WIDTH * 0.99,
   },
   header: {
     fontFamily: 'Raleway-Regular',
     color: 'white',
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
     marginTop: 30,
   },
   body: {
@@ -34,12 +34,12 @@ export default StyleSheet.create({
   },
   toggleSwitch: {
     flex: 2,
-    marginBottom: 5,
-    marginTop: 5,
+    marginBottom: 2,
+    marginTop: 2,
     alignSelf: 'flex-end',
   },
   categoryWrapper: {
-    marginBottom: 20,
+    marginBottom: 10,
   },
   picker: {
     color: 'white',
@@ -49,24 +49,25 @@ export default StyleSheet.create({
     borderColor: 'white',
     borderWidth: 2,
     borderRadius: 22,
-    minHeight: 40,
-    marginTop: 5,
+    marginTop: 2,
+    marginBottom: 2,
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 15,
   },
   difficultyWrapper: {
     marginTop: 10,
-    marginBottom: 20,
+    marginBottom: 10,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    width: metrics.DEVICE_WIDTH * 0.99,
   },
   radioButtonLabel: {
     fontFamily: 'Raleway-Regular',
     color: 'white',
-    marginRight: 5,
+    marginRight: 2,
   },
   radioButton: {},
 });

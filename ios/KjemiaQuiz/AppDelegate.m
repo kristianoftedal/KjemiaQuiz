@@ -32,7 +32,7 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
-  [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544~1458002511  "];
+  [GADMobileAds configureWithApplicationID:@"ca-app-pub-4545695212875309~6741517180"];
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   

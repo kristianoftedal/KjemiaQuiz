@@ -11,14 +11,14 @@ import styles from './index.style';
 
 const CustomText = props => {
   const { onPress, style, children, withShadow, ...otherProps } = props;
-  const fontSize = 20;
+  const fontSize = 15;
   const scaledFontSize = Math.round(fontSize * metrics.DEVICE_WIDTH / 375);
   const shadowStyle = {
     textShadowColor: 'rgba(0, 0, 0, 0.3)',
     textShadowRadius: 0,
     textShadowOffset: {
-      height: 2,
-      width: 2,
+      height: 1,
+      width: 1,
     },
   };
   const textStyle = [styles.text, withShadow ? shadowStyle : {}, style];

@@ -11,6 +11,7 @@ export default StyleSheet.create({
     marginTop: 5,
     marginBottom: 5,
     padding: 10,
+    paddingBottom: 5,
     width: width,
     alignItems: 'center',
   },
@@ -22,7 +23,7 @@ export default StyleSheet.create({
     color: 'white',
     //fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 22,
+    fontSize: 15,
     lineHeight: 22,
   },
   subscript: {

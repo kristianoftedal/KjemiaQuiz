@@ -101,7 +101,7 @@ export default class Home extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Naturfagsappen!</Text>
+          <Text style={style.header}>Naturfagsappen</Text>
         </View>
         {hasHeaderAppeared && (
           <View
@@ -123,7 +123,7 @@ export default class Home extends Component {
               <Text style={style.buttonText}>Om Kjemia</Text>
             </Button>
             <Button style={style.button} onPressOut={this._handleBadgesPress}>
-              <Text style={style.buttonText}>Badges</Text>
+              <Text style={style.buttonText}>Troféer</Text>
             </Button>
           </View>
         )}

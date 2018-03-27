@@ -29,7 +29,6 @@ export default class Level extends Component {
         <View style={styles.wrapper}>
           <Text style={styles.header}>{this.props.level.value}</Text>
           <Image style={styles.image} source={this.props.level.imageSource} />
-          <Text style={styles.header}>{this.props.level.title}</Text>
           <Text style={styles.text}>
             {this.props.level.text}
           </Text>

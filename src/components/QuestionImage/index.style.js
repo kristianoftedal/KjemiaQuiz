@@ -8,7 +8,5 @@ export default StyleSheet.create({
   image: {
     height: imageHeight,
     width: imageWidth,
-    borderRadius: 2,
-    borderColor: '#ffffff',
   },
 });

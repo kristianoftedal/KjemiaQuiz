@@ -2,9 +2,9 @@ import { StyleSheet } from 'react-native';
 import metrics from '../../config/metrics';
 
 const width = metrics.DEVICE_WIDTH * 0.95;
-const height = metrics.DEVICE_HEIGHT * 0.70;
+const height = metrics.DEVICE_HEIGHT * 0.75;
 const imageWidth = metrics.DEVICE_WIDTH * 0.9;
-const imageHeight = metrics.DEVICE_HEIGHT * 0.35;
+const imageHeight = metrics.DEVICE_HEIGHT * 0.30;
 
 export default StyleSheet.create({
   container: {

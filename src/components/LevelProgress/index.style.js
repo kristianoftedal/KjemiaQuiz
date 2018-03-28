@@ -3,6 +3,8 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     margin: 20,
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   wrapper: {
     flexDirection: 'row',
@@ -13,7 +15,8 @@ export default StyleSheet.create({
     height: 25,
   },
   text: {
-    fontSize: 20,
+    fontSize: 17,
+    textAlign: 'center',
     color: 'white',
     fontFamily: 'Permanent Marker',
   },

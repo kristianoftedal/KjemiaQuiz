@@ -31,8 +31,8 @@ export default class LevelProgress extends Component {
     };
     return (
       <View style={style.container}>
-        <View>
-          <Text style={style.text}>NIVÅ: {this.props.level}</Text>
+        <View style={{justifyContent: 'center', alignItems: 'center'}}>
+          <Text style={style.text}>{this.props.level}</Text>
         </View>
         <View key={score} style={[style.wrapper]}>
           <View style={[style.levelBar, progressStyle]} />

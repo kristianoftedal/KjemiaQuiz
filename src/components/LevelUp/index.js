@@ -26,7 +26,7 @@ export default class LevelUp extends Component {
         animationDuration={500}
         onClose={() => this.setState({visible: false})}>
         <View style={styles.wrapper}>
-          <Text style={styles.header}>🔥🔥 LEVEL UP!!! 🔥🔥</Text>
+          <Text style={styles.header}>NYTT NIVÅ!!</Text>
           <Text style={styles.header}>{this.state.level.value}</Text>
           <Image style={styles.image} source={this.state.level.imageSource} />
           <Text style={styles.text}>

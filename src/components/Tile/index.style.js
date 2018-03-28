@@ -14,21 +14,20 @@ export default StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 39,
   },
   subscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 15,
-    lineHeight: 18,
-    marginTop: 22,
+    fontSize: 12,
+    lineHeight: 15,
+    marginTop: 19,
   },
   superscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 15,
-    lineHeight: 18,
+    fontSize: 12,
+    lineHeight: 15,
   }
 });

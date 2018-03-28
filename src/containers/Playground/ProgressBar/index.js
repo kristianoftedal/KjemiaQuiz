@@ -49,7 +49,7 @@ export default class ProgressBar extends Component {
     // Animate the TimeBar color from grey to red, starting when there are left only 12 seconds
     const backgroundColor = this.state.animateValue.interpolate({
       inputRange: [0, 80 * metrics.DEVICE_WIDTH / 100, metrics.DEVICE_WIDTH],
-      outputRange: ['rgba(0,0,0, 0.3)', 'rgba(0,0,0, 0.3)', 'rgba(26, 188, 156, 1)'],
+      outputRange: ['rgba(0,0,0, 0.5)', 'rgba(0,0,0, 0.5)', 'rgba(26, 188, 156, 1)'],
     });
     const width = this._width;
     return (

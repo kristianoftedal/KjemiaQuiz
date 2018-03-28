@@ -14,7 +14,8 @@ const questionParser = (question) => {
       for (let j = 0; j < tempParts.length; j++) {
         if (tempParts[j].indexOf('_') > -1) {
           const x = tempParts[j].split('_');
-          restructuredText.push(<Text key={uuid.v4()}>{
+          restructuredText.push(
+            <Text key={uuid.v4()}>{
             x[0]}
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.subscript}>{
             x[1]}

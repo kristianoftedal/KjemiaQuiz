@@ -42,7 +42,7 @@ export default class Badges extends Component {
         this.setState({ hasHeaderAppeared: true });
     }
   }
-  _keyExtractor = (item, index) => item.title;
+  _keyExtractor = (item, index) => item.value;
 
   _onLevelPress = (selectedLevel, index) => {
     if (!selectedLevel && !index) {

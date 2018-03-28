@@ -122,7 +122,7 @@ export default class GameStore {
       this.isEndgame = true;
     }
 
-    if (this.currentIndex !== 0 && this.currentIndex % 10 === 0) {
+    if (this.currentIndex !== 0 && this.currentIndex % 8 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
       this.isAdTime = true;
     } else {
       this.isAdTime = false;

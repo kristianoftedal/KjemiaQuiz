@@ -3,8 +3,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   footerWrapper: {
-    height: 60,
-    flexDirection: 'column',
+    height: 40,
     backgroundColor: '#34495e',
   },
   periodicButton: {
@@ -13,18 +12,12 @@ export default StyleSheet.create({
     width: 10,
     borderColor: '#34495e',
     margin: 0,
-    marginBottom: 5,
+    marginBottom: 15,
     marginTop: 0,
-    marginRight: 5,
   },
   periodicIcon: {
-    width: 70,
-    height: 70
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 35,
-    fontFamily: 'Raleway-Regular',
+    width: 50,
+    height: 50
   },
   footerLayout: {
     flexDirection: 'row',
@@ -32,12 +25,15 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#34495e',
   },
+  scoreText: {
+    marginBottom: 10,
+  },
   text: {
-    marginTop: 20,
+    marginTop: 10,
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     fontSize: 20,
-    height: 50,
+    height: 30,
   },
 });

@@ -7,14 +7,12 @@ export default StyleSheet.create({
     alignSelf: 'flex-start',
     width: 10,
     borderColor: '#34495e',
-    margin: 0,
-    marginBottom: 0,
-    marginTop: 4,
-    marginRight: 20,
+    marginRight: 15,
+    paddingBottom: 5,
   },
   buttonText: {
     color: 'white',
-    fontSize: 35,
+    fontSize: 25,
     fontFamily: 'Raleway-Regular',
   },
 });

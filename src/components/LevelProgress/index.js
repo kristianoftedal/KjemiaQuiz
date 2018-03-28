@@ -16,12 +16,12 @@ export default class LevelProgress extends Component {
     level: '',
   };
 
-  animate() {
+  componentDidMount() {
     Animated.timing(this.state.animatedValue, {
       toValue: 1,
       duration: 600,
       easing: Easing.linear,
-    }).start(() => this.animate());
+    }).start();
   }
 
   render() {

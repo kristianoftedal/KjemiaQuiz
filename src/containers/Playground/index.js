@@ -21,6 +21,7 @@ import ProgressBar from './ProgressBar';
 import Footer from './Footer';
 import {
   AdMobInterstitial,
+  AdMobRewarded
 } from 'react-native-admob'
 
 @inject(allStores => ({
@@ -41,6 +42,11 @@ import {
 export default class Playground extends Component {
   _questionRef = null;
   _playRef = null;
+  
+  constructor(props) {
+    super(props);
+    this.state = { isLevelUp: true};
+  }
 
   componentDidMount() {
     this._playRef.fadeIn(1500);
@@ -49,12 +55,16 @@ export default class Playground extends Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps, nextProps) {
     if (this.props.isAdTime) {
       AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-      // AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
+      //AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+      // AdMobRewarded.setTestDevices([AdMobRewarded.simulatorId]);
+      // AdMobRewarded.setAdUnitID('ca-app-pub-4545695212875309/3999803771');
+      // AdMobRewarded.requestAd().then(() => AdMobRewarded.showAd());
+
     }
     if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
       if (this.props.isEndgame) {
@@ -68,11 +78,18 @@ export default class Playground extends Component {
         audioService.playFailureSound();
       }
       this._questionRef.bounceInRight(1000);
+      this.dropdown.closeDirectly();
+    }
+  }
+
+  componentWillReceiveProps(prevProps, nextProps) {
+    if (nextProps.isLevelUp) {
+      this.setState({isLevelUp: nextProps.isLevelUp});
     }
   }
 
   componentWillUnmount() {
-    this.dropdown.close();
+    this.dropdown.closeDirectly();
   }  
 
   _handleAnswerPress = answerKey => {
@@ -94,12 +111,12 @@ export default class Playground extends Component {
     });
 
     return (
+      <View>
       <View
         style={style.container}
         ref={ref => { this._playRef = ref;}}
       >
         <ProgressBar />
-        <LevelUp visible={this.props.isLevelUp} level={this.props.level} key={currentQuestion.id} />
         <View
           style={style.questionsWrapper}
           ref={ref => {this._questionRef = ref;}}
@@ -118,24 +135,18 @@ export default class Playground extends Component {
                 );
               })}
           </View>
+          <LevelUp visible={this.props.isLevelUp} level={this.props.level} key={currentQuestion.id}/>
         </View>
         <Footer dialog={this.popupDialog}/>
-        <DropdownAlert
-          ref={ref => this.dropdown = ref}
-          closeInterval={1000}
-          titleStyle={style.questionFeedback}
-          imageStyle={{display: 'none'}}
-          successColor="#2ecc71"
-          errorColor="#e74c3c"
-        />
-        <DropdownAlert
-          ref={ref => this.levelup = ref}
-          closeInterval={2000}
-          titleStyle={style.questionFeedback}
-          imageStyle={{display: 'none'}}
-          successColor="#2ecc71"
-          errorColor="#e74c3c"
-        />
+      </View>
+      <DropdownAlert
+        ref={ref => this.dropdown = ref}
+        closeInterval={1000}
+        titleStyle={style.questionFeedback}
+        imageStyle={{display: 'none'}}
+        successColor="#2ecc71"
+        errorColor="#e74c3c"
+      />
       </View>
     );
   }

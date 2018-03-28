@@ -49,7 +49,7 @@ export default class Badges extends Component {
       this.setState({showLevel: false});
       return;
     }
-    if (index >= this.props.currentLevelIndex) return;
+    if (index > this.props.currentLevelIndex) return;
     this.setState({showLevel: !this.state.showLevel, selectedLevel})
   }
 
@@ -66,7 +66,7 @@ export default class Badges extends Component {
     return (
       <TouchableOpacity onPress={() => this._onLevelPress(item, index)}>
         <View style={style.levelItem} key={item.value}>
-          <Image style={index <= this.props.currentLevelIndex ? style.thumbnail : style.thumbnailDisabled} source={item.imageSource}/>
+          <Image style={index > this.props.currentLevelIndex ? style.thumbnailDisabled : style.thumbnail} source={item.imageSource}/>
           <Text style={style.levelTitle}>{item.value}</Text>
         </View>
       </TouchableOpacity>
@@ -83,7 +83,7 @@ export default class Badges extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Badges</Text>
+          <Text style={style.header}>Troféer</Text>
         </View>
         {hasHeaderAppeared && (
           <View

@@ -12,7 +12,7 @@ export default StyleSheet.create({
   header: {
     fontFamily: 'Raleway-Regular',
     color: 'white',
-    fontSize: 30,
+    fontSize: 25,
     textAlign: 'center',
     margin: 10,
     marginTop: 30,
@@ -55,8 +55,9 @@ export default StyleSheet.create({
     borderColor: 'white',
     borderWidth: 2,
     borderRadius: 22,
-    minHeight: 40,
-    marginTop: 5,
+    minHeight: 30,
+    marginBottom: 20,
+    marginTop: 10,
   },
   buttonText: {
     color: 'white',

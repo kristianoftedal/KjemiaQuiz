@@ -119,11 +119,11 @@ export default class Home extends Component {
             <Button style={style.button} onPressOut={this._handleSelectionPress}>
               <Text style={style.buttonText}>Velg selv</Text>
             </Button>
-            <Button style={style.button} onPressOut={this._handleAboutPress}>
-              <Text style={style.buttonText}>Om Kjemia</Text>
-            </Button>
             <Button style={style.button} onPressOut={this._handleBadgesPress}>
               <Text style={style.buttonText}>Troféer</Text>
+            </Button>
+            <Button style={style.button} onPressOut={this._handleAboutPress}>
+              <Text style={style.buttonText}>Om Kjemia</Text>
             </Button>
           </View>
         )}

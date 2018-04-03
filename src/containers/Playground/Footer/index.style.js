@@ -21,7 +21,6 @@ export default StyleSheet.create({
   },
   footerLayout: {
     flexDirection: 'row',
-    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#34495e',
   },

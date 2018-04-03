@@ -80,6 +80,13 @@ export default class GameStore {
   };
 
   @action
+  handleGoBack= () => {
+    if (this.currentIndex - 1 > 0) {
+      this.currentIndex--;
+    }
+  };
+
+  @action
   handleAnswerPress = async answerKey => {
     this.isCorrectAnswer = false;
     this.previousScore = this.score;
@@ -101,9 +108,10 @@ export default class GameStore {
         this.score += 50;
         this.currentXp += 50;
       }
-      if (this.currentXp >= levels[this.currentLevelIndex + 1].score) {
-        this.currentLevelIndex++;
-        setLevelIndex(this.currentLevelIndex);
+      let nextScore = levels[this.currentLevelIndex + 1].score;
+      let test = this.currentXp >= nextScore;
+      if (this.currentXp >= nextScore) {
+        this.currentLevelIndex += 1;
         this.isLevelUp = true;
       } else {
         this.isLevelUp = false;
@@ -111,7 +119,9 @@ export default class GameStore {
       this.isCorrectAnswer = true;
       this.correctCount++;
       totalByCategory.correct++;
-      setXp(this.currentXp);
+      setXp(this.currentXp).then(() => {
+        setLevelIndex(this.currentLevelIndex).then(() => console.log('level set'));
+      });
     }
     totalByCategory.total++;
     this.totalByCategory[this.currentQuestion.category] = totalByCategory;

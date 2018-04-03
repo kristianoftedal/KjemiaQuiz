@@ -10,20 +10,34 @@ import Button from 'apsl-react-native-button';
 import style from './index.style';
 
 @inject(allStores => ({
-  handleGoBack: allStores.game.handleGoBack,
+  navigateToHome: allStores.router.navigateToHome,
 }))
 
 @observer
-export default class GoBackButton extends Component {
+export default class QuitButton extends Component {
 
   _handleBackPress = () => {
-    this.props.handleGoBack();
+    const onYes = () => {
+      this.props.navigateToHome();
+    };
+    Alert.alert(
+      'Sikker på at du ønsker å avslutte?',
+      '',
+      [
+        { text: 'Nei', onPress: () => console.log('Cancel Pressed'), style: 'cancel' },
+        {
+          text: 'Ja',
+          onPress: onYes,
+        },
+      ],
+      { cancelable: false }
+    );
   };
 
   render() {
     return(
     <Button onPress={this._handleBackPress} style={style.backButton}>
-      <Text style={style.buttonText}>&lt;</Text>
+      <Text style={style.buttonText}>x</Text>
     </Button>);
   }
 }

@@ -45,7 +45,7 @@ export default class Playground extends Component {
   
   constructor(props) {
     super(props);
-    this.state = { isLevelUp: true};
+    this.state = { isLevelUp: false};
   }
 
   componentDidMount() {
@@ -66,8 +66,12 @@ export default class Playground extends Component {
       // AdMobRewarded.requestAd().then(() => AdMobRewarded.showAd());
 
     }
-    if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
+    if (prevProps.currentIndex > this.props.currentIndex) {
+      this._questionRef.fadeInLeft(500);
+    }
+    else if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
       if (this.props.isEndgame) {
+        this.dropdown.closeDirectly();
         this.props.navigateToEndgame();
       }
       if (this.props.isCorrectAnswer) {
@@ -78,19 +82,32 @@ export default class Playground extends Component {
         audioService.playFailureSound();
       }
       this._questionRef.bounceInRight(1000);
-      this.dropdown.closeDirectly();
     }
   }
 
-  componentWillReceiveProps(prevProps, nextProps) {
+  componentWillReceiveProps(nextProps) {
+    debugger;
     if (nextProps.isLevelUp) {
-      this.setState({isLevelUp: nextProps.isLevelUp});
+      this.setState({isLevelUp: true});
     }
   }
 
   componentWillUnmount() {
     this.dropdown.closeDirectly();
-  }  
+  }
+
+  getDifficulty(difficulty) {
+    if (!difficulty) return '';
+    if (difficulty == 'Lett') {
+      return ' (L)';
+    }
+    if (difficulty == 'Middels') {
+      return ' (M)';
+    }
+    if (difficulty == 'Vanskelig') {
+      return ' (V)';
+    }
+  }
 
   _handleAnswerPress = answerKey => {
     this._questionRef.fadeOutLeft(500);
@@ -110,43 +127,45 @@ export default class Playground extends Component {
       alreadyPickedColors.push(color);
     });
 
+    const isLevelUp = this.props.isLevelUp;
+    debugger;
     return (
       <View>
-      <View
-        style={style.container}
-        ref={ref => { this._playRef = ref;}}
-      >
-        <ProgressBar />
         <View
-          style={style.questionsWrapper}
-          ref={ref => {this._questionRef = ref;}}
+          style={style.container}
+          ref={ref => { this._playRef = ref;}}
         >
-          <QuestionWrapper image={questionImage} text={currentQuestion.questionText} />    
-          <View style={style.answerWrapper}>
-            {currentQuestion.answers &&
-              currentQuestion.answers.map((e, i) => {
-                return (
-                  <AnswerTile
-                    backgroundColor={alreadyPickedColors[i]}
-                    key={e.key}
-                    text={`${e.key}. ${e.value}`}
-                    onTilePress={() => this._handleAnswerPress(e.key)}
-                  />
-                );
-              })}
+          <ProgressBar />
+          <View
+            style={style.questionsWrapper}
+            ref={ref => {this._questionRef = ref;}}
+          >
+            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + this.getDifficulty(currentQuestion.difficulty)} />    
+            <View style={style.answerWrapper}>
+              {currentQuestion.answers &&
+                currentQuestion.answers.map((e, i) => {
+                  return (
+                    <AnswerTile
+                      backgroundColor={alreadyPickedColors[i]}
+                      key={e.key}
+                      text={`${e.key}. ${e.value}`}
+                      onTilePress={() => this._handleAnswerPress(e.key)}
+                    />
+                  );
+                })}
+            </View>
+            <LevelUp visible={isLevelUp} level={this.props.level} onClose={() => this.setState({isLevelUp: false})} key={currentQuestion.id}/>
           </View>
-          <LevelUp visible={this.props.isLevelUp} level={this.props.level} key={currentQuestion.id}/>
+          <Footer dialog={this.popupDialog}/>
         </View>
-        <Footer dialog={this.popupDialog}/>
-      </View>
-      <DropdownAlert
-        ref={ref => this.dropdown = ref}
-        closeInterval={1000}
-        titleStyle={style.questionFeedback}
-        imageStyle={{display: 'none'}}
-        successColor="#2ecc71"
-        errorColor="#e74c3c"
-      />
+        <DropdownAlert
+          ref={ref => this.dropdown = ref}
+          closeInterval={1000}
+          titleStyle={style.questionFeedback}
+          imageStyle={{display: 'none'}}
+          successColor="#2ecc71"
+          errorColor="#e74c3c"
+        />
       </View>
     );
   }

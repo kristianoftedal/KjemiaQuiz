@@ -17,25 +17,25 @@ export default class LevelUp extends Component {
     onClose: PropTypes.func,
   };
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       visible: props.visible,
     };
   }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState({visible: visible});
+  componentWillReceiveProps(props) {
+    if (props.visible)
+      this.setState({visible: props.visible});
   }
 
   render() {
     return (
-      <Overlay visible={this.state.visible}
+      <Overlay visible={this.props.visible}
         closeOnTouchOutside
         animationType="zoomIn"
         containerStyle={styles.container}
         childrenWrapperStyle={styles.overlayWrapper}
         animationDuration={500}
-        onClose={() => this.setState({ visible: false })}>
+        onClose={() => this.props.onClose()}>
         <View style={styles.wrapper}>
           <Text style={styles.header}>NYTT NIVÅ!!</Text>
           <Text style={styles.header}>{this.props.level.value}</Text>

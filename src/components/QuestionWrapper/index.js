@@ -9,6 +9,7 @@ import styles from './index.style';
 import QuestionImage from '../QuestionImage';
 import questionParser from './questionParser';
 
+
 const printQuestion = (question) => {
   if (question == null) return (<Text/>);
   if (question.indexOf('*') > -1) {

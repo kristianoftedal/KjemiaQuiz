@@ -15,6 +15,7 @@ import style from './index.style';
 import ScoreText from '../../../components/ScoreText';
 import AnimateNumber from '../../../components/AnimateNumber';
 import GoBackButton from './GoBackButton';
+import QuitButton from './QuitButton';
 import periodicIcon from '../../../images/periodicIcon.png';
 
 @inject(allStores => ({
@@ -46,6 +47,7 @@ export default class Playground extends Component {
     return (
       <View style={style.footerWrapper}>
         <View style={style.footerLayout}>
+          <QuitButton />
           <GoBackButton />
           <ScoreText key={score}>
             {'Score: '}

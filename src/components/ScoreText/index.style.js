@@ -6,8 +6,9 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#34495e',
     height: 30,
-    flex: 2,
-    flexGrow: 2,
+    flex: 4,
+    flexGrow: 4,
+    paddingRight: 30,
     marginBottom: 15,
   },
   text: {

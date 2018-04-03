@@ -59,11 +59,7 @@ export default class GameStore {
 
   @action
   initPlayer = () => {
-    this.getLevels().then(() => {
-      if (this.currentXp >= levels[this.currentLevelIndex].score) {
-        this.currentLevelIndex++;
-      }
-    });
+    this.getLevels().then(() => console.log('got levels'));
   };
 
   @action

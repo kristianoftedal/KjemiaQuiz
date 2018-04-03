@@ -61,6 +61,17 @@ export default class Playground extends Component {
       //AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+      AdMobInterstitial.addEventListener('adClosed',
+      () => {
+        if (this.props.isCorrectAnswer) {
+          this.dropdown.alertWithType('success', 'Riktig 😀', '');
+          audioService.playSuccessSound();
+        } else {
+          this.dropdown.alertWithType('error', 'Feil 😮', '');
+          audioService.playFailureSound();
+        }
+      }
+    );
       // AdMobRewarded.setTestDevices([AdMobRewarded.simulatorId]);
       // AdMobRewarded.setAdUnitID('ca-app-pub-4545695212875309/3999803771');
       // AdMobRewarded.requestAd().then(() => AdMobRewarded.showAd());
@@ -86,7 +97,6 @@ export default class Playground extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    debugger;
     if (nextProps.isLevelUp) {
       this.setState({isLevelUp: true});
     }
@@ -128,7 +138,6 @@ export default class Playground extends Component {
     });
 
     const isLevelUp = this.props.isLevelUp;
-    debugger;
     return (
       <View>
         <View

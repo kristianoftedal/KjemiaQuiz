@@ -19,7 +19,7 @@ import audioService from '../../services/audio';
   navigateToAbout: allStores.router.navigateToAbout,
   navigateToBadges: allStores.router.navigateToBadges,
   navigateToChemForm: allStores.router.navigateToChemForm,
-  progress: allStores.game.getLevelUpProgress,
+  progress: allStores.game.levelUpProgress,
   level: allStores.game.currentLevel,
   initPlayer: allStores.game.initPlayer,
   resetGame: allStores.game.resetGame,
@@ -36,8 +36,8 @@ export default class Home extends Component {
   };
 
   componentDidMount() {
-    this.props.initPlayer();
     this.props.resetGame();
+    this.props.initPlayer();
     if (this._headerRef) {
       this._headerRef.fadeInRight(1200).then(() => {
         if (Platform.OS === 'android') {
@@ -90,7 +90,7 @@ export default class Home extends Component {
     }
     this.props.navigateToBadges();
   };
-
+  
   render() {
     const { hasHeaderAppeared } = this.state;
     return (
@@ -110,7 +110,7 @@ export default class Home extends Component {
               this._bodyRef = ref;
             }}
           >
-            <View>
+            <View key={this.props.progress}>
               <LevelProgress level={this.props.level.value} progress={this.props.progress} />
             </View>
             <Button style={style.button} onPressOut={this._handleStartPress}>

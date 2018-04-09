@@ -21,13 +21,18 @@ const questionParser = (question) => {
             x[1]}
           </Text>);
         }
-        if (tempParts[j].indexOf('^') > -1) {
+        else if (tempParts[j].indexOf('^') > -1) {
           const y = tempParts[j].split('^');
           restructuredText.push(<Text key={uuid.v4()}>{
             y[0]}
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
             y[1]}
           </Text>);
+        } else {
+          restructuredText.push(
+            <Text key={uuid.v4()}>
+              {tempParts[j]}
+            </Text>);
         }
       }
     } else if (parts[i].indexOf('_') > -1 ) {
@@ -40,6 +45,11 @@ const questionParser = (question) => {
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.subscript}>{
             x[1]}
           </Text>);
+        } else {
+          restructuredText.push(
+            <Text key={uuid.v4()}>
+              {tempParts[j]}
+            </Text>);
         }
       }
     } else if (parts[i].indexOf('^') > -1) {
@@ -52,6 +62,11 @@ const questionParser = (question) => {
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
             y[1]}
           </Text>);
+        } else {
+          restructuredText.push(
+            <Text key={uuid.v4()}>
+              {tempParts[j]}
+            </Text>);
         }
       }
     } else {

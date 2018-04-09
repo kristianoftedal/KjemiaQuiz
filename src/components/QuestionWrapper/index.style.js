@@ -23,7 +23,7 @@ export default StyleSheet.create({
     color: 'white',
     //fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 18,
+    fontSize: 19,
     lineHeight: 19,
   },
   subscript: {
@@ -31,14 +31,14 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     fontSize: 12,
-    lineHeight: 15,
-    marginTop: 19,
+    lineHeight: 10,
+    marginTop: 12,
   },
   superscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     fontSize: 12,
-    lineHeight: 15,
+    lineHeight: 19,
   }
 });

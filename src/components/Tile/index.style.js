@@ -8,7 +8,8 @@ export default StyleSheet.create({
     zIndex: 1,
   },
   textWrapper: {
-    justifyContent: 'flex-start',
+    flexDirection: 'row', 
+    alignItems: 'flex-end'
   },
   text: {
     color: 'white',
@@ -21,13 +22,13 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     fontSize: 12,
     lineHeight: 15,
-    marginTop: 19,
   },
   superscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     fontSize: 12,
-    lineHeight: 15,
+    lineHeight: 20,
+    alignItems: 'flex-start'
   }
 });

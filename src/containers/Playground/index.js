@@ -62,20 +62,16 @@ export default class Playground extends Component {
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
       AdMobInterstitial.addEventListener('adClosed',
-      () => {
-        if (this.props.isCorrectAnswer) {
-          this.dropdown.alertWithType('success', 'Riktig 😀', '');
-          audioService.playSuccessSound();
-        } else {
-          this.dropdown.alertWithType('error', 'Feil 😮', '');
-          audioService.playFailureSound();
+        () => {
+          if (this.props.isCorrectAnswer) {
+            this.dropdown.alertWithType('success', 'Riktig 😀', '');
+            audioService.playSuccessSound();
+          } else {
+            this.dropdown.alertWithType('error', 'Feil 😮', '');
+            audioService.playFailureSound();
+          }
         }
-      }
-    );
-      // AdMobRewarded.setTestDevices([AdMobRewarded.simulatorId]);
-      // AdMobRewarded.setAdUnitID('ca-app-pub-4545695212875309/3999803771');
-      // AdMobRewarded.requestAd().then(() => AdMobRewarded.showAd());
-
+      );
     }
     if (prevProps.currentIndex > this.props.currentIndex) {
       this._questionRef.fadeInLeft(500);
@@ -109,13 +105,13 @@ export default class Playground extends Component {
   getDifficulty(difficulty) {
     if (!difficulty) return '';
     if (difficulty == 'Lett') {
-      return ' (L)';
+      return ' ( L )';
     }
     if (difficulty == 'Middels') {
-      return ' (M)';
+      return ' ( M )';
     }
     if (difficulty == 'Vanskelig') {
-      return ' (V)';
+      return ' ( V )';
     }
   }
 
@@ -137,7 +133,7 @@ export default class Playground extends Component {
       alreadyPickedColors.push(color);
     });
 
-    const isLevelUp = this.props.isLevelUp;
+    const isLevelUp = this.state.isLevelUp;
     return (
       <View>
         <View

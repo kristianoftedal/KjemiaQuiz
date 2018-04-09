@@ -24,6 +24,7 @@ export default class GameStore {
   @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
   @observable isAdTime = false;
+  @observable levelUpProgress = 0;
 
   @action
   setBaseline() {
@@ -59,7 +60,9 @@ export default class GameStore {
 
   @action
   initPlayer = () => {
-    this.getLevels().then(() => console.log('got levels'));
+    this.getLevels().then(() => {
+      this.computeLevelUpProgress();
+    });
   };
 
   @action
@@ -77,7 +80,7 @@ export default class GameStore {
 
   @action
   handleGoBack= () => {
-    if (this.currentIndex - 1 > 0) {
+    if (this.currentIndex - 1 >= 0) {
       this.currentIndex--;
     }
   };
@@ -171,10 +174,20 @@ export default class GameStore {
     return nextLevelThreshold;
   };
 
-  @computed
-  get getLevelUpProgress() {
-    const levelUpProgress = this.currentXp / this.nextLevelThreshold() * 100;
-    return levelUpProgress * metrics.DEVICE_WIDTH / 100 - 10 * metrics.DEVICE_WIDTH / 100;
+  previousLevelThreshold = () => {
+    if (this.currentLevelIndex === 0) {
+      return 0;
+    }
+    const prev = levels[this.currentLevelIndex].score;
+    return prev;
+  }
+
+  computeLevelUpProgress() {
+    var threshold = this.nextLevelThreshold();
+    var previous = this.previousLevelThreshold();
+    var currentVal = this.currentXp - previous;
+    const levelUpProgress = (currentVal / threshold) * 100;
+    this.levelUpProgress = ((levelUpProgress * metrics.DEVICE_WIDTH )/ 100) * metrics.DEVICE_WIDTH / 100;
   }
 
   @computed

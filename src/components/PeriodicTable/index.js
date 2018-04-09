@@ -3,7 +3,7 @@
  * This component does, and it also provides a nice interface for using custom fonts and style.
  */
 import React, { Component } from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, } from 'react-native';
 import { Text } from 'react-native-animatable';
 import PhotoView from 'react-native-photo-view';
 import Overlay from 'react-native-modal-overlay';
@@ -24,7 +24,7 @@ export default periodicTable = props => {
       <View style={styles.wrapper}>
         <PhotoView style={{backgroundColor: 'white'}}
           source={periodicTableImg}
-          minimumZoomScale={2}
+          minimumZoomScale={1}
           maximumZoomScale={6}
           androidScaleType="center"
           style={{width: imageWidth, height: imageHeight}} />

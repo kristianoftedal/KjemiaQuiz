@@ -25,6 +25,7 @@ export default class GameStore {
   @observable isLevelUp = false;
   @observable isAdTime = false;
   @observable levelUpProgress = 0;
+  @observable answeredQuestions = [];
 
   @action
   setBaseline() {
@@ -37,6 +38,7 @@ export default class GameStore {
     this.isCorrectAnswer = false;
     this.isCustomizedGame = false;
     this.correctCount = 0;
+    this.answeredQuestions = [];
     this.totalByCategory = {};
   }
 
@@ -93,44 +95,47 @@ export default class GameStore {
     if (!totalByCategory) {
       totalByCategory = { correct: 0, total: 0 };
     }
-    if (this.currentQuestion.solution === answerKey) {
-      if (this.currentQuestion.difficulty === 'Lett') {
-        this.score += 50;
-        this.currentXp += 50;
-      } else if (this.currentQuestion.difficulty === 'Middels') {
-        this.score += 100;
-        this.currentXp += 100;
-      } else if (this.currentQuestion.difficulty === 'Vanskelig') {
-        this.score += 200;
-        this.currentXp += 200;
-      } else {
-        this.score += 50;
-        this.currentXp += 50;
+    if (!this.answeredQuestions.includes(this.currentQuestion.id)) {
+      totalByCategory.total++;
+      this.totalByCategory[this.currentQuestion.category] = totalByCategory;
+    } else {
+      this.answeredQuestions.push(this.currentQuestion.id);
+      if (this.currentQuestion.solution === answerKey) {
+        if (this.currentQuestion.difficulty === 'Lett') {
+          this.score += 50;
+          this.currentXp += 50;
+        } else if (this.currentQuestion.difficulty === 'Middels') {
+          this.score += 100;
+          this.currentXp += 100;
+        } else if (this.currentQuestion.difficulty === 'Vanskelig') {
+          this.score += 200;
+          this.currentXp += 200;
+        } else {
+          this.score += 50;
+          this.currentXp += 50;
+        }
+        let nextScore = levels[this.currentLevelIndex + 1].score;
+        let test = this.currentXp >= nextScore;
+        if (this.currentXp >= nextScore) {
+          this.currentLevelIndex += 1;
+          this.isLevelUp = true;
+        } else {
+          this.isLevelUp = false;
+        }
+        this.isCorrectAnswer = true;
+        this.correctCount++;
+        totalByCategory.correct++;
+        setXp(this.currentXp).then(() => {
+          setLevelIndex(this.currentLevelIndex).then(() => console.log('level set'));
+        });
       }
-      let nextScore = levels[this.currentLevelIndex + 1].score;
-      let test = this.currentXp >= nextScore;
-      if (this.currentXp >= nextScore) {
-        this.currentLevelIndex += 1;
-        this.isLevelUp = true;
-      } else {
-        this.isLevelUp = false;
-      }
-      this.isCorrectAnswer = true;
-      this.correctCount++;
-      totalByCategory.correct++;
-      setXp(this.currentXp).then(() => {
-        setLevelIndex(this.currentLevelIndex).then(() => console.log('level set'));
-      });
     }
-    totalByCategory.total++;
-    this.totalByCategory[this.currentQuestion.category] = totalByCategory;
     if (this.currentIndex < this.questions.length) {
       this.currentIndex++;
     }
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-
     if (this.currentIndex !== 0 && this.currentIndex % 8 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
       this.isAdTime = true;
     } else {

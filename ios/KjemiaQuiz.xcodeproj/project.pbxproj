@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -45,6 +44,7 @@
 		5276E91079CF4A6F827081E1 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		57EA4C2D1DCA4E87AAEAAAB4 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C588E72073F40C1A438C64C /* FontAwesome.ttf */; };
 		57EED13717294DE48534ECCD /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504700C65E514C60865A8592 /* Octicons.ttf */; };
+		5A4AD5C0207FE45E007569FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4AD5BF207FE45E007569FF /* StoreKit.framework */; };
 		5A4D5D142061B1CD001FD315 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D5CEA2061B1CC001FD315 /* GoogleService-Info.plist */; };
 		5A65052D202252BF0093F40B /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		5AC1C40E1FC7F53C00EEC08E /* button.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AC1C40B1FC7F53C00EEC08E /* button.wav */; };
@@ -415,6 +415,7 @@
 		504700C65E514C60865A8592 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		55EE00F8A0F64D578E737CE3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		5679BCB6EBF7FBD30ECC9C24 /* libPods-KjemiaQuiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KjemiaQuiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4AD5BF207FE45E007569FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5A4D5CEA2061B1CC001FD315 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "KjemiaQuiz/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AC1C40B1FC7F53C00EEC08E /* button.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = button.wav; path = ../src/assets/audio/button.wav; sourceTree = "<group>"; };
 		5AC1C40C1FC7F53C00EEC08E /* failure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = failure.wav; path = ../src/assets/audio/failure.wav; sourceTree = "<group>"; };
@@ -467,6 +468,7 @@
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
+				5A4AD5C0207FE45E007569FF /* StoreKit.framework in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
@@ -799,6 +801,7 @@
 		CF8E43D7583DDA6F6E89BB8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AD5BF207FE45E007569FF /* StoreKit.framework */,
 				5679BCB6EBF7FBD30ECC9C24 /* libPods-KjemiaQuiz.a */,
 				8229907AA9D724419C8CCEE0 /* libPods-KjemiaQuiz-tvOSTests.a */,
 				66617F3619E9246B1D0837D3 /* libPods-KjemiaQuizTests.a */,
@@ -918,6 +921,11 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = Z545X279E9;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;

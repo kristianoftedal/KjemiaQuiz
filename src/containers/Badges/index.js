@@ -14,6 +14,7 @@ import audioService from '../../services/audio';
 import levels from '../../config/levels';
 import RadioButton from '../../components/RadioButton';
 import Level from './Level';
+import locked from '../../images/padlock.png';
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
@@ -66,8 +67,10 @@ export default class Badges extends Component {
     return (
       <TouchableOpacity onPress={() => this._onLevelPress(item, index)}>
         <View style={style.levelItem} key={item.value}>
-          <Image style={index > this.props.currentLevelIndex ? style.thumbnailDisabled : style.thumbnail} source={item.imageSource}/>
-          <Text style={style.levelTitle}>{item.value}</Text>
+          <Image
+            style={index > this.props.currentLevelIndex ? style.thumbnailDisabled : style.thumbnail}
+            source={index > this.props.currentLevelIndex ? locked : item.imageSource}/>
+          <Text style={style.levelTitle}>{index > this.props.currentLevelIndex ? '' : item.value}</Text>
         </View>
       </TouchableOpacity>
     )

@@ -1,30 +1,32 @@
-import molekyl from './media/molekyl.jpg';
-import threeA from './media/3A.jpg';
-import threeB from './media/3B.jpg';
-import threeD from './media/3D.jpg';
-import fourA from './media/4A.jpg';
-import fourB from './media/4B.jpg';
-import fourC from './media/4C.jpg';
-import fourE from './media/4E.jpg';
+import threeA from './media/3A.png';
+import threeB from './media/3B.png';
+import threeD from './media/3D.png';
+import fourA from './media/4A.png';
+import fourB from './media/4B.png';
+import fourC from './media/4C.png';
+import fourE from './media/4E.png';
 import fiveA from './media/5A.png';
 import fiveB from './media/5B.jpg';
 import fiveC from './media/5C.png';
 import fiveD from './media/5D.png';
 import fiveF from './media/5F.bmp';
-import fiveH from  './media/5C.png';
-import eightA from './media/8A.jpg';
-import eightC from './media/8C.jpg';
-import nineA from './media/9A.jpg';
-import nineB from './media/9B.jpg';
-import nineC from './media/9C.jpg';
-import nineD from './media/9D.jpg';
-import nineE from './media/9E.jpg';
-import nineF from './media/9F.jpg';
-import nineG from './media/9G.jpg';
+import fiveH from  './media/5H.png';
+import sevenB from './media/7B.png';
+import sevenC from './media/7C.png';
+import eightA from './media/8A.png';
+import eightC from './media/8C.png';
+import nineA from './media/9A.png';
+import nineB from './media/9B.png';
+import nineC from './media/9C.pgn';
+import nineD from './media/9D.png';
+import nineE from './media/9E.png';
+import nineF from './media/9F.png';
+import nineG from './media/9G.png';
 import nineH from './media/9H.jpg';
 import nineI from './media/9I.png';
 import nineJ from './media/9J.png';
-import tenA from './media/10A.jpg';
+import tenA from './media/10A.png';
+import tenA from './media/10B.png';
 import tenD from './media/10D.png';
 import tenE from './media/10E.png';
 
@@ -172,10 +174,12 @@ const images =
     {
       id: '1d8e0213-59e9-efc7-8c76-a4e9c0f84d25',
       image: '7B',
+      src: sevenB,
     },
     {
       id: 'c383f31f-2837-7387-c46e-420d34b77015',
       image: '7C',
+      src: sevenC,
     },
     {
       id: 'f6957b32-9509-c509-6b70-37d324d0b9f4',
@@ -269,6 +273,7 @@ const images =
     {
       id: '78e0db0f-ebcd-3c85-f4b3-3017190d5ab4',
       image: '10B',
+      src: tenB,
     },
     {
       id: 'f8a6d750-071c-c5b2-1655-61ecd1682f69',

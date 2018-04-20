@@ -40,6 +40,8 @@ export default class GameStore {
     this.correctCount = 0;
     this.answeredQuestions = [];
     this.totalByCategory = {};
+    this.isLevelUp = false;
+    this.isAdTime = false;
   }
 
   getLevels = async () => {
@@ -89,15 +91,17 @@ export default class GameStore {
 
   @action
   handleAnswerPress = async answerKey => {
+    this.isLevelUp = false;
     this.isCorrectAnswer = false;
     this.previousScore = this.score;
     let totalByCategory = this.totalByCategory[this.currentQuestion.category];
     if (!totalByCategory) {
       totalByCategory = { correct: 0, total: 0 };
     }
-    if (!this.answeredQuestions.includes(this.currentQuestion.id)) {
-      totalByCategory.total++;
-      this.totalByCategory[this.currentQuestion.category] = totalByCategory;
+    if (this.answeredQuestions.includes(this.currentQuestion.id)) {
+      if (this.currentQuestion.solution === answerKey) {
+        this.isCorrectAnswer = true;
+      }
     } else {
       this.answeredQuestions.push(this.currentQuestion.id);
       if (this.currentQuestion.solution === answerKey) {
@@ -114,7 +118,8 @@ export default class GameStore {
           this.score += 50;
           this.currentXp += 50;
         }
-        let nextScore = levels[this.currentLevelIndex + 1].score;
+        
+        let nextScore = levels[this.currentLevelIndex].score;
         let test = this.currentXp >= nextScore;
         if (this.currentXp >= nextScore) {
           this.currentLevelIndex += 1;
@@ -125,10 +130,14 @@ export default class GameStore {
         this.isCorrectAnswer = true;
         this.correctCount++;
         totalByCategory.correct++;
+        // await setXp(0);
+        // await setLevelIndex(0);
         setXp(this.currentXp).then(() => {
-          setLevelIndex(this.currentLevelIndex).then(() => console.log('level set'));
+          setLevelIndex(this.currentLevelIndex);
         });
       }
+      totalByCategory.total++;
+      this.totalByCategory[this.currentQuestion.category] = totalByCategory;
     }
     if (this.currentIndex < this.questions.length) {
       this.currentIndex++;
@@ -136,7 +145,7 @@ export default class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-    if (this.currentIndex !== 0 && this.currentIndex % 8 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
+    if (!this.isLevelUp && this.currentIndex !== 0 && this.currentIndex % 8 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
       this.isAdTime = true;
     } else {
       this.isAdTime = false;
@@ -172,10 +181,10 @@ export default class GameStore {
   }
 
   nextLevelThreshold = () => {
-    if (this.currentLevelIndex + 1 > levels.length) {
+    if (this.currentLevelIndex + 1 > levels.length || this.currentLevelIndex === 0) {
       return levels[this.currentLevelIndex].score;
     }
-    const nextLevelThreshold = levels[this.currentLevelIndex + 1].score;
+    const nextLevelThreshold = levels[this.currentLevelIndex].score;
     return nextLevelThreshold;
   };
 
@@ -183,16 +192,15 @@ export default class GameStore {
     if (this.currentLevelIndex === 0) {
       return 0;
     }
-    const prev = levels[this.currentLevelIndex].score;
+    const prev = levels[this.currentLevelIndex - 1].score;
     return prev;
   }
 
   computeLevelUpProgress() {
-    var threshold = this.nextLevelThreshold();
-    var previous = this.previousLevelThreshold();
-    var currentVal = this.currentXp - previous;
-    const levelUpProgress = (currentVal / threshold) * 100;
-    this.levelUpProgress = ((levelUpProgress * metrics.DEVICE_WIDTH )/ 100) * metrics.DEVICE_WIDTH / 100;
+    const threshold = this.nextLevelThreshold();
+    const currentVal = this.currentXp - this.previousLevelThreshold();
+    const levelUpPercentage = (currentVal / threshold) * 100;
+    this.levelUpProgress = ((levelUpPercentage * (metrics.DEVICE_WIDTH - 70))/ 100);
   }
 
   @computed

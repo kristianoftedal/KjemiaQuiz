@@ -13,9 +13,10 @@ import questionParser from './questionParser';
 const printQuestion = (question) => {
   if (question == null) return (<Text/>);
   if (question.indexOf('*') > -1) {
-    return questionParser(question);
+    return (<Text style={styles.text}>
+      {questionParser(question)}
+    </Text>);
   }
-
   return (
     <Text style={styles.text}>
       {question}
@@ -26,7 +27,7 @@ const printQuestion = (question) => {
 const QuestionWrapper = props => {
   const { children, image, text, ...otherProps } = props;
   const prettyText = (
-    <Text style={styles.text} {...otherProps}>
+    <Text>
       {printQuestion(text)}
     </Text>
   );

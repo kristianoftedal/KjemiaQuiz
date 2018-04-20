@@ -17,7 +17,7 @@ import eightA from './media/8A.png';
 import eightC from './media/8C.png';
 import nineA from './media/9A.png';
 import nineB from './media/9B.png';
-import nineC from './media/9C.pgn';
+import nineC from './media/9C.png';
 import nineD from './media/9D.png';
 import nineE from './media/9E.png';
 import nineF from './media/9F.png';
@@ -26,7 +26,7 @@ import nineH from './media/9H.jpg';
 import nineI from './media/9I.png';
 import nineJ from './media/9J.png';
 import tenA from './media/10A.png';
-import tenA from './media/10B.png';
+import tenB from './media/10B.png';
 import tenD from './media/10D.png';
 import tenE from './media/10E.png';
 

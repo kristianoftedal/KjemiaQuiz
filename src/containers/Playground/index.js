@@ -61,13 +61,14 @@ export default class Playground extends Component {
       //AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
       AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+      const dropdown = this.dropdown;
       AdMobInterstitial.addEventListener('adClosed',
         () => {
           if (this.props.isCorrectAnswer) {
-            this.dropdown.alertWithType('success', 'Riktig 😀', '');
+            dropdown.alertWithType('success', 'Riktig 😀', '');
             audioService.playSuccessSound();
           } else {
-            this.dropdown.alertWithType('error', 'Feil 😮', '');
+            dropdown.alertWithType('error', 'Feil 😮', '');
             audioService.playFailureSound();
           }
         }
@@ -81,10 +82,10 @@ export default class Playground extends Component {
         this.dropdown.closeDirectly();
         this.props.navigateToEndgame();
       }
-      if (this.props.isCorrectAnswer) {
+      if (this.props.isCorrectAnswer && !this.props.isAdTime) {
         this.dropdown.alertWithType('success', 'Riktig 😀', '');
         audioService.playSuccessSound();
-      } else {
+      } else if (!this.props.isAdTime){
         this.dropdown.alertWithType('error', 'Feil 😮', '');
         audioService.playFailureSound();
       }
@@ -94,7 +95,11 @@ export default class Playground extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.isLevelUp) {
-      this.setState({isLevelUp: true});
+      this.setState({ isLevelUp: true });
+    }
+    debugger;
+    if (!nextProps.isLevelUp && this.state.isLevelUp) {
+      this.setState({ isLevelUp: false });
     }
   }
 

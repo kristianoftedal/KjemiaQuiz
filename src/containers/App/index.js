@@ -15,6 +15,7 @@ import Endgame from '../Endgame';
 import Selection from '../Selection';
 import About from '../About';
 import ChemForm from '../ChemForm';
+import Subscription from '../Subscription';
 import Badges from '../Badges';
 import styles from './index.style';
 import questionList from '../../config/db';
@@ -53,6 +54,9 @@ export default class App extends Component {
         break;
       case 'BADGES':
         content = <Badges />;
+        break;
+      case 'SUBSCRIPTION':
+        content = <Subscription />;
         break;
       default:
         content = <View />;

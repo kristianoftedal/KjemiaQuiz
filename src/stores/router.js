@@ -29,7 +29,12 @@ export default class RouterStore {
   navigateToBadges = () => {
     this.currentScreen = 'BADGES';
   }
+
   navigateToChemForm = () => {
     this.currentScreen = 'CHEMFORM';
+  };
+
+  navigateToSubscription = () => {
+    this.currentScreen = 'SUBSCRIPTION';
   };
 }

@@ -9,7 +9,6 @@ export default StyleSheet.create({
     // alignItems: 'center',
     backgroundColor: '#34495e',
     marginTop: 5,
-    marginBottom: 5,
     padding: 5,
     paddingBottom: 5,
     width: width,
@@ -25,6 +24,7 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     fontSize: 19,
     lineHeight: 19,
+    marginBottom: 1,
   },
   subscript: {
     color: 'white',

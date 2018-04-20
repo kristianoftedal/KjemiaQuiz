@@ -19,6 +19,7 @@ import audioService from '../../services/audio';
   navigateToAbout: allStores.router.navigateToAbout,
   navigateToBadges: allStores.router.navigateToBadges,
   navigateToChemForm: allStores.router.navigateToChemForm,
+  navigateToSubscription: allStores.router.navigateToSubscription,
   progress: allStores.game.levelUpProgress,
   level: allStores.game.currentLevel,
   initPlayer: allStores.game.initPlayer,
@@ -90,6 +91,14 @@ export default class Home extends Component {
     }
     this.props.navigateToBadges();
   };
+
+  _handleSubscriptionPress = async () => {
+    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
+    if (this._headerRef && this._bodyRef) {
+      await Promise.all([this._headerRef.fadeOutLeft(500), this._bodyRef.fadeOutRight(400)]);
+    }
+    this.props.navigateToSubscription();
+  };
   
   render() {
     const { hasHeaderAppeared } = this.state;
@@ -124,6 +133,9 @@ export default class Home extends Component {
             </Button>
             <Button style={style.button} onPressOut={this._handleAboutPress}>
               <Text style={style.buttonText}>Om Kjemia</Text>
+            </Button>
+            <Button style={style.button} onPressOut={this._handleSubscriptionPress}>
+              <Text style={style.buttonText}>Abonnement</Text>
             </Button>
           </View>
         )}

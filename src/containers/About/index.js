@@ -11,7 +11,7 @@ import about from '../../images/about.png'
 }))
 
 @observer
-export default class Endgame extends Component {
+export default class About extends Component {
   _headerRef;
   _bodyRef;
 

@@ -24,6 +24,7 @@ export default class GameStore {
   @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
   @observable isAdTime = false;
+  @observable hasSubscription = false;
   @observable levelUpProgress = 0;
   @observable answeredQuestions = [];
 
@@ -56,7 +57,8 @@ export default class GameStore {
   }
 
   @action
-  startGame = () => {
+  startGame = (hasSubscription) => {
+    this.hasSubscription = hasSubscription;
     this.setBaseline();
     this.isCustomizedGame = false;
     this.buildQuiz();
@@ -74,12 +76,12 @@ export default class GameStore {
     this.setBaseline();
     this.isCustomizedGame = true;
     this.correctCount = 0;
-    this.questions = getQuestionsSetByCriterias(categories, difficulty, count);
+    this.questions = getQuestionsSetByCriterias(categories, difficulty, count, this.hasSubscription);
   };
 
   @action
   buildQuiz = () => {
-    this.questions = getQuestionsSet(30);
+    this.questions = getQuestionsSet(30, this.hasSubscription);
   };
 
   @action
@@ -145,7 +147,7 @@ export default class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-    if (!this.isLevelUp && this.currentIndex !== 0 && this.currentIndex % 8 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
+    if (!this.hasSubscription && !this.isLevelUp && this.currentIndex !== 0 && this.currentIndex % 8 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
       this.isAdTime = true;
     } else {
       this.isAdTime = false;

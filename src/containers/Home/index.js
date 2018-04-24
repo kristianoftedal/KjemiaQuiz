@@ -24,6 +24,7 @@ import audioService from '../../services/audio';
   level: allStores.game.currentLevel,
   initPlayer: allStores.game.initPlayer,
   resetGame: allStores.game.resetGame,
+  hasSubscription: allStores.subscription.hasSubscription,
 }))
 
 @observer

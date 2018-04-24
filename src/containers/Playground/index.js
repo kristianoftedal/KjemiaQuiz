@@ -37,6 +37,7 @@ import {
   isAdTime: allStores.game.isAdTime,
   isLevelUp: allStores.game.isLevelUp,
   level: allStores.game.currentLevel,
+  hasSubscription: allStores.game.hasSubscription,
 }))
 @observer
 export default class Playground extends Component {
@@ -51,7 +52,7 @@ export default class Playground extends Component {
   componentDidMount() {
     this._playRef.fadeIn(1500);
     if (!this.props.isCustomizedGame) {
-      this.props.startGame();
+      this.props.startGame(this.props.hasSubscription);
     }
   }
 
@@ -97,7 +98,6 @@ export default class Playground extends Component {
     if (nextProps.isLevelUp) {
       this.setState({ isLevelUp: true });
     }
-    debugger;
     if (!nextProps.isLevelUp && this.state.isLevelUp) {
       this.setState({ isLevelUp: false });
     }

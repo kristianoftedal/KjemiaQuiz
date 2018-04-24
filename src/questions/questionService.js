@@ -2,7 +2,9 @@ import { find } from 'lodash';
 import questionImages from './questionImages';
 import shuffle from '../utils/shuffle';
 import questionList from '../config/db';
-let questions = require('./questions.json');
+import questions from './questions.json';
+
+const freeQuestions = questions;
 
 const snapshotToArray = (snapshot) => {
   var returnArr = [];
@@ -17,17 +19,23 @@ const getRandomNumber = (max, blackList) => {
   return blackList.includes(randomNumber) ? getRandomNumber(max, blackList) : randomNumber;
 };
 
-export const getQuestionsSet = max => {
-  let test = questionList;
+export const getQuestionsSet = (max, hasSubscription) => {
   const ceiling = max || questions.length;
   
   let questionsSet = [];
   const alreadyPickedNumbers = [];
   let number = 0;
-  questions = shuffle(questions);
+  let questionList = [] 
+  
+  if (!hasSubscription) {
+    questionList = shuffle(freeQuestions);
+  } else {
+    questionList = shuffle(questions);
+  }
+  
   for (let i = 0; i < ceiling; i++) {
     number = getRandomNumber(ceiling, alreadyPickedNumbers);
-    let question = questions[number];
+    let question = questionList[number];
     alreadyPickedNumbers.push(number);
     if (question.imageId && question.imageId !== '') {
       const image = find(questionImages, { id: question.imageId });
@@ -41,30 +49,34 @@ export const getQuestionsSet = max => {
   return questionsSet;
 };
 
-export const getQuestionsSetByCriterias = (categories, difficulty, count) => {
-  questions = require('./questions.json');
+export const getQuestionsSetByCriterias = (categories, difficulty, count, hasSubscription) => {
+  let questionList = [];
+  if (!hasSubscription) {
+    questionList = shuffle(freeQuestions);
+  } else {
+    questionList = shuffle(questions);
+  }
   if (difficulty) {
-    questions = questions.filter(e => e.difficulty === difficulty);
+    questionList = questionList.filter(e => e.difficulty === difficulty);
   }
   if (categories) {
-    questions = questions.filter(q => categories.map(x => x.value).indexOf(q.category > -1));
+    questionList = questionList.filter(q => categories.map(x => x.value).indexOf(q.category > -1));
   }
-  if (count > questions.length) {
-    count = questions.length;
+  if (count > questionList.length) {
+    count = questionList.length;
   }
-  const ceiling = count || questions.length;
+  const ceiling = count || questionList.length;
   const selectedCategories = categories.filter(e => e.isSelected);
   const categoryCeiling = ceiling / selectedCategories.length;
   let number = 0;
   let questionsSet = [];
   let alreadyPickedNumbers = [];
-  questions = shuffle(questions);
   if (categories) {
     for (let i = 0; i < selectedCategories.length; i++) {
       alreadyPickedNumbers = [];
       const selectedCategory = selectedCategories[i].value;
       for (let j = 0; j < categoryCeiling; j++) {
-        let qPerCategory = questions.filter(e => e.category === selectedCategory);
+        let qPerCategory = questionList.filter(e => e.category === selectedCategory);
         number = getRandomNumber(categoryCeiling, alreadyPickedNumbers);
         alreadyPickedNumbers.push(number);
         let question = qPerCategory[number];

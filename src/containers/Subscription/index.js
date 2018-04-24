@@ -78,6 +78,7 @@ export default class Subscription extends Component {
     this.setState({ loading: true });
     if (Platform.OS === 'ios') {
       InAppUtils.purchaseProduct(this.products[0], (error, response) => {
+        debugger;
         this.setState({ loading: false });
         if (error) {
           Alert.alert('Feil!', error);
@@ -86,7 +87,7 @@ export default class Subscription extends Component {
         if(response && response.productIdentifier) {
           Alert.alert('Purchase Successful', 'Your Transaction ID is ' + response.transactionIdentifier);
           this.setState({ purchase: resposne });
-          this.props.purchaseMade(response);
+          this.props.purchaseMade(response.transactionReceipt);
         }
       });
     }
@@ -145,9 +146,9 @@ export default class Subscription extends Component {
               <Button style={style.button} onPressOut={this._handleOnPurchase}>
                 <Text style={style.buttonText}>Kjøp</Text>
               </Button>
-              <Button style={style.button} onPressOut={this._handleOnRestore}>
+              {/* <Button style={style.button} onPressOut={this._handleOnRestore}>
                 <Text style={style.buttonText}>Gjenopprett kjøp</Text>
-              </Button>
+               </Button> */}
               </View>
             }
             <Button style={style.button} onPressOut={this._handleBackPress}>

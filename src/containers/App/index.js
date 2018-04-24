@@ -22,12 +22,17 @@ import questionList from '../../config/db';
 
 @inject(allStores => ({
   currentScreen: allStores.router.currentScreen,
+  init: allStores.subscription.init,
 }))
 @observer
 export default class App extends Component {
   static defaultProps = {
     currentScreen: 'HOME',
   };
+  
+  componentDidMount() {
+    this.props.init();
+  }
 
   render() {
     let content;

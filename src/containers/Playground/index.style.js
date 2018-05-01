@@ -5,7 +5,8 @@ import metrics from '../../config/metrics';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    alignSelf: 'stretch',
+    alignSelf: 'stretch', 
+    backgroundColor: 'rgba(0,0,0,0.1)',
   },
   questionSize: {
     width: metrics.TILE_SIZE,
@@ -23,7 +24,7 @@ export default StyleSheet.create({
   },
   footerWrapper: {
     flexDirection: 'column',
-    backgroundColor: '#34495e',
+    backgroundColor: '#0a3d62',
   },
   buttonText: {
     color: 'white',
@@ -35,7 +36,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#34495e',
+    backgroundColor: '#0a3d62',
   },
   text: {
     marginTop: 20,

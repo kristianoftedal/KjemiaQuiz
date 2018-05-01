@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StatusBar, Alert, Text, Linking, Platform, UIManager, LayoutAnimation, NativeModules } from 'react-native';
+import { StatusBar, Alert, Text, Platform, UIManager, LayoutAnimation, NativeModules } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
@@ -9,6 +9,7 @@ var InAppUtils = require('NativeModules').InAppUtils;
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
   purchaseMade: allStores.subscription.purchaseMade,
+  restore: allStores.subscription.restore,
 }))
 
 @observer
@@ -28,6 +29,7 @@ export default class Subscription extends Component {
       hasPressedButton: false,
       loading: false,
       purchase: null,
+      hasError: false,
     }
   }
 
@@ -54,39 +56,25 @@ export default class Subscription extends Component {
   };
 
   _handleOnRestore = async () => {
-    InAppUtils.restorePurchases((error, response) => {
-      if(error) {
-         Alert.alert('itunes Error', 'Could not connect to itunes store.');
-      } else {
-         Alert.alert('Restore Successful', 'Successfully restores all your purchases.');
-         
-         if (response.length === 0) {
-           Alert.alert('No Purchases', "We didn't find any purchases to restore.");
-           return;
-         }
-   
-         response.forEach((purchase) => {
-           if (purchase.productIdentifier === 'com.xyz.abc') {
-             // Handle purchased product.
-           }
-         });
-      }
-   });
+    this.setState({ loading: true });
+    if (Platform.OS === 'ios') {
+      await this.props.restore();
+      this.setState({ loading: false });
+    }
   }
 
   _handleOnPurchase = async () => {
     this.setState({ loading: true });
     if (Platform.OS === 'ios') {
       InAppUtils.purchaseProduct(this.products[0], (error, response) => {
-        debugger;
         this.setState({ loading: false });
         if (error) {
-          Alert.alert('Feil!', error);
+          Alert.alert('En feil ved kjøp har oppstått', error);
         }
         // NOTE for v3.0: User can cancel the payment which will be available as error object here.
         if(response && response.productIdentifier) {
-          Alert.alert('Purchase Successful', 'Your Transaction ID is ' + response.transactionIdentifier);
-          this.setState({ purchase: resposne });
+          Alert.alert('Vi kan herved bekreftet at ditt abonnement har startet :)', '');
+          this.setState({ purchase: response });
           this.props.purchaseMade(response.transactionReceipt);
         }
       });
@@ -143,12 +131,12 @@ export default class Subscription extends Component {
             }
             { !this.state.loading && 
               <View>
-              <Button style={style.button} onPressOut={this._handleOnPurchase}>
-                <Text style={style.buttonText}>Kjøp</Text>
-              </Button>
-              {/* <Button style={style.button} onPressOut={this._handleOnRestore}>
-                <Text style={style.buttonText}>Gjenopprett kjøp</Text>
-               </Button> */}
+                <Button style={style.button} onPressOut={this._handleOnPurchase}>
+                  <Text style={style.buttonText}>Kjøp</Text>
+                </Button>
+                <Button style={style.button} onPressOut={this._handleOnRestore}>
+                  <Text style={style.buttonText}>Gjenopprett et tidligere kjøp</Text>
+               </Button>
               </View>
             }
             <Button style={style.button} onPressOut={this._handleBackPress}>

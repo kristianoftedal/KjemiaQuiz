@@ -47,4 +47,8 @@ export default StyleSheet.create({
     color: 'white',
     fontSize: 20,
   },
+  subscriptionText: {
+    color: 'white',
+    fontSize: 15,
+  }
 });

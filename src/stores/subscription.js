@@ -4,7 +4,7 @@
 import { action, computed, observable } from 'mobx';
 import { Platform, NativeModules, Alert } from 'react-native';
 import iapReceiptValidator from 'iap-receipt-validator';
-import { getSubscription, setSubscription } from '../services/subscriptionStorage';
+import { getReceipt, setReceipt } from '../services/subscriptionStorage';
 
 const { InAppUtils } = NativeModules
 const password = 'ec294a7077574dea8f1bd66395171f0a'; // Shared Secret from iTunes connect
@@ -16,54 +16,56 @@ export default class SubscriptionStore {
   @observable subscriptionId = null;
 
   @action
-  init = () => {
-    getSubscription().then((receiptData) => {
-      if (Platform.OS === 'ios') {
-        this.validate(receiptData).then((isValid) => {
-          this.hasSubscription = isValid;
-          if (!isValid) {
-            InAppUtils.receiptData((error, receiptData)=> {
-              if(error) {
-                Alert.alert('itunes Error', 'Receipt not found.');
+  init = async () => {
+    let receiptData = await getReceipt();
+    if (Platform.OS === 'ios') {
+      let isValid = await this.validate(receiptData);
+      this.hasSubscription = isValid;
+      if (!isValid) {
+        InAppUtils.receiptData((error, receiptResponse) => {
+          if (error) {
+            // Alert.alert('iTunes feil', 'Kvittering ikke funnet.');
+          } else {
+            isValid = this.validate(receiptResponse).then(isValid => {
+              this.hasSubscription = isValid;
+              if (!isValid) {
+                // this.restore();
               } else {
-                this.validate(receiptData).then((isValid) => {
-                  this.hasSubscription = isValid;
-                  if (!isValid) {
-                    // this.restore();
-                  }
-                });
-                //send to validation server
+                setReceipt(receiptResponse);
               }
+            });
+            //send to validation server
+          }
+        });
+      }
+      if (!receiptData) {
+        // this.restore();
+      }
+    } else {
+
+    }
+  }
+
+  restore = async () => {
+    InAppUtils.restorePurchases((error, response) => {
+      if(error) {
+         Alert.alert('En feil har dessverre oppstått ', 'Vi fikk ikke kontakt med iTunes.');
+      } else {
+        if (response.length === 0) {
+          Alert.alert('Ingen kvittering funnet', "Abonnement ikke gjenopprettet-");
+          return;
+        }
+        response.forEach((purchase) => {
+          debugger;
+          if (purchase.productIdentifier === 'no.kjemia.naturfagsappen') {
+            Alert.alert('Gjenopprettelse gikk fint', 'Vi har gjenopprettet dine kjøp.');
+            // Handle purchased product.
+            setReceipt(purchase.transactionReceipt);
+            this.validate(purchase.transactionReceipt).then(isValid => {
+              this.hasSubscription = isValid;
             });
           }
         });
-        
-        if (!subscription) {
-          // this.restore();
-        }
-      }
-    })
-  }
-
-  restore = () => {
-    InAppUtils.restorePurchases((error, response) => {
-      if(error) {
-         Alert.alert('itunes Error', 'Could not connect to itunes store.');
-      } else {
-        debugger;
-         Alert.alert('Restore Successful', 'Successfully restores all your purchases.');
-         this.hasSubscription = true;
-         if (response.length === 0) {
-           Alert.alert('No Purchases', "We didn't find any purchases to restore.");
-           return;
-         }
-         response.forEach((purchase) => {
-           debugger;
-           if (purchase.productIdentifier === 'no.kjemia.naturfagsappen') {
-             // Handle purchased product.
-             setSubscription(purchase);
-           }
-         });
       }
     });
   }
@@ -71,7 +73,15 @@ export default class SubscriptionStore {
   @action
   purchaseMade = purchase => {
     this.hasSubscription = true;
-    setSubscription(purchase);
+    setReceipt(purchase);
+  }
+
+  @action
+  restoreMade = purchase => {
+    this.validate(receiptData).then((isValid) => {
+      this.hasSubscription = isValid;
+      setReceipt(purchase);
+    });
   }
 
   async validate(receiptData) {
@@ -79,16 +89,14 @@ export default class SubscriptionStore {
         const validationData = await validateReceipt(receiptData);
         // check if Auto-Renewable Subscription is still valid
         // validationData['latest_receipt_info'][0].expires_date > today
-        debugger;
-        return validationData['latest_receipt_info'][0].expires_date > today;
+        const kjemiaReceipts = validationData['latest_receipt_info'].filter(e = e => e.product_id === 'no.kjemia.naturfagsappen');
+        const expiresDate = Date.parse(kjemiaReceipts[kjemiaReceipts.length - 1].expires_date.replace('Etc/', ''));
+        const date = new Date();
+        const result = expiresDate > date.getTime();
+        return result;
     } catch(err) {
         console.log(err.valid, err.error, err.message);
         return false;
     }
-  }
-
-  @computed
-  get currentLevel() {
-    return levels[this.currentLevelIndex];
   }
 }

@@ -135,9 +135,14 @@ export default class Home extends Component {
             <Button style={style.button} onPressOut={this._handleAboutPress}>
               <Text style={style.buttonText}>Om Kjemia</Text>
             </Button>
-            <Button style={style.button} onPressOut={this._handleSubscriptionPress}>
-              <Text style={style.buttonText}>Abonnement</Text>
-            </Button>
+            {!this.props.hasSubscription &&
+              <Button style={style.button} onPressOut={this._handleSubscriptionPress}>
+                <Text style={style.buttonText}>Kjøp fullversjon</Text>
+              </Button>
+            }
+            <View style={style.body}>
+              <Text style={style.subscriptionText}>{this.props.hasSubscription ? 'Fullversjon' : 'Gratisversjon'}</Text>
+            </View>
           </View>
         )}
       </View>

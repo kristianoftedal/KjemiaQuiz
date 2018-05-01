@@ -1,11 +1,14 @@
 import { AsyncStorage } from 'react-native';
 
-export const getSubscription = async () => {
-  const responseSubscription = await AsyncStorage.getItem('subscription');
-  const subscription = JSON.parse(responseSubscription) || 0;
-  return subscription;
+export const getReceipt = async () => {
+  const responseSubscription = await AsyncStorage.getItem('receipt1');
+  if (responseSubscription) {
+    return JSON.parse(responseSubscription);
+  }
+  return '';
 };
 
-export const setSubscription = async subscription => {
-  await AsyncStorage.setItem('subscription', JSON.stringify(subscription));
+export const setReceipt = async receipt => {
+  if (receipt)
+  await AsyncStorage.setItem('receipt1', JSON.stringify(subscription));
 };

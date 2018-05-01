@@ -1,5 +1,23 @@
-import photon from '../images/photon.png';
-import electron from '../images/electron-300px.png';
+import photon from '../images/levels/Foton3.png';
+import electron from '../images/levels/Elektron.png';
+import proton from '../images/levels/Proton3.png';
+import atom from '../images/levels/Atomkjerne2.png';
+import hydrogen from '../images/levels/Hydrogen.png';
+import karbon from '../images/levels/karbon.png';
+import aminosyre from '../images/levels/Molekyl.png';
+import protein from '../images/levels/Protein2.png';
+import dna from '../images/levels/DNA3.png';
+import cellekjerne from '../images/levels/Cellekjerne.png';
+import celle from '../images/levels/Celle.png';
+import hjerte from '../images/levels/Hjerte2.png';
+import menneske from '../images/levels/Menneske2.png';
+import nuclear from '../images/levels/Kjernekraftverk2.png';
+import moon from '../images/levels/moon.png';
+import jorda from '../images/levels/jord2.png';
+import planet from '../images/levels/Planetene.png'; 
+import sol from '../images/levels/Sol2.png';
+import milky from '../images/levels/Melkeveien2.png';
+import univers from '../images/levels/Universet2.png';
 
 const levels = [
   { 
@@ -17,109 +35,109 @@ const levels = [
   { 
     value: 'Proton',
     score: 2300,
-    imageSource:  electron,
+    imageSource:  proton,
     text: 'Protoner befinner seg i atomkjernen og har en positiv elektrisk ladning. De er 1000 ganger større enn elektroner og er dermed en mye tyngre partikkel. Protoner lærer du mer om under «Radioaktivitet».',
   },
   {
     value: 'Atomkjerne',
     score: 4500,
-    imageSource:  electron,
+    imageSource:  atom,
     text: 'Atomkjerner består av protoner og nøytroner. Antall protoner som finnes i kjernen er det som varierer mellom ulike grunnstoffer. Atomkjerner er noen ganger ustabile og kan dermed frigjøre enten alfa-, beta- eller gammastråler. Atomkjerner lærer du mer om under «Radioaktiv stråling».',
   },
   {
     value: 'Hydrogen',
     score: 7000,
-    imageSource:  electron,
+    imageSource:  hydrogen,
     text: 'Hydrogen er det minste grunnstoffet som finnes, og det stoffet som forekommer mest i universet. Vi finner hydrogen i nesten alle organiske molekyler og mange uorganiske stoffer. Hydrogen lærer du mer om under «Elektromagnetisk stråling» og «Redoksreaksjoner».'
   },
   {
     value:'Karbon',
     score: 10000,
-    imageSource:  electron,
+    imageSource:  karbon,
     text: 'Karbon har 6 protoner i kjernen og 4 valenselektroner. Det gjør at karbon kan inngå i svært mange forbindelser og kan bli både oksidert og redusert. Alle levende organismer på jorda er karbonbasert. Karbon lærer du mer om under «Næringsstoffer og fordøyelsen» og «Redoksreaksjoner».'
   },
   {
     value:'Aminosyre',
     score: 15000,
-    imageSource:  electron,
+    imageSource:  aminosyre,
     text: 'Aminosyrer består av karbon, hydrogen, oksygen, nitrogen og svovel. Noen aminosyrer kan kroppen lage selv, mens andre må den skaffe via kostholdet. Aminosyrer lærer du mer om under «Næringsstoffer og fordøyelsen» og «DNA, proteinsyntese og arv».'
   },
   {
     value:'Protein',
     score: 20000,
-    imageSource:  electron,
+    imageSource:  protein,
     text: 'Proteiner er bygd opp av aminosyrer. Proteiner kan katalysere kjemiske reaksjoner og da kalles de enzymer. Noen proteiner, for eksempel hemoglobin, frakter oksygen rundt i kroppen. Proteiner lærer du mer om under «Næringsstoffer og fordøyelsen» og «DNA, proteinsyntese og arv».'
   },
   {
     value:'DNA',
     score: 25000,
-    imageSource:  electron,
+    imageSource:  dna,
     text: 'Deoksyribonukleinsyre er et stort molekyl bygd opp av et sukkermolekyl, fosfat og fire nitrogenbaser (adenin, cytosin, guanin og tymin). DNA er arvestoffet i alle cellene og via proteinsyntesen gir de opphav til alle våre egenskaper. DNA lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».',
   },
   {
     value:'Cellekjerne',
     score: 30000,
-    imageSource:  electron,
+    imageSource:  cellekjerne,
     text: 'De fleste levende individer på planeten mangler en cellekjerne. De har som en cellekjerne kalles eukaryoter og her finner vi blant annet dyreceller og planteceller. Cellekjernen lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».'
   },
   { 
     value: 'Celle',
     score: 37000,
-    imageSource:  electron,
+    imageSource:  celle,
     text: 'Alle levende organismer er bygd opp av celler. Eukaryote organismer består av over 200 ulike celletyper, mens bakterier kun består av én. Celler lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».',
   },
   { 
     value: 'Hjerte',
     score: 45000,
-    imageSource:  electron,
+    imageSource:  hjerte,
     text: 'Hjertet er den største muskelen i kroppen og står flere millioner slag i løpet av et menneskeliv. I fremtiden vil det muligens være aktuelt å dyrke et nytt hjertet ved hjelp av stamcelleteknologi. Hjertet lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».',
   },
   { 
     value: 'Menneske',
     score: 60000,
-    imageSource:  electron,
+    imageSource:  menneske,
     text: 'Mennesket, eller Homo Sapiens, er den arten på planeten som har kommet lengst i forståelsen av vitenskap. Mennesket er undrende, kreative, nysgjerrige og stadig på leting etter ny kunnskap. Mennesket lærer du om i alle temaer i Naturfag.',
   },
   { 
     value: 'Kjernekraftverk',
     score: 75000,
-    imageSource:  electron,
+    imageSource:  nuclear,
     text: 'Et kjernekraftverk benytter seg av radioaktiv stråling, og omdanner energien lagret i atomkjernene til elektrisk energi. Kjernekraft er mye omtalt i sosiale medier og politikk - selv om vi ikke har noe kjernekraft i Norge. Kjernekraftverk lærer du mer om i «Økologi og bærekraftig utvikling» og «Radioaktiv stråling».',
   },
   { 
     value: 'Månen',
     score: 90000,
-    imageSource:  electron,
+    imageSource:  moon,
     text: 'Månen er jordas eneste naturlig satellitt. Selv om månen befinner seg like langt unna sola som jorda, er den ikke like varm. Dette kommer av den tynne atmosfæren som månen har. Månen lærer du mer om under «Elektromagnetisk stråling».',
   },
   { 
     value: 'Jorda',
     score: 110000,
-    imageSource:  electron,
+    imageSource:  jorda,
     text: 'Jorda er den tredje planeten fra sola, og den eneste planeten i solsystemet der vi vet det finnes liv. Jorda har eksistert i nesten 5 milliarder år og har gjennomgått mange forandringer. Jorda lærer du mer om i «Elektromagnetisk stråling» og «Økologi og bærekraftig utvikling».',
   },
   { 
     value: 'Sola',
     score: 140000,
-    imageSource:  electron,
+    imageSource:  sol,
     text: 'Sola er vår egen stjerne. Sola fusjonerer hydrogen til helium og er ca. halvveis i sitt liv. Sola avgir mer energi på 1 time, enn det mennesket har brukt de siste 2 000 årene. Sola lærer du mer om under «Elektromagnetisk stråling», Økologi og bærekraftig utvikling» og «Energi for fremtiden».',
   },
   { 
     value: 'Solsystem',
     score: 200000,
-    imageSource:  electron,
+    imageSource:  planet,
     text: 'Solsystemet består av sola, planetene, kometene og alle legemer som går i bane rundt vår stjerne. Det finnes milliarder av solsystemer i galaksen og de aller fleste av disse har planeter. Solsystemet lærer du mer om under «Elektromagnetisk stråling».',
   },
   { 
     value: 'Melkeveien',
     score: 300000,
-    imageSource:  electron,
+    imageSource:  milky,
     text: 'Melkeveien er vår egen galakse og inneholder over 100 milliarder stjerner. Melkeveien er en spiralgalakse, og har en diameter på nesten 100 000 lysår! Dette gjør at vi mennesker mest sannsynlig aldri vil kunne utforske galaksen slik vi har utforsket jorda. Melkeveien lærer du mer om i «Elektromagnetisk stråling».',
   },
   { 
     value: 'Universet',
     score: 30000000000000,
-    imageSource:  electron,
+    imageSource:  univers,
     text: 'Universet er alt som finnes, og alt som noensinne vil finnes. Universet består av mange milliarder galakser og inneholder store gåter som sorte hull, mørk materie og mørk energi. Universet lærer du mer om under «Elektromagnetisk stråling». Gratulerer med å ha oppnådd det høyeste nivået i Naturfagsappen! ',
   },
 ];

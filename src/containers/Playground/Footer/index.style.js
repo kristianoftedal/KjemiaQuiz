@@ -4,13 +4,13 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   footerWrapper: {
     height: 40,
-    backgroundColor: '#34495e',
+    backgroundColor: '#0a3d62',
   },
   periodicButton: {
     flex: 1,
     alignSelf: 'flex-end',
     width: 10,
-    borderColor: '#34495e',
+    borderColor: '#0a3d62',
     margin: 0,
     marginBottom: 15,
     marginTop: 0,
@@ -22,7 +22,7 @@ export default StyleSheet.create({
   footerLayout: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#34495e',
+    backgroundColor: '#0a3d62',
   },
   scoreText: {
     marginBottom: 10,

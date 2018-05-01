@@ -6,7 +6,7 @@ export default StyleSheet.create({
     flex: 1,
     alignSelf: 'flex-start',
     width: 10,
-    borderColor: '#34495e',
+    borderColor: '#0a3d62',
     paddingBottom: 5,
   },
   buttonText: {

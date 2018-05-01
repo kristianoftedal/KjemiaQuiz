@@ -4,7 +4,7 @@ export default StyleSheet.create({
   wrapper: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#34495e',
+    backgroundColor: '#0a3d62',
     height: 30,
     flex: 4,
     flexGrow: 4,

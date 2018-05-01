@@ -8,8 +8,8 @@ export default StyleSheet.create({
     width: metrics.DEVICE_WIDTH,
     height: metrics.DEVICE_HEIGHT,
     flexDirection: 'column',
-    backgroundColor: 'transparent',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'rgba(0,0,100,0.9)'
   },
 });

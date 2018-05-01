@@ -5,7 +5,7 @@ import metrics from '../../config/metrics';
 export default StyleSheet.create({
   container: {
     flexDirection: 'column',
-    alignSelf: 'stretch',
+    alignSelf: 'center',
     justifyContent: 'center',
     padding: 10,
   },
@@ -32,13 +32,13 @@ export default StyleSheet.create({
     marginBottom: 10,
   },
   thumbnail: {
-    height: 50,
-    width: 50,
+    height: 70,
+    width: 70,
     alignSelf: 'center',
   },
   thumbnailDisabled: {
-    height: 50,
-    width: 50,
+    height: 70,
+    width: 70,
     alignSelf: 'center',
     opacity: 0.5,
   },

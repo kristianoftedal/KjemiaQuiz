@@ -13,7 +13,7 @@ import style from './index.style';
 import audioService from '../../services/audio';
 import levels from '../../config/levels';
 import RadioButton from '../../components/RadioButton';
-import Level from './Level';
+import Level from '../../components/LevelUp';
 import locked from '../../images/padlock.png';
 
 @inject(allStores => ({
@@ -50,7 +50,7 @@ export default class Badges extends Component {
       this.setState({showLevel: false});
       return;
     }
-    if (index > this.props.currentLevelIndex) return;
+    // if (index > this.props.currentLevelIndex) return;
     this.setState({showLevel: !this.state.showLevel, selectedLevel})
   }
 
@@ -68,9 +68,9 @@ export default class Badges extends Component {
       <TouchableOpacity onPress={() => this._onLevelPress(item, index)}>
         <View style={style.levelItem} key={item.value}>
           <Image
-            style={index > this.props.currentLevelIndex ? style.thumbnailDisabled : style.thumbnail}
-            source={index > this.props.currentLevelIndex ? locked : item.imageSource}/>
-          <Text style={style.levelTitle}>{index > this.props.currentLevelIndex ? '' : item.value}</Text>
+            style={index > this.props.currentLevelIndex ? style.thumbnail : style.thumbnail}
+            source={index > this.props.currentLevelIndex ? item.imageSource : item.imageSource}/>
+          <Text style={style.levelTitle}>{index > this.props.currentLevelIndex ? item.value : item.value}</Text>
         </View>
       </TouchableOpacity>
     )

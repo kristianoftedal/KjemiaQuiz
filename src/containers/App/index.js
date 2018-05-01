@@ -7,8 +7,8 @@ import React, { Component } from 'react';
 import { StatusBar, ImageBackground } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
-import backgroundImg from '../../images/bg.png';
-import playgroundImg from '../../images/background2.jpg';
+import backgroundImg from '../../images/bg7.png';
+import playgroundImg from '../../images/playground.png';
 import Playground from '../Playground';
 import Home from '../Home';
 import Endgame from '../Endgame';
@@ -24,6 +24,7 @@ import questionList from '../../config/db';
   currentScreen: allStores.router.currentScreen,
   init: allStores.subscription.init,
 }))
+
 @observer
 export default class App extends Component {
   static defaultProps = {
@@ -31,12 +32,15 @@ export default class App extends Component {
   };
   
   componentDidMount() {
-    this.props.init();
+    setTimeout(() => {
+      this.props.init();
+    }, 1500);
   }
 
   render() {
     let content;
     let bgImg = backgroundImg;
+    let bgImgStyle = styles.container;
     switch (this.props.currentScreen) {
       case 'HOME':
         content = <Home />;

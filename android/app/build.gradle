@@ -107,6 +107,17 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
+    signingConfigs {
+        release {
+            if (project.hasProperty('NATURFAGSAPPEN_RELEASE_STORE_FILE')) {
+                storeFile file(NATURFAGSAPPEN_RELEASE_STORE_FILE)
+                storePassword NATURFAGSAPPEN_RELEASE_STORE_PASSWORD
+                keyAlias NATURFAGSAPPEN_RELEASE_KEY_ALIAS
+                keyPassword NATURFAGSAPPEN_RELEASE_KEY_PASSWORD
+            }
+        }
+    }
+
     splits {
         abi {
             reset()
@@ -117,6 +128,7 @@ android {
     }
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
@@ -138,17 +150,9 @@ android {
 
 dependencies {
     compile project(':react-native-billing')
-    compile(project(':react-native-firebase')) {
-        transitive = false
-    }
-    // Firebase dependencies
-    compile "com.google.android.gms:play-services-base:11.8.0"
-    compile "com.google.firebase:firebase-core:11.8.0"
-    compile "com.google.firebase:firebase-database:11.8.0"
     compile project(':react-native-splash-screen')
     compile project(':react-native-admob')
     compile project(':react-native-photo-view')
-    compile project(':react-native-vector-icons')
     compile project(':react-native-sound')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
@@ -162,4 +166,3 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
-apply plugin: 'com.google.gms.google-services'

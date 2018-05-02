@@ -18,6 +18,11 @@ export default class SubscriptionStore {
   @action
   init = async () => {
     let receiptData = await getReceipt();
+    if (Platform.OS === 'android') {
+      InAppBilling.isSubscribed('android.test.purchased').then(
+        
+      )
+    }
     if (Platform.OS === 'ios') {
       let isValid = await this.validate(receiptData);
       this.hasSubscription = isValid;

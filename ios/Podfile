@@ -6,18 +6,9 @@ target 'KjemiaQuiz' do
   # use_frameworks!
 
   # Pods for KjemiaQuiz
-  # Required by RNFirebase
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
   pod 'GoogleToolboxForMac', '~> 2.1'
   pod 'Google-Mobile-Ads-SDK'
 
-  target 'KjemiaQuiz-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-    pod 'react-native-in-app-utils', :path => '../node_modules/react-native-in-app-utils'
-
-  end
 
   target 'KjemiaQuizTests' do
     inherit! :search_paths

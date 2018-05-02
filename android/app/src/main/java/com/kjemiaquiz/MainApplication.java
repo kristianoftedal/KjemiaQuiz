@@ -4,12 +4,9 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.idehub.Billing.InAppBillingBridgePackage;
-import io.invertase.firebase.RNFirebasePackage;
-import io.invertase.firebase.database.RNFirebaseDatabasePackage; 
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.sbugert.rnadmob.RNAdMobPackage;
 import com.reactnative.photoview.PhotoViewPackage;
-import com.oblador.vectoricons.VectorIconsPackage;
 import com.zmxv.RNSound.RNSoundPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -32,12 +29,9 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
             new InAppBillingBridgePackage(),
-            new RNFirebasePackage(),
-            new RNFirebaseDatabasePackage(),
             new SplashScreenReactPackage(),
             new RNAdMobPackage(),
             new PhotoViewPackage(),
-            new VectorIconsPackage(),
             new RNSoundPackage()
       );
     }

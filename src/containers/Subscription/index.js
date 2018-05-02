@@ -4,7 +4,8 @@ import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
-var InAppUtils = require('NativeModules').InAppUtils;
+const InAppBilling = require("react-native-billing");
+const InAppUtils = require('NativeModules').InAppUtils;
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
@@ -78,6 +79,26 @@ export default class Subscription extends Component {
           this.props.purchaseMade(response.transactionReceipt);
         }
       });
+    }
+    if (Platform.OS === 'android') {
+      // To be sure the service is close before opening it
+      await InAppBilling.close();
+      try {
+        await InAppBilling.open();
+        if (!await InAppBilling.isPurchased(productId)) {
+          const details = await InAppBilling.purchase(productId);
+          console.log('You purchased: ', details);
+        }
+        const transactionStatus = await InAppBilling.getPurchaseTransactionDetails(productId);
+        console.log('Transaction Status', transactionStatus);
+        const productDetails = await InAppBilling.getProductDetails(productId);
+        console.log(productDetails);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        await InAppBilling.consumePurchase(productId);
+        await InAppBilling.close();
+      }
     }
   };
 

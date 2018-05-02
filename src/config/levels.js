@@ -24,37 +24,37 @@ const levels = [
     value: 'Foton',
     score: 500,
     imageSource: photon,
-    text: 'Fotoner er små energipakker og regnes som en av de minste elementærpartiklene. Fotoner beveger seg i lysets hastighet og varierer i bølgelengde. Fotoner lærer du mer om under «Elektromagnetisk stråling, «Energi for fremtiden» og «Radioaktiv stråling».'
+    text: 'Fotoner er små energipakker og regnes som en av de minste elementærpartiklene. Fotoner beveger seg i lysets hastighet, og varierer i bølgelengde. Fotoner lærer du mer om under «Elektromagnetisk stråling, «Energi for fremtiden» og «Radioaktiv stråling».'
   },
   { 
     value: 'Elektron',
     score: 1300,
     imageSource:  electron,
-    text: 'Elektroner går i baner rundt atomkjernen og har negativ elektrisk ladning. Elektroner står svært sentralt i dannelsen av strøm, nordlys og kjernefysikk. Elektroner lærer du mer om under «Elektromagnetisk stråling», «Radioaktiv stråling», «Energi for fremtiden» og «Redoksreaksjoner».',
+    text: 'Elektroner går i baner rundt atomkjernen og har negativ elektrisk ladning. Elektroner står svært sentralt i dannelsen av strøm, nordlys og kjernefysikk. I det mest kjente elektronforsøket som er gjort; ”The double-slit expiriment”, ble det bevist at elektroner har både partikkel og bølgeegenskaper. Elektroner lærer du mer om under «Elektromagnetisk stråling», «Radioaktiv stråling», «Energi for fremtiden» og «Redoksreaksjoner».',
   },
   { 
     value: 'Proton',
     score: 2300,
     imageSource:  proton,
-    text: 'Protoner befinner seg i atomkjernen og har en positiv elektrisk ladning. De er 1000 ganger større enn elektroner og er dermed en mye tyngre partikkel. Protoner lærer du mer om under «Radioaktivitet».',
+    text: 'Protoner befinner seg i atomkjernen og har en positiv elektrisk ladning. De er 1000 ganger større enn elektroner, og er dermed en mye tyngre partikkel. Protoner lærer du mer om under «Radioaktivitet».',
   },
   {
     value: 'Atomkjerne',
     score: 4500,
     imageSource:  atom,
-    text: 'Atomkjerner består av protoner og nøytroner. Antall protoner som finnes i kjernen er det som varierer mellom ulike grunnstoffer. Atomkjerner er noen ganger ustabile og kan dermed frigjøre enten alfa-, beta- eller gammastråler. Atomkjerner lærer du mer om under «Radioaktiv stråling».',
+    text: 'Atomkjerner består av protoner og nøytroner. Antall protoner som finnes i kjernen er det som varierer mellom de ulike grunnstoffene. Atomkjerner er noen ganger ustabile, og kan dermed frigjøre enten alfa-, beta- eller gammastråler. Atomkjerner lærer du mer om under «Radioaktiv stråling».',
   },
   {
     value: 'Hydrogen',
     score: 7000,
     imageSource:  hydrogen,
-    text: 'Hydrogen er det minste grunnstoffet som finnes, og det stoffet som forekommer mest i universet. Vi finner hydrogen i nesten alle organiske molekyler og mange uorganiske stoffer. Hydrogen lærer du mer om under «Elektromagnetisk stråling» og «Redoksreaksjoner».'
+    text: 'Hydrogen er det minste grunnstoffet som finnes, og det stoffet som forekommer mest i universet. Vi finner hydrogen i nesten alle organiske molekyler, og mange uorganiske stoffer. Hydrogen lærer du mer om under «Elektromagnetisk stråling» og «Redoksreaksjoner».'
   },
   {
     value:'Karbon',
     score: 10000,
     imageSource:  karbon,
-    text: 'Karbon har 6 protoner i kjernen og 4 valenselektroner. Det gjør at karbon kan inngå i svært mange forbindelser og kan bli både oksidert og redusert. Alle levende organismer på jorda er karbonbasert. Karbon lærer du mer om under «Næringsstoffer og fordøyelsen» og «Redoksreaksjoner».'
+    text: 'Karbon har seks protoner i kjernen og fire valenselektroner. Det gjør at karbon kan inngå i svært mange forbindelser og bli oksidert og redusert. Alle levende organismer på jorda er karbonbaserte. Karbon lærer du mer om under «Næringsstoffer og fordøyelsen» og «Redoksreaksjoner».'
   },
   {
     value:'Aminosyre',
@@ -66,19 +66,19 @@ const levels = [
     value:'Protein',
     score: 20000,
     imageSource:  protein,
-    text: 'Proteiner er bygd opp av aminosyrer. Proteiner kan katalysere kjemiske reaksjoner og da kalles de enzymer. Noen proteiner, for eksempel hemoglobin, frakter oksygen rundt i kroppen. Proteiner lærer du mer om under «Næringsstoffer og fordøyelsen» og «DNA, proteinsyntese og arv».'
+    text: 'Proteiner er bygd opp av aminosyrer. Proteiner kan katalysere kjemiske reaksjoner, og da kalles de enzymer. Noen proteiner, for eksempel hemoglobin, frakter oksygen rundt i kroppen. Proteiner lærer du mer om under «Næringsstoffer og fordøyelsen» og «DNA, proteinsyntese og arv».'
   },
   {
     value:'DNA',
     score: 25000,
     imageSource:  dna,
-    text: 'Deoksyribonukleinsyre er et stort molekyl bygd opp av et sukkermolekyl, fosfat og fire nitrogenbaser (adenin, cytosin, guanin og tymin). DNA er arvestoffet i alle cellene og via proteinsyntesen gir de opphav til alle våre egenskaper. DNA lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».',
+    text: 'Deoksyribonukleinsyre er et stort molekyl bygd opp av et sukkermolekyl, et fosfatmolekyl og tilsammen fire forskjellige nitrogenbaser (adenin, cytosin, guanin og tymin). DNA er arvestoffet i alle cellene, og via proteinsyntesen gir de opphav til alle våre egenskaper. DNA lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».',
   },
   {
     value:'Cellekjerne',
     score: 30000,
     imageSource:  cellekjerne,
-    text: 'De fleste levende individer på planeten mangler en cellekjerne. De har som en cellekjerne kalles eukaryoter og her finner vi blant annet dyreceller og planteceller. Cellekjernen lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».'
+    text: 'De fleste levende individer på planeten mangler en cellekjerne. De som har cellekjerne kalles eukaryoter, og her finner vi blant annet dyreceller og planteceller. Cellekjernen lærer du mer om under «DNA, proteinsyntese og arv» og «Bioteknologi».'
   },
   { 
     value: 'Celle',
@@ -102,7 +102,7 @@ const levels = [
     value: 'Kjernekraftverk',
     score: 75000,
     imageSource:  nuclear,
-    text: 'Et kjernekraftverk benytter seg av radioaktiv stråling, og omdanner energien lagret i atomkjernene til elektrisk energi. Kjernekraft er mye omtalt i sosiale medier og politikk - selv om vi ikke har noe kjernekraft i Norge. Kjernekraftverk lærer du mer om i «Økologi og bærekraftig utvikling» og «Radioaktiv stråling».',
+    text: 'Et kjernekraftverk benytter seg av radioaktiv stråling, og omdanner energien lagret i atomkjernene til elektrisk energi. Kjernekraft er mye omtalt i sosiale medier og politikk - selv om vi ikke har noe kjernekraft i Norge. Kjernekraft regnes som en fornybar energi. Kjernekraftverk lærer du mer om i «Økologi og bærekraftig utvikling» og «Radioaktiv stråling».',
   },
   { 
     value: 'Månen',
@@ -114,7 +114,7 @@ const levels = [
     value: 'Jorda',
     score: 110000,
     imageSource:  jorda,
-    text: 'Jorda er den tredje planeten fra sola, og den eneste planeten i solsystemet der vi vet det finnes liv. Jorda har eksistert i nesten 5 milliarder år og har gjennomgått mange forandringer. Jorda lærer du mer om i «Elektromagnetisk stråling» og «Økologi og bærekraftig utvikling».',
+    text: 'Jorda er den tredje planeten fra sola, og den eneste planeten i solsystemet der vi vet det finnes liv. Jorda har eksistert i nesten 5 milliarder år, og har gjennomgått mange forandringer. Jorda lærer du mer om i «Elektromagnetisk stråling» og «Økologi og bærekraftig utvikling».',
   },
   { 
     value: 'Sola',
@@ -126,7 +126,7 @@ const levels = [
     value: 'Solsystem',
     score: 200000,
     imageSource:  planet,
-    text: 'Solsystemet består av sola, planetene, kometene og alle legemer som går i bane rundt vår stjerne. Det finnes milliarder av solsystemer i galaksen og de aller fleste av disse har planeter. Solsystemet lærer du mer om under «Elektromagnetisk stråling».',
+    text: 'Solsystemet består av sola, planetene, kometene og alle legemer som går i bane rundt vår stjerne. Det finnes milliarder av solsystemer i galaksen, og de aller fleste av disse har planeter. Solsystemet lærer du mer om under «Elektromagnetisk stråling».',
   },
   { 
     value: 'Melkeveien',
@@ -138,7 +138,7 @@ const levels = [
     value: 'Universet',
     score: 30000000000000,
     imageSource:  univers,
-    text: 'Universet er alt som finnes, og alt som noensinne vil finnes. Universet består av mange milliarder galakser og inneholder store gåter som sorte hull, mørk materie og mørk energi. Universet lærer du mer om under «Elektromagnetisk stråling». Gratulerer med å ha oppnådd det høyeste nivået i Naturfagsappen! ',
+    text: 'Universet er alt som finnes, og alt som noensinne vil finnes. Universet består av mange milliarder galakser, og inneholder store gåter som sorte hull, mørk materie og mørk energi. Universet lærer du mer om under «Elektromagnetisk stråling». Gratulerer med å ha oppnådd det høyeste nivået i Naturfagsappen!',
   },
 ];
 

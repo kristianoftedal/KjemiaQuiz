@@ -21,8 +21,8 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplachLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XU2-A1-8fH">
-                    <rect key="frame" x="55" y="11" width="351" height="260"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XU2-A1-8fH">
+                    <rect key="frame" x="55" y="11" width="351" height="268"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naturfagsappen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-NV-VVU">
@@ -45,6 +45,6 @@
         </view>
     </objects>
     <resources>
-        <image name="SplachLogo" width="375" height="667"/>
+        <image name="SplashLogo" width="375" height="667"/>
     </resources>
 </document>

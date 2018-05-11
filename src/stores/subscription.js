@@ -17,13 +17,13 @@ export default class SubscriptionStore {
 
   @action
   init = async () => {
-    let receiptData = await getReceipt();
     if (Platform.OS === 'android') {
-      InAppBilling.isSubscribed('android.test.purchased').then(
-        
-      )
+      InAppBilling.isSubscribed('no.kjemia.naturfagsappen').then(isSubscribed => {
+        this.hasSubscription = isSubscribed;
+      });
     }
     if (Platform.OS === 'ios') {
+      let receiptData = await getReceipt();
       let isValid = await this.validate(receiptData);
       this.hasSubscription = isValid;
       if (!isValid) {

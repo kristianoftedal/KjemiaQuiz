@@ -3,8 +3,7 @@ import questionImages from './questionImages';
 import shuffle from '../utils/shuffle';
 import questionList from '../config/db';
 import questions from './questions.json';
-
-const freeQuestions = questions;
+import freeQuestions from './freeQuestions.json';
 
 const snapshotToArray = (snapshot) => {
   var returnArr = [];

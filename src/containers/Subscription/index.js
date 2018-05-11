@@ -45,6 +45,8 @@ export default class Subscription extends Component {
         this.setState({ product: products[0] });
         // update store here.
       });      
+    } else if (Platform.OS === 'android') {
+      InAppBilling.getSubscriptionDetails(this.products[0]).then()
     }
   }
 
@@ -85,8 +87,8 @@ export default class Subscription extends Component {
       await InAppBilling.close();
       try {
         await InAppBilling.open();
-        if (!await InAppBilling.isPurchased(productId)) {
-          const details = await InAppBilling.purchase(productId);
+        if (!await InAppBilling.isSubscribed(this.products[0])) {
+          const details = await InAppBilling.subscribe(productId);
           console.log('You purchased: ', details);
         }
         const transactionStatus = await InAppBilling.getPurchaseTransactionDetails(productId);

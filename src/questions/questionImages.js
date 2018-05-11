@@ -1,3 +1,6 @@
+import twoA from './media/2A.png';
+import twoB from './media/2B.png';
+import twoC from './media/2C.png';
 import threeA from './media/3A.png';
 import threeB from './media/3B.png';
 import threeD from './media/3D.png';
@@ -59,14 +62,17 @@ const images =
     {
       id: '120239b3-8e47-a16f-5844-4ecb5bf186fb',
       image: '2A',
+      src: twoA,
     },
     {
       id: '9820aada-6048-3689-1c2f-4917c96a8e72',
       image: '2B',
+      src: twoB,
     },
     {
       id: '083cc46c-0f2e-5153-33cb-895f1d163089',
       image: '2C',
+      src: twoC,
     },
     {
       id: '599cd425-769a-43ee-ebd3-638517a1a3d8',

@@ -19,8 +19,9 @@ import RadioButton from '../../components/RadioButton';
   navigateToHome: allStores.router.navigateToHome,
   navigateToEndgame: allStores.router.navigateToEndgame,
   setCustomizedGame: allStores.game.setCustomizedGame,
-  hasSubscription: allStores.subscription.hasSubscription,
+  hasSubscription: allStores.game.hasSubscription,
 }))
+
 @observer
 export default class Selection extends Component {
   _headerRef;
@@ -145,10 +146,9 @@ export default class Selection extends Component {
               <RadioButton
                 isSelected={this.state.count === 30}
                 onPress={() => this.setState({ count: 30 })}
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length < 2}
+                disabled={!this.props.hasSubscription || this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length < 2}
                 innerColor="white"
                 outerColor="white"
-                disabled={!this.props.hasSubscription}
               />
               <Text style={style.radioButtonLabel}>40</Text>
               <RadioButton
@@ -177,7 +177,7 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 60 });
                 }}
-                disabled={!this.props.hasSubscription || this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 3}
+                disabled={!this.props.hasSubscription || this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 3}
                 innerColor="white"
                 outerColor="white"
               />

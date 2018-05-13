@@ -89,7 +89,6 @@ export default class Subscription extends Component {
         await InAppBilling.open();
         if (!await InAppBilling.isSubscribed(this.products[0])) {
           const details = await InAppBilling.subscribe(productId);
-          debugger;
           console.log('You purchased: ', details);
         }
         const transactionStatus = await InAppBilling.getPurchaseTransactionDetails(productId);

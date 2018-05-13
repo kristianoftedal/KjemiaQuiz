@@ -15,6 +15,7 @@ import fiveC from './media/5C.png';
 import fiveD from './media/5D.png';
 import fiveF from './media/5F.bmp';
 import fiveH from  './media/5H.png';
+import sevenA from './media/7A.png';
 import sevenB from './media/7B.png';
 import sevenC from './media/7C.png';
 import eightA from './media/8A.png';
@@ -178,6 +179,7 @@ const images =
     {
       id: '3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a',
       image: '7A',
+      src: sevenA,
     },
     {
       id: '1d8e0213-59e9-efc7-8c76-a4e9c0f84d25',

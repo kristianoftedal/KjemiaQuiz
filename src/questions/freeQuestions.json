@@ -199,34 +199,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"500 nm"
-      },
-      {
-        "key":"b",
-        "value":"600 nm"
-      },
-      {
-        "key":"c",
-        "value":"700 nm"
-      },
-      {
-        "key":"d",
-        "value":"800 nm"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Middels",
-    "id":"7feaeb20-2098-11e8-992f-7b7a51569ca4",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hva er bølgelengden på rødt lys?",
-    "solution":"d",
-    ".key":"-L6r9HqSoS0Xu-U0aI0i"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Eksitering"
       },
       {
@@ -311,90 +283,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"1"
-      },
-      {
-        "key":"b",
-        "value":"2"
-      },
-      {
-        "key":"c",
-        "value":"3"
-      },
-      {
-        "key":"d",
-        "value":"4"
-      }
-    ],
-    "category":"Redoksreaksjoner",
-    "difficulty":"Middels",
-    "id":"f2f3efa0-209c-11e8-bce1-25031cdb9156",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvor mange oksygengass molekyler trengs for å reagere med 2 hydrogengass molekyler?",
-    "solution":"a",
-    ".key":"-L6rGPeGFo2zA2cTZM5a"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Et prisme."
-      },
-      {
-        "key":"b",
-        "value":"Et glasslegme."
-      },
-      {
-        "key":"c",
-        "value":"Teodolitt."
-      },
-      {
-        "key":"d",
-        "value":"Teleskop."
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Middels",
-    "id":"2b0014a0-209d-11e8-97ba-79d01dd58047",
-    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
-    "lang":"no",
-    "questionText":"Hva heter det glasset vi bruker til å bryte lyset når vi ser på absorbsjonsspektre og emisjonsspektre?",
-    "solution":"a",
-    ".key":"-L6rHNPUmCDhrjUU7iDW"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Elektroner vandrer fra katoden til anoden."
-      },
-      {
-        "key":"b",
-        "value":"Elektroner vandrer gjennom membranen."
-      },
-      {
-        "key":"c",
-        "value":"Elektroner må ta omvei via den ytre kretsen."
-      },
-      {
-        "key":"d",
-        "value":"Elektroner reagerer med hydrogengass og danner oksygengass."
-      }
-    ],
-    "category":"Redoksreaksjoner",
-    "difficulty":"Middels",
-    "id":"77654540-209d-11e8-bce1-25031cdb9156",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilken påstand er riktig om brenselsceller?",
-    "solution":"c",
-    ".key":"-L6rHqHSkcOVOyrPFYXB"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Rød"
       },
       {
@@ -418,34 +306,6 @@
     "questionText":"Hvilken farge i det synlige spektret har kortest bølgelengde?",
     "solution":"d",
     ".key":"-L6rJkQ2LHGxaW6yymBF"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"A-vitamin"
-      },
-      {
-        "key":"b",
-        "value":"B-vitamin"
-      },
-      {
-        "key":"c",
-        "value":"C-vitamin"
-      },
-      {
-        "key":"d",
-        "value":"D-vitamin"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Lett",
-    "id":"a38ac570-20aa-11e8-af0c-5f22fb68e8b7",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket vitamin danner kroppen din ved hjelp av UV-stråler?",
-    "solution":"d",
-    ".key":"-L6rcRUUqghBvJP8z37g"
   },
   {
     "answers":[
@@ -843,34 +703,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Hydrogen"
-      },
-      {
-        "key":"b",
-        "value":"Karbon"
-      },
-      {
-        "key":"c",
-        "value":"Oksygen"
-      },
-      {
-        "key":"d",
-        "value":"Klor"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Middels",
-    "id":"4ba3b710-223d-11e8-8824-6d7c5a532c1b",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket atom finnes ikke i DNA?",
-    "solution":"d",
-    ".key":"-L70w2F6wnMEYE7nrQTQ"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"0%"
       },
       {
@@ -950,34 +782,6 @@
     "questionText":"Hvor mange ribsomer finnes i en vanlig celle?",
     "solution":"d",
     ".key":"-L73cLVN8dUu5jpZP3v7"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"1"
-      },
-      {
-        "key":"b",
-        "value":"2"
-      },
-      {
-        "key":"c",
-        "value":"3"
-      },
-      {
-        "key":"d",
-        "value":"4"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Lett",
-    "id":"676e0100-22a9-11e8-8597-87c2b4c61910",
-    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
-    "lang":"no",
-    "questionText":"Hvor mange genutgaver arver du fra foreldrene dine?",
-    "solution":"b",
-    ".key":"-L73g_MU-fO7dCizO1ch"
   },
   {
     "answers":[
@@ -1375,34 +1179,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Solfangere"
-      },
-      {
-        "key":"b",
-        "value":"Varmepumper"
-      },
-      {
-        "key":"c",
-        "value":"Batterier"
-      },
-      {
-        "key":"d",
-        "value":"Galvaniske elementer"
-      }
-    ],
-    "category":"Energi for fremtiden",
-    "difficulty":"Lett",
-    "id":"26dc4330-23cc-11e8-b7bb-f985bc925705",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hva kaller vi gjenstander som holder på varmen fra sola?",
-    "solution":"a",
-    ".key":"-L7B84eVNfLlYjqcU8_z"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Hydrogen"
       },
       {
@@ -1683,34 +1459,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Plasmaeksplosjoner"
-      },
-      {
-        "key":"b",
-        "value":"Solvind"
-      },
-      {
-        "key":"c",
-        "value":"Solstråler"
-      },
-      {
-        "key":"d",
-        "value":"Gammaburst"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Lett",
-    "id":"5a181d40-2602-11e8-a799-0b1189854af2",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Store eksplosjoner på sola som forårsaker kraftig nordlys på jorda kalles for?",
-    "solution":"b",
-    ".key":"-L7PccvSprkjayp7W6_Z"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Protonstråling"
       },
       {
@@ -1790,34 +1538,6 @@
     "questionText":"Hvilken av disse tingene må være tilstede for at du skal få dannet nordlys?",
     "solution":"c",
     ".key":"-L7PiUxgVaFZqoRuiq1h"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Magnetfelt, stjerne, himmel"
-      },
-      {
-        "key":"b",
-        "value":"Ozonlag, magnetfelt, atmosfære"
-      },
-      {
-        "key":"c",
-        "value":"Atmosfære, magnetfelt, stjerne"
-      },
-      {
-        "key":"d",
-        "value":"Planet, stjerne, magnetfelt"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Vanskelig",
-    "id":"6e64f710-2606-11e8-a799-0b1189854af2",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket av alternativene under beskriver hvilke tre ting du trenger for at nordlys skal dannes?",
-    "solution":"c",
-    ".key":"-L7PjbImHEzjBWNleu6_"
   },
   {
     "answers":[
@@ -2635,34 +2355,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Bjørk"
-      },
-      {
-        "key":"b",
-        "value":"Epletre"
-      },
-      {
-        "key":"c",
-        "value":"Blåveis"
-      },
-      {
-        "key":"d",
-        "value":"Geitrams"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Vanskelig",
-    "id":"8dafabf0-2774-11e8-ac2d-75690c54a1a4",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilken av følgende plantearter regnes som en pionéerplante?",
-    "solution":"d",
-    ".key":"-L8lcSVin3CXsRsMJM1Y"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Globale interessekonflikter er at alle land i verden er i konflikt med hverandre."
       },
       {
@@ -2714,34 +2406,6 @@
     "questionText":"Hvilket av følgende alternativer representerer en abiotisk faktor?",
     "solution":"d",
     ".key":"-L8ldoZayG24uDPCwWiT"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Pionéerfasen"
-      },
-      {
-        "key":"b",
-        "value":"Primærfasen"
-      },
-      {
-        "key":"c",
-        "value":"Førstefasen"
-      },
-      {
-        "key":"d",
-        "value":"Innledningsfasen"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Lett",
-    "id":"2c8121a0-2838-11e8-ab40-39855ea2f673",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hva er heter den første fasen i suksesjonen?",
-    "solution":"a",
-    ".key":"-L8ljP6mqSFW84AU374H"
   },
   {
     "answers":[
@@ -2966,34 +2630,6 @@
     "questionText":"Hva kalles det stedet i et kromosom der et spesifikt gen befinner seg?",
     "solution":"b",
     ".key":"-L8r-Ke8C7p_8sr_3i-W"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Søppel-DNA"
-      },
-      {
-        "key":"b",
-        "value":"Antigen-DNA"
-      },
-      {
-        "key":"c",
-        "value":"Mat-DNA"
-      },
-      {
-        "key":"d",
-        "value":"Utvasket-DNA"
-      }
-    ],
-    "category":"Bioteknologi",
-    "difficulty":"Middels",
-    "id":"bddad770-341a-11e8-bf94-8b474af0dd07",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket hverdagslig navn brukes på områder i kromosomer der ingen gener befinner seg?",
-    "solution":"a",
-    ".key":"-L8r-cyowL9YJ2Wm1r3F"
   },
   {
     "answers":[
@@ -3363,34 +2999,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"CAG"
-      },
-      {
-        "key":"b",
-        "value":"GAG"
-      },
-      {
-        "key":"c",
-        "value":"GTC"
-      },
-      {
-        "key":"d",
-        "value":"CTA"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Middels",
-    "id":"6246d480-20a2-11e8-bce1-25031cdb9156",
-    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
-    "lang":"no",
-    "questionText":"Hvilken DNA-sekvens er komplementær med CAG?",
-    "solution":"c",
-    ".key":"-L8rgfvuZrlqEwF97o0m"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Treden"
       },
       {
@@ -3554,34 +3162,6 @@
     "questionText":"Hva er lysets hastighet i vakuum?",
     "solution":"c",
     ".key":"-LAvkUR7Qwx20c_4Kda1"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Alle mutasjoner er farlige."
-      },
-      {
-        "key":"b",
-        "value":"Overdreven soling kan gi mutasjoner i huden som er arvelige."
-      },
-      {
-        "key":"c",
-        "value":"Alle mutasjoner er arvelige."
-      },
-      {
-        "key":"d",
-        "value":"Mutasjoner i kjønnsceller er arvelige."
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Vanskelig",
-    "id":"f55eeb30-4867-11e8-87d3-eb2b4ce750bb",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilken påstand om mutasjoner er riktig?",
-    "solution":"d",
-    ".key":"-LAw3r86NjzsD6MTaliz"
   },
   {
     "answers":[
@@ -3839,34 +3419,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"*Zn^2+|* og *SO_4|^2-|* "
-      },
-      {
-        "key":"b",
-        "value":"*Zn^2-|* og *SO_4|^2+|* "
-      },
-      {
-        "key":"c",
-        "value":"*Cu^2+|* og *SO_4|^2-|* "
-      },
-      {
-        "key":"d",
-        "value":"*Cu^2-|* og *SO_4|^2+|* "
-      }
-    ],
-    "category":"Redoksreaksjoner",
-    "difficulty":"Vanskelig",
-    "id":"404d7060-2213-11e8-897c-410cb3c8d2d7",
-    "imageId":"206ee370-cdf5-9450-2a11-e412c81494e4",
-    "lang":"no",
-    "questionText":"Hvilke ioner finnes oppløst ved den negative polen?",
-    "solution":"a",
-    ".key":"-LCPcceb9fRmD8-WaMLA"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"1"
       },
       {
@@ -4035,6 +3587,398 @@
     "answers":[
       {
         "key":"a",
+        "value":"Alle mutasjoner er farlige."
+      },
+      {
+        "key":"b",
+        "value":"Overdreven soling kan gi mutasjoner i huden som er arvelige."
+      },
+      {
+        "key":"c",
+        "value":"Alle mutasjoner er arvelige."
+      },
+      {
+        "key":"d",
+        "value":"Mutasjoner i kjønnsceller er arvelige."
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Vanskelig",
+    "id":"f55eeb30-4867-11e8-87d3-eb2b4ce750bb",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvilken påstand om mutasjoner er riktig?",
+    "solution":"d",
+    ".key":"-LCPt8Z98BLmT_-0ShKm"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Hydrogen"
+      },
+      {
+        "key":"b",
+        "value":"Karbon"
+      },
+      {
+        "key":"c",
+        "value":"Oksygen"
+      },
+      {
+        "key":"d",
+        "value":"Klor"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Middels",
+    "id":"4ba3b710-223d-11e8-8824-6d7c5a532c1b",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvilket atom finnes ikke i DNA?",
+    "solution":"d",
+    ".key":"-LCPt_MRy_P7KqPIqWua"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"CAG"
+      },
+      {
+        "key":"b",
+        "value":"GAG"
+      },
+      {
+        "key":"c",
+        "value":"GTC"
+      },
+      {
+        "key":"d",
+        "value":"CTA"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Middels",
+    "id":"6246d480-20a2-11e8-bce1-25031cdb9156",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvilken DNA-sekvens er komplementær med CAG?",
+    "solution":"c",
+    ".key":"-LCPtkdDMQtjczIL-unY"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Bjørk"
+      },
+      {
+        "key":"b",
+        "value":"Epletre"
+      },
+      {
+        "key":"c",
+        "value":"Blåveis"
+      },
+      {
+        "key":"d",
+        "value":"Geitrams"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"8dafabf0-2774-11e8-ac2d-75690c54a1a4",
+    "imageId":"9820aada-6048-3689-1c2f-4917c96a8e72",
+    "lang":"no",
+    "questionText":"Hvilken av følgende plantearter regnes som en pionéerplante?",
+    "solution":"d",
+    ".key":"-LCPtxKgqIKeM8M2TS73"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Magnetfelt, stjerne, himmel"
+      },
+      {
+        "key":"b",
+        "value":"Ozonlag, magnetfelt, atmosfære"
+      },
+      {
+        "key":"c",
+        "value":"Atmosfære, magnetfelt, stjerne"
+      },
+      {
+        "key":"d",
+        "value":"Planet, stjerne, magnetfelt"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"6e64f710-2606-11e8-a799-0b1189854af2",
+    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
+    "lang":"no",
+    "questionText":"Hvilket av alternativene under beskriver hvilke tre ting du trenger for at nordlys skal dannes?",
+    "solution":"c",
+    ".key":"-LCPu6-NZs-wvV8N8vkW"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Lett",
+    "id":"676e0100-22a9-11e8-8597-87c2b4c61910",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvor mange genutgaver arver du fra foreldrene dine?",
+    "solution":"b",
+    ".key":"-LCPuRdTTuDWkjGsDB29"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Søppel-DNA"
+      },
+      {
+        "key":"b",
+        "value":"Antigen-DNA"
+      },
+      {
+        "key":"c",
+        "value":"Mat-DNA"
+      },
+      {
+        "key":"d",
+        "value":"Utvasket-DNA"
+      }
+    ],
+    "category":"Bioteknologi",
+    "difficulty":"Middels",
+    "id":"bddad770-341a-11e8-bf94-8b474af0dd07",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvilket hverdagslig navn brukes på områder i kromosomer der ingen gener befinner seg?",
+    "solution":"a",
+    ".key":"-LCPuiHJPNFCxdttasyB"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Elektroner vandrer fra katoden til anoden."
+      },
+      {
+        "key":"b",
+        "value":"Elektroner vandrer gjennom membranen."
+      },
+      {
+        "key":"c",
+        "value":"Elektroner må ta omvei via den ytre kretsen."
+      },
+      {
+        "key":"d",
+        "value":"Elektroner reagerer med hydrogengass og danner oksygengass."
+      }
+    ],
+    "category":"Redoksreaksjoner",
+    "difficulty":"Middels",
+    "id":"77654540-209d-11e8-bce1-25031cdb9156",
+    "imageId":"e1c8c598-584e-e860-088f-30ba823f6b5d",
+    "lang":"no",
+    "questionText":"Hvilken påstand er riktig om brenselsceller?",
+    "solution":"c",
+    ".key":"-LCPv5qgHKNmDUDSWIqi"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"500 nm"
+      },
+      {
+        "key":"b",
+        "value":"600 nm"
+      },
+      {
+        "key":"c",
+        "value":"700 nm"
+      },
+      {
+        "key":"d",
+        "value":"800 nm"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"7feaeb20-2098-11e8-992f-7b7a51569ca4",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Hva er bølgelengden på rødt lys?",
+    "solution":"d",
+    ".key":"-LCPx-Ko_800wAemZbVD"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"Redoksreaksjoner",
+    "difficulty":"Middels",
+    "id":"f2f3efa0-209c-11e8-bce1-25031cdb9156",
+    "imageId":"e1c8c598-584e-e860-088f-30ba823f6b5d",
+    "lang":"no",
+    "questionText":"Hvor mange oksygengassmolekyler trengs for å reagere med 2 hydrogengassmolekyler?",
+    "solution":"a",
+    ".key":"-LCPxHPV-qQvi_WfWPSg"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*Zn^2+|* og *SO_4|^2-|* "
+      },
+      {
+        "key":"b",
+        "value":"*Zn^2-|* og *SO_4|^2+|* "
+      },
+      {
+        "key":"c",
+        "value":"*Cu^2+|* og *SO_4|^2-|* "
+      },
+      {
+        "key":"d",
+        "value":"*Cu^2-|* og *SO_4|^2+|* "
+      }
+    ],
+    "category":"Redoksreaksjoner",
+    "difficulty":"Vanskelig",
+    "id":"404d7060-2213-11e8-897c-410cb3c8d2d7",
+    "imageId":"206ee370-cdf5-9450-2a11-e412c81494e4",
+    "lang":"no",
+    "questionText":"Hvilke ioner finnes oppløst ved den negative polen?",
+    "solution":"a",
+    ".key":"-LCPxQSg5htX12hfZI5d"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Plasmaeksplosjoner"
+      },
+      {
+        "key":"b",
+        "value":"Solvind"
+      },
+      {
+        "key":"c",
+        "value":"Solstråler"
+      },
+      {
+        "key":"d",
+        "value":"Gammaburst"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"5a181d40-2602-11e8-a799-0b1189854af2",
+    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
+    "lang":"no",
+    "questionText":"Store eksplosjoner på sola som forårsaker kraftig nordlys på jorda kalles for?",
+    "solution":"b",
+    ".key":"-LCPxWoZ5zfc6QnGwC5f"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"A-vitamin"
+      },
+      {
+        "key":"b",
+        "value":"B-vitamin"
+      },
+      {
+        "key":"c",
+        "value":"C-vitamin"
+      },
+      {
+        "key":"d",
+        "value":"D-vitamin"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"a38ac570-20aa-11e8-af0c-5f22fb68e8b7",
+    "imageId":"60d5d315-eae5-42b7-80f3-68678199c1da",
+    "lang":"no",
+    "questionText":"Hvilket vitamin danner kroppen din ved hjelp av UV-stråler?",
+    "solution":"d",
+    ".key":"-LCPxmgmMWIdnFrtTpnj"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Solfangere"
+      },
+      {
+        "key":"b",
+        "value":"Varmepumper"
+      },
+      {
+        "key":"c",
+        "value":"Batterier"
+      },
+      {
+        "key":"d",
+        "value":"Galvaniske elementer"
+      }
+    ],
+    "category":"Energi for fremtiden",
+    "difficulty":"Lett",
+    "id":"26dc4330-23cc-11e8-b7bb-f985bc925705",
+    "imageId":"e59ebf96-f9d4-3497-3151-a57990e34cd9",
+    "lang":"no",
+    "questionText":"Hva kaller vi gjenstander som holder på varmen fra sola?",
+    "solution":"a",
+    ".key":"-LCPyH0kfFPpmCKsXcI9"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"CO"
       },
       {
@@ -4043,7 +3987,7 @@
       },
       {
         "key":"c",
-        "value":"*SO_4^2-|*"
+        "value":"*SO_4|^2-|*"
       },
       {
         "key":"d",
@@ -4057,6 +4001,62 @@
     "lang":"no",
     "questionText":"Hvilket av følgende stoffer inngår i fotosyntesen?",
     "solution":"b",
-    ".key":"-LCPschV8Hp613GT039g"
+    ".key":"-LCPytJuaynIPP5P7OFV"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et prisme"
+      },
+      {
+        "key":"b",
+        "value":"Et glasslegme"
+      },
+      {
+        "key":"c",
+        "value":"Teodolitt"
+      },
+      {
+        "key":"d",
+        "value":"Teleskop"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"2b0014a0-209d-11e8-97ba-79d01dd58047",
+    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
+    "lang":"no",
+    "questionText":"Hva heter det glasset vi bruker til å bryte lyset når vi ser på absorbsjonsspektre og emisjonsspektre?",
+    "solution":"a",
+    ".key":"-LCPz2xNS1-5d7JK-UrM"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pionéerfasen"
+      },
+      {
+        "key":"b",
+        "value":"Primærfasen"
+      },
+      {
+        "key":"c",
+        "value":"Førstefasen"
+      },
+      {
+        "key":"d",
+        "value":"Innledningsfasen"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"2c8121a0-2838-11e8-ab40-39855ea2f673",
+    "imageId":"120239b3-8e47-a16f-5844-4ecb5bf186fb",
+    "lang":"no",
+    "questionText":"Hva er heter den første fasen i suksesjonen?",
+    "solution":"a",
+    ".key":"-LCPzJy1-7QitMHyMecO"
   }
 ]

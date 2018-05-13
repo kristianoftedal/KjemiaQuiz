@@ -141,7 +141,7 @@ export default class Home extends Component {
               </Button>
             }
             <View style={style.body}>
-              <Text style={style.subscriptionText}>{this.props.hasSubscription ? 'Fullversjon' : 'Gratisversjon'}</Text>
+              <Text style={style.subscriptionText}>{this.props.hasSubscription ? 'Premium' : 'Gratisversjon'}</Text>
             </View>
           </View>
         )}

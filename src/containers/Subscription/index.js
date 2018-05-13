@@ -114,7 +114,7 @@ export default class Subscription extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Kjøp på fullversjonen av Naturfagsappen</Text>
+          <Text style={style.header}>Abonner på premium-utgaven av Naturfagsappen!</Text>
         </View>
         {hasHeaderAppeared && (
           <View
@@ -126,23 +126,19 @@ export default class Subscription extends Component {
             { this.state.product && !this.state.loading &&
               <View style={style.textPart}>
                 <Text style={style.text}>
-                  {this.state.product.title}
+                  Abonner på premium for å sikre deg alle 1500 spørsmålene og ingen reklame. Gratisversjonen inneholder kun 10% av spørsmålene.
                 </Text>
-                  <Text style={style.text}>
-                    Abonner på premium for å sikre deg alle spørsmålene og ingen reklame
-                  </Text>
-                  <Text style={style.text}>
-                    Pris: {this.state.product.priceString} / per mnd 
-                  </Text>
-                  <Text style={style.text}>
-                    Fornyes automatisk hver måned
-                  </Text>
-                  <Text style={style.text}>
-                    Betalingen vil bli belastet til iTunes-kontoen nå kjøpet bekreftes.
-                    Abonnementet vil automatisk fornyes med mindre automatisk fornyelse skrues av minst 24 timer før
-                    slutten av inneværende periode. Kontoen vil bli belastet innen for 24 timer av slutten på inneværende periode.
-                    Abonnementet-innstillinger kan styres ved å gå inn på brukeres konto-innstillinger..
-                  </Text>
+                <Text style={style.textPayment}>
+                  Pris: {this.state.product.priceString} / per mnd 
+                </Text>
+                <Text style={style.textPayment}>
+                  Fornyes automatisk hver måned
+                </Text>
+                <Text style={style.textPayment}>
+                  Betalingen vil bli belastet til iTunes-kontoen når kjøpet bekreftes.
+                  Avtalen vil automatisk fornyes med mindre automatisk fornyelse skrues av minst 24 timer før
+                  slutten av inneværende periode. Kontoen vil bli belastet innenfor 24 timer av slutten på inneværende periode.
+                </Text>
               </View>
             }
             { this.state.loading &&

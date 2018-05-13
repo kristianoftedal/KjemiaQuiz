@@ -21,7 +21,7 @@ export default class GameStore {
   @observable isCustomizedGame = false;
   @observable totalByCategory = {};
   @observable currentXp = 0;
-  @observable currentLevelIndex = -1;
+  @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
   @observable isAdTime = false;
   @observable hasSubscription = false;
@@ -120,7 +120,6 @@ export default class GameStore {
           this.score += 50;
           this.currentXp += 50;
         }
-        
         let nextScore = levels[this.currentLevelIndex + 1].score;
         let test = this.currentXp >= nextScore;
         if (this.currentXp >= nextScore) {
@@ -132,8 +131,6 @@ export default class GameStore {
         this.isCorrectAnswer = true;
         this.correctCount++;
         totalByCategory.correct++;
-        // await setXp(0);
-        // await setLevelIndex(0);
         setXp(this.currentXp).then(() => {
           setLevelIndex(this.currentLevelIndex);
         });
@@ -183,27 +180,24 @@ export default class GameStore {
   }
 
   nextLevelThreshold = () => {
-    if (this.currentLevelIndex === -1) {
-      return levels[0].score;
-    }
     if (this.currentLevelIndex + 1 > levels.length || this.currentLevelIndex === 0) {
       return levels[this.currentLevelIndex].score;
     }
-    const nextLevelThreshold = levels[this.currentLevelIndex].score;
+    const nextLevelThreshold = levels[this.currentLevelIndex + 1].score;
     return nextLevelThreshold;
   };
 
-  previousLevelThreshold = () => {
-    if (this.currentLevelIndex === 0 || this.currentLevelIndex === -1) {
+  currentLevelThreshold = () => {
+    if (this.currentLevelIndex === 0) {
       return 0;
     }
-    const prev = levels[this.currentLevelIndex - 1].score;
+    const prev = levels[this.currentLevelIndex].score;
     return prev;
   }
 
   computeLevelUpProgress() {
     const threshold = this.nextLevelThreshold();
-    const currentVal = this.currentXp - this.previousLevelThreshold();
+    const currentVal = this.currentXp - this.currentLevelThreshold();
     const levelUpPercentage = (currentVal / threshold) * 100;
     this.levelUpProgress = ((levelUpPercentage * (metrics.DEVICE_WIDTH - 70))/ 100);
   }

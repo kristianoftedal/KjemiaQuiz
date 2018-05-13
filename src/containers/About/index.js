@@ -62,13 +62,13 @@ export default class About extends Component {
             <Image source={about} style={style.image} />
           </View>
             <View style={style.textPart}>
-
               <View>
                 <Text style={style.text}>
-                Kjemia er en bedrift drevet av Carl-Joachim Isachsen og Håvard Ryan som spesialiserer seg på undervisning i Naturfag, Kjemi 1, Kjemi 2, Biologi 1 og Biologi 2. Vi har over ti års erfaring og er sensorer i alle fagene. 
+                  Kjemia er en bedrift drevet av Carl-Joachim Isachsen og Håvard Ryan som spesialiserer seg på undervisning i Naturfag, Kjemi 1, Kjemi 2, Biologi 1, Biologi 2 og alle mattefagene.
+                  Kjemia har over ti års erfaring og er sensorer i alle fagene. 
                 </Text>
                 <Text style={style.text}>
-                  I 2017 ga vi ut  oppgaveheftene Kjemia 1 og Kjemia 2, sammen med Fagbokforlaget. Ytterligere informasjon om Kjemia og våre produkter finner du på vår hjemmeside.
+                  I 2017 ga Kjemia ut oppgaveheftene Kjemia 1 og Kjemia 2, sammen med Fagbokforlaget. Ytterligere informasjon om Kjemia og våre produkter finner du på vår hjemmeside.
                 </Text>
               </View>
             </View>

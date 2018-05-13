@@ -29,6 +29,16 @@ export default StyleSheet.create({
     marginRight: 8,
     lineHeight: 22,
   },
+  textPayment: {
+    fontFamily: 'Raleway-Regular',
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 13,
+    marginTop: 10,
+    marginLeft: 8,
+    marginRight: 8,
+    lineHeight: 18,
+  },
   textPart: {
     marginBottom: 10,
   },

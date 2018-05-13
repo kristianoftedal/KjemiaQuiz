@@ -64,6 +64,9 @@ export default class Badges extends Component {
 
 
   _renderLevelBadge = ({item, index}) => {
+    if (index === 0) {
+      return (<View></View>);
+    }
     return (
       <TouchableOpacity onPress={() => this._onLevelPress(item, index)}>
         <View style={style.levelItem} key={item.value}>

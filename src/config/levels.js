@@ -20,6 +20,11 @@ import milky from '../images/levels/Melkeveien2.png';
 import univers from '../images/levels/Universet2.png';
 
 const levels = [
+  {
+    value: 'Naturfagselev',
+    score: 0,
+    text: 'Nybegynner',
+  },
   { 
     value: 'Foton',
     score: 500,
@@ -30,7 +35,7 @@ const levels = [
     value: 'Elektron',
     score: 1300,
     imageSource:  electron,
-    text: 'Elektroner går i baner rundt atomkjernen og har negativ ladning. Elektroner står svært sentralt i dannelsen av strøm, nordlys og kjernefysikk. Forsøket; ”The double-slit expiriment” beviste at elektroner har både partikkel- og bølgeegenskaper. Elektroner lærer du mer om under «Elektromagnetisk stråling», «Radioaktiv stråling», «Energi for fremtiden» og «Redoksreaksjoner».',
+    text: 'Elektroner går i baner rundt atomkjernen og har negativ ladning. Elektroner står sentralt i dannelsen av strøm, nordlys og kjernefysikk. Forsøket; ”The double-slit experiment”, viste at elektroner har både partikkel- og bølgeegenskaper. Elektroner lærer du mer om under «Elektromagnetisk stråling», «Radioaktiv stråling», «Energi for fremtiden» og «Redoksreaksjoner».',
   },
   { 
     value: 'Proton',

@@ -3,6 +3,174 @@
     "answers":[
       {
         "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Mikrobølger"
+      },
+      {
+        "key":"c",
+        "value":"UV-bølger"
+      },
+      {
+        "key":"d",
+        "value":"Gammabølger"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"9782ec90-1b9f-11e8-a2ca-218b0959cd51",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger finner du helt til venstre i det elektromagnetiske spektret?",
+    "solution":"a",
+    ".key":"2"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Mikrobølger"
+      },
+      {
+        "key":"c",
+        "value":"UV-bølger"
+      },
+      {
+        "key":"d",
+        "value":"Gammabølger"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"c8872ee0-1ba0-11e8-b644-bd76ecfef5f1",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger finner du helt til høyre i det elektromagnetiske spektret?",
+    "solution":"d",
+    ".key":"3"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Infrarødt"
+      },
+      {
+        "key":"c",
+        "value":"Røntgenstråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammabølger"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"f16a1a20-1ba0-11e8-9622-a5f2fc601c4a",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger har lengst bølgelengde?",
+    "solution":"a",
+    ".key":"4"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Infrarødt"
+      },
+      {
+        "key":"c",
+        "value":"Røntgenstråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammabølger"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"9a280a00-1ba1-11e8-891f-1b65800773f8",
+    "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger har kortest bølgelengde?",
+    "solution":"d",
+    ".key":"5"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Infrarødt"
+      },
+      {
+        "key":"c",
+        "value":"Røntgenstråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"fb29b7e0-1ba1-11e8-a786-bdde853fe8cf",
+    "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger har høyest energi?",
+    "solution":"d",
+    ".key":"6"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Mikrobølger"
+      },
+      {
+        "key":"c",
+        "value":"UV-stråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"2824ea80-1ba2-11e8-9178-418600f8b318",
+    "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger har lavest energi?",
+    "solution":"a",
+    ".key":"7"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Sink"
       },
       {
@@ -339,6 +507,34 @@
     "answers":[
       {
         "key":"a",
+        "value":"Rød"
+      },
+      {
+        "key":"b",
+        "value":"Gul"
+      },
+      {
+        "key":"c",
+        "value":"Grønn"
+      },
+      {
+        "key":"d",
+        "value":"Fiolett"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"485721e0-1b9f-11e8-9382-03818ed0d137",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken farge i det synlige spektret har lengst bølgelengde?",
+    "solution":"a",
+    ".key":"-L6SWuJ1qfh05cgKUTue"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"C"
       },
       {
@@ -647,6 +843,174 @@
     "answers":[
       {
         "key":"a",
+        "value":"500 nm"
+      },
+      {
+        "key":"b",
+        "value":"600 nm"
+      },
+      {
+        "key":"c",
+        "value":"700 nm"
+      },
+      {
+        "key":"d",
+        "value":"800 nm"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"7feaeb20-2098-11e8-992f-7b7a51569ca4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er bølgelengden på rødt lys?",
+    "solution":"d",
+    ".key":"-L6r9HqSoS0Xu-U0aI0i"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"300 nm"
+      },
+      {
+        "key":"b",
+        "value":"400 nm"
+      },
+      {
+        "key":"c",
+        "value":"500 nm"
+      },
+      {
+        "key":"d",
+        "value":"600 nm"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"cc45e290-2098-11e8-992f-7b7a51569ca4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er bølgelengden på blått lys?",
+    "solution":"b",
+    ".key":"-L6r9cquQ9Fq12_MXvSB"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Eksitering"
+      },
+      {
+        "key":"b",
+        "value":"Absorbsjon"
+      },
+      {
+        "key":"c",
+        "value":"Emittering"
+      },
+      {
+        "key":"d",
+        "value":"Reduksjon"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"49a5d510-2099-11e8-992f-7b7a51569ca4",
+    "imageId":"b650838f-ef5a-aac4-b6b5-3e5edbbb7abe",
+    "lang":"no",
+    "questionText":"Hvilket fagbegrep bruker vi om den prosessen der elektronet faller innover i skallene i atomet?",
+    "solution":"c",
+    ".key":"-L6rAcpknSpCNRvuKrPv"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"400 nm - 600 nm"
+      },
+      {
+        "key":"b",
+        "value":"300 nm - 600 nm"
+      },
+      {
+        "key":"c",
+        "value":"400 nm - 800 nm"
+      },
+      {
+        "key":"d",
+        "value":"600 nm - 800 nm"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"02007670-2099-11e8-992f-7b7a51569ca4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Innenfor hvilke bølgelengder finner vi synlig lys?",
+    "solution":"c",
+    ".key":"-L6rAhkUnjyYb-jrpC3S"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"De svarte linjene forteller oss om mengden mørk materie i en stjerne."
+      },
+      {
+        "key":"b",
+        "value":"De svarte linjene forteller oss at stjerner er svarte legmer."
+      },
+      {
+        "key":"c",
+        "value":"De svarte linjene forteller oss hvilke gasser som absorberer lyset fra et legme som lyser."
+      },
+      {
+        "key":"d",
+        "value":"De svarte linjene forteller oss hvilket lys som emitteres fra legmer som lyser."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"aa375c00-2099-11e8-992f-7b7a51569ca4",
+    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
+    "lang":"no",
+    "questionText":"Hva kan de svarte linjene i et absorbsjonsspekter fortelle deg? ",
+    "solution":"c",
+    ".key":"-L6rDNw-JEJWsKpWLPt4"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Lyset absorberes av gassene på sola."
+      },
+      {
+        "key":"b",
+        "value":"Lyset absorberes av andre stjerner."
+      },
+      {
+        "key":"c",
+        "value":"Lyset absorberes av prismet."
+      },
+      {
+        "key":"d",
+        "value":"Lyset absorberes av luft."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"b1affa80-209b-11e8-97ba-79d01dd58047",
+    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
+    "lang":"no",
+    "questionText":"Hvor blir det av det lyset som forsvinner i absorbsjonsspektret på figuren?",
+    "solution":"a",
+    ".key":"-L6rEhuNgTpV9z8MPqcO"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Forbrenning av magnesium."
       },
       {
@@ -703,6 +1067,62 @@
     "answers":[
       {
         "key":"a",
+        "value":"Det kommer fra brytningen i prismet."
+      },
+      {
+        "key":"b",
+        "value":"Det kommer fra infrarødt lys."
+      },
+      {
+        "key":"c",
+        "value":"Det kommer fra eksiterte atomer."
+      },
+      {
+        "key":"d",
+        "value":"Det kommer fra rødforskjøvede stjerner."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"1b6808f0-209c-11e8-97ba-79d01dd58047",
+    "imageId":"9d4c7f54-6e2b-00b6-c112-e272f8ad99ce",
+    "lang":"no",
+    "questionText":"Hvor kommer det lyset fra, som er synlig i emissjonssspektret på figuren?",
+    "solution":"c",
+    ".key":"-L6rGS99zPYrUyuS5OPN"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et prisme."
+      },
+      {
+        "key":"b",
+        "value":"Et glasslegme."
+      },
+      {
+        "key":"c",
+        "value":"Teodolitt."
+      },
+      {
+        "key":"d",
+        "value":"Teleskop."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"2b0014a0-209d-11e8-97ba-79d01dd58047",
+    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
+    "lang":"no",
+    "questionText":"Hva heter det glasset vi bruker til å bryte lyset når vi ser på absorbsjonsspektre og emisjonsspektre?",
+    "solution":"a",
+    ".key":"-L6rHNPUmCDhrjUU7iDW"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Elektroner vandrer fra katoden til anoden."
       },
       {
@@ -726,6 +1146,1462 @@
     "questionText":"Hvilken påstand er riktig om brenselsceller?",
     "solution":"c",
     ".key":"-L6rHqHSkcOVOyrPFYXB"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Rød"
+      },
+      {
+        "key":"b",
+        "value":"Gul"
+      },
+      {
+        "key":"c",
+        "value":"Grønn"
+      },
+      {
+        "key":"d",
+        "value":"Fiolett"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"7a76b4b0-1b9f-11e8-b931-4b88a279dc75",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken farge i det synlige spektret har kortest bølgelengde?",
+    "solution":"d",
+    ".key":"-L6rJkQ2LHGxaW6yymBF"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*NO_2|* og *H_2|O*"
+      },
+      {
+        "key":"b",
+        "value":"*NO_2|* og *O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*N_2|* og *O_2|*"
+      },
+      {
+        "key":"d",
+        "value":"*O_2|* og *H_2|O*"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"8691cba0-20a3-11e8-adf8-bbb8c2f7d269",
+    "imageId":"31aa1951-537c-45ad-63b1-b19ddd85790a",
+    "lang":"no",
+    "questionText":"Hvilke gasser kolliderer de ladde partiklene med i atmosfæren når nordlys dannes?",
+    "solution":"c",
+    ".key":"-L6rRsjI0-8QhS8VnVoZ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Nordpolen"
+      },
+      {
+        "key":"b",
+        "value":"Sydpolen"
+      },
+      {
+        "key":"c",
+        "value":"Ekvator"
+      },
+      {
+        "key":"d",
+        "value":"Nordpolen og sydpolen"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"83289380-20a4-11e8-adf8-bbb8c2f7d269",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor på kloden kan vi observere nordlys?",
+    "solution":"d",
+    ".key":"-L6rTP-wI6nYo6SDf9rT"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Blå"
+      },
+      {
+        "key":"b",
+        "value":"Grønn"
+      },
+      {
+        "key":"c",
+        "value":"Rosa"
+      },
+      {
+        "key":"d",
+        "value":"Rød"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"1295f3f0-20a5-11e8-adf8-bbb8c2f7d269",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken farge er det på nordlyset som kommer fra eksiteringen av *O_2|*",
+    "solution":"b",
+    ".key":"-L6rTjyKjpVmlrxQl5jX"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Mini-Tellus"
+      },
+      {
+        "key":"b",
+        "value":"Planetini"
+      },
+      {
+        "key":"c",
+        "value":"Terrella "
+      },
+      {
+        "key":"d",
+        "value":"Dvergplanet"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"c66a4280-20a7-11e8-adf8-bbb8c2f7d269",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva kalte Birkeland mini-kloden han brukte til å demonstrere nordlyset?",
+    "solution":"c",
+    ".key":"-L6rYPuoaGE9UA8A6mAd"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Nawak"
+      },
+      {
+        "key":"b",
+        "value":"Aurora Borealis"
+      },
+      {
+        "key":"c",
+        "value":"Planeterella"
+      },
+      {
+        "key":"d",
+        "value":"Nordleightur"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"220c0dd0-20a8-11e8-adf8-bbb8c2f7d269",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er det vitenskapelige navnet på nordlyset?",
+    "solution":"b",
+    ".key":"-L6rYzP_p0F1jxucC2q4"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"A-vitamin"
+      },
+      {
+        "key":"b",
+        "value":"B-vitamin"
+      },
+      {
+        "key":"c",
+        "value":"C-vitamin"
+      },
+      {
+        "key":"d",
+        "value":"D-vitamin"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"a38ac570-20aa-11e8-af0c-5f22fb68e8b7",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket vitamin danner kroppen din ved hjelp av UV-stråler?",
+    "solution":"d",
+    ".key":"-L6rcRUUqghBvJP8z37g"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Den energien som skal til for å øke en grad vann, ett gram."
+      },
+      {
+        "key":"b",
+        "value":"Den graden som skal til for å øke ett gram vann, en millimeter."
+      },
+      {
+        "key":"c",
+        "value":"Den energien som skal til for å øke ett gram vann, en grad."
+      },
+      {
+        "key":"d",
+        "value":"Den mengden vann som skal til for å øke energien en grad."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"e5e2c230-2125-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er definisjonen på en kalori?",
+    "solution":"c",
+    ".key":"-L6ulzPvCb1cz7Sm830U"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Diabetes 2"
+      },
+      {
+        "key":"b",
+        "value":"Multiple Sklerose (MS)"
+      },
+      {
+        "key":"c",
+        "value":"Anorexi"
+      },
+      {
+        "key":"d",
+        "value":"C-vitamin mangel"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"36a336a0-2126-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av disse sykdommene er foreløpig ikke kategorisert som en livsstilsykdom?",
+    "solution":"b",
+    ".key":"-L6umQC6ZR-n3N8Q1goX"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"-ose"
+      },
+      {
+        "key":"b",
+        "value":"-ase"
+      },
+      {
+        "key":"c",
+        "value":"-in"
+      },
+      {
+        "key":"d",
+        "value":"-id"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"7a77de30-2126-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Enzymer skal ha systematiske navn som slutter på?",
+    "solution":"b",
+    ".key":"-L6umYTn5KY87gmM1z07"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Amylase"
+      },
+      {
+        "key":"b",
+        "value":"Trypsin"
+      },
+      {
+        "key":"c",
+        "value":"Insulin"
+      },
+      {
+        "key":"d",
+        "value":"Pepsin"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"8eac98f0-2126-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av disse enzymene blir ikke tilsatt i tolvfingertarmen?",
+    "solution":"d",
+    ".key":"-L6umnv7EnL2dZbrN6hs"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Esterbindig"
+      },
+      {
+        "key":"b",
+        "value":"Peptidbinding"
+      },
+      {
+        "key":"c",
+        "value":"Ketobindig"
+      },
+      {
+        "key":"d",
+        "value":"Eterbinding"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"b6d13d40-2126-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva heter bindingen som oppstår mellom to karbohydrater?",
+    "solution":"d",
+    ".key":"-L6un8-8BbPVx-Pa2e9L"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Kylling"
+      },
+      {
+        "key":"b",
+        "value":"Ris"
+      },
+      {
+        "key":"c",
+        "value":"Grønnsaker"
+      },
+      {
+        "key":"d",
+        "value":"Kebabsaus"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"ea47fba0-2126-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av disse matproduktene inneholder usunt fett?",
+    "solution":"d",
+    ".key":"-L6unMiTxQVIB8Lwx7DL"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Vitaminer, sporstoffer og karbohydrater."
+      },
+      {
+        "key":"b",
+        "value":"Proteiner, vitaminer og fett."
+      },
+      {
+        "key":"c",
+        "value":"Fett, vitaminer og karbohydrater."
+      },
+      {
+        "key":"d",
+        "value":"Karbohydrater, proteiner og fett."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"0e39cbb0-2127-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilke tre hovedtyper av næringsstoffer har vi?",
+    "solution":"d",
+    ".key":"-L6unbsBhET_8ilHxmd5"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"8"
+      },
+      {
+        "key":"b",
+        "value":"12"
+      },
+      {
+        "key":"c",
+        "value":"20"
+      },
+      {
+        "key":"d",
+        "value":"24"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"002ec140-2129-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange essensielle aminosyrer er det?",
+    "solution":"a",
+    ".key":"-L6uqguefX96Bvpk-X_X"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"8"
+      },
+      {
+        "key":"b",
+        "value":"12"
+      },
+      {
+        "key":"c",
+        "value":"20"
+      },
+      {
+        "key":"d",
+        "value":"22"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"16b5a960-2129-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange ikke-essensielle aminosyrer er det?",
+    "solution":"b",
+    ".key":"-L6uqoODe2_BUZgZDXay"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Essensielle aminosyrer må du få i deg gjennom kosten, ikke-essensielle aminosyrer kan kroppen lage selv."
+      },
+      {
+        "key":"b",
+        "value":"Essensielle aminosyrer kan kroppen lage selv, ikke-essensielle aminosyrer må du få i deg gjennom kosten."
+      },
+      {
+        "key":"c",
+        "value":"Essensielle aminosyrer trenger du for å leve, ikke-essensielle aminosyrer kan du leve uten."
+      },
+      {
+        "key":"d",
+        "value":"Essensielle aminosyrer kan du leve uten, ikke-essensielle aminosyrer trenger du for å leve. "
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"28f71fa0-2129-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket utsagn beskriver forskjellen på essensielle og ikke-essensielle aminosyrer?",
+    "solution":"a",
+    ".key":"-L6urRB-1dukzunO-wdm"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Toast med ost"
+      },
+      {
+        "key":"b",
+        "value":"Kylling"
+      },
+      {
+        "key":"c",
+        "value":"Vegetarsalat"
+      },
+      {
+        "key":"d",
+        "value":"Grøt"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"a0131120-2129-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende matvarer inneholder proteiner?",
+    "solution":"b",
+    ".key":"-L6urrnnEhjRSwnKhgJq"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Melk"
+      },
+      {
+        "key":"b",
+        "value":"Pølser"
+      },
+      {
+        "key":"c",
+        "value":"Loff"
+      },
+      {
+        "key":"d",
+        "value":"Morsmelkerstatning"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"fb0eff80-2129-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken matvare har lavest protein-innhold?",
+    "solution":"c",
+    ".key":"-L6usPd1J3QAtzPjejEC"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Fiskepudding"
+      },
+      {
+        "key":"b",
+        "value":"Kjøttkaker i brun saus"
+      },
+      {
+        "key":"c",
+        "value":"Sushi"
+      },
+      {
+        "key":"d",
+        "value":"Fruktsalat"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"22982720-212a-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken rett har lavest protein-innhold?",
+    "solution":"d",
+    ".key":"-L6usclbExGXpPUcgQtL"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Potetgull"
+      },
+      {
+        "key":"b",
+        "value":"Vann"
+      },
+      {
+        "key":"c",
+        "value":"Ris"
+      },
+      {
+        "key":"d",
+        "value":"Sprit"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"5e2869d0-212a-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende matvarer inneholder fett?",
+    "solution":"a",
+    ".key":"-L6usvNJHlU3TO1Tykwy"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Ribbe og medisterkaker"
+      },
+      {
+        "key":"b",
+        "value":"Kyllingwok"
+      },
+      {
+        "key":"c",
+        "value":"Fiskesuppe"
+      },
+      {
+        "key":"d",
+        "value":"Fårikål"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"72856d10-212a-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken rett inneholder mest fett?",
+    "solution":"a",
+    ".key":"-L6ut3kK4WgjKAuiC8xx"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pølser"
+      },
+      {
+        "key":"b",
+        "value":"Bearnaisesaus"
+      },
+      {
+        "key":"c",
+        "value":"Tomatsuppe"
+      },
+      {
+        "key":"d",
+        "value":"Olivenolje"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"89687ef0-212a-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken matvare har lavest fettinnhold?",
+    "solution":"c",
+    ".key":"-L6utGOr7paPe4cd_Ihd"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Fiskegrateng"
+      },
+      {
+        "key":"b",
+        "value":"Egg og bacon"
+      },
+      {
+        "key":"c",
+        "value":"Bløtkake"
+      },
+      {
+        "key":"d",
+        "value":"Kyllinggryte"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"a84a3a20-212a-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken rett har lavest fettinnhold?",
+    "solution":"d",
+    ".key":"-L6utTwiVYB6q7rVs7aL"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pasta"
+      },
+      {
+        "key":"b",
+        "value":"Olivenolje"
+      },
+      {
+        "key":"c",
+        "value":"Kebabsaus"
+      },
+      {
+        "key":"d",
+        "value":"Østers"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"e4f9cf80-212a-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende matvarer inneholder karbohydrater?",
+    "solution":"a",
+    ".key":"-L6utoDqHbTQUUJBsePL"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Egg og bacon"
+      },
+      {
+        "key":"b",
+        "value":"Grønnsaksuppe"
+      },
+      {
+        "key":"c",
+        "value":"Flesk og duppe"
+      },
+      {
+        "key":"d",
+        "value":"Laks"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"fd51a710-212a-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken rett inneholder mest karbohydrater?",
+    "solution":"b",
+    ".key":"-L6uu4ZHHDSj_fx8drnk"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Potet"
+      },
+      {
+        "key":"b",
+        "value":"Pasta"
+      },
+      {
+        "key":"c",
+        "value":"Brød"
+      },
+      {
+        "key":"d",
+        "value":"Torsk"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"27a4eb30-212b-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av matvarene har det laveste innholdet av karbohydrater?",
+    "solution":"d",
+    ".key":"-L6uuJYCJ00u0naWiVGt"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Kokt torsk"
+      },
+      {
+        "key":"b",
+        "value":"Grønnsakssuppe"
+      },
+      {
+        "key":"c",
+        "value":"Kyllingwok"
+      },
+      {
+        "key":"d",
+        "value":"Spagetti"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"4c393cd0-212b-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken matvare har det laveste innholdet av karbohydrater?",
+    "solution":"a",
+    ".key":"-L6uuddPlcrIyXyQB0xS"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Glukose"
+      },
+      {
+        "key":"b",
+        "value":"Galaktose"
+      },
+      {
+        "key":"c",
+        "value":"Fruktose"
+      },
+      {
+        "key":"d",
+        "value":"Maltose"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"a713c080-212b-11e8-9e81-9328e1d61a77",
+    "imageId":"4bec8672-4b8e-83a6-cec0-b982d3fc66b2",
+    "lang":"no",
+    "questionText":"Hvilket karbohydrat er dette`?",
+    "solution":"a",
+    ".key":"-L6uv5nMHQJ5zoxY2670"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*C_6|H_6|*"
+      },
+      {
+        "key":"b",
+        "value":"*C_6|H_12|O_6|*"
+      },
+      {
+        "key":"c",
+        "value":"*C_6|H_22|O_5|*"
+      },
+      {
+        "key":"d",
+        "value":"*CH_4|*"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"c6e86730-212b-11e8-9e81-9328e1d61a77",
+    "imageId":"4bec8672-4b8e-83a6-cec0-b982d3fc66b2",
+    "lang":"no",
+    "questionText":"Hva er molekylformelen til denne forbindelsen?",
+    "solution":"b",
+    ".key":"-L6uvUVeIAXshKOEeNb5"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Glukose"
+      },
+      {
+        "key":"b",
+        "value":"Galaktose"
+      },
+      {
+        "key":"c",
+        "value":"Fruktose"
+      },
+      {
+        "key":"d",
+        "value":"Maltose"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"3ee7dae0-212c-11e8-9e81-9328e1d61a77",
+    "imageId":"cf7f11cb-faa8-9e56-f6f5-3b6a7294e14e",
+    "lang":"no",
+    "questionText":"Hvilket karbohydrat er dette`?",
+    "solution":"c",
+    ".key":"-L6uvzbu912Rr8arJ1ux"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*C_6|H_6|*"
+      },
+      {
+        "key":"b",
+        "value":"*C_6|H_12|O_6|*"
+      },
+      {
+        "key":"c",
+        "value":"*C_6|H_22|O_5|*"
+      },
+      {
+        "key":"d",
+        "value":"*CH_4|*"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"9284e260-212c-11e8-9e81-9328e1d61a77",
+    "imageId":"1a74ab6b-eab8-9e2f-e633-84cf0e61d299",
+    "lang":"no",
+    "questionText":"Hva er molekylformelen til denne forbindelsen?",
+    "solution":"b",
+    ".key":"-L6uxIKkhqgKqNpEYR8n"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Esterbinding"
+      },
+      {
+        "key":"b",
+        "value":"Eterbinding"
+      },
+      {
+        "key":"c",
+        "value":"Aminobinding"
+      },
+      {
+        "key":"d",
+        "value":"Peptidbinding"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"a4b76f10-212d-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken binding er det som oppstår når to aminosyrer kobles sammen?",
+    "solution":"d",
+    ".key":"-L6uyRSwX4QqxmLWxAmw"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Elektrolyse"
+      },
+      {
+        "key":"b",
+        "value":"Hydrolyse"
+      },
+      {
+        "key":"c",
+        "value":"Kondensasjonsreaksjon"
+      },
+      {
+        "key":"d",
+        "value":"Galvanisk element"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"d08d3480-212d-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva kalles den reaksjonstypen som foregår når to aminosyrer kobles sammen?",
+    "solution":"c",
+    ".key":"-L6uz3nO3h1ZIV-uP7g-"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*H_2|O*"
+      },
+      {
+        "key":"c",
+        "value":"Lys"
+      },
+      {
+        "key":"d",
+        "value":"*C_6|H_12|O_6|*"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"33075190-212e-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket biprodukt er det som dannes når to aminosyrer kobles sammen?",
+    "solution":"b",
+    ".key":"-L6uzT-cyJWQxZy1WfzD"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Aldehyder"
+      },
+      {
+        "key":"b",
+        "value":"Alkoholer"
+      },
+      {
+        "key":"c",
+        "value":"Syrer"
+      },
+      {
+        "key":"d",
+        "value":"Aminer"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"cd98de40-212e-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken stoffgruppe tilhører glyserol?",
+    "solution":"b",
+    ".key":"-L6v-FMLdQ_Dz4zLyIiw"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Enverdig"
+      },
+      {
+        "key":"b",
+        "value":"Toverdig"
+      },
+      {
+        "key":"c",
+        "value":"Treverdig"
+      },
+      {
+        "key":"d",
+        "value":"Tertiær"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"eb80a910-212e-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken type alkohol er glyserol?",
+    "solution":"c",
+    ".key":"-L6v-O10eB_1-9Gz8KPK"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Aldehyder"
+      },
+      {
+        "key":"b",
+        "value":"Alkoholer"
+      },
+      {
+        "key":"c",
+        "value":"Syrer "
+      },
+      {
+        "key":"d",
+        "value":"Aminer"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"00a960c0-212f-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken stoffgruppe tilhører fettsyrene?",
+    "solution":"c",
+    ".key":"-L6v-_cauPlAZpF-1kkT"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"At fettet i maten er mettende."
+      },
+      {
+        "key":"b",
+        "value":"At fettmolkeylet inneholder en dobbeltbinding."
+      },
+      {
+        "key":"c",
+        "value":"At fettmolekylet inneholder noen dobbeltbindinger."
+      },
+      {
+        "key":"d",
+        "value":"At det er et karbonatom i fettsyra (met=1)."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"9896f690-212f-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva vil det si at en fettsyre er umettet?",
+    "solution":"b",
+    ".key":"-L6v0jfImnPuPbFBnbKs"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"At fettet i maten er mettende."
+      },
+      {
+        "key":"b",
+        "value":"At fettmolkeylet inneholder flere dobbeltbindiger."
+      },
+      {
+        "key":"c",
+        "value":"At fettmolekylet ikke inneholder noen dobbeltbindiger."
+      },
+      {
+        "key":"d",
+        "value":"At det er et karbonatom i fettsyra (met=1)."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"3232ffb0-2130-11e8-a7d8-3b935643c81f",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva vil det si at en fettsyre er flerumettet? ",
+    "solution":"b",
+    ".key":"-L6v1pbc-o90SNh4d0Jv"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Esterbinding"
+      },
+      {
+        "key":"b",
+        "value":"Eterbinding"
+      },
+      {
+        "key":"c",
+        "value":"Aminobinding"
+      },
+      {
+        "key":"d",
+        "value":"Peptidbinding"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"e59b57f0-2130-11e8-a7d8-3b935643c81f",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva heter bindingstypen som oppstår mellom et fettsyremolekyl og et glyserolmolekyl?",
+    "solution":"a",
+    ".key":"-L6v2pXT9lWRJrmE0Ec6"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Triglyserider"
+      },
+      {
+        "key":"b",
+        "value":"Fosfolipider"
+      },
+      {
+        "key":"c",
+        "value":"Lipase"
+      },
+      {
+        "key":"d",
+        "value":"Emulgatorer"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"1b064530-2131-11e8-a7d8-3b935643c81f",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er det vitenskapelige navnet på fettmolekyler?",
+    "solution":"a",
+    ".key":"-L6v3CxsA4i39Whs4H4s"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*C_6|H_12|O_6|* + *CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*C_6|H_12|O_6|* + *O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*CO_2|* + *O_2|*"
+      },
+      {
+        "key":"d",
+        "value":"*H_2|O* + *CO_2|* + *O_2|*"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"08dd3190-2134-11e8-a15f-999bf0beb4bd",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er produktene i fotosyntesen? ",
+    "solution":"b",
+    ".key":"-L6v9WvFyKu3hMw5dx9Z"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*C_6|H_12|O_6|* + *CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*C_6|H_12|O_6|* + *O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*CO_2|* + *O_2|*"
+      },
+      {
+        "key":"d",
+        "value":"*H_2|O* + *CO_2|* + *O_2|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"30e69040-2135-11e8-a15f-999bf0beb4bd",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er produktene i fotosyntesen?",
+    "solution":"b",
+    ".key":"-L6v9hQgHRHKmIYc0MEk"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*H_2|O* og *CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*CO_2|* + *O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*H_2|O* + *C_6|H_12|O_6|*"
+      },
+      {
+        "key":"d",
+        "value":"*O_2|* og *H_2|O*"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Middels",
+    "id":"61acfbb0-2135-11e8-a15f-999bf0beb4bd",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er reaktantene i fotosyntesen?",
+    "solution":"b",
+    ".key":"-L6vAQ7B05a0uSK1y7wi"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*H_2|O* og *CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*CO_2|* + *O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*H_2|O* + *C_6|H_12|O_6|*"
+      },
+      {
+        "key":"d",
+        "value":"*O_2|* og *H_2|O*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"bc8cfda0-2135-11e8-a15f-999bf0beb4bd",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er reaktantene i fotosyntesen?",
+    "solution":"b",
+    ".key":"-L6vA_gxU6jgVBoy5JCy"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*H_2|O*"
+      },
+      {
+        "key":"b",
+        "value":"*C_6|H_6|*"
+      },
+      {
+        "key":"c",
+        "value":"*CH_4|*"
+      },
+      {
+        "key":"d",
+        "value":"*N_2|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"38f87e00-2136-11e8-a15f-999bf0beb4bd",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende stoffer er en del av reaksjonslikningen i fotosyntesen?",
+    "solution":"a",
+    ".key":"-L6vBQdGg3aEAHweAE7o"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*C_6|H_6|*"
+      },
+      {
+        "key":"b",
+        "value":"*O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*CH_4|*"
+      },
+      {
+        "key":"d",
+        "value":"CO"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"63318df0-2137-11e8-9ecf-d92bebb2d4bb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende stoffer er en del av reaksjonslikningen i fotosyntesen?",
+    "solution":"b",
+    ".key":"-L6vDJHazXyFuxX0yoNO"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*H_2|O*"
+      },
+      {
+        "key":"c",
+        "value":"*SO_4^2-|*"
+      },
+      {
+        "key":"d",
+        "value":"*Cl_2|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"c7a4bbe0-2137-11e8-9ecf-d92bebb2d4bb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende stoffer inngår i fotosyntesen?",
+    "solution":"a",
+    ".key":"-L6vDzDXJx3_RzwTJm-V"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*CH_4|*"
+      },
+      {
+        "key":"b",
+        "value":"*C_6|H_6|*"
+      },
+      {
+        "key":"c",
+        "value":"*C_6|H_12|O_6|*"
+      },
+      {
+        "key":"d",
+        "value":"*C_12|H_22|O_11|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"52c04e60-2138-11e8-9ecf-d92bebb2d4bb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende stoffer inngår i fotosyntesen?",
+    "solution":"c",
+    ".key":"-L6vErh98Nwoe4muuh9f"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*H_2|O*"
+      },
+      {
+        "key":"d",
+        "value":"*C_6|H_6|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"c44ebda0-2138-11e8-9ecf-d92bebb2d4bb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket stoff inngår ikke i fotosyntesen?",
+    "solution":"d",
+    ".key":"-L6vFXffFMjVkXyBJVFb"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*C_6|H_12|O_6|*"
+      },
+      {
+        "key":"b",
+        "value":"*O_2|*"
+      },
+      {
+        "key":"c",
+        "value":"*H_2|*"
+      },
+      {
+        "key":"d",
+        "value":"*H_2O|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"a1ecbfe0-2139-11e8-9ecf-d92bebb2d4bb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende stoffer inngår ikke i fotosyntesereaksjonen?",
+    "solution":"c",
+    ".key":"-L6vHCoHhVqLUaYxwDoR"
   },
   {
     "answers":[
@@ -1711,6 +3587,34 @@
     "answers":[
       {
         "key":"a",
+        "value":"*C_6|H_6|*"
+      },
+      {
+        "key":"b",
+        "value":"*C_6|H_12|O_6|*"
+      },
+      {
+        "key":"c",
+        "value":"*C_6|H_22|O_5|*"
+      },
+      {
+        "key":"d",
+        "value":"*CH_4|*"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"51a16750-212c-11e8-9e81-9328e1d61a77",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er molekylformelen til denne forbindelsen?",
+    "solution":"b",
+    ".key":"-L715Dvpwd_p5hbfIxVL"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Deoksyribose og fosfat"
       },
       {
@@ -2579,6 +4483,62 @@
     "answers":[
       {
         "key":"a",
+        "value":"Fettsyre med dobbeltbinding på tredje karbonet fra syregruppa."
+      },
+      {
+        "key":"b",
+        "value":"Fettsyre med dobbeltbinding til syregruppas ende."
+      },
+      {
+        "key":"c",
+        "value":"Fettsyre hvor dobbeltbindingen sitter på den syregruppa som er koblet på den tredje alkoholen i glyserolmolekylet."
+      },
+      {
+        "key":"d",
+        "value":"Fettsyre med tre dobeltbindinger."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"dc313cf0-238f-11e8-b5df-8def17ea9dcc",
+    "imageId":"7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang":"no",
+    "questionText":"Hva er en omega 3-fettsyre?",
+    "solution":"b",
+    ".key":"-L79b-jESFGaJVp02BPn"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Lys"
+      },
+      {
+        "key":"b",
+        "value":"Varme"
+      },
+      {
+        "key":"c",
+        "value":"Vind"
+      },
+      {
+        "key":"d",
+        "value":"Jord"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"1c8ccde0-2391-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken energikilde krever fotosyntesen for å gå?",
+    "solution":"a",
+    ".key":"-L79cNEIucaK-jF4bQi1"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Lys"
       },
       {
@@ -2602,6 +4562,594 @@
     "questionText":"Hvilken energikilde krever fotosyntesen for å gå?",
     "solution":"a",
     ".key":"-L79cXdFdu9koEAvHjpE"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Fruktose"
+      },
+      {
+        "key":"b",
+        "value":"Glukose"
+      },
+      {
+        "key":"c",
+        "value":"Sukrose"
+      },
+      {
+        "key":"d",
+        "value":"Maltose"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"71a26ba0-2391-11e8-b5df-8def17ea9dcc",
+    "imageId":"9c29a697-5407-4bc1-801f-d628c122c842",
+    "lang":"no",
+    "questionText":"Hvilket karbohydrat er dette?",
+    "solution":"c",
+    ".key":"-L79d7djafwz8BP8y36Z"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Amylase"
+      },
+      {
+        "key":"b",
+        "value":"Trypsin"
+      },
+      {
+        "key":"c",
+        "value":"Lipase"
+      },
+      {
+        "key":"d",
+        "value":"Pepsin"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"8b029600-2392-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende enzymer tilsettes av spyttkjertelene i munnen?",
+    "solution":"a",
+    ".key":"-L79eXcCc3S1pj7jbb8J"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Amylase"
+      },
+      {
+        "key":"b",
+        "value":"Trypsin"
+      },
+      {
+        "key":"c",
+        "value":"Lipase"
+      },
+      {
+        "key":"d",
+        "value":"Pepsin"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"c4942280-2392-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende enzymer tilsettes i magesekken?",
+    "solution":"d",
+    ".key":"-L79ereoLPTx5bcW1eon"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Amylase"
+      },
+      {
+        "key":"b",
+        "value":"Pepsin"
+      },
+      {
+        "key":"c",
+        "value":"Lipase"
+      },
+      {
+        "key":"d",
+        "value":"Insulin"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"dd76fc00-2392-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende enzymer bryter ned proteiner?",
+    "solution":"b",
+    ".key":"-L79f3qcwrr4M91VkBxP"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Amylase"
+      },
+      {
+        "key":"b",
+        "value":"Trypsin"
+      },
+      {
+        "key":"c",
+        "value":"Lipase"
+      },
+      {
+        "key":"d",
+        "value":"Galle"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"fda7cc70-2392-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende enzymer bryter ned proteiner?",
+    "solution":"b",
+    ".key":"-L79fFZ9xwq4muULjQp7"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Lipase"
+      },
+      {
+        "key":"b",
+        "value":"Pepsin"
+      },
+      {
+        "key":"c",
+        "value":"Trypsin"
+      },
+      {
+        "key":"d",
+        "value":"Amylase"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"1a3ead40-2393-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende enzymer bryter ned fett?",
+    "solution":"a",
+    ".key":"-L79fPhfEv1AniB0lkV3"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Lipase"
+      },
+      {
+        "key":"b",
+        "value":"Pepsin"
+      },
+      {
+        "key":"c",
+        "value":"Trypsin"
+      },
+      {
+        "key":"d",
+        "value":"Amylase"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"33059a50-2393-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende enzymer bryter ned karbohydrater?",
+    "solution":"d",
+    ".key":"-L79fc8fdRW0jLd7L4ca"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I munnen"
+      },
+      {
+        "key":"b",
+        "value":"I magesekken"
+      },
+      {
+        "key":"c",
+        "value":"I tynntarmen"
+      },
+      {
+        "key":"d",
+        "value":"I tykktarmen"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"34756180-2394-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor produseres amylase?",
+    "solution":"a",
+    ".key":"-L79hE9TmDk_SoTU-bPs"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I bukspyttkjertlen"
+      },
+      {
+        "key":"b",
+        "value":"I magesekken"
+      },
+      {
+        "key":"c",
+        "value":"I tynntarmen"
+      },
+      {
+        "key":"d",
+        "value":"I tykktarmen"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"4f52f990-2394-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor produseres amylase?",
+    "solution":"a",
+    ".key":"-L79hNG9qoa43FcnNm6c"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I bukspyttkjertlen"
+      },
+      {
+        "key":"b",
+        "value":"I leveren"
+      },
+      {
+        "key":"c",
+        "value":"I galleblæren"
+      },
+      {
+        "key":"d",
+        "value":"I magesekken"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"9e333c50-2394-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor produseres bikarbonat?",
+    "solution":"a",
+    ".key":"-L79hwiRI6qyESGm0QIP"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I bukspyttkjertlen"
+      },
+      {
+        "key":"b",
+        "value":"I leveren"
+      },
+      {
+        "key":"c",
+        "value":"I tolvfingertarmen"
+      },
+      {
+        "key":"d",
+        "value":"I magesekken"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"be8f1460-2394-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor produseres insulin?",
+    "solution":"a",
+    ".key":"-L79i5_oT_8PlbIbQSqH"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I galleblæren"
+      },
+      {
+        "key":"b",
+        "value":"I leveren"
+      },
+      {
+        "key":"c",
+        "value":"I bukspyttkjertlen"
+      },
+      {
+        "key":"d",
+        "value":"I magesekken"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"8ef79690-2395-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor i fordøyelsen lagres gallen?",
+    "solution":"a",
+    ".key":"-L79jSjAU5h35peCNcWY"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I magesekken"
+      },
+      {
+        "key":"b",
+        "value":"I munnen"
+      },
+      {
+        "key":"c",
+        "value":"I tolvfingertarmen"
+      },
+      {
+        "key":"d",
+        "value":"I tykktarmen"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"e1b4ec70-2395-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor tilsettes pepsin?",
+    "solution":"a",
+    ".key":"-L79k3ttYB8eCITyWmhV"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I tolvfingertarmen"
+      },
+      {
+        "key":"b",
+        "value":"I munnen"
+      },
+      {
+        "key":"c",
+        "value":"I magesekken"
+      },
+      {
+        "key":"d",
+        "value":"I tykktarmen"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"0b07b080-2396-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor tilsettes trypsin?",
+    "solution":"a",
+    ".key":"-L79kFaeLq78la8XA6Et"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Vitamin-A"
+      },
+      {
+        "key":"b",
+        "value":"Vitamin-D"
+      },
+      {
+        "key":"c",
+        "value":"Vitamin-C"
+      },
+      {
+        "key":"d",
+        "value":"Vitamin-E"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"a81e8880-2396-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende vitaminer er vannløslig?",
+    "solution":"c",
+    ".key":"-L79lGJomsoizdjeZ7b_"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Amylase, pepsin, lipase."
+      },
+      {
+        "key":"b",
+        "value":"Pepsin, lipase, amylase."
+      },
+      {
+        "key":"c",
+        "value":"Amylase, lipase, pepsin."
+      },
+      {
+        "key":"d",
+        "value":"Pepsin, amylase, lipase."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"cb6ecbf0-2397-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av alternativene under viser hvilken rekkefølge enzymene tilsettes i fordøyelsen?",
+    "solution":"a",
+    ".key":"-L79nPuO7GZLsmvL18dd"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Fordi amylase tilsettes i munnen og denaturerer i magesekken pga. den lave pHen. Deretter tilsettes amylase på nytt i tolvfingertarmen."
+      },
+      {
+        "key":"b",
+        "value":"Amylase må tilsettes to ganger fordi det er to forskjellige amylaser."
+      },
+      {
+        "key":"c",
+        "value":"Amylase må tilsettes to ganger fordi spyttkjertlen og bukspyttkjertlen er det samme organet."
+      },
+      {
+        "key":"d",
+        "value":"Amylase må tilsettes to ganger fordi karbohydrater er svært vanskelig å fordøye."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"5c616cd0-2398-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvorfor må amylase tilsettes i fordøyelsen to ganger?",
+    "solution":"a",
+    ".key":"-L79oRzZFMbxhs1f8S-d"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Magesekken"
+      },
+      {
+        "key":"b",
+        "value":"Munnen"
+      },
+      {
+        "key":"c",
+        "value":"Tynntarmen"
+      },
+      {
+        "key":"d",
+        "value":"Tykktarmen"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"b7567d60-2398-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor i kroppen dannes vitamin-K?",
+    "solution":"d",
+    ".key":"-L79obJ5gq56S2UFZbF9"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Bakterier"
+      },
+      {
+        "key":"b",
+        "value":"Virus"
+      },
+      {
+        "key":"c",
+        "value":"Tarmtotter"
+      },
+      {
+        "key":"d",
+        "value":"Gallestein"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"d0886140-2398-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er det som hjelper til med å danne vitamin-K i fordøyelsessystemet?",
+    "solution":"a",
+    ".key":"-L79otTG96dPNo6_kozA"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Base"
+      },
+      {
+        "key":"b",
+        "value":"Emulgator"
+      },
+      {
+        "key":"c",
+        "value":"Enzym"
+      },
+      {
+        "key":"d",
+        "value":"Gallesalt"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"fcde5330-2398-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Bikarbonat er en?",
+    "solution":"a",
+    ".key":"-L79p1ikvI6Vv8ouaFHp"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et stoff som gjør at du kan blande fett og vann."
+      },
+      {
+        "key":"b",
+        "value":"Et stoff som hindrer vann og fett i å blande seg."
+      },
+      {
+        "key":"c",
+        "value":"Et stoff som nøytraliserer magesyre."
+      },
+      {
+        "key":"d",
+        "value":"Et soff som bryter ned fett."
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Vanskelig",
+    "id":"13778ad0-2399-11e8-b5df-8def17ea9dcc",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er en emulgator?",
+    "solution":"a",
+    ".key":"-L79pHz75Ga-OuM-VaOw"
   },
   {
     "answers":[
@@ -3279,6 +5827,2442 @@
     "answers":[
       {
         "key":"a",
+        "value":"273 K"
+      },
+      {
+        "key":"b",
+        "value":"2073 K"
+      },
+      {
+        "key":"c",
+        "value":"293 K"
+      },
+      {
+        "key":"d",
+        "value":"2093 K"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"e18f6b70-25f8-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"20 grader celsius tilsvarer hvor mange grader Kelvin?",
+    "solution":"c",
+    ".key":"-L7POEwtIck3H-c4SbEM"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"-100 grader celsius"
+      },
+      {
+        "key":"b",
+        "value":"0 grader celsius"
+      },
+      {
+        "key":"c",
+        "value":"100 grader celsius"
+      },
+      {
+        "key":"d",
+        "value":"273 grader celsius"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"1cc13a70-25f9-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"273 grader celsius tilsvarer hvor mange grader kelvin?",
+    "solution":"c",
+    ".key":"-L7POdb__sfO5FKKqEk5"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"273 grader kelvin tilsvarer 100 grader celsius."
+      },
+      {
+        "key":"b",
+        "value":"Kelvin kan ikke være et positivit tall."
+      },
+      {
+        "key":"c",
+        "value":"Kelvin kan ikke være et negativit tall."
+      },
+      {
+        "key":"d",
+        "value":"100 grader kelvin tilsvarer 273 grader celsius."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"5b6a55e0-25f9-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken påstand er riktig om enheten kelvin?",
+    "solution":"c",
+    ".key":"-L7PPEJl_mRJiyIK8qhi"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*CO_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*H_2|O*"
+      },
+      {
+        "key":"c",
+        "value":"KFK"
+      },
+      {
+        "key":"d",
+        "value":"Alkylhalider"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"b77a2540-25f9-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende gasser var en miljøtrussel mot ozonlaget?",
+    "solution":"c",
+    ".key":"-L7PP_bqWIt47CjLYzpw"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0 grader kelvin tilsvarer 273 grader celsius"
+      },
+      {
+        "key":"b",
+        "value":"273 grader celsius tilsvarer 0 grader kelvin."
+      },
+      {
+        "key":"c",
+        "value":"0 grader celsius tilsvarer 273 grader kelvin."
+      },
+      {
+        "key":"d",
+        "value":"0 grader kelvin tilsvarer 0 grader kelvin."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"ede98a30-25f9-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken påstand er riktig om enheten kelvin?",
+    "solution":"c",
+    ".key":"-L7PQcCK0vyuFoP3x5WI"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Enheten kelvin brukes vanligvis i vitenskaplige artikler."
+      },
+      {
+        "key":"b",
+        "value":"Enheten kelvin har bare plussgrader."
+      },
+      {
+        "key":"c",
+        "value":"100 grader celsius tilsvarer 373 grader kelvin."
+      },
+      {
+        "key":"d",
+        "value":"Enheten kelvin har både pluss- og minusgrader."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"90799920-25fa-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken påstand er feil om enheten kelvin?",
+    "solution":"d",
+    ".key":"-L7PRQvZ4BoKMqPnbuno"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alt i universet er blåforskjøvet."
+      },
+      {
+        "key":"b",
+        "value":"Planeter og stjerner som er lengre unna jorda beveger seg fortere vekk fra jorda enn planeter og stjerner som er nærmere."
+      },
+      {
+        "key":"c",
+        "value":"Alt i universet beveger seg bort fra jorda, og er rødforskjøvet."
+      },
+      {
+        "key":"d",
+        "value":"Universet utvider seg samtidig som det er uendelig. "
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"0ec01b10-25fb-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av alternativene under beskriver Hubbles lov?",
+    "solution":"b",
+    ".key":"-L7PS1eMZR-EGobM3prX"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et elektron hopper utover i skallene i et atom."
+      },
+      {
+        "key":"b",
+        "value":"Når et elektron tar opp energi fra omgivelsene."
+      },
+      {
+        "key":"c",
+        "value":"Når et elektron hopper til et skall på et lavere energinivå etter å ha blitt eksitert."
+      },
+      {
+        "key":"d",
+        "value":"Når to hydrogenkjerner fusjonerer og danner helium. "
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"6d4ef430-25fb-11e8-a799-0b1189854af2",
+    "imageId":"b650838f-ef5a-aac4-b6b5-3e5edbbb7abe",
+    "lang":"no",
+    "questionText":"Emissjon er når?",
+    "solution":"a",
+    ".key":"-L7PScNfrD-LJ2_Nfm1w"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"*O_2|*"
+      },
+      {
+        "key":"b",
+        "value":"*O_3|*"
+      },
+      {
+        "key":"c",
+        "value":"O=O"
+      },
+      {
+        "key":"d",
+        "value":"O-O"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"78700140-25fd-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er molkeylformelen til ozon?",
+    "solution":"b",
+    ".key":"-L7PVncPg3F1j6QCaTtN"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"O-14"
+      },
+      {
+        "key":"b",
+        "value":"N-15"
+      },
+      {
+        "key":"c",
+        "value":"B-10"
+      },
+      {
+        "key":"d",
+        "value":"O-15"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"c06f7be0-25ff-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvis N-14 gjennomgår betastråling får du?",
+    "solution":"a",
+    ".key":"-L7PZIZ5jxGOgdNrIErB"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Vann fryser ved 100 grader kelvin"
+      },
+      {
+        "key":"b",
+        "value":"Vann koker ved 100 grader kelvin."
+      },
+      {
+        "key":"c",
+        "value":"Vann fryser ved 373 grader kelvin."
+      },
+      {
+        "key":"d",
+        "value":"Vann koker ved 373 grader kelvin."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"13d39910-2600-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket utsagn er riktig om temperaturenheten kelvin?",
+    "solution":"d",
+    ".key":"-L7P_0uwsdwzFgnmW0pR"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Vann fryser ved 0 grader kelvin."
+      },
+      {
+        "key":"b",
+        "value":"Vann koker ved 0 grader kelvin."
+      },
+      {
+        "key":"c",
+        "value":"Vann fryser ved 273 grader kelvin."
+      },
+      {
+        "key":"d",
+        "value":"Vann koker ved 273 grader kelvin."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"4d800090-2600-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket utsagn er riktig om temperaturenheten kelvin?",
+    "solution":"c",
+    ".key":"-L7P_KwR0bA_1HeOGg6s"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"40"
+      },
+      {
+        "key":"b",
+        "value":"0,4"
+      },
+      {
+        "key":"c",
+        "value":"2,5"
+      },
+      {
+        "key":"d",
+        "value":"104"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"f1faef90-2600-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"10 svigninger på 4 sekunder gir en frekvens på?",
+    "solution":"c",
+    ".key":"-L7PaHxezWoe_a0S2mok"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"2"
+      },
+      {
+        "key":"b",
+        "value":"90"
+      },
+      {
+        "key":"c",
+        "value":"89"
+      },
+      {
+        "key":"d",
+        "value":"178"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"135af130-2601-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Ac-180 har hvor mange nøytroner for mye?",
+    "solution":"a",
+    ".key":"-L7PagU2Wsl1kQO9wNPI"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Nukleontallet endrer seg."
+      },
+      {
+        "key":"b",
+        "value":"Nukleontallet endrer seg ikke."
+      },
+      {
+        "key":"c",
+        "value":"Protontallet endrer seg ikke."
+      },
+      {
+        "key":"d",
+        "value":"Atomsymbolet endrer seg ikke. "
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"51aaa200-2601-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er en egenskap ved betastråling?",
+    "solution":"b",
+    ".key":"-L7PbKzOZi4bSic9STOE"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Plasmaeksplosjoner"
+      },
+      {
+        "key":"b",
+        "value":"Solvind"
+      },
+      {
+        "key":"c",
+        "value":"Solstråler"
+      },
+      {
+        "key":"d",
+        "value":"Gammaburst"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"5a181d40-2602-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Store eksplosjoner på sola som forårsaker kraftig nordlys på jorda kalles for?",
+    "solution":"b",
+    ".key":"-L7PccvSprkjayp7W6_Z"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Protonstråling"
+      },
+      {
+        "key":"b",
+        "value":"UV-stråling"
+      },
+      {
+        "key":"c",
+        "value":"Nøytronstråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"9b1561e0-2602-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken type radioaktiv stråling bruker man i EU for å øke holdbarheten på mat?",
+    "solution":"d",
+    ".key":"-L7Pd4icQTU5V-OJi8jJ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Protontallet"
+      },
+      {
+        "key":"b",
+        "value":"Nøytrontallet"
+      },
+      {
+        "key":"c",
+        "value":"Nukleontallet"
+      },
+      {
+        "key":"d",
+        "value":"Atomsymbolet"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"6f808b20-2604-11e8-a799-0b1189854af2",
+    "imageId":"93f63388-4499-f062-d22e-768de2c0acfb",
+    "lang":"no",
+    "questionText":"Hva er navnet på det tallet som står nede i denne noteringen av karbon?",
+    "solution":"a",
+    ".key":"-L7Pg0UEqGvtcDa9zxfJ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Californium"
+      },
+      {
+        "key":"b",
+        "value":"Karbon"
+      },
+      {
+        "key":"c",
+        "value":"Kalsium"
+      },
+      {
+        "key":"d",
+        "value":"Kalium"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"bc8b98b0-2604-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket atom er representert her?",
+    "solution":"b",
+    ".key":"-L7PgdHyy8VLcHiH0Efg"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"6"
+      },
+      {
+        "key":"b",
+        "value":"12"
+      },
+      {
+        "key":"c",
+        "value":"6 + 12"
+      },
+      {
+        "key":"d",
+        "value":"12 - 6"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"f361aeb0-2604-11e8-a799-0b1189854af2",
+    "imageId":"93f63388-4499-f062-d22e-768de2c0acfb",
+    "lang":"no",
+    "questionText":"Hvor mange protoner er det i det atomet som er representert her?",
+    "solution":"a",
+    ".key":"-L7PgtqpT4PXzuB9KfaE"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"6"
+      },
+      {
+        "key":"b",
+        "value":"8"
+      },
+      {
+        "key":"c",
+        "value":"12"
+      },
+      {
+        "key":"d",
+        "value":"12 + 6"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"474c8810-2605-11e8-a799-0b1189854af2",
+    "imageId":"6d1db61d-5344-064f-d831-35b1d9498796",
+    "lang":"no",
+    "questionText":"Hvor mange nøytroner er det i det atomet som er representert her?",
+    "solution":"b",
+    ".key":"-L7Php4M7pSLeDI3hlIb"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Liv"
+      },
+      {
+        "key":"b",
+        "value":"Himmel"
+      },
+      {
+        "key":"c",
+        "value":"Atmosfære"
+      },
+      {
+        "key":"d",
+        "value":"Grunnvann"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"ac682b00-2605-11e8-a799-0b1189854af2",
+    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
+    "lang":"no",
+    "questionText":"Hvilken av disse tingene må være tilstede for at du skal få dannet nordlys?",
+    "solution":"c",
+    ".key":"-L7PiUxgVaFZqoRuiq1h"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Magnetfelt, stjerne, himmel"
+      },
+      {
+        "key":"b",
+        "value":"Ozonlag, magnetfelt, atmosfære"
+      },
+      {
+        "key":"c",
+        "value":"Atmosfære, magnetfelt, stjerne"
+      },
+      {
+        "key":"d",
+        "value":"Planet, stjerne, magnetfelt"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"6e64f710-2606-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av alternativene under beskriver hvilke tre ting du trenger for at nordlys skal dannes?",
+    "solution":"c",
+    ".key":"-L7PjbImHEzjBWNleu6_"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Fisjon"
+      },
+      {
+        "key":"b",
+        "value":"Terrella"
+      },
+      {
+        "key":"c",
+        "value":"Fusjon"
+      },
+      {
+        "key":"d",
+        "value":"Supernova"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"12a28ef0-2607-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Prosessen som skjer på sola hvor helium dannes fra hydrogen kalles for?",
+    "solution":"c",
+    ".key":"-L7PkIUBSwi7-cCjN5gl"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Frekvensen blir høyere til høyre."
+      },
+      {
+        "key":"b",
+        "value":"Fargene blir mørkere til høyre."
+      },
+      {
+        "key":"c",
+        "value":"Lyset blir sterkere til høyre."
+      },
+      {
+        "key":"d",
+        "value":"Bølgelengden blir lengre til høyre."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"2f22b370-2607-11e8-a799-0b1189854af2",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Den rød pilen som går til høyre i denne figuren forteller at?",
+    "solution":"a",
+    ".key":"-L7PkzOcI0PI3rdB54QP"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Energien blir høyere til høyre."
+      },
+      {
+        "key":"b",
+        "value":"Fargene blir mørkere til høyre."
+      },
+      {
+        "key":"c",
+        "value":"Lyset blir sterkere til høyre."
+      },
+      {
+        "key":"d",
+        "value":"Bølgelengden blir lengre til høyre."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"9a588840-2607-11e8-a799-0b1189854af2",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Den rød pilen som går til høyre i denne figuren forteller at?",
+    "solution":"a",
+    ".key":"-L7Pl_kxSf833UJEUcve"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Frekvensen blir lavere til venstre."
+      },
+      {
+        "key":"b",
+        "value":"Fargene blir lysere til venstre."
+      },
+      {
+        "key":"c",
+        "value":"Lyset blir svakere til venstre."
+      },
+      {
+        "key":"d",
+        "value":"Bølgelengden blir kortere til høyre."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"f801e360-2607-11e8-a799-0b1189854af2",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Den rød pilen som går til høyre i denne figuren forteller at?",
+    "solution":"a",
+    ".key":"-L7Plwa7ass2Lph2e1aK"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Energien blir lavere til venstre."
+      },
+      {
+        "key":"b",
+        "value":"Fargene blir lysere til venstre."
+      },
+      {
+        "key":"c",
+        "value":"Lyset blir svakere til venstre."
+      },
+      {
+        "key":"d",
+        "value":"Bølgelengden blir kortere til venstre."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"2fbfe860-2608-11e8-a799-0b1189854af2",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Den rød pilen som går til høyre i denne figuren forteller at?",
+    "solution":"a",
+    ".key":"-L7Pm9HgFOGfRikhmqGv"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa"
+      },
+      {
+        "key":"b",
+        "value":"Beta"
+      },
+      {
+        "key":"c",
+        "value":"Delta"
+      },
+      {
+        "key":"d",
+        "value":"Gamma"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"a8cc8480-2643-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilket alternativ er ikke et eksempel på radioaktiv stråling?",
+    "solution":"c",
+    ".key":"-L7TFL098_XSzLhAIja9"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa"
+      },
+      {
+        "key":"b",
+        "value":"Beta"
+      },
+      {
+        "key":"c",
+        "value":"Gamma"
+      },
+      {
+        "key":"d",
+        "value":"Feta"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"accb4970-2690-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilken type radioaktiv stråling avgir fotoner?",
+    "solution":"c",
+    ".key":"-L7TGjcK-xfgn4F_lN90"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa"
+      },
+      {
+        "key":"b",
+        "value":"Beta"
+      },
+      {
+        "key":"c",
+        "value":"Delta"
+      },
+      {
+        "key":"d",
+        "value":"Gamma"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"ca101d80-2690-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilken type radioaktiv stråling sender elektroner ut av kjernen?",
+    "solution":"b",
+    ".key":"-L7THk73993Nw10OMv0J"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0"
+      },
+      {
+        "key":"b",
+        "value":"4"
+      },
+      {
+        "key":"c",
+        "value":"8"
+      },
+      {
+        "key":"d",
+        "value":"14"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"67862c80-2691-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvor mange nøytroner finnes i C-14?",
+    "solution":"c",
+    ".key":"-L7TI-l8KdWsEUeaRv7H"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"92"
+      },
+      {
+        "key":"c",
+        "value":"147"
+      },
+      {
+        "key":"d",
+        "value":"235"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"902753d0-2691-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvor mange protoner finner man i U-235?",
+    "solution":"b",
+    ".key":"-L7TJDu_ZFkJHbU_Upt_"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0"
+      },
+      {
+        "key":"b",
+        "value":"43"
+      },
+      {
+        "key":"c",
+        "value":"92"
+      },
+      {
+        "key":"d",
+        "value":"238"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"4ef15680-2692-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvor mange elektroner finner man i Uran-238?",
+    "solution":"c",
+    ".key":"-L7TJR28ymhQpFFClNo0"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"6"
+      },
+      {
+        "key":"c",
+        "value":"8"
+      },
+      {
+        "key":"d",
+        "value":"14"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"6f01f4c0-2692-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er nukleontallet til C-14?",
+    "solution":"d",
+    ".key":"-L7TNb2mOEBd22wvbzyL"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"26"
+      },
+      {
+        "key":"b",
+        "value":"31"
+      },
+      {
+        "key":"c",
+        "value":"47"
+      },
+      {
+        "key":"d",
+        "value":"54"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"fae30f40-2694-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange protoner er det i Fe-54?",
+    "solution":"a",
+    ".key":"-L7TP0mLCRKBYjPptd8e"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"26"
+      },
+      {
+        "key":"b",
+        "value":"31"
+      },
+      {
+        "key":"c",
+        "value":"57"
+      },
+      {
+        "key":"d",
+        "value":"114"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"d86413a0-2695-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange nøytroner finnes det i Fe-57?",
+    "solution":"b",
+    ".key":"-L7TQnbHRZlzkVOjE5F7"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"ee49e450-2696-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange nøytroner er det i H-2?",
+    "solution":"a",
+    ".key":"-L7TRQE95YoNabY2o_UF"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"33"
+      },
+      {
+        "key":"b",
+        "value":"34"
+      },
+      {
+        "key":"c",
+        "value":"77"
+      },
+      {
+        "key":"d",
+        "value":"110"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"4f064bd0-2697-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er nukleontallet til Se-77?",
+    "solution":"c",
+    ".key":"-L7TRfgmKEQMqMysbdkv"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Lys"
+      },
+      {
+        "key":"b",
+        "value":"Temperatur"
+      },
+      {
+        "key":"c",
+        "value":"Vann"
+      },
+      {
+        "key":"d",
+        "value":"Maur"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"7390e1f0-2772-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende alternativer representerer en biotisk faktor?",
+    "solution":"d",
+    ".key":"-L7Z4ib9bqMUIyw7I5hG"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Luft"
+      },
+      {
+        "key":"b",
+        "value":"Stein"
+      },
+      {
+        "key":"c",
+        "value":"Ioner"
+      },
+      {
+        "key":"d",
+        "value":"Sopp"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"d29a25c0-2773-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende alternativer er en biotisk faktor?",
+    "solution":"d",
+    ".key":"-L7Z4tibLp0Lz-DnXnm3"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Løvetann"
+      },
+      {
+        "key":"b",
+        "value":"Geitrams"
+      },
+      {
+        "key":"c",
+        "value":"Bringerbærbusk"
+      },
+      {
+        "key":"d",
+        "value":"Furu"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"e9afeaf0-2774-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende plantearter regnes som en plante i klimaksfasen?",
+    "solution":"d",
+    ".key":"-L7Z6iHh_Bkz5tf7zP7m"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Epletre"
+      },
+      {
+        "key":"b",
+        "value":"Hvitveis"
+      },
+      {
+        "key":"c",
+        "value":"Bregne "
+      },
+      {
+        "key":"d",
+        "value":"Gran"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"0a5241e0-2775-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende plantearter regnes som en plante i klimaksfasen?",
+    "solution":"d",
+    ".key":"-L7Z6rlIbvusBV7q6ch0"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Lys"
+      },
+      {
+        "key":"b",
+        "value":"Furu"
+      },
+      {
+        "key":"c",
+        "value":"Regn"
+      },
+      {
+        "key":"d",
+        "value":"pH"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"08fc3250-2776-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende alternativer er en biotisk faktor?",
+    "solution":"b",
+    ".key":"-L7Z8YJx_mF3izDg0B-w"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Dyr som ser like ut."
+      },
+      {
+        "key":"b",
+        "value":"Dyr som parrer seg med hverandre."
+      },
+      {
+        "key":"c",
+        "value":"Dyr som kan få fruktbart avkom."
+      },
+      {
+        "key":"d",
+        "value":"Dyr som lever i flokk."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"789decc0-2776-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er definisjonen på en art?",
+    "solution":"c",
+    ".key":"-L7Z9NTHF4lluz1k67_d"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et samfunn er grupper av mennesker som lever under et samlet system."
+      },
+      {
+        "key":"b",
+        "value":"Et samfunn er dyr som lever i hierarkier."
+      },
+      {
+        "key":"c",
+        "value":"Et samfunn er en samling av forskjellige arter som lever i et definert område."
+      },
+      {
+        "key":"d",
+        "value":"Et samfunn er en samling av økosystemer som ligner på hvernandre, men som befinner seg i geografisk avstand fra hverandre."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"f8ada080-2777-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket fagbegrep beskriver fagbegrepet samfunn?",
+    "solution":"c",
+    ".key":"-L7ZC6jFUVCcsJyu1j1c"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"En gruppe av samme art som lever i et gitt økosystem."
+      },
+      {
+        "key":"b",
+        "value":"En gruppe mennesker som lever i et land."
+      },
+      {
+        "key":"c",
+        "value":"En gruppe arter som lever i et gitt økosystem."
+      },
+      {
+        "key":"d",
+        "value":"En gruppe økosystemer som inneholder samme arter."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"475e6010-277e-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ beskriver fagbegrepet populasjon",
+    "solution":"a",
+    ".key":"-L7ZMFIo6IKo5TNanWiT"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et økosystem er de biotiske og abiotiske faktorene som befinner seg innenfor et definert område."
+      },
+      {
+        "key":"b",
+        "value":"Økosystemer finnes overalt på kloden."
+      },
+      {
+        "key":"c",
+        "value":"Et økosystem er beskrivelsen av hvilke arter som spiser hverandre i et samfunn."
+      },
+      {
+        "key":"d",
+        "value":"Et økosystem forklarer hvordan hierarkier utspiller seg hos dyr som lever i grupper."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"851ef040-277e-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ passer best med beskrivelsen av et økosystem?",
+    "solution":"a",
+    ".key":"-L7ZQtCIeQjyJ-uulSR-"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Løvtrær"
+      },
+      {
+        "key":"b",
+        "value":"Sopp"
+      },
+      {
+        "key":"c",
+        "value":"Lys"
+      },
+      {
+        "key":"d",
+        "value":"Kuer"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"4c4f7e70-2782-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av alternativene er et eksempel på en produsent? ",
+    "solution":"a",
+    ".key":"-L7ZXR0LSdFV0Qj-eLlN"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"HIV-viruset"
+      },
+      {
+        "key":"b",
+        "value":"Kuer"
+      },
+      {
+        "key":"c",
+        "value":"Sopp"
+      },
+      {
+        "key":"d",
+        "value":"Løvtrær"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"58769460-2785-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ et eksempel på en 1. forbruker?",
+    "solution":"b",
+    ".key":"-L7ZY3Pi5cYp6RnU97hT"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Sau"
+      },
+      {
+        "key":"b",
+        "value":"Ulv"
+      },
+      {
+        "key":"c",
+        "value":"Løvetann"
+      },
+      {
+        "key":"d",
+        "value":"Sopp"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"e5e11ff0-2785-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ er et eksempel på en 2. forbruker?",
+    "solution":"b",
+    ".key":"-L7ZYy3lFDpHiH1i9aU1"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Produsenter driver fotosyntese."
+      },
+      {
+        "key":"b",
+        "value":"Produsenter står sist i næringskjeden."
+      },
+      {
+        "key":"c",
+        "value":"Produsenter formerer seg flere ganger på en sesong."
+      },
+      {
+        "key":"d",
+        "value":"Produsenter er heterozygoter."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"52e6d2c0-2786-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ beskriver best fagbegrepet produsenter?",
+    "solution":"a",
+    ".key":"-L7Z_gFsWTWyBNjIAlF3"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Planter"
+      },
+      {
+        "key":"b",
+        "value":"Planteplankton"
+      },
+      {
+        "key":"c",
+        "value":"Blågrønnbakterier"
+      },
+      {
+        "key":"d",
+        "value":"Sopp"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"54de4080-2787-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ representerer ikke en produsent?",
+    "solution":"d",
+    ".key":"-L7Za3qS-hOz_X5pGYJK"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"b936ba80-2787-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange typer suksesjon har vi?",
+    "solution":"b",
+    ".key":"-L7ZaPfFKRtLAw_jl35O"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Løvetann"
+      },
+      {
+        "key":"b",
+        "value":"Pæretre"
+      },
+      {
+        "key":"c",
+        "value":"Solsikke"
+      },
+      {
+        "key":"d",
+        "value":"Gran"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"1125b700-2788-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende planter kalles for en pionerplante?",
+    "solution":"a",
+    ".key":"-L7Zb_hY47Pmxu5tk7g8"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Papir"
+      },
+      {
+        "key":"b",
+        "value":"Tre"
+      },
+      {
+        "key":"c",
+        "value":"Aluminium"
+      },
+      {
+        "key":"d",
+        "value":"Bly"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"0f582550-27bc-11e8-a5c7-ad99d4671feb",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hva er det minste som må til for å stanse alfastråling? ",
+    "solution":"a",
+    ".key":"-L7_wbUT7Qxk7IMkX2bB"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Gammastråling avgir elektroner."
+      },
+      {
+        "key":"b",
+        "value":"Gammastråling er partikkelstråling."
+      },
+      {
+        "key":"c",
+        "value":"Gammastråling kvitter seg med energi i form av et foton."
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling er heliumkjerner."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"dd6184a0-2776-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken påstand om gammastråling er riktig?",
+    "solution":"c",
+    ".key":"-L7_wgilBNdwJBVRLLoN"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Protactinium-234"
+      },
+      {
+        "key":"b",
+        "value":"Protactinium-233"
+      },
+      {
+        "key":"c",
+        "value":"Thorium-234"
+      },
+      {
+        "key":"d",
+        "value":"Thorium-233"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"87d57770-26ff-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Thorium-234 kan gjennomgå en betastråling. Hva dannes i tillegg til betapartikkelen?",
+    "solution":"a",
+    ".key":"-L7_wzgV9bDuHpJpLaf0"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa og Beta"
+      },
+      {
+        "key":"b",
+        "value":"Alfa og Gamma"
+      },
+      {
+        "key":"c",
+        "value":"Beta og Gamma"
+      },
+      {
+        "key":"d",
+        "value":"Alfa, Beta og Gamma"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"99a08fc0-2700-11e8-acc6-13d5e9a6268d",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilke radioaktive strålingstyper er partikkelstråling?",
+    "solution":"a",
+    ".key":"-L7_x4xqTHkpSeCMkIGz"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Thorium-232"
+      },
+      {
+        "key":"b",
+        "value":"Thorium-234"
+      },
+      {
+        "key":"c",
+        "value":"Thorium-236"
+      },
+      {
+        "key":"d",
+        "value":"Thorium-238"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"9eaa9180-26fd-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Uran-238 gjennomgår en alfastråling. Hva dannes i tillegg til heliumkjernen?",
+    "solution":"b",
+    ".key":"-L7_xAJC6XX2wNifBwwW"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa"
+      },
+      {
+        "key":"b",
+        "value":"Beta"
+      },
+      {
+        "key":"c",
+        "value":"Delta"
+      },
+      {
+        "key":"d",
+        "value":"Gamma"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"8da38490-2690-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilke type radioaktiv stråling omgjør et nøytron til et proton og elektron?",
+    "solution":"b",
+    ".key":"-L7_xDovmmkNMXnx5fgD"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radon-222"
+      },
+      {
+        "key":"b",
+        "value":"Karbon-14"
+      },
+      {
+        "key":"c",
+        "value":"Uran-235"
+      },
+      {
+        "key":"d",
+        "value":"Thorium-232"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"dc524ef0-25ff-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av disse grunnstoffene har kortest halveringstid?",
+    "solution":"a",
+    ".key":"-L7_yK50tU7o8zpf96Rs"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Papir"
+      },
+      {
+        "key":"b",
+        "value":"Tre"
+      },
+      {
+        "key":"c",
+        "value":"Bly"
+      },
+      {
+        "key":"d",
+        "value":"Betong"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"6f1cc9e0-27bd-11e8-8e58-eb223e95a7be",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hva er det minste som må til for å stanse betastråling? ",
+    "solution":"b",
+    ".key":"-L7_ybQNu8jaeqQgj_c8"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Papir"
+      },
+      {
+        "key":"b",
+        "value":"Tre"
+      },
+      {
+        "key":"c",
+        "value":"Aluminium"
+      },
+      {
+        "key":"d",
+        "value":"Bly"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"9bdf3940-27bd-11e8-8e58-eb223e95a7be",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hva må til for å stanse gammastråling?",
+    "solution":"d",
+    ".key":"-L7_yjr4khyQ_sHVo0Pq"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Papir"
+      },
+      {
+        "key":"b",
+        "value":"Tre"
+      },
+      {
+        "key":"c",
+        "value":"Aluminium"
+      },
+      {
+        "key":"d",
+        "value":"Bly"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"b075c310-27bd-11e8-8e58-eb223e95a7be",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hvilket alternativ vil ikke kunne stanse betastråling?",
+    "solution":"a",
+    ".key":"-L7_zZNZfXRy8RBak6U_"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Co-56"
+      },
+      {
+        "key":"b",
+        "value":"Ba-56"
+      },
+      {
+        "key":"c",
+        "value":"Mn-56"
+      },
+      {
+        "key":"d",
+        "value":"Co-60"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"77377340-2697-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hva blir produktet dersom Co-60 avgir en heliumkjerne?",
+    "solution":"c",
+    ".key":"-L7a-ExEDMcWz8DX_Slr"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Betastråling har mer energi."
+      },
+      {
+        "key":"b",
+        "value":"Betastråling har mindre energi."
+      },
+      {
+        "key":"c",
+        "value":"Gammastråling er partikkelstråling."
+      },
+      {
+        "key":"d",
+        "value":"Betastråling er partikkelstråling."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"9b1208c0-27be-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er hovedårsaken til at gammastråling er vanskeligere å stanse enn betastråling?",
+    "solution":"d",
+    ".key":"-L7a-x03c_bgHdHmWKWW"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Den kan slå løs elektroner fra DNA/proteiner."
+      },
+      {
+        "key":"b",
+        "value":"Den gjør om ribosomer til ioder."
+      },
+      {
+        "key":"c",
+        "value":"Den frigjøre ioner fra kjernen til andre radioaktive stoffer."
+      },
+      {
+        "key":"d",
+        "value":"Den hindrer dannelsen av ioner i cytoplasma."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"4531b610-27c0-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva betyr det at radioaktiv stråling er ioniserende?",
+    "solution":"a",
+    ".key":"-L7a2nfLTPnpIL4SZYtF"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Den har lang halveringstid."
+      },
+      {
+        "key":"b",
+        "value":"Gasser er mer radioaktiv enn faste stoffer."
+      },
+      {
+        "key":"c",
+        "value":"Gasser har lettere for å bli tatt opp av levende organismer."
+      },
+      {
+        "key":"d",
+        "value":"Den avgir både alfastråling og infrarød stråling."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"c7075230-27c0-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvorfor er radon-222 farligere enn andre former for alfastråling?",
+    "solution":"c",
+    ".key":"-L7a3QqRAdCsg9pcUT-M"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Tellusteller"
+      },
+      {
+        "key":"b",
+        "value":"Fraksjonertteller"
+      },
+      {
+        "key":"c",
+        "value":"Geigerteller"
+      },
+      {
+        "key":"d",
+        "value":"Strålingsteller"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"291b8180-27c1-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva kalles apparatet som måler radioaktiv stråling?",
+    "solution":"c",
+    ".key":"-L7a3pgBo8k7RVq_zfMj"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Atomer som ønsker 8 valenselektroner."
+      },
+      {
+        "key":"b",
+        "value":"Atomer som oksiderer og reduseres."
+      },
+      {
+        "key":"c",
+        "value":"Atomkjerner som er ustabile."
+      },
+      {
+        "key":"d",
+        "value":"Atomkjerner som ønsker å bli redusert."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"68316880-27c1-11e8-8e58-eb223e95a7be",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilket alternativ beskriver radioaktiv stråling best?",
+    "solution":"c",
+    ".key":"-L7a5RUepU13PheLFWRA"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1120-tallet"
+      },
+      {
+        "key":"b",
+        "value":"1550-tallet"
+      },
+      {
+        "key":"c",
+        "value":"1890-tallet"
+      },
+      {
+        "key":"d",
+        "value":"1960-tallet"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"632e2f70-27c2-11e8-8e58-eb223e95a7be",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Når ble radioaktiv stråling først oppdaget?",
+    "solution":"c",
+    ".key":"-L7a65IDVTMCxT9WCt5g"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Henri Becquerel"
+      },
+      {
+        "key":"b",
+        "value":"Ernest Rutherford"
+      },
+      {
+        "key":"c",
+        "value":"Marie Curie"
+      },
+      {
+        "key":"d",
+        "value":"Friedrich Wöhler"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"c93eb9b0-27c2-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken historisk person har ikke bidratt til forståelsen rundt radioaktiv stråling?",
+    "solution":"d",
+    ".key":"-L7a6pLMzS73GMRX7OP-"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Positiv"
+      },
+      {
+        "key":"b",
+        "value":"Negativ"
+      },
+      {
+        "key":"c",
+        "value":"Nøytral"
+      },
+      {
+        "key":"d",
+        "value":"Både positiv og negativ"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"318ef360-27c6-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken elektrisk ladning har betastråling?",
+    "solution":"b",
+    ".key":"-L7aBttQaJXhkwjMlj23"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Positiv"
+      },
+      {
+        "key":"b",
+        "value":"Negativ"
+      },
+      {
+        "key":"c",
+        "value":"Nøytral"
+      },
+      {
+        "key":"d",
+        "value":"Både positiv og negativ"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"5476a670-27c6-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken elektrisk ladning har gammastråling?",
+    "solution":"c",
+    ".key":"-L7aC8P3wcdwihkCvAEd"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Protonet og elektroner forlater kjernen."
+      },
+      {
+        "key":"b",
+        "value":"Protonet blir i kjernen mens elektronet forlater kjernen."
+      },
+      {
+        "key":"c",
+        "value":"Elektronet blir i kjernen mens protonet forlater kjernen."
+      },
+      {
+        "key":"d",
+        "value":"Protonet og elektronet blir igjen i kjernen."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"f320fd70-27cb-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva skjer etter at et nøytron har blitt omgjort i en betastråling?",
+    "solution":"b",
+    ".key":"-L7aNTio2xeKqT2TmjJu"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Universet og jordskorpen."
+      },
+      {
+        "key":"b",
+        "value":"Vann og månen."
+      },
+      {
+        "key":"c",
+        "value":"Sola og melkeveien."
+      },
+      {
+        "key":"d",
+        "value":"Vulkaner og drivhuseffekten."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"ab5455d0-27cd-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor kommer mesteparten av bakgrunnsstrålingen fra?",
+    "solution":"a",
+    ".key":"-L7aOCq1iCnsEmXKHMgO"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Sola og månen"
+      },
+      {
+        "key":"b",
+        "value":"Melkeveien"
+      },
+      {
+        "key":"c",
+        "value":"Atmosfæren og magnetfeltet"
+      },
+      {
+        "key":"d",
+        "value":"Drivhuseffekten og ioniserende stråling"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"d80f9940-27cd-11e8-8e58-eb223e95a7be",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva beskytter oss mot kosmisk stråling?",
+    "solution":"c",
+    ".key":"-L7aQiG-MxcaHcIvDhc4"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Næringsnett"
+      },
+      {
+        "key":"b",
+        "value":"Næringskjede"
+      },
+      {
+        "key":"c",
+        "value":"Næringsliste"
+      },
+      {
+        "key":"d",
+        "value":"Næringsvei"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"759e0c70-2835-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva kalles det skjemaet som viser en oversikt over hvem som spiser hvem i et økosystem?",
+    "solution":"a",
+    ".key":"-L7d28AOMCYc8pGBFPt9"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Planteplankton og krill"
+      },
+      {
+        "key":"b",
+        "value":"Øgler og reptiler"
+      },
+      {
+        "key":"c",
+        "value":"Blågrønnbakterier og sopp"
+      },
+      {
+        "key":"d",
+        "value":"Ulv og sau"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"765977c0-2836-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Lav er en symbiose mellom?",
+    "solution":"c",
+    ".key":"-L7d5MDDNp-yyKW9rJy0"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Karbohydrater"
+      },
+      {
+        "key":"b",
+        "value":"Proteiner"
+      },
+      {
+        "key":"c",
+        "value":"Mineraler"
+      },
+      {
+        "key":"d",
+        "value":"Ioner"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"881f8700-2837-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"I en symbiose mellom blågrønnbakterier og sopp, hva hjelper blågrønnbakterien soppen med?",
+    "solution":"a",
+    ".key":"-L7d5Wov6cHQRwvk4qYI"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Karbohydrater"
+      },
+      {
+        "key":"b",
+        "value":"Mineraler og ioner"
+      },
+      {
+        "key":"c",
+        "value":"*CO_2|*"
+      },
+      {
+        "key":"d",
+        "value":"Vann"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"a2029270-2837-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"I en symbiose mellom blågrønnbakterier og sopp, hva hjelper soppen blågrønnbakterien med?",
+    "solution":"b",
+    ".key":"-L7d5rhtTm4qjTymVrUs"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pionéerfasen"
+      },
+      {
+        "key":"b",
+        "value":"Andrefasen"
+      },
+      {
+        "key":"c",
+        "value":"Sekundærfasen"
+      },
+      {
+        "key":"d",
+        "value":"Konsolideringsfasen"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"a0096510-2838-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva heter den mellomste fasen i suksesjonen?",
+    "solution":"d",
+    ".key":"-L7d7KNkr5CEo5sn8t82"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Sluttfasen"
+      },
+      {
+        "key":"b",
+        "value":"Tertiærfasen"
+      },
+      {
+        "key":"c",
+        "value":"Apokalypsen"
+      },
+      {
+        "key":"d",
+        "value":"Klimaksfasen"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"bc234db0-2838-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva heter den siste fasen i suksesjonen?",
+    "solution":"d",
+    ".key":"-L7d7UxCjjvZqY49j6Db"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Løvetann"
+      },
+      {
+        "key":"b",
+        "value":"Orkidée"
+      },
+      {
+        "key":"c",
+        "value":"Furu"
+      },
+      {
+        "key":"d",
+        "value":"Lav"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"28834aa0-2839-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken planteart er et eksempel på en pionéerplante?",
+    "solution":"a",
+    ".key":"-L7dA1lVUvVcqRaKWz2w"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Fjellbjørk"
+      },
+      {
+        "key":"b",
+        "value":"Bringebærbusk"
+      },
+      {
+        "key":"c",
+        "value":"Lav"
+      },
+      {
+        "key":"d",
+        "value":"Løvetann"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"637227c0-283a-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken plante er et eksempel på en pionéerplante som kommer sent i primærfasen?",
+    "solution":"b",
+    ".key":"-L7dANMcUrod9DNJmuy9"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Primærsuksesjon"
+      },
+      {
+        "key":"b",
+        "value":"Pionéersuksesjon"
+      },
+      {
+        "key":"c",
+        "value":"Sekundærsuksesjon"
+      },
+      {
+        "key":"d",
+        "value":"Annengradssuksesjon"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"982c1480-283a-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Etter atomreaktorkatastrofen i Tsjernobyl på 80-tallet evakuerte byen på grunn av den radioaktive strålingen. Byen er fortsatt ubebodd i 2018. Hvilken type suksesjon har forekommet der?",
+    "solution":"c",
+    ".key":"-L7dB2Yz5rvMRXagzS5n"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"For å bryte ned næringsstoffer."
       },
       {
@@ -3302,6 +8286,426 @@
     "questionText":"Hvorfor har bakterier restriksjonsenzymer?",
     "solution":"b",
     ".key":"-L7dBjrUtxcFVG9xcG32"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Sekundærsuksesjon"
+      },
+      {
+        "key":"b",
+        "value":"Pionéersuksesjon"
+      },
+      {
+        "key":"c",
+        "value":"Primærsuksesjon"
+      },
+      {
+        "key":"d",
+        "value":"Debutsuksesjon"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"07615180-283b-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"En vulkansk øy stiger opp av havet. Hvilken type suksesjon forekommer her?",
+    "solution":"c",
+    ".key":"-L7dBt9y0sN2ayqPcu8Q"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Løvetann"
+      },
+      {
+        "key":"b",
+        "value":"Hestehov"
+      },
+      {
+        "key":"c",
+        "value":"Bringebærbusk"
+      },
+      {
+        "key":"d",
+        "value":"Gran"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"848154d0-283b-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende arter finner vi typisk i klimaksfasen?",
+    "solution":"d",
+    ".key":"-L7dC6wsmaKRUhnmsnce"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Gran"
+      },
+      {
+        "key":"b",
+        "value":"Furu"
+      },
+      {
+        "key":"c",
+        "value":"Bjørk"
+      },
+      {
+        "key":"d",
+        "value":"Geitrams"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"a8963d40-283b-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken art finner vi typisk i pionéerfasen av sekundærsuksesjonen?",
+    "solution":"d",
+    ".key":"-L7dCKf_OTnN3KZSdtLx"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pionéersuksesjon"
+      },
+      {
+        "key":"b",
+        "value":"Sekundærsuksesjon"
+      },
+      {
+        "key":"c",
+        "value":"Primærsuksejon"
+      },
+      {
+        "key":"d",
+        "value":"Foregangssuksesjon"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"ca1bc840-283b-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"En isbre trekker seg tilbake etter flere tusen år med istid. Hvilken type suksesjon får vi?",
+    "solution":"c",
+    ".key":"-L7dCfG5jXgGMcQMt17E"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pionéersuksesjon"
+      },
+      {
+        "key":"b",
+        "value":"Pionéerfasen"
+      },
+      {
+        "key":"c",
+        "value":"Primærsuksejon"
+      },
+      {
+        "key":"d",
+        "value":"Sekundærsuksesjon"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"995148b0-283c-11e8-ab40-39855ea2f673",
+    "imageId":"120239b3-8e47-a16f-5844-4ecb5bf186fb",
+    "lang":"no",
+    "questionText":"Hvilken type suksesjon viser figuren?",
+    "solution":"c",
+    ".key":"-L7dE3ovoJJVtanDBNe0"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Sekundærsuksesjon"
+      },
+      {
+        "key":"b",
+        "value":"Pionéersuksesjon"
+      },
+      {
+        "key":"c",
+        "value":"Pionéerfase"
+      },
+      {
+        "key":"d",
+        "value":"Sekundærfase"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"3644ebd0-283e-11e8-ab40-39855ea2f673",
+    "imageId":"9820aada-6048-3689-1c2f-4917c96a8e72",
+    "lang":"no",
+    "questionText":"Hvilken type suksesjon ser du på denne figuren?",
+    "solution":"a",
+    ".key":"-L7dGWksoHD53HFu2f_T"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Gammakilden vil gi flest pip."
+      },
+      {
+        "key":"b",
+        "value":"Den tyngste vil gi flest pip."
+      },
+      {
+        "key":"c",
+        "value":"Den med kortest halveringstid vil gi flest pipe."
+      },
+      {
+        "key":"d",
+        "value":"Den med størst gjennomtrengelighetskraft vil gi flest pip."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"771beb80-2885-11e8-a48d-8d8c91264bd0",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Du måler en alfa-, en beta- og en gammastrålingskilde med en geigerteller. Hvilken påstand er riktig?",
+    "solution":"c",
+    ".key":"-L7f6T7KWr0YytKSI73l"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"60"
+      },
+      {
+        "key":"d",
+        "value":"120"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"53ac2740-2886-11e8-a48d-8d8c91264bd0",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange becquerel vil C-14 gi om den sender ut 120 elektroner per minutt?",
+    "solution":"b",
+    ".key":"-L7f8BNTze2XrUKzforO"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Bestråling av krydder."
+      },
+      {
+        "key":"b",
+        "value":"Til å ta røntgen bilder."
+      },
+      {
+        "key":"c",
+        "value":"Leder av elektrisk strøm i røykvarslere."
+      },
+      {
+        "key":"d",
+        "value":"Ytre strålebehandling av kreft."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"c98eb190-288a-11e8-a48d-8d8c91264bd0",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Am-241 avgir alfastråling og brukes blant annet i:",
+    "solution":"c",
+    ".key":"-L7fINZLRD-G4B8aOBE7"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Gammastråling med lang halveringstid."
+      },
+      {
+        "key":"b",
+        "value":"Betastråling med lang halveringstid."
+      },
+      {
+        "key":"c",
+        "value":"Alfastråling med kort halveringstid."
+      },
+      {
+        "key":"d",
+        "value":"Betastråling med kort halveringstid."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"6c714d30-2a13-11e8-8c8b-41a06252600e",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hvilken radioaktiv strålingskilde kan skade mennesker mest?",
+    "solution":"d",
+    ".key":"-L7pJP5nVuKLCokr-5Pj"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Fe-59"
+      },
+      {
+        "key":"b",
+        "value":"Ni-59"
+      },
+      {
+        "key":"c",
+        "value":"Ni-63"
+      },
+      {
+        "key":"d",
+        "value":"Cu-63"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"c316af70-2ad3-11e8-b170-979dbbe83fd3",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva blir dannet om Ni-63 gjennomgår en betastråling?",
+    "solution":"d",
+    ".key":"-L7uD7twqW-fDAviwr1d"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"33457ef0-2ae5-11e8-b170-979dbbe83fd3",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange typer radioaktiv stråling finnes?",
+    "solution":"c",
+    ".key":"-L7udrIcqrW3lv-54-1y"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"En med lang halveringstid."
+      },
+      {
+        "key":"b",
+        "value":"En med kort halveringtid."
+      },
+      {
+        "key":"c",
+        "value":"En uten halveringstid."
+      },
+      {
+        "key":"d",
+        "value":"Alle isotoper er like farlig."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"ccec5d80-2ae5-11e8-b170-979dbbe83fd3",
+    "imageId":"f8a6d750-071c-c5b2-1655-61ecd1682f69",
+    "lang":"no",
+    "questionText":"Hvilken isotop vil være farligst for mennesker?",
+    "solution":"b",
+    ".key":"-L7uj1ZLLjZo1sUxL7Xx"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0"
+      },
+      {
+        "key":"b",
+        "value":"10"
+      },
+      {
+        "key":"c",
+        "value":"20"
+      },
+      {
+        "key":"d",
+        "value":"30"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"66c2d030-2ae9-11e8-b170-979dbbe83fd3",
+    "imageId":"f8a6d750-071c-c5b2-1655-61ecd1682f69",
+    "lang":"no",
+    "questionText":"Hvor mange år tar det før 100 radioaktive atomer med halveringstid på 10 år gjøres om til 50 atomer?",
+    "solution":"b",
+    ".key":"-L7v1C-uwoOZwFOqy1jO"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Olje"
+      },
+      {
+        "key":"b",
+        "value":"Vannkraft"
+      },
+      {
+        "key":"c",
+        "value":"Vindkraft"
+      },
+      {
+        "key":"d",
+        "value":"Solkraft"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"0e637780-2b5e-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ er en ikke fornybar energikilde?",
+    "solution":"a",
+    ".key":"-L7xk3t5TroxhqO5f3cn"
   },
   {
     "answers":[
@@ -4259,6 +9663,62 @@
     "answers":[
       {
         "key":"a",
+        "value":"Det er flere protoner i kjernen enn nøytroner."
+      },
+      {
+        "key":"b",
+        "value":"Det er flere nøytroner i skallene enn elektroner."
+      },
+      {
+        "key":"c",
+        "value":"Det er flere elektroner i skallene enn nukleoner i kjernen."
+      },
+      {
+        "key":"d",
+        "value":"Det er flere nøytroner i kjernen enn protoner."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"faef9a00-2ad4-11e8-b170-979dbbe83fd3",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken påstand om Ni-63 er korrekt?",
+    "solution":"d",
+    ".key":"-L7zTB5WHQMpCNbbAYME"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Mikrobølger"
+      },
+      {
+        "key":"c",
+        "value":"UV-stråler"
+      },
+      {
+        "key":"d",
+        "value":"Røntgenstråler"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"c92ef5b0-1ba2-11e8-9163-cf262794ba18",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger finner du rett til høyre for synlig lys i det elektromagnetiske spektret?",
+    "solution":"c",
+    ".key":"-L8lMKUwxA5WS3Tm4cTC"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Jern"
       },
       {
@@ -4399,6 +9859,622 @@
     "answers":[
       {
         "key":"a",
+        "value":"Emittering"
+      },
+      {
+        "key":"b",
+        "value":"Eksitering"
+      },
+      {
+        "key":"c",
+        "value":"Elektrisering"
+      },
+      {
+        "key":"d",
+        "value":"Emissjon"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"0813fd00-1d35-11e8-8863-e1523875a15f",
+    "imageId":"b650838f-ef5a-aac4-b6b5-3e5edbbb7abe",
+    "lang":"no",
+    "questionText":"Hva kalles det når et elektron hopper utover i elektronskallene?",
+    "solution":"b",
+    ".key":"-L8lSVbVtjoH4dQahkv0"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Emissjonsspekter"
+      },
+      {
+        "key":"b",
+        "value":"Emitteringsspekter"
+      },
+      {
+        "key":"c",
+        "value":"Absorbsjonsspekter"
+      },
+      {
+        "key":"d",
+        "value":"Spektralspekter"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"33fd4660-2096-11e8-992f-7b7a51569ca4",
+    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
+    "lang":"no",
+    "questionText":"Hva er navnet på spekteret du ser i denne figuren?",
+    "solution":"c",
+    ".key":"-L8lT-f7oGaJwnzjQY5d"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"UV-lys"
+      },
+      {
+        "key":"b",
+        "value":"Blå"
+      },
+      {
+        "key":"c",
+        "value":"Rød"
+      },
+      {
+        "key":"d",
+        "value":"Fiolett"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"35a8e8a0-2098-11e8-992f-7b7a51569ca4",
+    "imageId":"b650838f-ef5a-aac4-b6b5-3e5edbbb7abe",
+    "lang":"no",
+    "questionText":"Hvilken av følgende farger er det mest sannsynlig på den lysbølgen som frigjøres fra det korteste elektronspranget i denne figuren?",
+    "solution":"c",
+    ".key":"-L8lT5XiiuwIY41hwkQM"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Blå"
+      },
+      {
+        "key":"b",
+        "value":"Rød"
+      },
+      {
+        "key":"c",
+        "value":"Infrarødt"
+      },
+      {
+        "key":"d",
+        "value":"Fiolett"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"a5009730-2097-11e8-992f-7b7a51569ca4",
+    "imageId":"b650838f-ef5a-aac4-b6b5-3e5edbbb7abe",
+    "lang":"no",
+    "questionText":"Hvilken av følgende farger er det mest sannsynlig på den lysbølgen som frigjøres fra det lengste elektronspranget i denne figuren?",
+    "solution":"d",
+    ".key":"-L8lTA2agCWm0FpFgg4y"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Emissjonsspekter"
+      },
+      {
+        "key":"b",
+        "value":"Emitteringsspekter"
+      },
+      {
+        "key":"c",
+        "value":"Absorbsjonsspekter"
+      },
+      {
+        "key":"d",
+        "value":"Spektralspekter"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"4b96e190-2097-11e8-992f-7b7a51569ca4",
+    "imageId":"9d4c7f54-6e2b-00b6-c112-e272f8ad99ce",
+    "lang":"no",
+    "questionText":"Hva er navnet på spekteret du ser i denne figuren?",
+    "solution":"c",
+    ".key":"-L8lTElZYgz6ZdacuBfI"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Radiobølger"
+      },
+      {
+        "key":"b",
+        "value":"Infrarødt"
+      },
+      {
+        "key":"c",
+        "value":"UV-stråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"9468ace0-1ba2-11e8-91e5-25b59218f8f3",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Hvilken kategori elektromagnetiske bølger finner du rett til venstre for synlig lys i det elektromagnetiske spektret?",
+    "solution":"b",
+    ".key":"-L8lUH2XGJFpQEvIdo1j"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"1.5"
+      },
+      {
+        "key":"c",
+        "value":"2"
+      },
+      {
+        "key":"d",
+        "value":"2.5"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"3b7e6720-2b5e-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange overlevende barn må hver kvinne få i gjennomsnitt for at befolkningen skal øke?",
+    "solution":"d",
+    ".key":"-L8laiffp0X5Jqfjd_4x"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alt som lever"
+      },
+      {
+        "key":"b",
+        "value":"Alle steder hvor noe kan leve"
+      },
+      {
+        "key":"c",
+        "value":"Et økosystem"
+      },
+      {
+        "key":"d",
+        "value":"En populasjon"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"b21d02b0-2776-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er definisjonen på fagbegrepet biosfære?",
+    "solution":"b",
+    ".key":"-L8lb5Mpw77Xv24pO8Q2"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"\"Oikos\" betyr hus og \"logos\" betyr lære."
+      },
+      {
+        "key":"b",
+        "value":"\"Oikos\" betyr jord og \"logos\" betyr lære"
+      },
+      {
+        "key":"c",
+        "value":"\"Oikos\" betyr hus og \"logos\" levne "
+      },
+      {
+        "key":"d",
+        "value":"\"Oikos\" betyr jord og \"logos\" betyr levne."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"de03b810-2776-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Ordet økologi er bygd opp av de to greske ordene \"oikos\" og \"logos, som betyr hva?",
+    "solution":"a",
+    ".key":"-L8lbBcyEBy3uRflhDLI"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Hvilket omårde en art lever i."
+      },
+      {
+        "key":"b",
+        "value":"Hvor mang økosystemer en art er tilpasset."
+      },
+      {
+        "key":"c",
+        "value":"Hvor mange arter som lever i samme oråde."
+      },
+      {
+        "key":"d",
+        "value":"Hvilke arter som spiser hverandre i et økosystem."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"59f84f30-2781-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ beskriver best fagbegrepet habitat?",
+    "solution":"a",
+    ".key":"-L8lbEeFRYyLSvsv8QLp"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et individ er en organisme som kan leve uten å ta opp næring."
+      },
+      {
+        "key":"b",
+        "value":"Et individ er en organisme som kan formere seg uten å parre seg."
+      },
+      {
+        "key":"c",
+        "value":"Et individ er én enkelt organisme."
+      },
+      {
+        "key":"d",
+        "value":"Et individ er en organsime som ikke lever i flokk."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"a32ee0b0-2777-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av alternativene beskriver fagbegrepet individ?",
+    "solution":"c",
+    ".key":"-L8lbdh8IEbPH1WzschC"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et avkom av to forskjellige arter."
+      },
+      {
+        "key":"b",
+        "value":"To arter som parrer seg uten å få avkom."
+      },
+      {
+        "key":"c",
+        "value":"To organismer som lever sammen."
+      },
+      {
+        "key":"d",
+        "value":"En betegnelse som brukes på arter som lever i famile."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"91159a90-2835-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er en symbiose?",
+    "solution":"c",
+    ".key":"-L8lbphv2YrbGp7DqiBN"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Næringsnett"
+      },
+      {
+        "key":"b",
+        "value":"Næringskjede"
+      },
+      {
+        "key":"c",
+        "value":"Næringsspor"
+      },
+      {
+        "key":"d",
+        "value":"Næringsliste"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"ff3c4330-2834-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva kalles et skjema som viser hvordan energi beveger seg fra én enkelt produsent til én enkelt sisteforbruker?",
+    "solution":"b",
+    ".key":"-L8lc4xAWqJx3KY4OqhN"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Løvetann"
+      },
+      {
+        "key":"b",
+        "value":"Gran"
+      },
+      {
+        "key":"c",
+        "value":"Furu"
+      },
+      {
+        "key":"d",
+        "value":"Lønn"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"73fde9b0-2774-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende plantearter regnes som en pionéerplante?",
+    "solution":"a",
+    ".key":"-L8lcR7WbggU9OfoPsyx"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Bjørk"
+      },
+      {
+        "key":"b",
+        "value":"Epletre"
+      },
+      {
+        "key":"c",
+        "value":"Blåveis"
+      },
+      {
+        "key":"d",
+        "value":"Geitrams"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"8dafabf0-2774-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken av følgende plantearter regnes som en pionéerplante?",
+    "solution":"d",
+    ".key":"-L8lcSVin3CXsRsMJM1Y"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Globale interessekonflikter er at alle land i verden er i konflikt med hverandre."
+      },
+      {
+        "key":"b",
+        "value":"Global interessekonflikter er når globaliserte firmaers interesser går utover befolkning og samfunnet."
+      },
+      {
+        "key":"c",
+        "value":"Globale interessekonflikter er når konflikter oppstår som rammer alle mennesker uavhengig av nasjonalitet og kultur."
+      },
+      {
+        "key":"d",
+        "value":"Golbale interessekonflikter er når store selskaper slåss om den samme interessen i et land."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"a4d89e20-2b5e-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ beskriver best en global interessekonflikt?",
+    "solution":"c",
+    ".key":"-L8lcpRElJX3jt3zUYF4"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Tilgang på rent vann."
+      },
+      {
+        "key":"b",
+        "value":"Smelting av polene."
+      },
+      {
+        "key":"c",
+        "value":"Utbyggingen av norsk vannkraft."
+      },
+      {
+        "key":"d",
+        "value":"*CO_2|*-utslipp"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"1d7cb640-2b5f-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ representerer ikke en global interessekonflikt?",
+    "solution":"c",
+    ".key":"-L8lct041AIu04npjOn3"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Sel"
+      },
+      {
+        "key":"b",
+        "value":"Hai"
+      },
+      {
+        "key":"c",
+        "value":"Bjørn"
+      },
+      {
+        "key":"d",
+        "value":"*O_2|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"4b38d4c0-2776-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende alternativer representerer en abiotisk faktor?",
+    "solution":"d",
+    ".key":"-L8ldoZayG24uDPCwWiT"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Gran"
+      },
+      {
+        "key":"b",
+        "value":"Fisk"
+      },
+      {
+        "key":"c",
+        "value":"Lys"
+      },
+      {
+        "key":"d",
+        "value":"Kråke"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"280c7790-2776-11e8-ac2d-75690c54a1a4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende alternativer representerer en abiotisk faktor?",
+    "solution":"c",
+    ".key":"-L8ldrUTnT0Ld9F4xsx2"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Lav"
+      },
+      {
+        "key":"b",
+        "value":"Fluesopp"
+      },
+      {
+        "key":"c",
+        "value":"Geitrams"
+      },
+      {
+        "key":"d",
+        "value":"Mose"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"546a0760-2836-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken alternativ er et eksempel på en symbiose?",
+    "solution":"a",
+    ".key":"-L8li4Ew7nyKrUb9AuGC"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Isbre som trekker seg tilbake."
+      },
+      {
+        "key":"b",
+        "value":"Ubrukt flyplass som gror igjen."
+      },
+      {
+        "key":"c",
+        "value":"Gressbane som ikke klippes."
+      },
+      {
+        "key":"d",
+        "value":"Skog etter skogbrann."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"f21e0590-283d-11e8-ab40-39855ea2f673",
+    "imageId":"120239b3-8e47-a16f-5844-4ecb5bf186fb",
+    "lang":"no",
+    "questionText":"Hvilket alternativ representerer forhold som legger til rette for primærsuksesjon?",
+    "solution":"a",
+    ".key":"-L8ljIN1lwgBrSeloaK7"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pionéerfasen"
+      },
+      {
+        "key":"b",
+        "value":"Primærfasen"
+      },
+      {
+        "key":"c",
+        "value":"Førstefasen"
+      },
+      {
+        "key":"d",
+        "value":"Innledningsfasen"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"2c8121a0-2838-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er heter den første fasen i suksesjonen?",
+    "solution":"a",
+    ".key":"-L8ljP6mqSFW84AU374H"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Alfred"
       },
       {
@@ -4483,6 +10559,118 @@
     "answers":[
       {
         "key":"a",
+        "value":"Det ytterste skallet"
+      },
+      {
+        "key":"b",
+        "value":"Atomkjernen"
+      },
+      {
+        "key":"c",
+        "value":"Hele atomet"
+      },
+      {
+        "key":"d",
+        "value":"Det innerste skallet"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"8935e0f0-2632-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvor i atomet kommer radioaktiviteten fra?",
+    "solution":"b",
+    ".key":"-L8qraeZrD5vTy_SL_d1"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa"
+      },
+      {
+        "key":"b",
+        "value":"Beta"
+      },
+      {
+        "key":"c",
+        "value":"Delta"
+      },
+      {
+        "key":"d",
+        "value":"Gamma"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"ef48bae0-268f-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilken type radioaktiv stråling frigjør heliumkjerner?",
+    "solution":"a",
+    ".key":"-L8qrsjB-YSR5eHUePgZ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Protoner og positroner"
+      },
+      {
+        "key":"b",
+        "value":"Protoner og elektroner"
+      },
+      {
+        "key":"c",
+        "value":"Protoner og nøytroner"
+      },
+      {
+        "key":"d",
+        "value":"Protoner og fotoner"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"e681b2c0-2632-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilke partikler finnes i atomkjernen?",
+    "solution":"c",
+    ".key":"-L8qs6eVoNxbMh9lkpGv"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Røntgnestråling"
+      },
+      {
+        "key":"b",
+        "value":"Gammastråling"
+      },
+      {
+        "key":"c",
+        "value":"Betastråling"
+      },
+      {
+        "key":"d",
+        "value":"Infrarød stråling"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"32e83930-2602-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken type stråling er et eksempel på partikkelstråling?",
+    "solution":"c",
+    ".key":"-L8qsIVu2W851-KFGTPZ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"De trengte DNA fra alle individene."
       },
       {
@@ -4539,6 +10727,34 @@
     "answers":[
       {
         "key":"a",
+        "value":"Ca. 6 år"
+      },
+      {
+        "key":"b",
+        "value":"Ca. 60 år"
+      },
+      {
+        "key":"c",
+        "value":"Ca. 600 år"
+      },
+      {
+        "key":"d",
+        "value":"Ca.  6 000 år"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"50d8e2a0-283c-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor lang tid vil en sekundærsuksesjon ta?",
+    "solution":"b",
+    ".key":"-L8qsq9NKsJyot_iXCUZ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"Eggdonor"
       },
       {
@@ -4562,6 +10778,34 @@
     "questionText":"Hvilket individ er genetisk lik Dolly?",
     "solution":"d",
     ".key":"-L8qts7Eo5xdOa25r7yg"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"10"
+      },
+      {
+        "key":"c",
+        "value":"100"
+      },
+      {
+        "key":"d",
+        "value":"1 000"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"b0ff0cb0-2880-11e8-a48d-8d8c91264bd0",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvor mange radioaktive hendelser måles når en geigerteller klikker en gang?",
+    "solution":"a",
+    ".key":"-L8quIGPyuNP5iGgXNle"
   },
   {
     "answers":[
@@ -4646,6 +10890,62 @@
     "questionText":"Hvilken påstand om stamceller er feil?",
     "solution":"c",
     ".key":"-L8qwOIyTyKMLJhSPJKA"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et gammelt karbonsverd som er ca. 36 000 år gammelt."
+      },
+      {
+        "key":"b",
+        "value":"Et dinosaurfossil som er ca. 65 millioner år gammelt."
+      },
+      {
+        "key":"c",
+        "value":"Nedfrosne neandertalere, 40 000 år gamle eller mer."
+      },
+      {
+        "key":"d",
+        "value":"En stein som inneholder karbon, ca. 100 000 år gammel."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"b6ff0830-2601-11e8-a799-0b1189854af2",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Når isotopen C-14 har halvert seg så mange ganger at det er under 1,5% igjen av opprinnelig mengde, kan den ikke lengre brukes til karbondatering på grunn av store unøyaktigheter. Hvilket av følgende materialer kan C-14-datering brukes på?",
+    "solution":"a",
+    ".key":"-L8qx2cyKGu_1ZNpLyPy"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Nukleontallet faller med 2."
+      },
+      {
+        "key":"b",
+        "value":"Atomnummeret faller med 4."
+      },
+      {
+        "key":"c",
+        "value":"Hydrogenkjerner forlater kjernen."
+      },
+      {
+        "key":"d",
+        "value":"Antall nøytroner og protoner faller med 2 hver."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"59cf6480-26ff-11e8-acc6-13d5e9a6268d",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvilken påstand er riktig om alfastråling?",
+    "solution":"d",
+    ".key":"-L8qySqR_f93aZBMcCSq"
   },
   {
     "answers":[
@@ -4814,6 +11114,62 @@
     "questionText":"Hvilket hverdagslig navn brukes på områder i kromosomer der ingen gener befinner seg?",
     "solution":"a",
     ".key":"-L8r-cyowL9YJ2Wm1r3F"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Ja, det vil gå helt fint."
+      },
+      {
+        "key":"b",
+        "value":"Ja, men kun fra de som har dødd innen de siste 100 millioner år."
+      },
+      {
+        "key":"c",
+        "value":"Nei, halveringstiden er for kort."
+      },
+      {
+        "key":"d",
+        "value":"Dinosaurfossiler kan ikke aldersbestemmes ved halveringstid."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"c91ecb40-341b-11e8-b7d2-8376c2da14e4",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Halveringstiden til C-14 er ca 6 000 år. Er C-14 egnet til å aldersbestemme dinosaurfossiler?",
+    "solution":"c",
+    ".key":"-L8r1RCHRjNFl3vWIICl"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Gammastråling oppstår ofte rett etter en alfa-/betastråling."
+      },
+      {
+        "key":"b",
+        "value":"Gammastråling har kort rekkevidde."
+      },
+      {
+        "key":"c",
+        "value":"Gammastråling er partikkelstråling."
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling frigjør elektroner fra kjernen."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Vanskelig",
+    "id":"755ed540-2a11-11e8-8c8b-41a06252600e",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilken påstand er riktig?",
+    "solution":"a",
+    ".key":"-L8r2aoDWuf_OVoyZE4G"
   },
   {
     "answers":[
@@ -6275,6 +12631,90 @@
     "answers":[
       {
         "key":"a",
+        "value":"Vind"
+      },
+      {
+        "key":"b",
+        "value":"Varme"
+      },
+      {
+        "key":"c",
+        "value":"Sollys"
+      },
+      {
+        "key":"d",
+        "value":"Solvind"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"a23bade0-3a8d-11e8-8e51-1fd73dab2f90",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er det alle arter i en suksesjonsfase konkurrer om?",
+    "solution":"c",
+    ".key":"-L9WHdJlvHGPj4zAUCzc"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pionerorganismer"
+      },
+      {
+        "key":"b",
+        "value":"Stamarter"
+      },
+      {
+        "key":"c",
+        "value":"Plantebærere"
+      },
+      {
+        "key":"d",
+        "value":"Stamceller"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"8cd75750-3a8e-11e8-8e51-1fd73dab2f90",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva kalles de levende organismene som dukker opp først i en suksesjon?",
+    "solution":"a",
+    ".key":"-L9WI7joYuEtjZ0_WwM3"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Bølgelengden er høy."
+      },
+      {
+        "key":"b",
+        "value":"Bølgelengden er lav."
+      },
+      {
+        "key":"c",
+        "value":"Bølgelengden er kort."
+      },
+      {
+        "key":"d",
+        "value":"Bølgelengden er lang."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"4b5ff970-209f-11e8-97ba-79d01dd58047",
+    "imageId":"b650838f-ef5a-aac4-b6b5-3e5edbbb7abe",
+    "lang":"no",
+    "questionText":"Hva er bølgelengden på det lyset som emitteres fra det korteste energispranget i figuren?",
+    "solution":"d",
+    ".key":"-L9sgy0fTkUq00MDZWW1"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
         "value":"At mengden *CO_2|* som frigjøres er lik null."
       },
       {
@@ -6550,6 +12990,230 @@
     "questionText":"Genmodifiserte planter er planter som?",
     "solution":"d",
     ".key":"-LAiPU8INgQM4OiBhpIm"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Drivhuseffekten handler om produksjon av blomster og ugress."
+      },
+      {
+        "key":"b",
+        "value":"Drivhuseffekten øker vannproduksjon i roten hos karsporeplanter."
+      },
+      {
+        "key":"c",
+        "value":"Metan og vanndamp utslipp fører til økt drivhuseffekt."
+      },
+      {
+        "key":"d",
+        "value":"Stråling fra atomer øker drivhuseffekten."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"e047d000-4654-11e8-93ae-dd6a5b95eedb",
+    "imageId":"31aa1951-537c-45ad-63b1-b19ddd85790a",
+    "lang":"no",
+    "questionText":"Hvilken påstand passer med drivhuseffekten?",
+    "solution":"c",
+    ".key":"-LAiV2tqqK299SJvDXwd"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Avstanden til sola blir kortere for hvert år"
+      },
+      {
+        "key":"b",
+        "value":"Sola blir varmere"
+      },
+      {
+        "key":"c",
+        "value":"Ozonlaget ødelegges av KFK gasser"
+      },
+      {
+        "key":"d",
+        "value":"Økt utslipp av klimagasser"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"7ec8c9e0-4656-11e8-93ae-dd6a5b95eedb",
+    "imageId":"31aa1951-537c-45ad-63b1-b19ddd85790a",
+    "lang":"no",
+    "questionText":"Temperaturen de siste årene har økt på jorda på grunn av?",
+    "solution":"d",
+    ".key":"-LAiVV-T4-I0YrDJZCEC"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Hastighet"
+      },
+      {
+        "key":"b",
+        "value":"Frekvens"
+      },
+      {
+        "key":"c",
+        "value":"Bølgelengde"
+      },
+      {
+        "key":"d",
+        "value":"Hertz"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"c3655550-4656-11e8-93ae-dd6a5b95eedb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"I vakuum har alle elektromagnetiske bølger samme?",
+    "solution":"a",
+    ".key":"-LAiVlrEbBO4CyGppM-W"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0,1 Hz"
+      },
+      {
+        "key":"b",
+        "value":"0,5 Hz"
+      },
+      {
+        "key":"c",
+        "value":"2 Hz"
+      },
+      {
+        "key":"d",
+        "value":"200 Hz"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"316b3a10-4657-11e8-93ae-dd6a5b95eedb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"En bølge svinger opp og ned 20 ganger på 10 sekunder. Hva er frekvensen?",
+    "solution":"c",
+    ".key":"-LAiYoxlrvt-tZ0Ww8Wl"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Rød-blå-grønn"
+      },
+      {
+        "key":"b",
+        "value":"Rød-grønn-blå"
+      },
+      {
+        "key":"c",
+        "value":"Blå-grønn-rød"
+      },
+      {
+        "key":"d",
+        "value":"Grønn-rød-blå"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"eefd2760-4656-11e8-93ae-dd6a5b95eedb",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Ranger fargene rød, blå og grønn etter økende bølgelengde.",
+    "solution":"c",
+    ".key":"-LAiYqJSzRa41kOngWBi"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Månelys skinner på skyene"
+      },
+      {
+        "key":"b",
+        "value":"Ladde partikler fra sola kommer inn i jordas magnetfelt"
+      },
+      {
+        "key":"c",
+        "value":"Elektroner forlater atomkjernen ved osmose"
+      },
+      {
+        "key":"d",
+        "value":"Metan og vann får fargene i himmelen til å endres på natta"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"ce9ea550-4658-11e8-93ae-dd6a5b95eedb",
+    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
+    "lang":"no",
+    "questionText":"Hva er med i forklaringsmodellen til nordlys?",
+    "solution":"b",
+    ".key":"-LAiZNc2CODxJcDD9W0Q"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"300 km/s"
+      },
+      {
+        "key":"b",
+        "value":"3000 km/s"
+      },
+      {
+        "key":"c",
+        "value":"300 000 km/s"
+      },
+      {
+        "key":"d",
+        "value":"300 000 000 000 km/s"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"3e12a300-485c-11e8-8886-49e716aaed2f",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva er lysets hastighet i vakuum?",
+    "solution":"c",
+    ".key":"-LAvkUR7Qwx20c_4Kda1"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et foton"
+      },
+      {
+        "key":"b",
+        "value":"Pepsin"
+      },
+      {
+        "key":"c",
+        "value":"Saltsyre"
+      },
+      {
+        "key":"d",
+        "value":"Celler"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"698253a0-485c-11e8-87d3-eb2b4ce750bb",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva kan få et elektron til å eksitere?",
+    "solution":"a",
+    ".key":"-LAvm-YKWil1IjABcosP"
   },
   {
     "answers":[

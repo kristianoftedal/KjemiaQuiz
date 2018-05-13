@@ -51,16 +51,14 @@ export default class Playground extends Component {
 
   componentDidMount() {
     this._playRef.fadeIn(1500);
-    if (!this.props.isCustomizedGame) {
-      this.props.startGame(this.props.hasSubscription);
-    }
+    this.props.startGame(this.props.hasSubscription);
   }
 
   componentDidUpdate(prevProps, nextProps) {
     if (this.props.isAdTime) {
-      AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-      //AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
-      AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
+      //AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
+      AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
+      // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
       const dropdown = this.dropdown;
       AdMobInterstitial.addEventListener('adClosed',

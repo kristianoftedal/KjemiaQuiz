@@ -3,6 +3,7 @@ import twoB from './media/2B.png';
 import twoC from './media/2C.png';
 import threeA from './media/3A.png';
 import threeB from './media/3B.png';
+import threeC from './media/3C.png';
 import threeD from './media/3D.png';
 import fourA from './media/4A.png';
 import fourB from './media/4B.png';
@@ -95,6 +96,7 @@ const images =
     {
       id: '5b88e514-2745-c42d-3fc5-ebdad6faa6ca',
       image: '3C',
+      src: threeC,
     },
     {
       id: 'e1c8c598-584e-e860-088f-30ba823f6b5d',

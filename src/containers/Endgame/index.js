@@ -20,12 +20,14 @@ import {
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
   navigateToHome: allStores.router.navigateToHome,
+  navigateToSelection: allStores.router.navigateToSelection,
   score: allStores.game.score,
   correctCount: allStores.game.correctCount,
   quizLength: allStores.game.quizLength,
   correctPercentage: allStores.game.correctPercentage,
   totalByCategory: allStores.game.totalByCategory,
   resetGame: allStores.game.resetGame,
+  isCustomizedGame: allStores.game.isCustomizedGame,
 }))
 @observer
 export default class Endgame extends Component {
@@ -49,10 +51,6 @@ export default class Endgame extends Component {
         audioService.initSounds();
       });
     }
-    // AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-    // AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
-    // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
-    // AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
   }
 
   componentWillUnmount() {
@@ -65,10 +63,6 @@ export default class Endgame extends Component {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
     
-    // AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-    // AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
-    // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
-    // AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     this.props.navigateToHome();
   };
   _handleReplayPress = async () => {
@@ -76,12 +70,12 @@ export default class Endgame extends Component {
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
-
-    // AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-    // //AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
-    // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
-    // AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
-    this.props.navigateToPlayground();
+    if (!this.props.isCustomizedGame) {
+      this.props.navigateToPlayground();
+    }
+    else {
+      this.props.navigateToSelection();
+    }
   };
 
   _handleOpenKjemia = async () => {

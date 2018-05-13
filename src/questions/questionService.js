@@ -19,6 +19,7 @@ const getRandomNumber = (max, blackList) => {
 };
 
 export const getQuestionsSet = (max, hasSubscription) => {
+  debugger;
   const ceiling = max || questions.length;
   
   let questionsSet = [];
@@ -49,6 +50,7 @@ export const getQuestionsSet = (max, hasSubscription) => {
 };
 
 export const getQuestionsSetByCriterias = (categories, difficulty, count, hasSubscription) => {
+  debugger;
   let questionList = [];
   if (!hasSubscription) {
     questionList = shuffle(freeQuestions);

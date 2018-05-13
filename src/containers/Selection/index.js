@@ -19,6 +19,7 @@ import RadioButton from '../../components/RadioButton';
   navigateToHome: allStores.router.navigateToHome,
   navigateToEndgame: allStores.router.navigateToEndgame,
   setCustomizedGame: allStores.game.setCustomizedGame,
+  hasSubscription: allStores.subscription.hasSubscription,
 }))
 @observer
 export default class Selection extends Component {
@@ -90,6 +91,7 @@ export default class Selection extends Component {
                 onPress={() => this.setState({ difficulty: 'Lett' })}
                 innerColor="white"
                 outerColor="white"
+                disabled={!this.props.hasSubscription}
               />
               <Text style={style.radioButtonLabel}>Middels</Text>
               <RadioButton
@@ -97,6 +99,7 @@ export default class Selection extends Component {
                 onPress={() => this.setState({ difficulty: 'Middels' })}
                 innerColor="white"
                 outerColor="white"
+                disabled={!this.props.hasSubscription}
               />
               <Text style={style.radioButtonLabel}>Vanskelig</Text>
               <RadioButton
@@ -104,6 +107,7 @@ export default class Selection extends Component {
                 onPress={() => this.setState({ difficulty: 'Vanskelig' })}
                 innerColor="white"
                 outerColor="white"
+                disabled={!this.props.hasSubscription}
               />
             </View>
             <View style={style.categoryWrapper}>
@@ -120,6 +124,7 @@ export default class Selection extends Component {
                         categories[i].isSelected = value;
                         this.setState(categories);
                       }}
+                      disabled={!this.props.hasSubscription}
                     />
                   </View>
                 );
@@ -134,6 +139,7 @@ export default class Selection extends Component {
                 onPress={() => this.setState({ count: 20 })}
                 innerColor="white"
                 outerColor="white"
+                disabled={!this.props.hasSubscription}
               />
               <Text style={style.radioButtonLabel}>30</Text>
               <RadioButton
@@ -142,6 +148,7 @@ export default class Selection extends Component {
                 disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length < 2}
                 innerColor="white"
                 outerColor="white"
+                disabled={!this.props.hasSubscription}
               />
               <Text style={style.radioButtonLabel}>40</Text>
               <RadioButton
@@ -150,7 +157,7 @@ export default class Selection extends Component {
                   this.setState({ count: 40 });
                 }}
 
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
+                disabled={!this.props.hasSubscription || this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
                 innerColor="white"
                 outerColor="white"
               />
@@ -160,7 +167,7 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 50 });
                 }}
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
+                disabled={!this.props.hasSubscription || this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
                 innerColor="white"
                 outerColor="white"
               />
@@ -170,7 +177,7 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 60 });
                 }}
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 3}
+                disabled={!this.props.hasSubscription || this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 3}
                 innerColor="white"
                 outerColor="white"
               />

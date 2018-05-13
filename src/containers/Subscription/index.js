@@ -72,9 +72,9 @@ export default class Subscription extends Component {
       InAppUtils.purchaseProduct(this.products[0], (error, response) => {
         this.setState({ loading: false });
         if (error) {
+          this.setState({ hasError: true });
           Alert.alert('En feil ved kjøp har oppstått', error);
         }
-        // NOTE for v3.0: User can cancel the payment which will be available as error object here.
         if(response && response.productIdentifier) {
           Alert.alert('Vi kan herved bekreftet at ditt abonnement har startet :)', '');
           this.setState({ purchase: response });
@@ -89,14 +89,15 @@ export default class Subscription extends Component {
         await InAppBilling.open();
         if (!await InAppBilling.isSubscribed(this.products[0])) {
           const details = await InAppBilling.subscribe(productId);
+          debugger;
           console.log('You purchased: ', details);
         }
         const transactionStatus = await InAppBilling.getPurchaseTransactionDetails(productId);
-        console.log('Transaction Status', transactionStatus);
         const productDetails = await InAppBilling.getProductDetails(productId);
         console.log(productDetails);
       } catch (err) {
         console.log(err);
+        this.setState({hasError: true});
       } finally {
         await InAppBilling.consumePurchase(productId);
         await InAppBilling.close();
@@ -157,9 +158,12 @@ export default class Subscription extends Component {
                 <Button style={style.button} onPressOut={this._handleOnPurchase}>
                   <Text style={style.buttonText}>Kjøp</Text>
                 </Button>
-                <Button style={style.button} onPressOut={this._handleOnRestore}>
-                  <Text style={style.buttonText}>Gjenopprett et tidligere kjøp</Text>
-               </Button>
+                {
+                  this.state.hasError &&
+                    <Button style={style.button} onPressOut={this._handleOnRestore}>
+                      <Text style={style.buttonText}>Gjenopprett et tidligere kjøp</Text>
+                   </Button>
+                }
               </View>
             }
             <Button style={style.button} onPressOut={this._handleBackPress}>

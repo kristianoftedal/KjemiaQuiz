@@ -21,7 +21,7 @@ export default class GameStore {
   @observable isCustomizedGame = false;
   @observable totalByCategory = {};
   @observable currentXp = 0;
-  @observable currentLevelIndex = 0;
+  @observable currentLevelIndex = -1;
   @observable isLevelUp = false;
   @observable isAdTime = false;
   @observable hasSubscription = false;
@@ -121,7 +121,7 @@ export default class GameStore {
           this.currentXp += 50;
         }
         
-        let nextScore = levels[this.currentLevelIndex].score;
+        let nextScore = levels[this.currentLevelIndex + 1].score;
         let test = this.currentXp >= nextScore;
         if (this.currentXp >= nextScore) {
           this.currentLevelIndex += 1;
@@ -183,6 +183,9 @@ export default class GameStore {
   }
 
   nextLevelThreshold = () => {
+    if (this.currentLevelIndex === -1) {
+      return levels[0].score;
+    }
     if (this.currentLevelIndex + 1 > levels.length || this.currentLevelIndex === 0) {
       return levels[this.currentLevelIndex].score;
     }
@@ -191,7 +194,7 @@ export default class GameStore {
   };
 
   previousLevelThreshold = () => {
-    if (this.currentLevelIndex === 0) {
+    if (this.currentLevelIndex === 0 || this.currentLevelIndex === -1) {
       return 0;
     }
     const prev = levels[this.currentLevelIndex - 1].score;

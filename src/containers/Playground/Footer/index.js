@@ -24,7 +24,6 @@ import periodicIcon from '../../../images/periodicIcon.png';
   currentQuestion: allStores.game.currentQuestion,
   currentIndex: allStores.game.currentIndex,
   previousScore: allStores.game.previousScore,
-  currentLevelIndex: allStores.game.currentLevelIndex,
 }))
 @observer
 export default class Playground extends Component {

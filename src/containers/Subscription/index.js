@@ -66,6 +66,13 @@ export default class Subscription extends Component {
     }
   }
 
+  _termsOfUseClicked = () => {
+    Linking.openURL('http://kjemia.no/termsofuse');
+  }
+  _privacyPolicyClicked = () => {
+    Linking.openURL('http://kjemia.no/privacy');
+  }
+
   _handleOnPurchase = async () => {
     this.setState({ loading: true });
     if (Platform.OS === 'ios') {
@@ -129,7 +136,7 @@ export default class Subscription extends Component {
                   Abonner på premium for å sikre deg alle 1500 spørsmålene og ingen reklame. Gratisversjonen inneholder kun 10% av spørsmålene.
                 </Text>
                 <Text style={style.textPayment}>
-                  Pris: {this.state.product.priceString} / per mnd 
+                  Price: {this.state.product.priceString} / per mnd 
                 </Text>
                 <Text style={style.textPayment}>
                   Fornyes automatisk hver måned
@@ -138,6 +145,7 @@ export default class Subscription extends Component {
                   Betalingen vil bli belastet til iTunes-kontoen når kjøpet bekreftes.
                   Avtalen vil automatisk fornyes med mindre automatisk fornyelse skrues av minst 24 timer før
                   slutten av inneværende periode. Kontoen vil bli belastet innenfor 24 timer av slutten på inneværende periode.
+                  Abonnement kan styres av brukeren og automatisk fornyelse kan bli slått av ved gå til brukeres kontoinnstillinger etter kjøp.
                 </Text>
               </View>
             }
@@ -159,6 +167,12 @@ export default class Subscription extends Component {
                       <Text style={style.buttonText}>Gjenopprett et tidligere kjøp</Text>
                    </Button>
                 }
+                <Button style={style.button} onPressOut={this._termsOfUseClicked}>
+                  <Text style={style.buttonText}>Vilkår for bruk</Text>
+                </Button>
+                <Button style={style.button} onPressOut={this._privacyPolicyClicked}>
+                  <Text style={style.buttonText}>Personvernserlæring</Text>
+                </Button>
               </View>
             }
             <Button style={style.button} onPressOut={this._handleBackPress}>

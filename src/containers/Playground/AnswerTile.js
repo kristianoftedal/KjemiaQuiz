@@ -10,6 +10,7 @@ import { observer } from 'mobx-react/native';
 import metrics from '../../config/metrics';
 import uuid from 'uuid';
 import styles from './index.style';
+
 @observer
 export default class AnswerTile extends Component {
   _tileRef = null;

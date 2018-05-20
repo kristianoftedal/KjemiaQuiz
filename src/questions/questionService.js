@@ -59,7 +59,8 @@ export const getQuestionsSetByCriterias = (categories, difficulty, count, hasSub
     questionList = questionList.filter(e => e.difficulty === difficulty);
   }
   if (categories) {
-    questionList = questionList.filter(q => categories.map(x => x.value).indexOf(q.category > -1));
+    const temp = categories.filter(e => e.isSelected);
+    questionList = questionList.filter(q => temp.map(x => x.value).indexOf(q.category > -1));
   }
   if (count > questionList.length) {
     count = questionList.length;

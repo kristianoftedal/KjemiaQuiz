@@ -30,14 +30,12 @@ export default class GameStore {
 
   @action
   setBaseline() {
-    this.questions = [];
     this.score = 0;
     this.currentIndex = 0;
     this.isEndgame = false;
     this.previousScore = 0;
     this.isGameRunning = true;
     this.isCorrectAnswer = false;
-    this.isCustomizedGame = false;
     this.correctCount = 0;
     this.answeredQuestions = [];
     this.totalByCategory = {};
@@ -60,7 +58,6 @@ export default class GameStore {
   startGame = (hasSubscription) => {
     this.hasSubscription = hasSubscription;
     this.setBaseline();
-    this.isCustomizedGame = false;
     this.buildQuiz();
   };
 
@@ -81,7 +78,9 @@ export default class GameStore {
 
   @action
   buildQuiz = () => {
-    this.questions = getQuestionsSet(30, this.hasSubscription);
+    if (!this.isCustomizedGame) {
+      this.questions = getQuestionsSet(30, this.hasSubscription);
+    }
   };
 
   @action

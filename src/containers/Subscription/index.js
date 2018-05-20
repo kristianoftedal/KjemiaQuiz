@@ -70,7 +70,7 @@ export default class Subscription extends Component {
     Linking.openURL('http://kjemia.no/termsofuse');
   }
   _privacyPolicyClicked = () => {
-    Linking.openURL('http://kjemia.no/privacy');
+    Linking.openURL('http://kjemia.no/privacypolicy');
   }
 
   _handleOnPurchase = async () => {
@@ -136,7 +136,7 @@ export default class Subscription extends Component {
                   Abonner på premium for å sikre deg alle 1500 spørsmålene og ingen reklame. Gratisversjonen inneholder kun 10% av spørsmålene.
                 </Text>
                 <Text style={style.textPayment}>
-                  Price: {this.state.product.priceString} / per mnd 
+                  Pris: {this.state.product.priceString} / per mnd 
                 </Text>
                 <Text style={style.textPayment}>
                   Fornyes automatisk hver måned
@@ -146,6 +146,7 @@ export default class Subscription extends Component {
                   Avtalen vil automatisk fornyes med mindre automatisk fornyelse skrues av minst 24 timer før
                   slutten av inneværende periode. Kontoen vil bli belastet innenfor 24 timer av slutten på inneværende periode.
                   Abonnement kan styres av brukeren og automatisk fornyelse kan bli slått av ved gå til brukeres kontoinnstillinger etter kjøp.
+                  Enhver ubrukt del av gratisversjonen vil du miste når du går over til abonnementversjonen. Hvis du avslutter ditt abonnement vil du fortsatt kunne bruke gratisversjonen av appen. 
                 </Text>
               </View>
             }
@@ -171,7 +172,7 @@ export default class Subscription extends Component {
                   <Text style={style.buttonText}>Vilkår for bruk</Text>
                 </Button>
                 <Button style={style.button} onPressOut={this._privacyPolicyClicked}>
-                  <Text style={style.buttonText}>Personvernserlæring</Text>
+                  <Text style={style.buttonText}>Personvernserklæring</Text>
                 </Button>
               </View>
             }

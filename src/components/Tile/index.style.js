@@ -9,26 +9,32 @@ export default StyleSheet.create({
   },
   textWrapper: {
     flexDirection: 'row', 
-    alignItems: 'flex-end'
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
+    margin: 2,
+    padding: 2,
   },
   text: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
+    fontSize: 18,
   },
   subscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 12,
-    lineHeight: 15,
+    fontSize: 4,
+    lineHeight: 14,
+    marginTop: 10,
   },
   superscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 12,
-    lineHeight: 20,
-    alignItems: 'flex-start'
+    lineHeight: 14,
+    fontSize: 4,
+    marginBottom: 10,
+    textAlignVertical: 'top',
   }
 });

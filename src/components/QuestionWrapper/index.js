@@ -13,31 +13,28 @@ import questionParser from './questionParser';
 const printQuestion = (question) => {
   if (question == null) return (<Text/>);
   if (question.indexOf('*') > -1) {
-    return (<Text style={styles.text}>
+    return (<View style={styles.textWrapper}>
       {questionParser(question)}
-    </Text>);
+      </View>);
+      
   }
   return (
-    <Text style={styles.text}>
-      {question}
-    </Text>
-  );
+    <View style={styles.textWrapper}>
+      <Text style={styles.text}>
+        {question}
+      </Text>
+    </View>);
 }
 
 const QuestionWrapper = props => {
   const { children, image, text, ...otherProps } = props;
-  const prettyText = (
-    <Text>
-      {printQuestion(text)}
-    </Text>
-  );
+  const prettyText = 
+      printQuestion(text);
   if (image) {
     const questionImage = <QuestionImage imageName={image} />;
     return (
       <View style={styles.wrapper}>
-        <View style={styles.textWrapper}>
           {prettyText}
-        </View>
         {questionImage}
       </View>
     );

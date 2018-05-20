@@ -5,8 +5,6 @@ const width = metrics.DEVICE_WIDTH;
 export default StyleSheet.create({
   wrapper: {
     flexDirection: 'column',
-    // justifyContent: 'center',
-    // alignItems: 'center',
     backgroundColor: '#0a3d62',
     marginTop: 5,
     padding: 5,
@@ -16,29 +14,30 @@ export default StyleSheet.create({
   },
   textWrapper: {
     flexDirection: 'row',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
   },
   text: {
     color: 'white',
     //fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 19,
-    lineHeight: 19,
+    fontSize: 18,
+    lineHeight: 18,
     marginBottom: 1,
   },
   subscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 12,
-    lineHeight: 10,
-    marginTop: 12,
+    fontSize: 10,
+    lineHeight: 8,
+    marginTop: 10,
   },
   superscript: {
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 12,
-    lineHeight: 19,
+    lineHeight: 16,
+    fontSize: 4,
   }
 });

@@ -14,7 +14,7 @@ const questionParser = (question) => {
       for (let j = 0; j < tempParts.length; j++) {
         if (tempParts[j].indexOf('_') > -1) {
           const x = tempParts[j].split('_');
-          restructuredText.push(<Text key={uuid.v4()}>{
+          restructuredText.push(<Text key={uuid.v4()} style={styles.text}>{
             x[0]}
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.subscript}>{
             x[1]}
@@ -22,7 +22,7 @@ const questionParser = (question) => {
         }
         else if (tempParts[j].indexOf('^') > -1) {
           const y = tempParts[j].split('^');
-          restructuredText.push(<Text key={uuid.v4()}>{
+          restructuredText.push(<Text key={uuid.v4()} style={styles.text}>{
             y[0]}
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
             y[1]}
@@ -39,14 +39,14 @@ const questionParser = (question) => {
       for (let j = 0; j < tempParts.length; j++) {
         if (tempParts[j].indexOf('_') > -1) {
           const x = tempParts[j].split('_');
-          restructuredText.push(<Text key={uuid.v4()}>{
+          restructuredText.push(<Text key={uuid.v4()} style={styles.text}>{
             x[0]}
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.subscript}>{
             x[1]}
           </Text>);
         } else {
           restructuredText.push(
-            <Text key={uuid.v4()}>
+            <Text key={uuid.v4()} style={styles.text}>
               {tempParts[j]}
             </Text>);
         }
@@ -56,21 +56,21 @@ const questionParser = (question) => {
       for (let j = 0; j < tempParts.length; j++) {
         if (tempParts[j].indexOf('^') > -1) {
           const y = tempParts[j].split('^');
-          restructuredText.push(<Text key={uuid.v4()}>{
+          restructuredText.push(<Text key={uuid.v4()} style={styles.text}>{
             y[0]}
           </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
             y[1]}
           </Text>);
         } else {
           restructuredText.push(
-            <Text key={uuid.v4()}>
+            <Text key={uuid.v4()} style={styles.text}>
               {tempParts[j]}
             </Text>);
         }
       }
     } else {
       restructuredText.push(
-        <Text key={uuid.v4()}>
+        <Text key={uuid.v4()} style={styles.text}>
           {parts[i]}
         </Text>);
     }

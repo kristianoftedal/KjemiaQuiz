@@ -67,7 +67,7 @@ export default class Tile extends Component {
   }
 
   render() {
-    const { depth, borderRadius, backgroundColor, text, textStyle, style } = this.props;
+    const { depth, borderRadius, backgroundColor, text, style } = this.props;
     const { isTouched } = this.state;
     const halfDepth = depth / 2; // The bottom gap, needed to shop the the depth
     const tileStyle = {
@@ -95,9 +95,7 @@ export default class Tile extends Component {
         >
           <View style={[styles.tile, tileStyle, style]}>
             <View style={styles.textWrapper}>
-              <CustomText style={[styles.text, textStyle]} withShadow={true}>
-                {this.printAnswer(text)}
-              </CustomText>
+                {this.printAnswer(text + ' *Zn^2+|* og *SO_4|^2-|*')}
             </View>
           </View>
           <View style={[styles.depth, depthStyle]} />

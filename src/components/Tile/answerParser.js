@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, Linking, } from 'react-native';
+import CustomText from '../CustomText';
 import uuid from 'uuid';
 import styles from './index.style';
 
@@ -15,24 +16,30 @@ const questionParser = (question) => {
         if (tempParts[j].indexOf('_') > -1) {
           const x = tempParts[j].split('_');
           restructuredText.push(
-            <Text key={uuid.v4()}>{
-            x[0]}
-          </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.subscript}>{
-            x[1]}
-          </Text>);
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.text}>
+              {x[0]}
+            </CustomText>
+          );
+          restructuredText.push(
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.subscript}>
+              {x[1]}
+            </CustomText>
+          );
         }
         else if (tempParts[j].indexOf('^') > -1) {
           const y = tempParts[j].split('^');
-          restructuredText.push(<Text key={uuid.v4()}>{
-            y[0]}
-          </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
+          restructuredText.push(
+            <CustomText key={uuid.v4()}  withShadow={true} style={styles.text}>
+              {y[0]}
+            </CustomText>
+          );restructuredText.push(<CustomText key={uuid.v4()}  withShadow={true} style={styles.superscript}>{
             y[1]}
-          </Text>);
+          </CustomText>);
         } else {
           restructuredText.push(
-            <Text key={uuid.v4()}>
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.text}>
               {tempParts[j]}
-            </Text>);
+            </CustomText>);
         }
       }
     } else if (parts[i].indexOf('_') > -1 ) {
@@ -40,16 +47,16 @@ const questionParser = (question) => {
       for (let j = 0; j < tempParts.length; j++) {
         if (tempParts[j].indexOf('_') > -1) {
           const x = tempParts[j].split('_');
-          restructuredText.push(<Text key={uuid.v4()}>{
+          restructuredText.push(<CustomText key={uuid.v4()} withShadow={true} style={styles.text}>{
             x[0]}
-          </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.subscript}>{
+          </CustomText>);restructuredText.push(<CustomText key={uuid.v4()} withShadow={true}  style={styles.subscript}>{
             x[1]}
-          </Text>);
+          </CustomText>);
         } else {
           restructuredText.push(
-            <Text key={uuid.v4()}>
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.text}>
               {tempParts[j]}
-            </Text>);
+            </CustomText>);
         }
       }
     } else if (parts[i].indexOf('^') > -1) {
@@ -57,23 +64,23 @@ const questionParser = (question) => {
       for (let j = 0; j < tempParts.length; j++) {
         if (tempParts[j].indexOf('^') > -1) {
           const y = tempParts[j].split('^');
-          restructuredText.push(<Text key={uuid.v4()}>{
+          restructuredText.push(<CustomText key={uuid.v4()} withShadow={true} style={styles.text}>{
             y[0]}
-          </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
+          </CustomText>);restructuredText.push(<CustomText key={uuid.v4()} withShadow={true}  style={styles.superscript}>{
             y[1]}
-          </Text>);
+          </CustomText>);
         } else {
           restructuredText.push(
-            <Text key={uuid.v4()}>
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.text}>
               {tempParts[j]}
-            </Text>);
+            </CustomText>);
         }
       }
     } else {
       restructuredText.push(
-        <Text key={uuid.v4()}>
+        <CustomText key={uuid.v4()} withShadow={true} style={styles.text}>
           {parts[i]}
-        </Text>);
+        </CustomText>);
     }
   }
   return restructuredText;

@@ -177,6 +177,12 @@ export default class Selection extends Component {
                 outerColor="white"
               />
             </View>
+            {!this.hasSubscription &&
+              <Text style={style.textFree}>
+              I gratis versjonen vil kun 10% av spørsmålene være tilgjengelige
+              </Text>
+
+            }
             <Button style={style.button} onPressOut={this._handleStartPress}>
               <Text style={style.buttonText}>Start</Text>
             </Button>

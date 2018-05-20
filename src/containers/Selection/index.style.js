@@ -12,7 +12,7 @@ export default StyleSheet.create({
   header: {
     fontFamily: 'Raleway-Regular',
     color: 'white',
-    fontSize: 20,
+    fontSize: 18,
     textAlign: 'center',
     marginTop: 30,
   },
@@ -30,6 +30,7 @@ export default StyleSheet.create({
     color: 'white',
     flex: 1,
     flexGrow: 9,
+    fontSize: 13,
     alignSelf: 'center',
   },
   toggleSwitch: {
@@ -57,8 +58,8 @@ export default StyleSheet.create({
     fontSize: 15,
   },
   difficultyWrapper: {
-    marginTop: 10,
-    marginBottom: 10,
+    marginTop: 7,
+    marginBottom: 7,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -68,6 +69,17 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     color: 'white',
     marginRight: 2,
+  },
+
+  textFree: {
+    fontFamily: 'Raleway-Regular',
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 9,
+    marginTop: 2,
+    marginLeft: 2,
+    marginRight: 8,
+    lineHeight: 15,
   },
   radioButton: {},
 });

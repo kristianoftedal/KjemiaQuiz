@@ -1,4 +1,4 @@
-package com.splashexample; // make sure this is your package name
+package com.kjemiaquiz;
 
 import android.content.Intent;
 import android.os.Bundle;

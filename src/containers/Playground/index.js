@@ -37,7 +37,7 @@ import {
   isAdTime: allStores.game.isAdTime,
   isLevelUp: allStores.game.isLevelUp,
   level: allStores.game.currentLevel,
-  hasSubscription: allStores.game.hasSubscription,
+  hasSubscription: allStores.subscription.hasSubscription,
 }))
 @observer
 export default class Playground extends Component {

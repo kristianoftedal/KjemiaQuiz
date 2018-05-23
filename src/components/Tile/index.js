@@ -63,7 +63,7 @@ export default class Tile extends Component {
     if (answer.indexOf('*') > -1) {
       return answerParser(answer);
     }
-    return answer;
+    return (<CustomText withShadow={true} style={styles.text}>{answer}</CustomText>);
   }
 
   render() {

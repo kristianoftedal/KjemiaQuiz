@@ -95,7 +95,7 @@ export default class Tile extends Component {
         >
           <View style={[styles.tile, tileStyle, style]}>
             <View style={styles.textWrapper}>
-                {this.printAnswer(text + ' *Zn^2+|* og *SO_4|^2-|*')}
+                {this.printAnswer(text)}
             </View>
           </View>
           <View style={[styles.depth, depthStyle]} />

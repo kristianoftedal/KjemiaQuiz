@@ -227,34 +227,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"400 nm - 600 nm"
-      },
-      {
-        "key":"b",
-        "value":"300 nm - 600 nm"
-      },
-      {
-        "key":"c",
-        "value":"400 nm - 800 nm"
-      },
-      {
-        "key":"d",
-        "value":"600 nm - 800 nm"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Middels",
-    "id":"02007670-2099-11e8-992f-7b7a51569ca4",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Innenfor hvilke bølgelengder finner vi synlig lys?",
-    "solution":"c",
-    ".key":"-L6rAhkUnjyYb-jrpC3S"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Forbrenning av magnesium."
       },
       {
@@ -731,34 +703,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"1"
-      },
-      {
-        "key":"b",
-        "value":"6"
-      },
-      {
-        "key":"c",
-        "value":"12"
-      },
-      {
-        "key":"d",
-        "value":"24"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Vanskelig",
-    "id":"ee5b6050-223f-11e8-8824-6d7c5a532c1b",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvor mange nitrogenbaser i et mRNA må til for å sette sammen 4 aminosyrer?",
-    "solution":"c",
-    ".key":"-L7106qla-Ef4pKZonRY"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"1-2"
       },
       {
@@ -950,62 +894,6 @@
     "questionText":"Hvilket av følgende enzymer tilsettes i magesekken?",
     "solution":"d",
     ".key":"-L79ereoLPTx5bcW1eon"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Amylase"
-      },
-      {
-        "key":"b",
-        "value":"Pepsin"
-      },
-      {
-        "key":"c",
-        "value":"Lipase"
-      },
-      {
-        "key":"d",
-        "value":"Insulin"
-      }
-    ],
-    "category":"Ernæring, fordøyelse og helse",
-    "difficulty":"Lett",
-    "id":"dd76fc00-2392-11e8-b5df-8def17ea9dcc",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket av følgende enzymer bryter ned proteiner?",
-    "solution":"b",
-    ".key":"-L79f3qcwrr4M91VkBxP"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"I munnen"
-      },
-      {
-        "key":"b",
-        "value":"I magesekken"
-      },
-      {
-        "key":"c",
-        "value":"I tynntarmen"
-      },
-      {
-        "key":"d",
-        "value":"I tykktarmen"
-      }
-    ],
-    "category":"Ernæring, fordøyelse og helse",
-    "difficulty":"Lett",
-    "id":"34756180-2394-11e8-b5df-8def17ea9dcc",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvor produseres amylase?",
-    "solution":"a",
-    ".key":"-L79hE9TmDk_SoTU-bPs"
   },
   {
     "answers":[
@@ -1454,34 +1342,6 @@
     "questionText":"Hva er en egenskap ved betastråling?",
     "solution":"b",
     ".key":"-L7PbKzOZi4bSic9STOE"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Protonstråling"
-      },
-      {
-        "key":"b",
-        "value":"UV-stråling"
-      },
-      {
-        "key":"c",
-        "value":"Nøytronstråling"
-      },
-      {
-        "key":"d",
-        "value":"Gammastråling"
-      }
-    ],
-    "category":"Radioaktiv stråling",
-    "difficulty":"Middels",
-    "id":"9b1561e0-2602-11e8-a799-0b1189854af2",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilken type radioaktiv stråling bruker man i EU for å øke holdbarheten på mat?",
-    "solution":"d",
-    ".key":"-L7Pd4icQTU5V-OJi8jJ"
   },
   {
     "answers":[
@@ -2215,34 +2075,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Motstand mot insektmidler"
-      },
-      {
-        "key":"b",
-        "value":"Større *CO_2|*-opptak."
-      },
-      {
-        "key":"c",
-        "value":"Større *O_2|*-produksjon."
-      },
-      {
-        "key":"d",
-        "value":"Krav om mindre lys til fotosyntesen."
-      }
-    ],
-    "category":"Bioteknologi",
-    "difficulty":"Lett",
-    "id":"33fc16c0-2b7f-11e8-b5b0-45e1d500dcb8",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket alternativ representerer en grunn til at vi velger og genmodifeisere planter i jordbruket?",
-    "solution":"a",
-    ".key":"-L7yaH-j0zmyf_5F5SCF"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Kloning"
       },
       {
@@ -2266,34 +2098,6 @@
     "questionText":"Hva heter teknologien der vi setter inn gener i bakterier og får disse til å produsere proteiner for oss?",
     "solution":"d",
     ".key":"-L7yezuSPDoDIcQ-REYy"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Kjernedonor"
-      },
-      {
-        "key":"b",
-        "value":"Eggdonor"
-      },
-      {
-        "key":"c",
-        "value":"Surrogat"
-      },
-      {
-        "key":"d",
-        "value":"Fostermor"
-      }
-    ],
-    "category":"Bioteknologi",
-    "difficulty":"Lett",
-    "id":"ba8c08d0-2b8e-11e8-9f70-037199116599",
-    "imageId":"094c0bcb-b950-90fc-d89b-3642bb03befd",
-    "lang":"no",
-    "questionText":"Hva kalles sauen som fødte Dolly men ikke bidro med genetisk material?",
-    "solution":"c",
-    ".key":"-L7zFcPbDfOyvmTJQLFT"
   },
   {
     "answers":[
@@ -2350,34 +2154,6 @@
     "questionText":"Hvilket stoff blir oksidert i dette forsøket?",
     "solution":"d",
     ".key":"-L8lMwkB4TuXIAPM-f1k"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Globale interessekonflikter er at alle land i verden er i konflikt med hverandre."
-      },
-      {
-        "key":"b",
-        "value":"Global interessekonflikter er når globaliserte firmaers interesser går utover befolkning og samfunnet."
-      },
-      {
-        "key":"c",
-        "value":"Globale interessekonflikter er når konflikter oppstår som rammer alle mennesker uavhengig av nasjonalitet og kultur."
-      },
-      {
-        "key":"d",
-        "value":"Golbale interessekonflikter er når store selskaper slåss om den samme interessen i et land."
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Vanskelig",
-    "id":"a4d89e20-2b5e-11e8-b5b0-45e1d500dcb8",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket alternativ beskriver best en global interessekonflikt?",
-    "solution":"c",
-    ".key":"-L8lcpRElJX3jt3zUYF4"
   },
   {
     "answers":[
@@ -2462,34 +2238,6 @@
     "questionText":"Hva var kjønnet til eggdonoren i kloningen av Dolly?",
     "solution":"b",
     ".key":"-L8qsmcYLI4q5TgB2JW-"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Zebra"
-      },
-      {
-        "key":"b",
-        "value":"E.coli"
-      },
-      {
-        "key":"c",
-        "value":"Edderkopp"
-      },
-      {
-        "key":"d",
-        "value":"Sau"
-      }
-    ],
-    "category":"Bioteknologi",
-    "difficulty":"Middels",
-    "id":"cc4307f0-3416-11e8-bf94-8b474af0dd07",
-    "imageId":"094c0bcb-b950-90fc-d89b-3642bb03befd",
-    "lang":"no",
-    "questionText":"Hvilket alternativ er i stand til å klone seg selv?",
-    "solution":"b",
-    ".key":"-L8quNdRaq8wLw4HTlcl"
   },
   {
     "answers":[
@@ -2803,34 +2551,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Identifisering av bærere for recessive gener."
-      },
-      {
-        "key":"b",
-        "value":"Indentifisering av sykdommer som kreft."
-      },
-      {
-        "key":"c",
-        "value":"Indentifisering av intelligens hos nyfødte."
-      },
-      {
-        "key":"d",
-        "value":"Indentifisering av gjerningspersoner i kriminalsaker."
-      }
-    ],
-    "category":"Bioteknologi",
-    "difficulty":"Vanskelig",
-    "id":"725a40d0-3422-11e8-bf94-8b474af0dd07",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hva bruker man ikke gentester til?",
-    "solution":"c",
-    ".key":"-L8rFKSyCOh0Eruv7F6L"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"For lite tilgang på hydrogengass."
       },
       {
@@ -3106,34 +2826,6 @@
     "questionText":"En mor har genotype Gg og en far har genotype gg. Hva er sannsynligheten for at barnet får genotype gg?",
     "solution":"b",
     ".key":"-LAZhp8VpE2ip27VOQDc"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Drivhuseffekten handler om produksjon av blomster og ugress."
-      },
-      {
-        "key":"b",
-        "value":"Drivhuseffekten øker vannproduksjon i roten hos karsporeplanter."
-      },
-      {
-        "key":"c",
-        "value":"Metan og vanndamp utslipp fører til økt drivhuseffekt."
-      },
-      {
-        "key":"d",
-        "value":"Stråling fra atomer øker drivhuseffekten."
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Vanskelig",
-    "id":"e047d000-4654-11e8-93ae-dd6a5b95eedb",
-    "imageId":"31aa1951-537c-45ad-63b1-b19ddd85790a",
-    "lang":"no",
-    "questionText":"Hvilken påstand passer med drivhuseffekten?",
-    "solution":"c",
-    ".key":"-LAiV2tqqK299SJvDXwd"
   },
   {
     "answers":[
@@ -3895,34 +3587,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Plasmaeksplosjoner"
-      },
-      {
-        "key":"b",
-        "value":"Solvind"
-      },
-      {
-        "key":"c",
-        "value":"Solstråler"
-      },
-      {
-        "key":"d",
-        "value":"Gammaburst"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Lett",
-    "id":"5a181d40-2602-11e8-a799-0b1189854af2",
-    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
-    "lang":"no",
-    "questionText":"Store eksplosjoner på sola som forårsaker kraftig nordlys på jorda kalles for?",
-    "solution":"b",
-    ".key":"-LCPxWoZ5zfc6QnGwC5f"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"A-vitamin"
       },
       {
@@ -4058,5 +3722,341 @@
     "questionText":"Hva er heter den første fasen i suksesjonen?",
     "solution":"a",
     ".key":"-LCPzJy1-7QitMHyMecO"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I munnen"
+      },
+      {
+        "key":"b",
+        "value":"I magesekken"
+      },
+      {
+        "key":"c",
+        "value":"I tynntarmen"
+      },
+      {
+        "key":"d",
+        "value":"I tykktarmen"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"34756180-2394-11e8-b5df-8def17ea9dcc",
+    "imageId":"c383f31f-2837-7387-c46e-420d34b77015",
+    "lang":"no",
+    "questionText":"Hvor produseres amylase?",
+    "solution":"a",
+    ".key":"-LCQ5zBGc2n-_baw9bjl"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"6"
+      },
+      {
+        "key":"c",
+        "value":"12"
+      },
+      {
+        "key":"d",
+        "value":"24"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Vanskelig",
+    "id":"ee5b6050-223f-11e8-8824-6d7c5a532c1b",
+    "imageId":"1d8e0213-59e9-efc7-8c76-a4e9c0f84d25",
+    "lang":"no",
+    "questionText":"Hvor mange nitrogenbaser i et mRNA må til for å sette sammen 4 aminosyrer?",
+    "solution":"c",
+    ".key":"-LCQ9SFFRiXkrYc2CBj6"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Motstand mot insektmidler"
+      },
+      {
+        "key":"b",
+        "value":"Større *CO_2|*-opptak."
+      },
+      {
+        "key":"c",
+        "value":"Større *O_2|*-produksjon."
+      },
+      {
+        "key":"d",
+        "value":"Krav om mindre lys til fotosyntesen."
+      }
+    ],
+    "category":"Bioteknologi",
+    "difficulty":"Lett",
+    "id":"33fc16c0-2b7f-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ representerer en grunn til at vi velger å genmodifisere planter i jordbruket?",
+    "solution":"a",
+    ".key":"-LDIQ-0k5DTF8K8hrz1O"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Globale interessekonflikter er at alle land i verden er i konflikt med hverandre."
+      },
+      {
+        "key":"b",
+        "value":"Globale interessekonflikter er når globaliserte firmaers interesser går utover befolkning og samfunnet."
+      },
+      {
+        "key":"c",
+        "value":"Globale interessekonflikter er når konflikter oppstår som rammer alle mennesker uavhengig av nasjonalitet og kultur."
+      },
+      {
+        "key":"d",
+        "value":"Globale interessekonflikter er når store selskaper slåss om den samme interessen i et land."
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"a4d89e20-2b5e-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ beskriver best en global interessekonflikt?",
+    "solution":"c",
+    ".key":"-LDIQS8XuRA2DjHYd70c"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Identifisering av bærere for recessive gener."
+      },
+      {
+        "key":"b",
+        "value":"Identifisering av sykdommer som kreft."
+      },
+      {
+        "key":"c",
+        "value":"Identifisering av intelligens hos nyfødte."
+      },
+      {
+        "key":"d",
+        "value":"Identifisering av gjerningspersoner i kriminalsaker."
+      }
+    ],
+    "category":"Bioteknologi",
+    "difficulty":"Vanskelig",
+    "id":"725a40d0-3422-11e8-bf94-8b474af0dd07",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hva bruker man ikke gentester til?",
+    "solution":"c",
+    ".key":"-LDIQ_4oNzcORNfVWOxe"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Kjernedonor"
+      },
+      {
+        "key":"b",
+        "value":"Eggdonor"
+      },
+      {
+        "key":"c",
+        "value":"Surrogat"
+      },
+      {
+        "key":"d",
+        "value":"Fostermor"
+      }
+    ],
+    "category":"Bioteknologi",
+    "difficulty":"Lett",
+    "id":"ba8c08d0-2b8e-11e8-9f70-037199116599",
+    "imageId":"094c0bcb-b950-90fc-d89b-3642bb03befd",
+    "lang":"no",
+    "questionText":"Hva kalles sauen som fødte Dolly, men ikke bidro med genetisk materiale?",
+    "solution":"c",
+    ".key":"-LDIQfRSSULcHtfHGz4z"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Drivhuseffekten handler om produksjon av blomster og ugress."
+      },
+      {
+        "key":"b",
+        "value":"Drivhuseffekten øker vannproduksjon i roten hos karsporeplanter."
+      },
+      {
+        "key":"c",
+        "value":"Metan- og vanndamputslipp fører til økt drivhuseffekt."
+      },
+      {
+        "key":"d",
+        "value":"Stråling fra atomer øker drivhuseffekten."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"e047d000-4654-11e8-93ae-dd6a5b95eedb",
+    "imageId":"31aa1951-537c-45ad-63b1-b19ddd85790a",
+    "lang":"no",
+    "questionText":"Hvilken påstand passer med drivhuseffekten?",
+    "solution":"c",
+    ".key":"-LDIQq77Mw7-Jg682UYJ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Protonstråling"
+      },
+      {
+        "key":"b",
+        "value":"UV-stråling"
+      },
+      {
+        "key":"c",
+        "value":"Nøytronstråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"9b1561e0-2602-11e8-a799-0b1189854af2",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hvilken type radioaktiv stråling bruker man i EU for å øke holdbarheten på mat?",
+    "solution":"d",
+    ".key":"-LDIRi5lVL4_5ULfNJFn"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"400 nm - 600 nm"
+      },
+      {
+        "key":"b",
+        "value":"300 nm - 600 nm"
+      },
+      {
+        "key":"c",
+        "value":"400 nm - 800 nm"
+      },
+      {
+        "key":"d",
+        "value":"600 nm - 800 nm"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"02007670-2099-11e8-992f-7b7a51569ca4",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Innenfor hvilke bølgelengder finner vi synlig lys?",
+    "solution":"c",
+    ".key":"-LDIS66ajSrVR2E_ljIa"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Zebra"
+      },
+      {
+        "key":"b",
+        "value":"E.coli"
+      },
+      {
+        "key":"c",
+        "value":"Edderkopp"
+      },
+      {
+        "key":"d",
+        "value":"Sau"
+      }
+    ],
+    "category":"Bioteknologi",
+    "difficulty":"Middels",
+    "id":"cc4307f0-3416-11e8-bf94-8b474af0dd07",
+    "imageId":"094c0bcb-b950-90fc-d89b-3642bb03befd",
+    "lang":"no",
+    "questionText":"Hvilken art er i stand til å klone seg selv?",
+    "solution":"b",
+    ".key":"-LDISF52mSlmNNPOXS8l"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Amylase"
+      },
+      {
+        "key":"b",
+        "value":"Pepsin"
+      },
+      {
+        "key":"c",
+        "value":"Lipase"
+      },
+      {
+        "key":"d",
+        "value":"Insulin"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"dd76fc00-2392-11e8-b5df-8def17ea9dcc",
+    "imageId":"c383f31f-2837-7387-c46e-420d34b77015",
+    "lang":"no",
+    "questionText":"Hvilket av følgende enzymer bryter ned proteiner?",
+    "solution":"b",
+    ".key":"-LDISkK9cdIBu1MmZ3Bq"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Varmeutbrudd"
+      },
+      {
+        "key":"b",
+        "value":"Solvind"
+      },
+      {
+        "key":"c",
+        "value":"Solstråler"
+      },
+      {
+        "key":"d",
+        "value":"Gammaburst"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"5a181d40-2602-11e8-a799-0b1189854af2",
+    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
+    "lang":"no",
+    "questionText":"Eksplosjoner på sola som forårsaker nordlys på jorda kalles for?",
+    "solution":"b",
+    ".key":"-LDISvc0isUZOThZ5cTy"
   }
 ]

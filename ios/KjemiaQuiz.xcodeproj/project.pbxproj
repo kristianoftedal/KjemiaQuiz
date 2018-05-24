@@ -39,7 +39,6 @@
 		4DB9C4DEF209420C8D98B692 /* libRNPhotoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 286290A94E014E9596C5E914 /* libRNPhotoView.a */; };
 		5276E91079CF4A6F827081E1 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		5A4AD5C0207FE45E007569FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4AD5BF207FE45E007569FF /* StoreKit.framework */; };
-		5A4D5D142061B1CD001FD315 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D5CEA2061B1CC001FD315 /* GoogleService-Info.plist */; };
 		5A65052D202252BF0093F40B /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		5A7BEBE3208680E400B49F85 /* libInAppUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7BEBB72086809E00B49F85 /* libInAppUtils.a */; };
 		5AC1C40E1FC7F53C00EEC08E /* button.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AC1C40B1FC7F53C00EEC08E /* button.wav */; };
@@ -397,7 +396,6 @@
 		55EE00F8A0F64D578E737CE3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		5679BCB6EBF7FBD30ECC9C24 /* libPods-KjemiaQuiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KjemiaQuiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4AD5BF207FE45E007569FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		5A4D5CEA2061B1CC001FD315 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "KjemiaQuiz/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A7BEBB12086809E00B49F85 /* InAppUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = InAppUtils.xcodeproj; path = "../node_modules/react-native-in-app-utils/InAppUtils.xcodeproj"; sourceTree = "<group>"; };
 		5AC1C40B1FC7F53C00EEC08E /* button.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = button.wav; path = ../src/assets/audio/button.wav; sourceTree = "<group>"; };
 		5AC1C40C1FC7F53C00EEC08E /* failure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = failure.wav; path = ../src/assets/audio/failure.wav; sourceTree = "<group>"; };
@@ -562,7 +560,6 @@
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
-				5A4D5CEA2061B1CC001FD315 /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -1294,7 +1291,6 @@
 				F5F34C43DC314271AC3C3745 /* (null) in Resources */,
 				76659C3E5487479A98B38C51 /* (null) in Resources */,
 				5EEBA4E99898434C8AB9AEB1 /* (null) in Resources */,
-				5A4D5D142061B1CD001FD315 /* GoogleService-Info.plist in Resources */,
 				F979EF4C0F764B208E942657 /* Raleway-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

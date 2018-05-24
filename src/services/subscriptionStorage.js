@@ -10,5 +10,5 @@ export const getReceipt = async () => {
 
 export const setReceipt = async receipt => {
   if (receipt)
-  await AsyncStorage.setItem('receipt1', JSON.stringify(subscription));
+  await AsyncStorage.setItem('receipt1', JSON.stringify(receipt));
 };

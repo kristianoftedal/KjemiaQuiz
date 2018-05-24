@@ -83,7 +83,6 @@ export default class Subscription extends Component {
           Alert.alert('En feil ved kjøp har oppstått', error);
         }
         if(response && response.productIdentifier) {
-          Alert.alert('Vi kan herved bekreftet at ditt abonnement har startet :)', '');
           this.setState({ purchase: response });
           this.props.purchaseMade(response.transactionReceipt);
         }

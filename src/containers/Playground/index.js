@@ -55,11 +55,21 @@ export default class Playground extends Component {
   }
 
   componentDidUpdate(prevProps, nextProps) {
-    if (this.props.isAdTime) {
+    if (this.props.isAdTime && !this.props.hasSubscription) {
       //AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
       AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
       // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
-      AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+      AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd())
+      .catch(error => {
+        console.log(error);
+        if (this.props.isCorrectAnswer) {
+          dropdown.alertWithType('success', 'Riktig 😀', '');
+          audioService.playSuccessSound();
+        } else {
+          dropdown.alertWithType('error', 'Feil 😮', '');
+          audioService.playFailureSound();
+        }
+      });
       const dropdown = this.dropdown;
       AdMobInterstitial.addEventListener('adClosed',
         () => {

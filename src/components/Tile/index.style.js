@@ -11,8 +11,8 @@ export default StyleSheet.create({
     flexDirection: 'row', 
     alignItems: 'flex-start',
     flexWrap: 'wrap',
-    margin: 2,
-    padding: 2,
+    margin: 4,
+    padding: 4,
   },
   text: {
     color: 'white',

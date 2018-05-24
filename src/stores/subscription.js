@@ -8,7 +8,7 @@ import { getReceipt, setReceipt } from '../services/subscriptionStorage';
 
 const { InAppUtils } = NativeModules
 const password = 'ec294a7077574dea8f1bd66395171f0a'; // Shared Secret from iTunes connect
-const production = true; // use sandbox or production url for validation
+const production = false; // use sandbox or production url for validation
 const validateReceipt = iapReceiptValidator(password, production);
 
 export default class SubscriptionStore {
@@ -27,25 +27,19 @@ export default class SubscriptionStore {
       let isValid = await this.validate(receiptData);
       this.hasSubscription = isValid;
       if (!isValid) {
-        InAppUtils.receiptData((error, receiptResponse) => {
+        InAppUtils.receiptData(async (error, receiptResponse) => {
           if (error) {
             // Alert.alert('iTunes feil', 'Kvittering ikke funnet.');
           } else {
-            isValid = this.validate(receiptResponse).then(isValid => {
-              this.hasSubscription = isValid;
-              if (!isValid) {
-                // this.restore();
-              } else {
-                setReceipt(receiptResponse);
-              }
-            });
+            this.hasSubscription = await this.validate(receiptResponse);
+            setReceipt(receiptResponse);
             //send to validation server
           }
         });
       }
-      if (!receiptData) {
+      // if (!receiptData) {
         // this.restore();
-      }
+      // }
     } else {
 
     }
@@ -94,9 +88,9 @@ export default class SubscriptionStore {
         // check if Auto-Renewable Subscription is still valid
         // validationData['latest_receipt_info'][0].expires_date > today
         const kjemiaReceipts = validationData['latest_receipt_info'].filter(e = e => e.product_id === 'no.kjemia.naturfagsappen');
-        const expiresDate = Date.parse(kjemiaReceipts[kjemiaReceipts.length - 1].expires_date.replace('Etc/', ''));
+        const expiresDate = parseInt(kjemiaReceipts[kjemiaReceipts.length - 1].expires_date_ms);
         const date = new Date();
-        const result = expiresDate > date.getTime();
+        result = expiresDate > date.getTime();
         return result;
     } catch(err) {
         console.log(err.valid, err.error, err.message);

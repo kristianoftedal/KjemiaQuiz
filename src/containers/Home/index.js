@@ -35,13 +35,16 @@ export default class Home extends Component {
   state = {
     hasHeaderAppeared: false,
     hasPressedButton: false,
+    init: true,
   };
 
   componentDidMount() {
     this.props.resetGame();
     this.props.initPlayer();
     if (this._headerRef) {
-      this._headerRef.fadeInRight(1200).then(() => {
+      const fadeTime = this.state.init ? 3000 : 1000;
+      this._headerRef.fadeInRight(fadeTime).then(() => {
+        this.setState({ init: false });
         if (Platform.OS === 'android') {
           UIManager.setLayoutAnimationEnabledExperimental &&
             UIManager.setLayoutAnimationEnabledExperimental(true);

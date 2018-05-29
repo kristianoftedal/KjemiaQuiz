@@ -8,7 +8,7 @@ import { getReceipt, setReceipt } from '../services/subscriptionStorage';
 
 const { InAppUtils } = NativeModules
 const password = 'ec294a7077574dea8f1bd66395171f0a'; // Shared Secret from iTunes connect
-const production = false; // use sandbox or production url for validation
+const production = true; // use sandbox or production url for validation
 const validateReceipt = iapReceiptValidator(password, production);
 
 export default class SubscriptionStore {
@@ -18,8 +18,10 @@ export default class SubscriptionStore {
   @action
   init = async () => {
     if (Platform.OS === 'android') {
-      InAppBilling.isSubscribed('no.kjemia.naturfagsappen').then(isSubscribed => {
-        this.hasSubscription = isSubscribed;
+      InAppBilling.open().then(() => {
+        InAppBilling.isSubscribed('no.kjemia.naturfagsappen').then(isSubscribed => {
+          this.hasSubscription = isSubscribed;
+        });
       });
     }
     if (Platform.OS === 'ios') {

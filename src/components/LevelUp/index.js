@@ -16,12 +16,14 @@ export default class LevelUp extends Component {
     visible: PropTypes.bool,
     onClose: PropTypes.func,
   };
+
   constructor(props) {
     super(props);
     this.state = {
       visible: props.visible,
     };
   }
+  
   componentWillReceiveProps(props) {
     if (props.visible)
       this.setState({visible: props.visible});

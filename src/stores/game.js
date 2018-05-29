@@ -143,7 +143,7 @@ export default class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-    if (!this.hasSubscription && !this.isLevelUp && this.currentIndex !== 0 && this.currentIndex % 8 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
+    if (!this.hasSubscription && !this.isLevelUp && this.currentIndex !== 0 && this.currentIndex % 6 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
       this.isAdTime = true;
     } else {
       this.isAdTime = false;

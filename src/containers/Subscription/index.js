@@ -4,7 +4,8 @@ import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
-const InAppBilling = require("react-native-billing");
+
+import InAppBilling from "react-native-billing";
 const InAppUtils = require('NativeModules').InAppUtils;
 
 @inject(allStores => ({
@@ -20,6 +21,7 @@ export default class Subscription extends Component {
 
   products = [
     'no.kjemia.naturfagsappen',
+    'no.kjemia.naturfagsappen.1',
   ];
 
   constructor(props) {
@@ -43,10 +45,11 @@ export default class Subscription extends Component {
     if (Platform.OS === 'ios') {
       InAppUtils.loadProducts(this.products, (error, products) => {
         this.setState({ product: products[0] });
-        // update store here.
       });      
     } else if (Platform.OS === 'android') {
-      InAppBilling.getSubscriptionDetails(this.products[0]).then()
+      InAppBilling.open().then(() => 
+        InAppBilling.getSubscriptionDetails(this.products[1]).then(
+          (product) =>  this.setState({ product })));
     }
   }
 
@@ -92,19 +95,18 @@ export default class Subscription extends Component {
       // To be sure the service is close before opening it
       await InAppBilling.close();
       try {
+        this.setState({ loading: false });
         await InAppBilling.open();
-        if (!await InAppBilling.isSubscribed(this.products[0])) {
-          const details = await InAppBilling.subscribe(productId);
-          console.log('You purchased: ', details);
+        const isSubscribed = await InAppBilling.isSubscribed(this.products[1]);
+        if (!isSubscribed) {
+          const details = await InAppBilling.subscribe(this.products[1]);
+          const transactionStatus = await InAppBilling.getPurchaseTransactionDetails(this.products[1]);
+          this.props.purchaseMade(transactionStatus);
         }
-        const transactionStatus = await InAppBilling.getPurchaseTransactionDetails(productId);
-        const productDetails = await InAppBilling.getProductDetails(productId);
-        console.log(productDetails);
       } catch (err) {
-        console.log(err);
         this.setState({hasError: true});
+        Alert.alert('En feil ved kjøp har oppstått', err);
       } finally {
-        await InAppBilling.consumePurchase(productId);
         await InAppBilling.close();
       }
     }
@@ -135,7 +137,7 @@ export default class Subscription extends Component {
                   Abonner på premium for å sikre deg alle 1500 spørsmålene og ingen reklame. Gratisversjonen inneholder kun 10% av spørsmålene.
                 </Text>
                 <Text style={style.textPayment}>
-                  Pris: {this.state.product.priceString} / per mnd 
+                  Pris: 39 / per mnd 
                 </Text>
                 <Text style={style.textPayment}>
                   Fornyes automatisk hver måned
@@ -152,7 +154,7 @@ export default class Subscription extends Component {
             { this.state.loading &&
               <View style={style.textPart}>
                 <Text style={style.text}>
-                  Kontakter iTunes...
+                  Kontakter {Platform.OS === 'android' ? 'Play Store' : 'iTunes' }...
                 </Text>
               </View>
             }

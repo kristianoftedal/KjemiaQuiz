@@ -42,7 +42,7 @@ export default class Home extends Component {
     this.props.resetGame();
     this.props.initPlayer();
     if (this._headerRef) {
-      const fadeTime = this.state.init ? 3000 : 1000;
+      const fadeTime = 1400;
       this._headerRef.fadeInRight(fadeTime).then(() => {
         this.setState({ init: false });
         if (Platform.OS === 'android') {
@@ -144,7 +144,7 @@ export default class Home extends Component {
               </Button>
             }
             <View style={style.body}>
-              <Text style={style.subscriptionText}>{this.props.hasSubscription ? 'Premium' : 'Gratisversjon'}</Text>
+              <Text style={style.subscriptionText}>{this.props.hasSubscription ? 'Premium' : 'Gratisversjon' }</Text>
             </View>
           </View>
         )}

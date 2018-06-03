@@ -255,34 +255,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Rød"
-      },
-      {
-        "key":"b",
-        "value":"Gul"
-      },
-      {
-        "key":"c",
-        "value":"Grønn"
-      },
-      {
-        "key":"d",
-        "value":"Fiolett"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Lett",
-    "id":"7a76b4b0-1b9f-11e8-b931-4b88a279dc75",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilken farge i det synlige spektret har kortest bølgelengde?",
-    "solution":"d",
-    ".key":"-L6rJkQ2LHGxaW6yymBF"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Kylling"
       },
       {
@@ -670,62 +642,6 @@
     "questionText":"Hvor mange elektroner mangler karbon i sitt ytterste skall?",
     "solution":"d",
     ".key":"-L70XHz7R1fRNb1wghk_"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"0%"
-      },
-      {
-        "key":"b",
-        "value":"25%"
-      },
-      {
-        "key":"c",
-        "value":"50%"
-      },
-      {
-        "key":"d",
-        "value":"100%"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Lett",
-    "id":"5e2cef40-223e-11e8-8824-6d7c5a532c1b",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvor stor prosent av ditt DNA kommer fra din bestefar?",
-    "solution":"b",
-    ".key":"-L70xBDk0oP1qn56KlHH"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"1-2"
-      },
-      {
-        "key":"b",
-        "value":"50-100"
-      },
-      {
-        "key":"c",
-        "value":"Flere hundre"
-      },
-      {
-        "key":"d",
-        "value":"Flere tusen"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Lett",
-    "id":"68103bd0-22a6-11e8-8597-87c2b4c61910",
-    "imageId":"1d8e0213-59e9-efc7-8c76-a4e9c0f84d25",
-    "lang":"no",
-    "questionText":"Hvor mange ribsomer finnes i en vanlig celle?",
-    "solution":"d",
-    ".key":"-L73cLVN8dUu5jpZP3v7"
   },
   {
     "answers":[
@@ -1431,62 +1347,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Alfa"
-      },
-      {
-        "key":"b",
-        "value":"Beta"
-      },
-      {
-        "key":"c",
-        "value":"Gamma"
-      },
-      {
-        "key":"d",
-        "value":"Feta"
-      }
-    ],
-    "category":"Radioaktiv stråling",
-    "difficulty":"Lett",
-    "id":"accb4970-2690-11e8-acc6-13d5e9a6268d",
-    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
-    "lang":"no",
-    "questionText":"Hvilken type radioaktiv stråling avgir fotoner?",
-    "solution":"c",
-    ".key":"-L7TGjcK-xfgn4F_lN90"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"0"
-      },
-      {
-        "key":"b",
-        "value":"4"
-      },
-      {
-        "key":"c",
-        "value":"8"
-      },
-      {
-        "key":"d",
-        "value":"14"
-      }
-    ],
-    "category":"Radioaktiv stråling",
-    "difficulty":"Middels",
-    "id":"67862c80-2691-11e8-acc6-13d5e9a6268d",
-    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
-    "lang":"no",
-    "questionText":"Hvor mange nøytroner finnes i C-14?",
-    "solution":"c",
-    ".key":"-L7TI-l8KdWsEUeaRv7H"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"0"
       },
       {
@@ -1627,34 +1487,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Alfa og Beta"
-      },
-      {
-        "key":"b",
-        "value":"Alfa og Gamma"
-      },
-      {
-        "key":"c",
-        "value":"Beta og Gamma"
-      },
-      {
-        "key":"d",
-        "value":"Alfa, Beta og Gamma"
-      }
-    ],
-    "category":"Radioaktiv stråling",
-    "difficulty":"Middels",
-    "id":"99a08fc0-2700-11e8-acc6-13d5e9a6268d",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilke radioaktive strålingstyper er partikkelstråling?",
-    "solution":"a",
-    ".key":"-L7_x4xqTHkpSeCMkIGz"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Papir"
       },
       {
@@ -1739,34 +1571,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Planteplankton og krill"
-      },
-      {
-        "key":"b",
-        "value":"Øgler og reptiler"
-      },
-      {
-        "key":"c",
-        "value":"Blågrønnbakterier og sopp"
-      },
-      {
-        "key":"d",
-        "value":"Ulv og sau"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Lett",
-    "id":"765977c0-2836-11e8-ab40-39855ea2f673",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Lav er en symbiose mellom?",
-    "solution":"c",
-    ".key":"-L7d5MDDNp-yyKW9rJy0"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Karbohydrater"
       },
       {
@@ -1790,34 +1594,6 @@
     "questionText":"I en symbiose mellom blågrønnbakterier og sopp, hva hjelper blågrønnbakterien soppen med?",
     "solution":"a",
     ".key":"-L7d5Wov6cHQRwvk4qYI"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Primærsuksesjon"
-      },
-      {
-        "key":"b",
-        "value":"Pionéersuksesjon"
-      },
-      {
-        "key":"c",
-        "value":"Sekundærsuksesjon"
-      },
-      {
-        "key":"d",
-        "value":"Annengradssuksesjon"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Middels",
-    "id":"982c1480-283a-11e8-ab40-39855ea2f673",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Etter atomreaktorkatastrofen i Tsjernobyl på 80-tallet evakuerte byen på grunn av den radioaktive strålingen. Byen er fortsatt ubebodd i 2018. Hvilken type suksesjon har forekommet der?",
-    "solution":"c",
-    ".key":"-L7dB2Yz5rvMRXagzS5n"
   },
   {
     "answers":[
@@ -1958,62 +1734,6 @@
     "questionText":"Hvor mange typer radioaktiv stråling finnes?",
     "solution":"c",
     ".key":"-L7udrIcqrW3lv-54-1y"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"0"
-      },
-      {
-        "key":"b",
-        "value":"10"
-      },
-      {
-        "key":"c",
-        "value":"20"
-      },
-      {
-        "key":"d",
-        "value":"30"
-      }
-    ],
-    "category":"Radioaktiv stråling",
-    "difficulty":"Lett",
-    "id":"66c2d030-2ae9-11e8-b170-979dbbe83fd3",
-    "imageId":"f8a6d750-071c-c5b2-1655-61ecd1682f69",
-    "lang":"no",
-    "questionText":"Hvor mange år tar det før 100 radioaktive atomer med halveringstid på 10 år gjøres om til 50 atomer?",
-    "solution":"b",
-    ".key":"-L7v1C-uwoOZwFOqy1jO"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Olje"
-      },
-      {
-        "key":"b",
-        "value":"Vannkraft"
-      },
-      {
-        "key":"c",
-        "value":"Vindkraft"
-      },
-      {
-        "key":"d",
-        "value":"Solkraft"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Lett",
-    "id":"0e637780-2b5e-11e8-b5b0-45e1d500dcb8",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket alternativ er en ikke fornybar energikilde?",
-    "solution":"a",
-    ".key":"-L7xk3t5TroxhqO5f3cn"
   },
   {
     "answers":[
@@ -2747,62 +2467,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"0,3"
-      },
-      {
-        "key":"b",
-        "value":"3"
-      },
-      {
-        "key":"c",
-        "value":"300"
-      },
-      {
-        "key":"d",
-        "value":"300 000 "
-      }
-    ],
-    "category":"Energi for fremtiden",
-    "difficulty":"Vanskelig",
-    "id":"c9214490-34d1-11e8-bf94-8b474af0dd07",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Et kullkraftverk tilføres 1000J varmeenergi fra brenning av kull. Dette genererer 300J elektrisk strøm. Hva er virkningsgraden til kullkraftverket?",
-    "solution":"a",
-    ".key":"-L8vjsEP6cBS3CNURfti"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"20 J"
-      },
-      {
-        "key":"b",
-        "value":"40 J"
-      },
-      {
-        "key":"c",
-        "value":"100 J"
-      },
-      {
-        "key":"d",
-        "value":"200 J"
-      }
-    ],
-    "category":"Energi for fremtiden",
-    "difficulty":"Vanskelig",
-    "id":"6ab36d70-3580-11e8-bf94-8b474af0dd07",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Et solcellepanel mottar 200 J fra sola. Virkningsgraden er 20 %. Hvor mye elektrisk energi leverer panelet?",
-    "solution":"b",
-    ".key":"-L9-q_pwuGoKbjE7LQlI"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"25%"
       },
       {
@@ -2943,146 +2607,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"5"
-      },
-      {
-        "key":"b",
-        "value":"6"
-      },
-      {
-        "key":"c",
-        "value":"7"
-      },
-      {
-        "key":"d",
-        "value":"8"
-      }
-    ],
-    "category":"Redoksreaksjoner",
-    "difficulty":"Lett",
-    "id":"17888400-1bea-11e8-9863-bdc5c540e40f",
-    "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
-    "lang":"no",
-    "questionText":"Hvilket atomnummer har oksygen?",
-    "solution":"d",
-    ".key":"-LCEI0t1xR_S_N9hoHia"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Mini-Tellus"
-      },
-      {
-        "key":"b",
-        "value":"Planetini"
-      },
-      {
-        "key":"c",
-        "value":"Terrella "
-      },
-      {
-        "key":"d",
-        "value":"Dvergplanet"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Lett",
-    "id":"c66a4280-20a7-11e8-adf8-bbb8c2f7d269",
-    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
-    "lang":"no",
-    "questionText":"Hva kalte Birkeland mini-kloden han brukte til å demonstrere nordlyset?",
-    "solution":"c",
-    ".key":"-LCNaksnzGbzoxSJBYuC"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Sekundærsuksesjon"
-      },
-      {
-        "key":"b",
-        "value":"Pionéersuksesjon"
-      },
-      {
-        "key":"c",
-        "value":"Primærsuksesjon"
-      },
-      {
-        "key":"d",
-        "value":"Debutsuksesjon"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Middels",
-    "id":"07615180-283b-11e8-ab40-39855ea2f673",
-    "imageId":"120239b3-8e47-a16f-5844-4ecb5bf186fb",
-    "lang":"no",
-    "questionText":"En vulkansk øy stiger opp av havet. Hvilken type suksesjon forekommer her?",
-    "solution":"c",
-    ".key":"-LCNb6WFig4lE9mM-8uT"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Den har lang halveringstid."
-      },
-      {
-        "key":"b",
-        "value":"Gasser er mer radioaktiv enn faste stoffer."
-      },
-      {
-        "key":"c",
-        "value":"Gasser har lettere for å bli tatt opp av levende organismer."
-      },
-      {
-        "key":"d",
-        "value":"Den avgir både alfastråling og infrarød stråling."
-      }
-    ],
-    "category":"Radioaktiv stråling",
-    "difficulty":"Middels",
-    "id":"c7075230-27c0-11e8-8e58-eb223e95a7be",
-    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
-    "lang":"no",
-    "questionText":"Hvorfor er radon-222 farligere enn andre former for alfastråling?",
-    "solution":"c",
-    ".key":"-LCNbjEkafAbMfZ06Sgn"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Det kommer fra brytningen i prismet."
-      },
-      {
-        "key":"b",
-        "value":"Det kommer fra infrarødt lys."
-      },
-      {
-        "key":"c",
-        "value":"Det kommer fra eksiterte atomer."
-      },
-      {
-        "key":"d",
-        "value":"Det kommer fra rødforskjøvede stjerner."
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Vanskelig",
-    "id":"1b6808f0-209c-11e8-97ba-79d01dd58047",
-    "imageId":"9d4c7f54-6e2b-00b6-c112-e272f8ad99ce",
-    "lang":"no",
-    "questionText":"Hvor kommer det lyset fra, som er synlig i emisjonsspektret på figuren?",
-    "solution":"c",
-    ".key":"-LCPa5BEYZXn0J1E0kni"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"*SO_4|^2-|* "
       },
       {
@@ -3106,34 +2630,6 @@
     "questionText":"Hvilket ion fra saltbroen vil bevege seg mot anoden under forsøket?",
     "solution":"a",
     ".key":"-LCPbr4WsSE8I6Ql7j2Z"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"1"
-      },
-      {
-        "key":"b",
-        "value":"2"
-      },
-      {
-        "key":"c",
-        "value":"3"
-      },
-      {
-        "key":"d",
-        "value":"4"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Middels",
-    "id":"3cc01e80-20a0-11e8-bce1-25031cdb9156",
-    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
-    "lang":"no",
-    "questionText":"Hvor mange hydrogenbindinger finner vi mellom adenin og tymin?",
-    "solution":"b",
-    ".key":"-LCPiy6aYHdk_9mK2VmM"
   },
   {
     "answers":[
@@ -3195,90 +2691,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"TGACGG"
-      },
-      {
-        "key":"b",
-        "value":"ACTGCC"
-      },
-      {
-        "key":"c",
-        "value":"UGACGG"
-      },
-      {
-        "key":"d",
-        "value":"ACAUAC"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Middels",
-    "id":"e4401340-2168-11e8-bc21-f9669b89a806",
-    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
-    "lang":"no",
-    "questionText":"Hvilken RNA tråd kan lages fra DNA kjeden: ACT GCC?",
-    "solution":"c",
-    ".key":"-LCPkK_tJkQojSUnSkhc"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Solenergi"
-      },
-      {
-        "key":"b",
-        "value":"Vannkraft"
-      },
-      {
-        "key":"c",
-        "value":"Døde planter"
-      },
-      {
-        "key":"d",
-        "value":"Vindkraft"
-      }
-    ],
-    "category":"Energi for fremtiden",
-    "difficulty":"Lett",
-    "id":"00fbb1d0-343b-11e8-bf94-8b474af0dd07",
-    "imageId":"7aa57515-ed58-30ef-e9fb-13bb415f1e68",
-    "lang":"no",
-    "questionText":"Hvilken av disse er et eksempel på bioenergi?",
-    "solution":"c",
-    ".key":"-LCPq-Zb21yOnDQMQ0o4"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"1"
-      },
-      {
-        "key":"b",
-        "value":"2"
-      },
-      {
-        "key":"c",
-        "value":"3"
-      },
-      {
-        "key":"d",
-        "value":"4"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Lett",
-    "id":"b936ba80-2787-11e8-ac2d-75690c54a1a4",
-    "imageId":"9820aada-6048-3689-1c2f-4917c96a8e72",
-    "lang":"no",
-    "questionText":"Hvor mange typer suksesjon har vi?",
-    "solution":"b",
-    ".key":"-LCPqzhoUEhG4PeA8DPH"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"Alle mutasjoner er farlige."
       },
       {
@@ -3302,118 +2714,6 @@
     "questionText":"Hvilken påstand om mutasjoner er riktig?",
     "solution":"d",
     ".key":"-LCPt8Z98BLmT_-0ShKm"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Hydrogen"
-      },
-      {
-        "key":"b",
-        "value":"Karbon"
-      },
-      {
-        "key":"c",
-        "value":"Oksygen"
-      },
-      {
-        "key":"d",
-        "value":"Klor"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Middels",
-    "id":"4ba3b710-223d-11e8-8824-6d7c5a532c1b",
-    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
-    "lang":"no",
-    "questionText":"Hvilket atom finnes ikke i DNA?",
-    "solution":"d",
-    ".key":"-LCPt_MRy_P7KqPIqWua"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"CAG"
-      },
-      {
-        "key":"b",
-        "value":"GAG"
-      },
-      {
-        "key":"c",
-        "value":"GTC"
-      },
-      {
-        "key":"d",
-        "value":"CTA"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Middels",
-    "id":"6246d480-20a2-11e8-bce1-25031cdb9156",
-    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
-    "lang":"no",
-    "questionText":"Hvilken DNA-sekvens er komplementær med CAG?",
-    "solution":"c",
-    ".key":"-LCPtkdDMQtjczIL-unY"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Bjørk"
-      },
-      {
-        "key":"b",
-        "value":"Epletre"
-      },
-      {
-        "key":"c",
-        "value":"Blåveis"
-      },
-      {
-        "key":"d",
-        "value":"Geitrams"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Vanskelig",
-    "id":"8dafabf0-2774-11e8-ac2d-75690c54a1a4",
-    "imageId":"9820aada-6048-3689-1c2f-4917c96a8e72",
-    "lang":"no",
-    "questionText":"Hvilken av følgende plantearter regnes som en pionéerplante?",
-    "solution":"d",
-    ".key":"-LCPtxKgqIKeM8M2TS73"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Magnetfelt, stjerne, himmel"
-      },
-      {
-        "key":"b",
-        "value":"Ozonlag, magnetfelt, atmosfære"
-      },
-      {
-        "key":"c",
-        "value":"Atmosfære, magnetfelt, stjerne"
-      },
-      {
-        "key":"d",
-        "value":"Planet, stjerne, magnetfelt"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Vanskelig",
-    "id":"6e64f710-2606-11e8-a799-0b1189854af2",
-    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
-    "lang":"no",
-    "questionText":"Hvilket av alternativene under beskriver hvilke tre ting du trenger for at nordlys skal dannes?",
-    "solution":"c",
-    ".key":"-LCPu6-NZs-wvV8N8vkW"
   },
   {
     "answers":[
@@ -3475,90 +2775,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Elektroner vandrer fra katoden til anoden."
-      },
-      {
-        "key":"b",
-        "value":"Elektroner vandrer gjennom membranen."
-      },
-      {
-        "key":"c",
-        "value":"Elektroner må ta omvei via den ytre kretsen."
-      },
-      {
-        "key":"d",
-        "value":"Elektroner reagerer med hydrogengass og danner oksygengass."
-      }
-    ],
-    "category":"Redoksreaksjoner",
-    "difficulty":"Middels",
-    "id":"77654540-209d-11e8-bce1-25031cdb9156",
-    "imageId":"e1c8c598-584e-e860-088f-30ba823f6b5d",
-    "lang":"no",
-    "questionText":"Hvilken påstand er riktig om brenselsceller?",
-    "solution":"c",
-    ".key":"-LCPv5qgHKNmDUDSWIqi"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"500 nm"
-      },
-      {
-        "key":"b",
-        "value":"600 nm"
-      },
-      {
-        "key":"c",
-        "value":"700 nm"
-      },
-      {
-        "key":"d",
-        "value":"800 nm"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Middels",
-    "id":"7feaeb20-2098-11e8-992f-7b7a51569ca4",
-    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
-    "lang":"no",
-    "questionText":"Hva er bølgelengden på rødt lys?",
-    "solution":"d",
-    ".key":"-LCPx-Ko_800wAemZbVD"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"1"
-      },
-      {
-        "key":"b",
-        "value":"2"
-      },
-      {
-        "key":"c",
-        "value":"3"
-      },
-      {
-        "key":"d",
-        "value":"4"
-      }
-    ],
-    "category":"Redoksreaksjoner",
-    "difficulty":"Middels",
-    "id":"f2f3efa0-209c-11e8-bce1-25031cdb9156",
-    "imageId":"e1c8c598-584e-e860-088f-30ba823f6b5d",
-    "lang":"no",
-    "questionText":"Hvor mange oksygengassmolekyler trengs for å reagere med 2 hydrogengassmolekyler?",
-    "solution":"a",
-    ".key":"-LCPxHPV-qQvi_WfWPSg"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"*Zn^2+|* og *SO_4|^2-|* "
       },
       {
@@ -3610,202 +2826,6 @@
     "questionText":"Hvilket vitamin danner kroppen din ved hjelp av UV-stråler?",
     "solution":"d",
     ".key":"-LCPxmgmMWIdnFrtTpnj"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Solfangere"
-      },
-      {
-        "key":"b",
-        "value":"Varmepumper"
-      },
-      {
-        "key":"c",
-        "value":"Batterier"
-      },
-      {
-        "key":"d",
-        "value":"Galvaniske elementer"
-      }
-    ],
-    "category":"Energi for fremtiden",
-    "difficulty":"Lett",
-    "id":"26dc4330-23cc-11e8-b7bb-f985bc925705",
-    "imageId":"e59ebf96-f9d4-3497-3151-a57990e34cd9",
-    "lang":"no",
-    "questionText":"Hva kaller vi gjenstander som holder på varmen fra sola?",
-    "solution":"a",
-    ".key":"-LCPyH0kfFPpmCKsXcI9"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"CO"
-      },
-      {
-        "key":"b",
-        "value":"*H_2|O*"
-      },
-      {
-        "key":"c",
-        "value":"*SO_4|^2-|*"
-      },
-      {
-        "key":"d",
-        "value":"*Cl_2|*"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Middels",
-    "id":"9ef5ba40-56df-11e8-bdac-9f67665ba50a",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket av følgende stoffer inngår i fotosyntesen?",
-    "solution":"b",
-    ".key":"-LCPytJuaynIPP5P7OFV"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Et prisme"
-      },
-      {
-        "key":"b",
-        "value":"Et glasslegme"
-      },
-      {
-        "key":"c",
-        "value":"Teodolitt"
-      },
-      {
-        "key":"d",
-        "value":"Teleskop"
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Middels",
-    "id":"2b0014a0-209d-11e8-97ba-79d01dd58047",
-    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
-    "lang":"no",
-    "questionText":"Hva heter det glasset vi bruker til å bryte lyset når vi ser på absorbsjonsspektre og emisjonsspektre?",
-    "solution":"a",
-    ".key":"-LCPz2xNS1-5d7JK-UrM"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Pionéerfasen"
-      },
-      {
-        "key":"b",
-        "value":"Primærfasen"
-      },
-      {
-        "key":"c",
-        "value":"Førstefasen"
-      },
-      {
-        "key":"d",
-        "value":"Innledningsfasen"
-      }
-    ],
-    "category":"Økologi og bærekraftig utvikling",
-    "difficulty":"Lett",
-    "id":"2c8121a0-2838-11e8-ab40-39855ea2f673",
-    "imageId":"120239b3-8e47-a16f-5844-4ecb5bf186fb",
-    "lang":"no",
-    "questionText":"Hva er heter den første fasen i suksesjonen?",
-    "solution":"a",
-    ".key":"-LCPzJy1-7QitMHyMecO"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"I munnen"
-      },
-      {
-        "key":"b",
-        "value":"I magesekken"
-      },
-      {
-        "key":"c",
-        "value":"I tynntarmen"
-      },
-      {
-        "key":"d",
-        "value":"I tykktarmen"
-      }
-    ],
-    "category":"Ernæring, fordøyelse og helse",
-    "difficulty":"Lett",
-    "id":"34756180-2394-11e8-b5df-8def17ea9dcc",
-    "imageId":"c383f31f-2837-7387-c46e-420d34b77015",
-    "lang":"no",
-    "questionText":"Hvor produseres amylase?",
-    "solution":"a",
-    ".key":"-LCQ5zBGc2n-_baw9bjl"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"1"
-      },
-      {
-        "key":"b",
-        "value":"6"
-      },
-      {
-        "key":"c",
-        "value":"12"
-      },
-      {
-        "key":"d",
-        "value":"24"
-      }
-    ],
-    "category":"DNA, proteinsyntese og arv",
-    "difficulty":"Vanskelig",
-    "id":"ee5b6050-223f-11e8-8824-6d7c5a532c1b",
-    "imageId":"1d8e0213-59e9-efc7-8c76-a4e9c0f84d25",
-    "lang":"no",
-    "questionText":"Hvor mange nitrogenbaser i et mRNA må til for å sette sammen 4 aminosyrer?",
-    "solution":"c",
-    ".key":"-LCQ9SFFRiXkrYc2CBj6"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Motstand mot insektmidler"
-      },
-      {
-        "key":"b",
-        "value":"Større *CO_2|*-opptak."
-      },
-      {
-        "key":"c",
-        "value":"Større *O_2|*-produksjon."
-      },
-      {
-        "key":"d",
-        "value":"Krav om mindre lys til fotosyntesen."
-      }
-    ],
-    "category":"Bioteknologi",
-    "difficulty":"Lett",
-    "id":"33fc16c0-2b7f-11e8-b5b0-45e1d500dcb8",
-    "imageId":"",
-    "lang":"no",
-    "questionText":"Hvilket alternativ representerer en grunn til at vi velger å genmodifisere planter i jordbruket?",
-    "solution":"a",
-    ".key":"-LDIQ-0k5DTF8K8hrz1O"
   },
   {
     "answers":[
@@ -3895,62 +2915,6 @@
     "answers":[
       {
         "key":"a",
-        "value":"Drivhuseffekten handler om produksjon av blomster og ugress."
-      },
-      {
-        "key":"b",
-        "value":"Drivhuseffekten øker vannproduksjon i roten hos karsporeplanter."
-      },
-      {
-        "key":"c",
-        "value":"Metan- og vanndamputslipp fører til økt drivhuseffekt."
-      },
-      {
-        "key":"d",
-        "value":"Stråling fra atomer øker drivhuseffekten."
-      }
-    ],
-    "category":"Elektromagnetisk stråling",
-    "difficulty":"Vanskelig",
-    "id":"e047d000-4654-11e8-93ae-dd6a5b95eedb",
-    "imageId":"31aa1951-537c-45ad-63b1-b19ddd85790a",
-    "lang":"no",
-    "questionText":"Hvilken påstand passer med drivhuseffekten?",
-    "solution":"c",
-    ".key":"-LDIQq77Mw7-Jg682UYJ"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
-        "value":"Protonstråling"
-      },
-      {
-        "key":"b",
-        "value":"UV-stråling"
-      },
-      {
-        "key":"c",
-        "value":"Nøytronstråling"
-      },
-      {
-        "key":"d",
-        "value":"Gammastråling"
-      }
-    ],
-    "category":"Radioaktiv stråling",
-    "difficulty":"Middels",
-    "id":"9b1561e0-2602-11e8-a799-0b1189854af2",
-    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
-    "lang":"no",
-    "questionText":"Hvilken type radioaktiv stråling bruker man i EU for å øke holdbarheten på mat?",
-    "solution":"d",
-    ".key":"-LDIRi5lVL4_5ULfNJFn"
-  },
-  {
-    "answers":[
-      {
-        "key":"a",
         "value":"400 nm - 600 nm"
       },
       {
@@ -4029,7 +2993,119 @@
     "lang":"no",
     "questionText":"Hvilket av følgende enzymer bryter ned proteiner?",
     "solution":"b",
-    ".key":"-LDISkK9cdIBu1MmZ3Bq"
+    ".key":"-LDW0DPlbTedW6BD8Mm1"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"I munnen"
+      },
+      {
+        "key":"b",
+        "value":"I magesekken"
+      },
+      {
+        "key":"c",
+        "value":"I tynntarmen"
+      },
+      {
+        "key":"d",
+        "value":"I tykktarmen"
+      }
+    ],
+    "category":"Ernæring, fordøyelse og helse",
+    "difficulty":"Lett",
+    "id":"34756180-2394-11e8-b5df-8def17ea9dcc",
+    "imageId":"c383f31f-2837-7387-c46e-420d34b77015",
+    "lang":"no",
+    "questionText":"Hvor produseres amylase?",
+    "solution":"a",
+    ".key":"-LDW0S61Dur8CAa7epSA"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"b936ba80-2787-11e8-ac2d-75690c54a1a4",
+    "imageId":"9820aada-6048-3689-1c2f-4917c96a8e72",
+    "lang":"no",
+    "questionText":"Hvor mange typer suksesjon har vi?",
+    "solution":"b",
+    ".key":"-LDWEAL3l1BQ6PjZZ2mL"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Pionéerfasen"
+      },
+      {
+        "key":"b",
+        "value":"Primærfasen"
+      },
+      {
+        "key":"c",
+        "value":"Førstefasen"
+      },
+      {
+        "key":"d",
+        "value":"Innledningsfasen"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"2c8121a0-2838-11e8-ab40-39855ea2f673",
+    "imageId":"120239b3-8e47-a16f-5844-4ecb5bf186fb",
+    "lang":"no",
+    "questionText":"Hva er heter den første fasen i suksesjonen?",
+    "solution":"a",
+    ".key":"-LDWEQKAQ02tMgicT00u"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Rød"
+      },
+      {
+        "key":"b",
+        "value":"Gul"
+      },
+      {
+        "key":"c",
+        "value":"Grønn"
+      },
+      {
+        "key":"d",
+        "value":"Fiolett"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"7a76b4b0-1b9f-11e8-b931-4b88a279dc75",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Hvilken farge i det synlige spektret har kortest bølgelengde?",
+    "solution":"d",
+    ".key":"-LDW_Uc5KLQWmezaLWbJ"
   },
   {
     "answers":[
@@ -4057,6 +3133,930 @@
     "lang":"no",
     "questionText":"Eksplosjoner på sola som forårsaker nordlys på jorda kalles for?",
     "solution":"b",
-    ".key":"-LDISvc0isUZOThZ5cTy"
+    ".key":"-LDWb4V7_O7fVfmpStAS"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"500 nm"
+      },
+      {
+        "key":"b",
+        "value":"600 nm"
+      },
+      {
+        "key":"c",
+        "value":"700 nm"
+      },
+      {
+        "key":"d",
+        "value":"800 nm"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"7feaeb20-2098-11e8-992f-7b7a51569ca4",
+    "imageId":"f4e6f6fa-9d1b-c61d-8994-d9a76b462957",
+    "lang":"no",
+    "questionText":"Hva er bølgelengden på rødt lys?",
+    "solution":"d",
+    ".key":"-LDWdlGEbLW97hg0aj4g"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Magnetfelt, stjerne, himmel"
+      },
+      {
+        "key":"b",
+        "value":"Ozonlag, magnetfelt, atmosfære"
+      },
+      {
+        "key":"c",
+        "value":"Atmosfære, magnetfelt, stjerne"
+      },
+      {
+        "key":"d",
+        "value":"Planet, stjerne, magnetfelt"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"6e64f710-2606-11e8-a799-0b1189854af2",
+    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
+    "lang":"no",
+    "questionText":"Hvilket av alternativene under beskriver hvilke tre ting du trenger for at nordlys skal dannes?",
+    "solution":"c",
+    ".key":"-LDWgVyNU1Jtl5HvViSu"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa"
+      },
+      {
+        "key":"b",
+        "value":"Beta"
+      },
+      {
+        "key":"c",
+        "value":"Gamma"
+      },
+      {
+        "key":"d",
+        "value":"Feta"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"accb4970-2690-11e8-acc6-13d5e9a6268d",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hvilken type radioaktiv stråling avgir fotoner?",
+    "solution":"c",
+    ".key":"-LDXmaNMMy9IsvAnGKLR"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0"
+      },
+      {
+        "key":"b",
+        "value":"4"
+      },
+      {
+        "key":"c",
+        "value":"8"
+      },
+      {
+        "key":"d",
+        "value":"14"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"67862c80-2691-11e8-acc6-13d5e9a6268d",
+    "imageId":"6d1db61d-5344-064f-d831-35b1d9498796",
+    "lang":"no",
+    "questionText":"Hvor mange nøytroner finnes i C-14?",
+    "solution":"c",
+    ".key":"-LDXmsfmtRUWX4UHvu1S"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Protonstråling"
+      },
+      {
+        "key":"b",
+        "value":"UV-stråling"
+      },
+      {
+        "key":"c",
+        "value":"Nøytronstråling"
+      },
+      {
+        "key":"d",
+        "value":"Gammastråling"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"9b1561e0-2602-11e8-a799-0b1189854af2",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hvilken type radioaktiv stråling bruker man i EU for å øke holdbarheten på mat?",
+    "solution":"d",
+    ".key":"-LDXnDs8gwFZv_5mHzYB"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Alfa og Beta"
+      },
+      {
+        "key":"b",
+        "value":"Alfa og Gamma"
+      },
+      {
+        "key":"c",
+        "value":"Beta og Gamma"
+      },
+      {
+        "key":"d",
+        "value":"Alfa, Beta og Gamma"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"99a08fc0-2700-11e8-acc6-13d5e9a6268d",
+    "imageId":"78e0db0f-ebcd-3c85-f4b3-3017190d5ab4",
+    "lang":"no",
+    "questionText":"Hvilke radioaktive strålingstyper er partikkelstråling?",
+    "solution":"a",
+    ".key":"-LDXo1_MFiw2Ty9UPVDx"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Den har lang halveringstid."
+      },
+      {
+        "key":"b",
+        "value":"Gasser er mer radioaktiv enn faste stoffer."
+      },
+      {
+        "key":"c",
+        "value":"Gasser har lettere for å bli tatt opp av levende organismer."
+      },
+      {
+        "key":"d",
+        "value":"Den avgir både alfastråling og infrarød stråling."
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Middels",
+    "id":"c7075230-27c0-11e8-8e58-eb223e95a7be",
+    "imageId":"1f579906-455f-27da-0385-d34677e4abf6",
+    "lang":"no",
+    "questionText":"Hvorfor er radon-222 farligere enn andre former for alfastråling?",
+    "solution":"c",
+    ".key":"-LDXoWiIqoiNg4LOx0gV"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"Redoksreaksjoner",
+    "difficulty":"Middels",
+    "id":"f2f3efa0-209c-11e8-bce1-25031cdb9156",
+    "imageId":"e1c8c598-584e-e860-088f-30ba823f6b5d",
+    "lang":"no",
+    "questionText":"Hvor mange oksygengassmolekyler trengs for å reagere med 2 hydrogengassmolekyler?",
+    "solution":"a",
+    ".key":"-LDXq48i6o6pQp3mvS5c"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Solenergi"
+      },
+      {
+        "key":"b",
+        "value":"Vannkraft"
+      },
+      {
+        "key":"c",
+        "value":"Døde planter"
+      },
+      {
+        "key":"d",
+        "value":"Vindkraft"
+      }
+    ],
+    "category":"Energi for fremtiden",
+    "difficulty":"Lett",
+    "id":"00fbb1d0-343b-11e8-bf94-8b474af0dd07",
+    "imageId":"7aa57515-ed58-30ef-e9fb-13bb415f1e68",
+    "lang":"no",
+    "questionText":"Hvilken av disse er et eksempel på bioenergi?",
+    "solution":"c",
+    ".key":"-LDXqbtc8FghXiVyce86"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Solfangere"
+      },
+      {
+        "key":"b",
+        "value":"Varmepumper"
+      },
+      {
+        "key":"c",
+        "value":"Batterier"
+      },
+      {
+        "key":"d",
+        "value":"Galvaniske elementer"
+      }
+    ],
+    "category":"Energi for fremtiden",
+    "difficulty":"Lett",
+    "id":"26dc4330-23cc-11e8-b7bb-f985bc925705",
+    "imageId":"e59ebf96-f9d4-3497-3151-a57990e34cd9",
+    "lang":"no",
+    "questionText":"Hva kaller vi gjenstander som holder på varmen fra sola?",
+    "solution":"a",
+    ".key":"-LDXqgdmGWmlTyXkYoy5"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"20 J"
+      },
+      {
+        "key":"b",
+        "value":"40 J"
+      },
+      {
+        "key":"c",
+        "value":"100 J"
+      },
+      {
+        "key":"d",
+        "value":"200 J"
+      }
+    ],
+    "category":"Energi for fremtiden",
+    "difficulty":"Vanskelig",
+    "id":"6ab36d70-3580-11e8-bf94-8b474af0dd07",
+    "imageId":"cbf1e124-a1f8-dfd8-1b31-2b7b7b56f94d",
+    "lang":"no",
+    "questionText":"Et solcellepanel mottar 200 J fra sola. Virkningsgraden er 20 %. Hvor mye elektrisk energi leverer panelet?",
+    "solution":"b",
+    ".key":"-LDXrsNuNCgetOwYo17_"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"CO"
+      },
+      {
+        "key":"b",
+        "value":"*H_2|O*"
+      },
+      {
+        "key":"c",
+        "value":"*SO_4|^2-|*"
+      },
+      {
+        "key":"d",
+        "value":"*Cl_2|*"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"9ef5ba40-56df-11e8-bdac-9f67665ba50a",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket av følgende stoffer inngår i fotosyntesen?",
+    "solution":"b",
+    ".key":"-LDaoRWwryXr-v6xQb-K"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Olje"
+      },
+      {
+        "key":"b",
+        "value":"Vannkraft"
+      },
+      {
+        "key":"c",
+        "value":"Vindkraft"
+      },
+      {
+        "key":"d",
+        "value":"Solkraft"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Lett",
+    "id":"0e637780-2b5e-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ er en ikke-fornybar energikilde?",
+    "solution":"a",
+    ".key":"-LDbmqKZ4YXnf3yMb6cc"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Planteplankton og krill"
+      },
+      {
+        "key":"b",
+        "value":"Øgler og reptiler"
+      },
+      {
+        "key":"c",
+        "value":"Blågrønnbakterier og sopp"
+      },
+      {
+        "key":"d",
+        "value":"Ulv og sau"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"765977c0-2836-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Lav er en symbiose mellom?",
+    "solution":"c",
+    ".key":"-LDbmusvSEHRaZXngtyq"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Sekundærsuksesjon"
+      },
+      {
+        "key":"b",
+        "value":"Pionersuksesjon"
+      },
+      {
+        "key":"c",
+        "value":"Primærsuksesjon"
+      },
+      {
+        "key":"d",
+        "value":"Debutsuksesjon"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"07615180-283b-11e8-ab40-39855ea2f673",
+    "imageId":"120239b3-8e47-a16f-5844-4ecb5bf186fb",
+    "lang":"no",
+    "questionText":"En vulkansk øy stiger opp av havet. Hvilken type suksesjon forekommer her?",
+    "solution":"c",
+    ".key":"-LDbqIaOGrx90KSB7bJN"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Primærsuksesjon"
+      },
+      {
+        "key":"b",
+        "value":"Pionersuksesjon"
+      },
+      {
+        "key":"c",
+        "value":"Sekundærsuksesjon"
+      },
+      {
+        "key":"d",
+        "value":"Annengradssuksesjon"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Middels",
+    "id":"982c1480-283a-11e8-ab40-39855ea2f673",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Etter atomreaktorkatastrofen i Tsjernobyl på 80-tallet evakuerte byen på grunn av den radioaktive strålingen. Byen er fortsatt ubebodd i 2018. Hvilken type suksesjon har forekommet der?",
+    "solution":"c",
+    ".key":"-LDbshe8K3KL4VoTiv9M"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0%"
+      },
+      {
+        "key":"b",
+        "value":"25%"
+      },
+      {
+        "key":"c",
+        "value":"50%"
+      },
+      {
+        "key":"d",
+        "value":"100%"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Lett",
+    "id":"5e2cef40-223e-11e8-8824-6d7c5a532c1b",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvor stor prosent av ditt DNA kommer fra din bestefar?",
+    "solution":"b",
+    ".key":"-LDc1RAO0H1KsAXkSwSy"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"2"
+      },
+      {
+        "key":"c",
+        "value":"3"
+      },
+      {
+        "key":"d",
+        "value":"4"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Middels",
+    "id":"3cc01e80-20a0-11e8-bce1-25031cdb9156",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvor mange hydrogenbindinger finner vi mellom adenin og tymin?",
+    "solution":"b",
+    ".key":"-LDc2LkK6Ybn-SAYp6t6"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"TGACGG"
+      },
+      {
+        "key":"b",
+        "value":"ACTGCC"
+      },
+      {
+        "key":"c",
+        "value":"UGACGG"
+      },
+      {
+        "key":"d",
+        "value":"ACAUAC"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Middels",
+    "id":"e4401340-2168-11e8-bc21-f9669b89a806",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvilken RNA tråd kan lages fra DNA kjeden: ACT GCC?",
+    "solution":"c",
+    ".key":"-LDc2kpTnwbFJ3yIkSmn"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"CAG"
+      },
+      {
+        "key":"b",
+        "value":"GAG"
+      },
+      {
+        "key":"c",
+        "value":"GTC"
+      },
+      {
+        "key":"d",
+        "value":"CTA"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Middels",
+    "id":"6246d480-20a2-11e8-bce1-25031cdb9156",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvilken DNA-sekvens er komplementær med CAG?",
+    "solution":"c",
+    ".key":"-LDc3YUcpH9rRrqoJn2g"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Hydrogen"
+      },
+      {
+        "key":"b",
+        "value":"Karbon"
+      },
+      {
+        "key":"c",
+        "value":"Oksygen"
+      },
+      {
+        "key":"d",
+        "value":"Klor"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Middels",
+    "id":"4ba3b710-223d-11e8-8824-6d7c5a532c1b",
+    "imageId":"3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang":"no",
+    "questionText":"Hvilket atom finnes ikke i DNA?",
+    "solution":"d",
+    ".key":"-LDc3csaJCSmYoxXm_Ik"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1"
+      },
+      {
+        "key":"b",
+        "value":"6"
+      },
+      {
+        "key":"c",
+        "value":"12"
+      },
+      {
+        "key":"d",
+        "value":"24"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Vanskelig",
+    "id":"ee5b6050-223f-11e8-8824-6d7c5a532c1b",
+    "imageId":"1d8e0213-59e9-efc7-8c76-a4e9c0f84d25",
+    "lang":"no",
+    "questionText":"Hvor mange nitrogenbaser i et mRNA må til for å sette sammen 4 aminosyrer?",
+    "solution":"c",
+    ".key":"-LDc3trYeDJlK33pR3DZ"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Bjørk"
+      },
+      {
+        "key":"b",
+        "value":"Epletre"
+      },
+      {
+        "key":"c",
+        "value":"Blåveis"
+      },
+      {
+        "key":"d",
+        "value":"Geitrams"
+      }
+    ],
+    "category":"Økologi og bærekraftig utvikling",
+    "difficulty":"Vanskelig",
+    "id":"8dafabf0-2774-11e8-ac2d-75690c54a1a4",
+    "imageId":"9820aada-6048-3689-1c2f-4917c96a8e72",
+    "lang":"no",
+    "questionText":"Hvilken av følgende plantearter regnes som en pionerplante?",
+    "solution":"d",
+    ".key":"-LDc5J3mjhV-188pkU_g"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Mini-Tellusen"
+      },
+      {
+        "key":"b",
+        "value":"Planetinien"
+      },
+      {
+        "key":"c",
+        "value":"Terrellaen "
+      },
+      {
+        "key":"d",
+        "value":"Dvergplaneten"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Lett",
+    "id":"c66a4280-20a7-11e8-adf8-bbb8c2f7d269",
+    "imageId":"ee333f8d-cfba-e69c-eb7e-897e98a5b79d",
+    "lang":"no",
+    "questionText":"Hva kalte Birkeland mini-kloden han brukte til å demonstrere nordlyset?",
+    "solution":"c",
+    ".key":"-LDcA2x1FbGNOmlDQQUu"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Et prisme"
+      },
+      {
+        "key":"b",
+        "value":"Et glasslegme"
+      },
+      {
+        "key":"c",
+        "value":"Teodolitt"
+      },
+      {
+        "key":"d",
+        "value":"Teleskop"
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Middels",
+    "id":"2b0014a0-209d-11e8-97ba-79d01dd58047",
+    "imageId":"aad6732d-944e-12a7-21a5-b7f0673b2171",
+    "lang":"no",
+    "questionText":"Hva heter det glasset vi bruker til å bryte lyset med når vi ser på absorbsjonsspektre og emisjonsspektre?",
+    "solution":"a",
+    ".key":"-LDg1RjThiq0z32Pyjtt"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Det kommer fra brytningen i prismet."
+      },
+      {
+        "key":"b",
+        "value":"Det kommer fra infrarødt lys."
+      },
+      {
+        "key":"c",
+        "value":"Det kommer fra eksiterte atomer."
+      },
+      {
+        "key":"d",
+        "value":"Det kommer fra rødforskjøvede stjerner."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"1b6808f0-209c-11e8-97ba-79d01dd58047",
+    "imageId":"9d4c7f54-6e2b-00b6-c112-e272f8ad99ce",
+    "lang":"no",
+    "questionText":"Hvor kommer det lyset fra, som er synlig i emisjonspektret på figuren?",
+    "solution":"c",
+    ".key":"-LDgDcI7RgXHRjbDARqU"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Drivhuseffekten handler om produksjon av blomster og ugress."
+      },
+      {
+        "key":"b",
+        "value":"Drivhuseffekten øker vannproduksjon i roten hos karsporeplanter."
+      },
+      {
+        "key":"c",
+        "value":"Metan- og vanndamputslipp fører til økt drivhuseffekt."
+      },
+      {
+        "key":"d",
+        "value":"Stråling fra atomer øker drivhuseffekten."
+      }
+    ],
+    "category":"Elektromagnetisk stråling",
+    "difficulty":"Vanskelig",
+    "id":"e047d000-4654-11e8-93ae-dd6a5b95eedb",
+    "imageId":"31aa1951-537c-45ad-63b1-b19ddd85790a",
+    "lang":"no",
+    "questionText":"Hvilken påstand passer med drivhuseffekten?",
+    "solution":"c",
+    ".key":"-LDgDqLAbpfKWlZY57s0"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0 år"
+      },
+      {
+        "key":"b",
+        "value":"10 år"
+      },
+      {
+        "key":"c",
+        "value":"20 år"
+      },
+      {
+        "key":"d",
+        "value":"30 år"
+      }
+    ],
+    "category":"Radioaktiv stråling",
+    "difficulty":"Lett",
+    "id":"66c2d030-2ae9-11e8-b170-979dbbe83fd3",
+    "imageId":"f8a6d750-071c-c5b2-1655-61ecd1682f69",
+    "lang":"no",
+    "questionText":"Hvor mange år tar det før 100 radioaktive atomer med halveringstid på 10 år gjøres om til 50 atomer?",
+    "solution":"b",
+    ".key":"-LDgFgwe_3r3b49hfPVs"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"5"
+      },
+      {
+        "key":"b",
+        "value":"6"
+      },
+      {
+        "key":"c",
+        "value":"7"
+      },
+      {
+        "key":"d",
+        "value":"8"
+      }
+    ],
+    "category":"Redoksreaksjoner",
+    "difficulty":"Lett",
+    "id":"17888400-1bea-11e8-9863-bdc5c540e40f",
+    "imageId":"8e846ed7-a6d7-443a-86aa-b1a4cd69b2c8",
+    "lang":"no",
+    "questionText":"Hvilket atomnummer har oksygen?",
+    "solution":"d",
+    ".key":"-LDkO19CX-pSvEO2_Ids"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Elektroner vandrer fra katoden til anoden."
+      },
+      {
+        "key":"b",
+        "value":"Elektroner vandrer gjennom membranen."
+      },
+      {
+        "key":"c",
+        "value":"Elektroner må ta omveien via den ytre kretsen."
+      },
+      {
+        "key":"d",
+        "value":"Elektroner reagerer med hydrogengass og danner oksygengass."
+      }
+    ],
+    "category":"Redoksreaksjoner",
+    "difficulty":"Middels",
+    "id":"77654540-209d-11e8-bce1-25031cdb9156",
+    "imageId":"e1c8c598-584e-e860-088f-30ba823f6b5d",
+    "lang":"no",
+    "questionText":"Hvilken påstand er riktig om brenselsceller?",
+    "solution":"c",
+    ".key":"-LDkRsiK0sXWeBVShKHm"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"0,3"
+      },
+      {
+        "key":"b",
+        "value":"3"
+      },
+      {
+        "key":"c",
+        "value":"300"
+      },
+      {
+        "key":"d",
+        "value":"300 000 "
+      }
+    ],
+    "category":"Energi for fremtiden",
+    "difficulty":"Vanskelig",
+    "id":"c9214490-34d1-11e8-bf94-8b474af0dd07",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Et kullkraftverk tilføres 1000 J varmeenergi fra brenning av kull. Dette genererer 300 J elektrisk strøm. Hva er virkningsgraden til kullkraftverket?",
+    "solution":"a",
+    ".key":"-LDkrp-ypGB2rxAStSOh"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"1-2"
+      },
+      {
+        "key":"b",
+        "value":"50-100"
+      },
+      {
+        "key":"c",
+        "value":"Flere hundre"
+      },
+      {
+        "key":"d",
+        "value":"Flere tusen"
+      }
+    ],
+    "category":"DNA, proteinsyntese og arv",
+    "difficulty":"Lett",
+    "id":"68103bd0-22a6-11e8-8597-87c2b4c61910",
+    "imageId":"1d8e0213-59e9-efc7-8c76-a4e9c0f84d25",
+    "lang":"no",
+    "questionText":"Hvor mange ribosomer finnes i en vanlig celle?",
+    "solution":"d",
+    ".key":"-LDkuOTTGeqwx7qu0TfU"
+  },
+  {
+    "answers":[
+      {
+        "key":"a",
+        "value":"Motstand mot insektmidler."
+      },
+      {
+        "key":"b",
+        "value":"Større *CO_2|*-opptak."
+      },
+      {
+        "key":"c",
+        "value":"Større *O_2|*-produksjon."
+      },
+      {
+        "key":"d",
+        "value":"Krav om mindre lys til fotosyntesen."
+      }
+    ],
+    "category":"Bioteknologi",
+    "difficulty":"Lett",
+    "id":"33fc16c0-2b7f-11e8-b5b0-45e1d500dcb8",
+    "imageId":"",
+    "lang":"no",
+    "questionText":"Hvilket alternativ representerer en grunn til at vi velger å genmodifisere planter i jordbruket?",
+    "solution":"a",
+    ".key":"-LDp90ZHl56Jl_5jVntt"
   }
 ]

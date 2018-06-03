@@ -146,6 +146,9 @@ export default class Home extends Component {
             <View style={style.body}>
               <Text style={style.subscriptionText}>{this.props.hasSubscription ? 'Premium' : 'Gratisversjon' }</Text>
             </View>
+            <View style={style.body}>
+              <Text style={style.subscriptionText}>Innspill og rettelser sendes til kontakt@kjemia.no</Text>
+            </View>
           </View>
         )}
       </View>

@@ -47,9 +47,10 @@ export default class Subscription extends Component {
         this.setState({ product: products[0] });
       });      
     } else if (Platform.OS === 'android') {
+      InAppBilling.close().then(() =>
       InAppBilling.open().then(() => 
         InAppBilling.getSubscriptionDetails(this.products[1]).then(
-          (product) =>  this.setState({ product })));
+          (product) =>  this.setState({ product }))));
     }
   }
 
@@ -101,7 +102,7 @@ export default class Subscription extends Component {
         if (!isSubscribed) {
           const details = await InAppBilling.subscribe(this.products[1]);
           const transactionStatus = await InAppBilling.getPurchaseTransactionDetails(this.products[1]);
-          this.props.purchaseMade(transactionStatus);
+          this.props.purchaseMade(transactionStatus.purchaseState);
         }
       } catch (err) {
         this.setState({hasError: true});

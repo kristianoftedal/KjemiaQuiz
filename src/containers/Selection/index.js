@@ -19,7 +19,7 @@ import RadioButton from '../../components/RadioButton';
   navigateToHome: allStores.router.navigateToHome,
   navigateToEndgame: allStores.router.navigateToEndgame,
   setCustomizedGame: allStores.game.setCustomizedGame,
-  hasSubscription: allStores.game.hasSubscription,
+  hasSubscription: allStores.subscription.hasSubscription,
 }))
 
 @observer
@@ -53,7 +53,7 @@ export default class Selection extends Component {
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
-    this.props.setCustomizedGame(this.state.categories, this.state.difficulty, this.state.count);
+    this.props.setCustomizedGame(this.state.categories, this.state.difficulty, this.state.count, this.props.hasSubscription);
     this.setState({ categories: categories.map(e => ({...e}))});
     this.props.navigateToPlayground();
   };
@@ -179,7 +179,7 @@ export default class Selection extends Component {
             </View>
             {!this.hasSubscription &&
               <Text style={style.textFree}>
-              I gratis versjonen vil kun 10% av spørsmålene være tilgjengelige
+              I gratisversjonen vil kun 10% av spørsmålene være tilgjengelige
               </Text>
 
             }

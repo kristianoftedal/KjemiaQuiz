@@ -3,12 +3,12 @@
  * The core of the game.
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from '../../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
+import PropTypes from '../../../../../../Library/Caches/typescript/2.9/node_modules/@types/prop-types';
 import { inject, observer } from 'mobx-react/native';
 import { Text, Alert, Image } from 'react-native';
 import { View } from 'react-native-animatable';
-import PhotoView from 'react-native-photo-view';
+import PhotoView from '../../../../../../Library/Caches/typescript/2.9/node_modules/@types/react-native-photo-view';
 import Button from 'apsl-react-native-button';
 import PeriodicTable from '../../../components/PeriodicTable';
 import style from './index.style';

@@ -12,7 +12,6 @@ const TILE_SIZE = DEVICE_WIDTH * 0.28;
 const TILE_SHADOW_DEPTH = 6;
 const TILE_BORDER_RADIUS = TILE_SIZE * 0.1;
 
-
 export default {
   DEVICE_HEIGHT,
   DEVICE_WIDTH,

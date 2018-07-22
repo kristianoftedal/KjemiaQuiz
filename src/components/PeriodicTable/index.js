@@ -26,7 +26,6 @@ export default periodicTable = props => {
           source={periodicTableImg}
           minimumZoomScale={1}
           maximumZoomScale={6}
-          androidScaleType="center"
           style={{width: imageWidth, height: imageHeight}} />
       </View>
     </Overlay>

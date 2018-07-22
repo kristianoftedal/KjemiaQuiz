@@ -15,6 +15,7 @@ import com.facebook.soloader.SoLoader;
 
 import java.util.Arrays;
 import java.util.List;
+import com.google.android.gms.ads.MobileAds;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -51,5 +52,6 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+    MobileAds.initialize(this, "ca-app-pub-4545695212875309~8334321259");
   }
 }

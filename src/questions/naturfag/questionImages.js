@@ -5,6 +5,7 @@ import threeA from './media/3A.png';
 import threeB from './media/3B.png';
 import threeC from './media/3C.png';
 import threeD from './media/3D.png';
+import threeE from './media/3E.png'
 import fourA from './media/4A.png';
 import fourB from './media/4B.png';
 import fourC from './media/4C.png';
@@ -15,7 +16,7 @@ import fiveC from './media/5C.png';
 import fiveD from './media/5D.png';
 import fiveF from './media/5F.bmp';
 import fiveH from  './media/5H.png';
-// import sevenA from './media/7A.png';
+import sevenA from './media/7A.png';
 import sevenB from './media/7B.png';
 import sevenC from './media/7C.png';
 import eightA from './media/8A.png';
@@ -107,6 +108,7 @@ const images =
     {
       id: '9959b98f-fe61-7ae4-b1a9-32036bf6c202',
       image: '3E',
+      src: threeE,
     },
     {
       id: '1b1880ff-d18b-7730-b9d0-23cbca19440c',
@@ -179,6 +181,7 @@ const images =
     {
       id: '3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a',
       image: '7A',
+      src: sevenA,
     },
     {
       id: '1d8e0213-59e9-efc7-8c76-a4e9c0f84d25',

@@ -5043,34 +5043,6 @@
     "answers": [
       {
         "key": "a",
-        "value": "I bukspyttkjertlen"
-      },
-      {
-        "key": "b",
-        "value": "I leveren"
-      },
-      {
-        "key": "c",
-        "value": "I tolvfingertarmen"
-      },
-      {
-        "key": "d",
-        "value": "I magesekken"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Vanskelig",
-    "id": "be8f1460-2394-11e8-b5df-8def17ea9dcc",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvor produseres insulin?",
-    "solution": "a",
-    ".key": "-L79i5_oT_8PlbIbQSqH"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
         "value": "I tynntarmen"
       },
       {
@@ -5206,34 +5178,6 @@
     "questionText": "Hvor i fordøyelsen tas vann opp?",
     "solution": "a",
     ".key": "-L79jH4eg8wtL6BCUhmI"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "I galleblæren"
-      },
-      {
-        "key": "b",
-        "value": "I leveren"
-      },
-      {
-        "key": "c",
-        "value": "I bukspyttkjertlen"
-      },
-      {
-        "key": "d",
-        "value": "I magesekken"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Lett",
-    "id": "8ef79690-2395-11e8-b5df-8def17ea9dcc",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvor i fordøyelsen lagres gallen?",
-    "solution": "a",
-    ".key": "-L79jSjAU5h35peCNcWY"
   },
   {
     "answers": [
@@ -5598,34 +5542,6 @@
     "questionText": "Hvilket stoff er det som forårsaker den lave pHen i magesekken?",
     "solution": "a",
     ".key": "-L79q0Bu7CjrEu0lzLXf"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Lipase"
-      },
-      {
-        "key": "b",
-        "value": "Galle"
-      },
-      {
-        "key": "c",
-        "value": "Bikarbonat"
-      },
-      {
-        "key": "d",
-        "value": "Insulin"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Middels",
-    "id": "abfc0970-2399-11e8-b5df-8def17ea9dcc",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvilket stoff er det som nøytraliserer magesyra som kommer fra magesekken og ut i tolvfingertarmen?",
-    "solution": "c",
-    ".key": "-L79qCCTeG2JuinuoXAv"
   },
   {
     "answers": [
@@ -11875,34 +11791,6 @@
     "answers": [
       {
         "key": "a",
-        "value": "Munnen, magesekken, tolvfingertarmen, tynntarmen."
-      },
-      {
-        "key": "b",
-        "value": "Munnen, magesekken, tynntarmen, tolvfingertarmen."
-      },
-      {
-        "key": "c",
-        "value": "Svelget, magesekken, tykktarmen, tynntarmen."
-      },
-      {
-        "key": "d",
-        "value": "Magesekken, tynntarmen, tolvfingertarmen, tykktarmen."
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Vanskelig",
-    "id": "87ce2cb0-2397-11e8-b5df-8def17ea9dcc",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvilken av alternativene under er den riktige rekkefølgen på fordøyelsen?",
-    "solution": "a",
-    ".key": "-L8lYwhjdM5vExPLFG3j"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
         "value": "-*NH_2|*"
       },
       {
@@ -16495,34 +16383,6 @@
     "answers": [
       {
         "key": "a",
-        "value": "Pepsin"
-      },
-      {
-        "key": "b",
-        "value": "Trypsin"
-      },
-      {
-        "key": "c",
-        "value": "Lipase"
-      },
-      {
-        "key": "d",
-        "value": "Amylase"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Lett",
-    "id": "34fd9b10-35ad-11e8-bf94-8b474af0dd07",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvilket enzym finnes i munnen?",
-    "solution": "d",
-    ".key": "-L90Iv4ANVX05Zz9UWkv"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
         "value": "Spalter proteiner til polypeptider."
       },
       {
@@ -16546,118 +16406,6 @@
     "questionText": "Hva er det amylase gjør?",
     "solution": "c",
     ".key": "-L90JBxqE3D1IQHbkYs0"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Bryte opp maten i mindre biter."
-      },
-      {
-        "key": "b",
-        "value": "Opptaket av næringsstoffer skjer i tungen."
-      },
-      {
-        "key": "c",
-        "value": "Flytte og smake på maten som spises."
-      },
-      {
-        "key": "d",
-        "value": "Kjemisk nedbryting av proteiner og fett."
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Lett",
-    "id": "7e91aa50-35ad-11e8-bf94-8b474af0dd07",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hva er tungens rolle i fordøyelsessystemet ?",
-    "solution": "c",
-    ".key": "-L90K4BxaU9waNIod0DD"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "De krever hverken klor eller natrium i ionekanalene."
-      },
-      {
-        "key": "b",
-        "value": "De er avhengig av ADP for å virke."
-      },
-      {
-        "key": "c",
-        "value": "De kan kun bevege seg i en retning."
-      },
-      {
-        "key": "d",
-        "value": "De er avhenig av å få tilført vann for å virke."
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Vanskelig",
-    "id": "34720770-35ae-11e8-bf94-8b474af0dd07",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hva betyr det at musklene i spiserøret er peristaltiske?",
-    "solution": "c",
-    ".key": "-L90Kq4td9KSolxZ3KhC"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Tynntarmen"
-      },
-      {
-        "key": "b",
-        "value": "Tykktarmen"
-      },
-      {
-        "key": "c",
-        "value": "Leveren"
-      },
-      {
-        "key": "d",
-        "value": "Magesekken"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Lett",
-    "id": "7f38f160-35ae-11e8-bf94-8b474af0dd07",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvilken del av fordøyelsen kommer etter spiserøret?",
-    "solution": "d",
-    ".key": "-L90L0ByGqjE2ojqp-lV"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Poren"
-      },
-      {
-        "key": "b",
-        "value": "Portneren"
-      },
-      {
-        "key": "c",
-        "value": "Palladium"
-      },
-      {
-        "key": "d",
-        "value": "Parasystemium"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Lett",
-    "id": "9a5910b0-35ae-11e8-bf94-8b474af0dd07",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hva heter åpningen mellom magesekken og tolvfingertarmen?",
-    "solution": "b",
-    ".key": "-L90LFWOfK8JExZSUCmn"
   },
   {
     "answers": [
@@ -17190,34 +16938,6 @@
     "questionText": "Hva er et aktivt sete?",
     "solution": "c",
     ".key": "-L96aAt1uZH2OdqHC5u0"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Ved å tilsette Fehlingsvæske."
-      },
-      {
-        "key": "b",
-        "value": "Ved å tilsette jod."
-      },
-      {
-        "key": "c",
-        "value": "Ved å tilsette sukrose."
-      },
-      {
-        "key": "d",
-        "value": "Ved å tilsette NaOH."
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Lett",
-    "id": "54b73430-3764-11e8-b136-4786323fa38a",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvordan kan man kjemisk påvise stivelse?",
-    "solution": "b",
-    ".key": "-L9BYoEmNE__MrslqO8D"
   },
   {
     "answers": [
@@ -17946,34 +17666,6 @@
     "questionText": "Hvorfor bryter ikke amylase ned andre polysakkarider enn stivelse?",
     "solution": "b",
     ".key": "-L9ZsQnufRKYLcjfIE4n"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Saltsyre"
-      },
-      {
-        "key": "b",
-        "value": "Pepsin"
-      },
-      {
-        "key": "c",
-        "value": "Slim"
-      },
-      {
-        "key": "d",
-        "value": "Hydrogenkarbonat"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Vanskelig",
-    "id": "cd7d9cb0-3b1a-11e8-8e51-1fd73dab2f90",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvilket av følgende alternativer finner man ikke i magesekken?",
-    "solution": "d",
-    ".key": "-L9Zt26OFayO2U-8X-KU"
   },
   {
     "answers": [
@@ -19071,34 +18763,6 @@
     "answers": [
       {
         "key": "a",
-        "value": "2"
-      },
-      {
-        "key": "b",
-        "value": "4"
-      },
-      {
-        "key": "c",
-        "value": "6"
-      },
-      {
-        "key": "d",
-        "value": "8"
-      }
-    ],
-    "category": "Redoksreaksjoner",
-    "difficulty": "Lett",
-    "id": "6506b2c0-415a-11e8-a9ce-59139ca4008a",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvor mange bindiger danner atomet karbon med andre stoffer?",
-    "solution": "b",
-    ".key": "-LACpPQZBgiGFPrrtQNW"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
         "value": "1"
       },
       {
@@ -19122,34 +18786,6 @@
     "questionText": "",
     "solution": "b",
     ".key": "-LACpW-mst4MWTt5WhI9"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "1"
-      },
-      {
-        "key": "b",
-        "value": "2"
-      },
-      {
-        "key": "c",
-        "value": "3"
-      },
-      {
-        "key": "d",
-        "value": "4"
-      }
-    ],
-    "category": "Redoksreaksjoner",
-    "difficulty": "Lett",
-    "id": "8d60e600-415a-11e8-a9ce-59139ca4008a",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvor mange bindiger danner atomet hydrogen med andre stoffer?",
-    "solution": "a",
-    ".key": "-LACpaoiCqbPw7NHRFDq"
   },
   {
     "answers": [
@@ -20639,34 +20275,6 @@
     "answers": [
       {
         "key": "a",
-        "value": "AATGCGAC"
-      },
-      {
-        "key": "b",
-        "value": "CATTAAAC"
-      },
-      {
-        "key": "c",
-        "value": "TATGCAGC"
-      },
-      {
-        "key": "d",
-        "value": "TTTGAGAG"
-      }
-    ],
-    "category": "DNA, proteinsyntese og arv",
-    "difficulty": "Middels",
-    "id": "a95e3b30-2177-11e8-bc21-f9669b89a806",
-    "imageId": "3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
-    "lang": "no",
-    "questionText": "Hvilken DNA sekvens ga opphav til mRNA sekvensen UUACGCUG?",
-    "solution": "a",
-    ".key": "-LCNb_H-d90TeqK3YzwA"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
         "value": "Lipase"
       },
       {
@@ -21670,34 +21278,6 @@
     "questionText": "Hvilken gruppe hovednæringsstoff tilhører enzymene?",
     "solution": "a",
     ".key": "-LDW6Kk06ysZes6NzWCY"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Amylase, pepsin, lipase."
-      },
-      {
-        "key": "b",
-        "value": "Pepsin, lipase, amylase."
-      },
-      {
-        "key": "c",
-        "value": "Amylase, lipase, pepsin."
-      },
-      {
-        "key": "d",
-        "value": "Pepsin, amylase, lipase."
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Vanskelig",
-    "id": "cb6ecbf0-2397-11e8-b5df-8def17ea9dcc",
-    "imageId": "c383f31f-2837-7387-c46e-420d34b77015",
-    "lang": "no",
-    "questionText": "Hvilken av alternativene under viser hvilken rekkefølge enzymene tilsettes i fordøyelsen?",
-    "solution": "a",
-    ".key": "-LDW6SK4l-8nvHLbUT0M"
   },
   {
     "answers": [
@@ -24559,34 +24139,6 @@
     "answers": [
       {
         "key": "a",
-        "value": "I munnen"
-      },
-      {
-        "key": "b",
-        "value": "I magesekken"
-      },
-      {
-        "key": "c",
-        "value": "I tynntarmen"
-      },
-      {
-        "key": "d",
-        "value": "I endetarmen"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Lett",
-    "id": "00878dc0-35b0-11e8-bf94-8b474af0dd07",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvor i fordøyelsen skjer opptaket av næringsstoffene?",
-    "solution": "c",
-    ".key": "-LDacbi2X6qyU-vKWD4W"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
         "value": "Glukose"
       },
       {
@@ -25254,34 +24806,6 @@
     "questionText": "Hvor mange vannmolekyler dannes når tre aminosyrer settes sammen til et tripeptid?",
     "solution": "b",
     ".key": "-LDasfw1sOLJQMzUnO7j"
-  },
-  {
-    "answers": [
-      {
-        "key": "a",
-        "value": "Kylling"
-      },
-      {
-        "key": "b",
-        "value": "Bacon"
-      },
-      {
-        "key": "c",
-        "value": "Nøtter"
-      },
-      {
-        "key": "d",
-        "value": "Melk"
-      }
-    ],
-    "category": "Ernæring, fordøyelse og helse",
-    "difficulty": "Vanskelig",
-    "id": "4622efc0-3a8b-11e8-8e51-1fd73dab2f90",
-    "imageId": "",
-    "lang": "no",
-    "questionText": "Hvilken matvare vil kunne påvises av både Fehlings væske og Biuret reagens?",
-    "solution": "d",
-    ".key": "-LDat57CE302eelhYToZ"
   },
   {
     "answers": [
@@ -30294,5 +29818,481 @@
     "questionText": "Hva kalles teknikken der DNA separeres etter størrelse?",
     "solution": "c",
     ".key": "-LDpS554FoPOdGavKTgr"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "1"
+      },
+      {
+        "key": "b",
+        "value": "2"
+      },
+      {
+        "key": "c",
+        "value": "3"
+      },
+      {
+        "key": "d",
+        "value": "4"
+      }
+    ],
+    "category": "Redoksreaksjoner",
+    "difficulty": "Lett",
+    "id": "8d60e600-415a-11e8-a9ce-59139ca4008a",
+    "imageId": "",
+    "lang": "no",
+    "questionText": "Hvor mange bindinger danner atomet hydrogen med andre stoffer?",
+    "solution": "a",
+    ".key": "-LEB15iDTtPrFSkUYpJb"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "2"
+      },
+      {
+        "key": "b",
+        "value": "4"
+      },
+      {
+        "key": "c",
+        "value": "6"
+      },
+      {
+        "key": "d",
+        "value": "8"
+      }
+    ],
+    "category": "Redoksreaksjoner",
+    "difficulty": "Lett",
+    "id": "6506b2c0-415a-11e8-a9ce-59139ca4008a",
+    "imageId": "",
+    "lang": "no",
+    "questionText": "Hvor mange bindinger danner atomet karbon med andre stoffer?",
+    "solution": "b",
+    ".key": "-LEB18iHNTb-zyy0MZuJ"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Saltsyre"
+      },
+      {
+        "key": "b",
+        "value": "Pepsin"
+      },
+      {
+        "key": "c",
+        "value": "Slim"
+      },
+      {
+        "key": "d",
+        "value": "Hydrogenkarbonat"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Vanskelig",
+    "id": "cd7d9cb0-3b1a-11e8-8e51-1fd73dab2f90",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvilket av følgende alternativer finner man ikke i magesekken?",
+    "solution": "d",
+    ".key": "-LEB1GgYgaS3lU6h8OuC"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Poren"
+      },
+      {
+        "key": "b",
+        "value": "Portneren"
+      },
+      {
+        "key": "c",
+        "value": "Palladium"
+      },
+      {
+        "key": "d",
+        "value": "Parasystemium"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Lett",
+    "id": "9a5910b0-35ae-11e8-bf94-8b474af0dd07",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hva heter åpningen mellom magesekken og tolvfingertarmen?",
+    "solution": "b",
+    ".key": "-LEB1Kbsp2VmQBA-txdy"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Lipase"
+      },
+      {
+        "key": "b",
+        "value": "Galle"
+      },
+      {
+        "key": "c",
+        "value": "Bikarbonat"
+      },
+      {
+        "key": "d",
+        "value": "Insulin"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Middels",
+    "id": "abfc0970-2399-11e8-b5df-8def17ea9dcc",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvilket stoff er det som nøytraliserer magesyra som kommer fra magesekken og ut i tolvfingertarmen?",
+    "solution": "c",
+    ".key": "-LEB1PRHdE2YSdIMniOY"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Pepsin"
+      },
+      {
+        "key": "b",
+        "value": "Trypsin"
+      },
+      {
+        "key": "c",
+        "value": "Lipase"
+      },
+      {
+        "key": "d",
+        "value": "Amylase"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Lett",
+    "id": "34fd9b10-35ad-11e8-bf94-8b474af0dd07",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvilket enzym finnes i munnen?",
+    "solution": "d",
+    ".key": "-LEB1UXY9DThe0oqDn9A"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Tynntarmen"
+      },
+      {
+        "key": "b",
+        "value": "Tykktarmen"
+      },
+      {
+        "key": "c",
+        "value": "Leveren"
+      },
+      {
+        "key": "d",
+        "value": "Magesekken"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Lett",
+    "id": "7f38f160-35ae-11e8-bf94-8b474af0dd07",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvilken del av fordøyelsen kommer etter spiserøret?",
+    "solution": "d",
+    ".key": "-LEB1b7uMvD7u3YlmW0P"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "De krever hverken klor eller natrium i ionekanalene."
+      },
+      {
+        "key": "b",
+        "value": "De er avhengig av ADP for å virke."
+      },
+      {
+        "key": "c",
+        "value": "De kan kun bevege seg i en retning."
+      },
+      {
+        "key": "d",
+        "value": "De er avhenig av å få tilført vann for å virke."
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Vanskelig",
+    "id": "34720770-35ae-11e8-bf94-8b474af0dd07",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hva betyr det at musklene i spiserøret er peristaltiske?",
+    "solution": "c",
+    ".key": "-LEB1eDWURBw7i85Telf"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "I munnen"
+      },
+      {
+        "key": "b",
+        "value": "I magesekken"
+      },
+      {
+        "key": "c",
+        "value": "I tynntarmen"
+      },
+      {
+        "key": "d",
+        "value": "I endetarmen"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Lett",
+    "id": "00878dc0-35b0-11e8-bf94-8b474af0dd07",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvor i fordøyelsen skjer opptaket av næringsstoffene?",
+    "solution": "c",
+    ".key": "-LEB1kQCIZHjW8VtMRlU"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Amylase, pepsin, lipase."
+      },
+      {
+        "key": "b",
+        "value": "Pepsin, lipase, amylase."
+      },
+      {
+        "key": "c",
+        "value": "Amylase, lipase, pepsin."
+      },
+      {
+        "key": "d",
+        "value": "Pepsin, amylase, lipase."
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Vanskelig",
+    "id": "cb6ecbf0-2397-11e8-b5df-8def17ea9dcc",
+    "imageId": "c383f31f-2837-7387-c46e-420d34b77015",
+    "lang": "no",
+    "questionText": "Hvilken av alternativene under viser hvilken rekkefølge enzymene tilsettes i fordøyelsen?",
+    "solution": "a",
+    ".key": "-LEB1pgccteudXq7Ifk9"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Bryte opp maten i mindre biter."
+      },
+      {
+        "key": "b",
+        "value": "Opptaket av næringsstoffer skjer i tungen."
+      },
+      {
+        "key": "c",
+        "value": "Flytte og smake på maten som spises."
+      },
+      {
+        "key": "d",
+        "value": "Kjemisk nedbryting av proteiner og fett."
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Lett",
+    "id": "7e91aa50-35ad-11e8-bf94-8b474af0dd07",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hva er tungens rolle i fordøyelsessystemet ?",
+    "solution": "c",
+    ".key": "-LEB1tyLBXMtnk9IYzxw"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Munnen, magesekken, tolvfingertarmen, tynntarmen."
+      },
+      {
+        "key": "b",
+        "value": "Munnen, magesekken, tynntarmen, tolvfingertarmen."
+      },
+      {
+        "key": "c",
+        "value": "Svelget, magesekken, tykktarmen, tynntarmen."
+      },
+      {
+        "key": "d",
+        "value": "Magesekken, tynntarmen, tolvfingertarmen, tykktarmen."
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Vanskelig",
+    "id": "87ce2cb0-2397-11e8-b5df-8def17ea9dcc",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvilken av alternativene under er den riktige rekkefølgen på fordøyelsen?",
+    "solution": "a",
+    ".key": "-LEB1yrs4wCt66NP8yPr"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Ved å tilsette Fehlingsvæske."
+      },
+      {
+        "key": "b",
+        "value": "Ved å tilsette jod."
+      },
+      {
+        "key": "c",
+        "value": "Ved å tilsette sukrose."
+      },
+      {
+        "key": "d",
+        "value": "Ved å tilsette NaOH."
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Lett",
+    "id": "54b73430-3764-11e8-b136-4786323fa38a",
+    "imageId": "cf7f11cb-faa8-9e56-f6f5-3b6a7294e14e",
+    "lang": "no",
+    "questionText": "Hvordan kan man kjemisk påvise stivelse?",
+    "solution": "b",
+    ".key": "-LEB24hRDvmr0l0SrodZ"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "Kylling"
+      },
+      {
+        "key": "b",
+        "value": "Bacon"
+      },
+      {
+        "key": "c",
+        "value": "Nøtter"
+      },
+      {
+        "key": "d",
+        "value": "Melk"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Vanskelig",
+    "id": "4622efc0-3a8b-11e8-8e51-1fd73dab2f90",
+    "imageId": "cf7f11cb-faa8-9e56-f6f5-3b6a7294e14e",
+    "lang": "no",
+    "questionText": "Hvilken matvare vil kunne påvises av både Fehlings væske og Biuret reagens?",
+    "solution": "d",
+    ".key": "-LEB2Av0OuQOpOs3TSLv"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "AATGCGAC"
+      },
+      {
+        "key": "b",
+        "value": "CATTAAAC"
+      },
+      {
+        "key": "c",
+        "value": "TATGCAGC"
+      },
+      {
+        "key": "d",
+        "value": "TTTGAGAG"
+      }
+    ],
+    "category": "DNA, proteinsyntese og arv",
+    "difficulty": "Middels",
+    "id": "a95e3b30-2177-11e8-bc21-f9669b89a806",
+    "imageId": "3ab75eb6-fb3d-5cc8-1f0c-4a09ca44428a",
+    "lang": "no",
+    "questionText": "Hvilken DNA sekvens ga opphav til mRNA sekvensen UUACGCUG?",
+    "solution": "a",
+    ".key": "-LEB2PIsq_amc2t5ErB6"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "I galleblæren"
+      },
+      {
+        "key": "b",
+        "value": "I leveren"
+      },
+      {
+        "key": "c",
+        "value": "I bukspyttkjertlen"
+      },
+      {
+        "key": "d",
+        "value": "I magesekken"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Lett",
+    "id": "8ef79690-2395-11e8-b5df-8def17ea9dcc",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvor i fordøyelsen lagres gallen?",
+    "solution": "a",
+    ".key": "-LEB3HBwYH1-rxkhsZxk"
+  },
+  {
+    "answers": [
+      {
+        "key": "a",
+        "value": "I bukspyttkjertlen"
+      },
+      {
+        "key": "b",
+        "value": "I leveren"
+      },
+      {
+        "key": "c",
+        "value": "I tolvfingertarmen"
+      },
+      {
+        "key": "d",
+        "value": "I magesekken"
+      }
+    ],
+    "category": "Ernæring, fordøyelse og helse",
+    "difficulty": "Vanskelig",
+    "id": "be8f1460-2394-11e8-b5df-8def17ea9dcc",
+    "imageId": "7a290b4d-3620-d838-0603-c4a6a78a54d9",
+    "lang": "no",
+    "questionText": "Hvor produseres insulin?",
+    "solution": "a",
+    ".key": "-LEB3mNu19zkILmQPzcv"
   }
 ]

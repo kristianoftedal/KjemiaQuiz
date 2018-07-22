@@ -2,7 +2,7 @@
  * React-Native `<Text />` component does not scale the text based on the device size.
  * This component does, and it also provides a nice interface for using custom fonts and style.
  */
-import React, { Component } from 'react';
+import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { View, Animated, Easing } from 'react-native';
 import styles from './index.style';
 

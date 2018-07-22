@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { Text, Linking, } from 'react-native';
-import uuid from 'uuid';
+import uuid from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/uuid';
 import styles from './index.style';
 
 const questionParser = (question) => {

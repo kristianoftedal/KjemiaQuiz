@@ -5,7 +5,7 @@
 
 // @flow
 
-import React, { Component } from 'react';
+import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { Text } from 'react-native';
 import Timer from 'react-timer-mixin';
 

@@ -3,7 +3,7 @@
  * Main application component, handles the routing.
  */
 
-import React, { Component } from 'react';
+import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { StatusBar, ImageBackground } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
@@ -18,7 +18,6 @@ import ChemForm from '../ChemForm';
 import Subscription from '../Subscription';
 import Badges from '../Badges';
 import styles from './index.style';
-import questionList from '../../config/db';
 
 @inject(allStores => ({
   currentScreen: allStores.router.currentScreen,
@@ -40,7 +39,6 @@ export default class App extends Component {
   render() {
     let content;
     let bgImg = backgroundImg;
-    let bgImgStyle = styles.container;
     switch (this.props.currentScreen) {
       case 'HOME':
         content = <Home />;
@@ -57,9 +55,6 @@ export default class App extends Component {
         break;
       case 'ABOUT':
         content = <About />;
-        break;
-      case 'CHEMFORM':
-        content = <ChemForm />;
         break;
       case 'BADGES':
         content = <Badges />;

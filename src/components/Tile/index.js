@@ -4,7 +4,7 @@
  * It renders a square (the depth), and of top of it another square (the Tile itself) with a bit of
  * space on bottom that get's halved when pressed.
  */
-import React, { Component } from 'react';
+import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { View } from 'react-native-animatable';
 import { observer } from 'mobx-react/native';
 import { TouchableWithoutFeedback, LayoutAnimation, UIManager, Platform } from 'react-native';

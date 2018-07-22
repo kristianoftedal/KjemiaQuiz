@@ -1,17 +1,9 @@
-import { find } from 'lodash';
-import questionImages from './questionImages';
+import { find } from '../../../../Library/Caches/typescript/2.9/node_modules/@types/lodash';
+import questionImages from '../questions/questionImages';
 import shuffle from '../utils/shuffle';
-import questionList from '../config/db';
 import questions from './questions.json';
 import freeQuestions from './freeQuestions.json';
 
-const snapshotToArray = (snapshot) => {
-  var returnArr = [];
-  db.ref('/naturfagQuestions').on('value', snapshot => {
-    returnArr = snapshot.val();
-  });
-  return returnArr;
-};
 
 const getRandomNumber = (max, blackList) => {
   const randomNumber = Math.floor(Math.random() * max);

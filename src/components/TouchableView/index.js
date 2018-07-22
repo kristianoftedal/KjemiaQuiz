@@ -2,7 +2,7 @@
 /**
  * A simple cross platform component that handles the default touchable feedback.
  */
-import React from 'react';
+import React from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { View, TouchableNativeFeedback, TouchableOpacity } from 'react-native';
 import env from '../../config/env';
 

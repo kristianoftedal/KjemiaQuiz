@@ -18,7 +18,6 @@ import ChemForm from '../ChemForm';
 import Subscription from '../Subscription';
 import Badges from '../Badges';
 import styles from './index.style';
-import questionList from '../../config/db';
 
 @inject(allStores => ({
   currentScreen: allStores.router.currentScreen,

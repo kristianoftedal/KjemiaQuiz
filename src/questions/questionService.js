@@ -1,7 +1,6 @@
 import { find } from 'lodash';
 import questionImages from './questionImages';
 import shuffle from '../utils/shuffle';
-import questionList from '../config/db';
 import questions from './questions.json';
 import freeQuestions from './freeQuestions.json';
 

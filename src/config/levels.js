@@ -1,4 +1,4 @@
-import photon from '../images/levels/Foton3.png';
+import photon from '../images/levels/Hcl.png';
 import electron from '../images/levels/Elektron.png';
 import proton from '../images/levels/Proton3.png';
 import atom from '../images/levels/Atomkjerne2.png';

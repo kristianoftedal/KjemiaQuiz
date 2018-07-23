@@ -3,13 +3,11 @@
  * The core of the game.
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Text, Alert, Image } from 'react-native';
+import React, { Component } from 'treact';
+import { Text, Alert, Image, Platform } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
-import Button from 'apsl-react-native-button';
 import DropdownAlert from 'react-native-dropdownalert';
 import QuestionWrapper from '../../components/QuestionWrapper';
 import LevelUp from '../../components/LevelUp';
@@ -57,7 +55,7 @@ export default class Playground extends Component {
   componentDidUpdate(prevProps, nextProps) {
     if (this.props.isAdTime && !this.props.hasSubscription) {
       //AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-      AdMobInterstitial.setAdUnitID('ca-app-pub-4545695212875309/4606308438');
+      AdMobInterstitial.setAdUnitID(Platform.OS === 'android' ? 'ca-app-pub-4545695212875309/2834033827': 'ca-app-pub-4545695212875309/4606308438');
       // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd())
       .catch(error => {

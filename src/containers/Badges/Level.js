@@ -28,7 +28,7 @@ export default class Level extends Component {
         onClose={() => this.props.onClose()}>
         <View style={styles.wrapper}>
           <Text style={styles.header}>{this.props.level.value}</Text>
-          <Image style={styles.image} source={this.props.level.imageSource} />
+          <Image style={styles.image} source={this.props.level.imageSource} resizeMode="contain" />
           <Text style={styles.text}>
             {this.props.level.text}
           </Text>

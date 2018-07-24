@@ -7,13 +7,14 @@
 import React, { Component } from 'react';
 import { View } from 'react-native-animatable';
 import { observer } from 'mobx-react/native';
-import { TouchableWithoutFeedback, LayoutAnimation, UIManager, Platform } from 'react-native';
+import { Platform, TouchableWithoutFeedback, LayoutAnimation, UIManager } from 'react-native';
 import CustomText from '../CustomText';
 import colorUtils from '../../utils/colorUtils';
 import metrics from '../../config/metrics';
 import audioService from '../../services/audio';
 import styles from './index.style';
 import answerParser from './answerParser';
+import fractionParser from './fractionParser';
 
 @observer
 export default class Tile extends Component {
@@ -60,8 +61,11 @@ export default class Tile extends Component {
   };
 
   printAnswer(answer) {
-    if (answer.indexOf('*') > -1) {
-      return answerParser(answer);
+    // if (answer.indexOf('*') > -1) {
+    //   return answerParser(answer);
+    // }
+    if (answer.indexOf('#') > -1) {
+      return fractionParser(answer);
     }
     return (<CustomText withShadow={true} style={styles.text}>{answer}</CustomText>);
   }

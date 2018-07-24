@@ -8,15 +8,20 @@ import { Text } from 'react-native-animatable';
 import styles from './index.style';
 import QuestionImage from '../QuestionImage';
 import questionParser from './questionParser';
+import fractionParser from './fractionParser';
 
 
 const printQuestion = (question) => {
   if (question == null) return (<Text/>);
   if (question.indexOf('*') > -1) {
     return (<View style={styles.textWrapper}>
-      {questionParser(question)}
-      </View>);
-      
+      {questionParser(question, styles)}
+      </View>);      
+  }
+  if (question.indexOf('#') > -1) {
+    return (<View style={styles.textWrapper}>
+      {fractionParser(question)}
+      </View>);      
   }
   return (
     <View style={styles.textWrapper}>

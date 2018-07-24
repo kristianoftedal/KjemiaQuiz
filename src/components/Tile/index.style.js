@@ -36,5 +36,23 @@ export default StyleSheet.create({
     fontSize: 4,
     marginBottom: 10,
     textAlignVertical: 'top',
-  }
+  },
+  top: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    lineHeight: 12,
+    textAlignVertical: 'top',
+  },
+  bottom: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    lineHeight: 12,
+    marginTop: 1,
+  },
+  fraction: {
+    borderBottomColor: 'white',
+    borderBottomWidth: 1,
+  },
 });

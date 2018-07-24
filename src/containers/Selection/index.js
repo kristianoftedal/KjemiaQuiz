@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { StatusBar, Text, Switch, Platform, UIManager, LayoutAnimation } from 'react-native';
+import { Text, Switch, Platform, UIManager, LayoutAnimation } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';

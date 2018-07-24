@@ -1,5 +1,5 @@
 import photon from '../images/levels/Hcl.png';
-import electron from '../images/levels/Elektron.png';
+import electron from '../images/levels/AMMONIAKK.png';
 import proton from '../images/levels/Proton3.png';
 import atom from '../images/levels/Atomkjerne2.png';
 import hydrogen from '../images/levels/Hydrogen.png';

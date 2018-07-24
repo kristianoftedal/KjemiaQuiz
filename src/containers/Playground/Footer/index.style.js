@@ -35,4 +35,17 @@ export default StyleSheet.create({
     fontSize: 20,
     height: 30,
   },
+  explanationButton: {
+    flex: 1,
+    alignSelf: 'flex-start',
+    width: 5,
+    borderColor: '#0a3d62',
+    paddingBottom: 5,
+    marginRight: 10,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 25,
+    fontFamily: 'Raleway-Regular',
+  },
 });

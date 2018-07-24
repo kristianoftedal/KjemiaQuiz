@@ -4,12 +4,10 @@
  * It adds styles and animations when the Tile appears/disappears.
  */
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Platform } from 'react-native';
 import Tile from '../../components/Tile';
 import { observer } from 'mobx-react/native';
-import metrics from '../../config/metrics';
 import uuid from 'uuid';
-import styles from './index.style';
 
 @observer
 export default class AnswerTile extends Component {
@@ -32,7 +30,7 @@ export default class AnswerTile extends Component {
   };
 
   render() {
-    const { left, bottom, backgroundColor, text } = this.props;
+    const { backgroundColor, text } = this.props;
     return (
       <View key={uuid.v4()} >
         <Tile

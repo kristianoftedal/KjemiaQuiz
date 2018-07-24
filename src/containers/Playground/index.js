@@ -3,8 +3,8 @@
  * The core of the game.
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
-import React, { Component } from 'treact';
-import { Text, Alert, Image, Platform } from 'react-native';
+import React, { Component } from 'react';
+import { Platform } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
@@ -156,7 +156,7 @@ export default class Playground extends Component {
             style={style.questionsWrapper}
             ref={ref => {this._questionRef = ref;}}
           >
-            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + this.getDifficulty(currentQuestion.difficulty)} />    
+            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + '#x-2/x-3#' + this.getDifficulty(currentQuestion.difficulty)} />    
             <View style={style.answerWrapper}>
               {currentQuestion.answers &&
                 currentQuestion.answers.map((e, i) => {
@@ -164,7 +164,7 @@ export default class Playground extends Component {
                     <AnswerTile
                       backgroundColor={alreadyPickedColors[i]}
                       key={e.key}
-                      text={`${e.key}. ${e.value}`}
+                      text={`${e.key}. ${e.value} #x-2/x-3#`}
                       onTilePress={() => this._handleAnswerPress(e.key)}
                     />
                   );

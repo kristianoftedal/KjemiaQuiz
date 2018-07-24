@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Text, Linking, } from 'react-native';
+import React from 'react';
+import { Text } from 'react-native';
 import CustomText from '../CustomText';
 import uuid from 'uuid';
 import styles from './index.style';

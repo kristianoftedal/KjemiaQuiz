@@ -3,16 +3,29 @@
  * This component does, and it also provides a nice interface for using custom fonts and style.
  */
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text} from 'react-native';
 import PhotoView from 'react-native-photo-view';
 import Overlay from 'react-native-modal-overlay';
 import styles from './index.style';
-import metrics from '../../config/metrics';
-import periodicTableImg from '../../images/periodicTable.png';
+import questionParser from './questionParser';
+import fractionParser from './fractionParser';
 
-export default periodicTable = props => {
-  const imageWidth = metrics.DEVICE_WIDTH * 0.95;
-  const imageHeight = metrics.DEVICE_HEIGHT * 0.82;
+const parsedText = (text) => {
+  if (text == null) return (<Text/>);
+  if (text.indexOf('*') > -1) {
+    return questionParser(text, styles);      
+  }
+  if (text.indexOf('#') > -1) {
+    return fractionParser(text);      
+  }
+  return (
+    <Text style={styles.text}>
+      {text}
+    </Text>);
+}
+
+export default explanantion = props => {
+  const prettyText = parsedText(props.text);
   return (
     <Overlay visible={props.visible}
       closeOnTouchOutside animationType="zoomIn"
@@ -21,12 +34,10 @@ export default periodicTable = props => {
       animationDuration={500}
       onClose={() => props.onClose()}>
       <View style={styles.wrapper}>
-        <PhotoView style={{backgroundColor: 'white'}}
-          source={periodicTableImg}
-          minimumZoomScale={1}
-          maximumZoomScale={6}
-          androidScaleType="center"
-          style={{width: imageWidth, height: imageHeight}} />
+        <View style={styles.headerWrapper}>
+          <Text style={styles.header}>Forklaring:</Text>
+        </View>
+        {prettyText}
       </View>
     </Overlay>
   );

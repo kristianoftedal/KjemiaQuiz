@@ -22,15 +22,17 @@ const questionParser = (question, styles) => {
           const y = tempParts[j].split('^');
           restructuredText.push(<Text key={uuid.v4()} style={styles.text}>{
             y[0]}
-          </Text>);
-          restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
+          </Text>);restructuredText.push(<Text key={uuid.v4()} style={styles.superscript}>{
             y[1]}
           </Text>);
         } else {
-          restructuredText.push(
-            <Text key={uuid.v4()}>
-              {tempParts[j]}
-            </Text>);
+          const broken = tempParts[j].split(' ');
+          for (let k = 0; k < broken.length; k++) {
+            restructuredText.push(
+              <Text key={uuid.v4()}>
+                {broken[k] + ' '}
+              </Text>);
+          }
         }
       }
     } else if (parts[i].indexOf('_') > -1 ) {
@@ -61,17 +63,23 @@ const questionParser = (question, styles) => {
             y[1]}
           </Text>);
         } else {
-          restructuredText.push(
-            <Text key={uuid.v4()} style={styles.text}>
-              {tempParts[j]}
-            </Text>);
+          const broken = tempParts[j].split(' ');
+          for (let k = 0; k < broken.length; k++) {
+            restructuredText.push(
+              <Text key={uuid.v4()}>
+                {broken[k] + ' '}
+              </Text>);
+          }
         }
       }
     } else {
-      restructuredText.push(
-        <Text key={uuid.v4()} style={styles.text}>
-          {parts[i]}
-        </Text>);
+      const broken = parts[i].split(' ');
+      for (let k = 0; k < broken.length; k++) {
+        restructuredText.push(
+          <Text key={uuid.v4()} style={styles.text}>
+            {broken[k] + ' '}
+          </Text>);
+      }
     }
   }
   return restructuredText;

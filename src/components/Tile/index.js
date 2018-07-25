@@ -13,8 +13,7 @@ import colorUtils from '../../utils/colorUtils';
 import metrics from '../../config/metrics';
 import audioService from '../../services/audio';
 import styles from './index.style';
-import answerParser from './answerParser';
-import fractionParser from './fractionParser';
+import prettyPrint from './prettyPrint';
 
 @observer
 export default class Tile extends Component {
@@ -62,12 +61,10 @@ export default class Tile extends Component {
 
   printAnswer(answer) {
     // if (answer.indexOf('*') > -1) {
-    //   return answerParser(answer);
+    //   return formulaParser(answer);
     // }
-    if (answer.indexOf('#') > -1) {
-      return fractionParser(answer);
-    }
-    return (<CustomText withShadow={true} style={styles.text}>{answer}</CustomText>);
+    return prettyPrint(answer);
+    // return (<CustomText withShadow={true} style={styles.text}>{answer}</CustomText>);
   }
 
   render() {

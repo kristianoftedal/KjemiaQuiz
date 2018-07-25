@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text } from 'react-native';
 import uuid from 'uuid';
+import styles from './index.style';
 
-const questionParser = (question, styles) => {
+const formulaParser = (question) => {
   if (question == null) return (<Text/>);
   const parts = question.split('*');
   const restructuredText = [];
@@ -85,4 +86,4 @@ const questionParser = (question, styles) => {
   return restructuredText;
 }
 
-export default questionParser;
+export default formulaParser;

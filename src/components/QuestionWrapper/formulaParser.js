@@ -1,9 +1,11 @@
 import React from 'react';
 import { Text } from 'react-native';
 import uuid from 'uuid';
+import styles from './index.style';
 
-const questionParser = (question, styles) => {
+const formulaParser = (question) => {
   if (question == null) return (<Text/>);
+  debugger;
   const parts = question.split('*');
   const restructuredText = [];
   for (let i = 0; i < parts.length; i++) {
@@ -67,6 +69,8 @@ const questionParser = (question, styles) => {
             </Text>);
         }
       }
+    } else if (parts[i] === '') {
+      continue;
     } else {
       restructuredText.push(
         <Text key={uuid.v4()} style={styles.text}>
@@ -77,4 +81,4 @@ const questionParser = (question, styles) => {
   return restructuredText;
 }
 
-export default questionParser;
+export default formulaParser;

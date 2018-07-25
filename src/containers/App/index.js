@@ -14,7 +14,6 @@ import Home from '../Home';
 import Endgame from '../Endgame';
 import Selection from '../Selection';
 import About from '../About';
-import ChemForm from '../ChemForm';
 import Subscription from '../Subscription';
 import Badges from '../Badges';
 import styles from './index.style';
@@ -56,9 +55,6 @@ export default class App extends Component {
         break;
       case 'ABOUT':
         content = <About />;
-        break;
-      case 'CHEMFORM':
-        content = <ChemForm />;
         break;
       case 'BADGES':
         content = <Badges />;

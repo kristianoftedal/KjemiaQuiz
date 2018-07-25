@@ -30,10 +30,6 @@ export default class RouterStore {
     this.currentScreen = 'BADGES';
   }
 
-  navigateToChemForm = () => {
-    this.currentScreen = 'CHEMFORM';
-  };
-
   navigateToSubscription = () => {
     this.currentScreen = 'SUBSCRIPTION';
   };

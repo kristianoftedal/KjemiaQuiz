@@ -7,28 +7,17 @@ import { View } from 'react-native';
 import { Text } from 'react-native-animatable';
 import styles from './index.style';
 import QuestionImage from '../QuestionImage';
-import questionParser from './questionParser';
-import fractionParser from './fractionParser';
+import prettyPrint from './prettyPrint';
 
 
 const printQuestion = (question) => {
-  if (question == null) return (<Text/>);
-  if (question.indexOf('*') > -1) {
-    return (<View style={styles.textWrapper}>
-      {questionParser(question, styles)}
-      </View>);      
+  if (question == null) {
+    return (<Text/>);
   }
-  if (question.indexOf('#') > -1) {
-    return (<View style={styles.textWrapper}>
-      {fractionParser(question)}
-      </View>);      
-  }
-  return (
-    <View style={styles.textWrapper}>
-      <Text style={styles.text}>
-        {question}
-      </Text>
-    </View>);
+  debugger;
+  return (<View style={styles.textWrapper}>
+      {prettyPrint(question)}
+  </View>);
 }
 
 const QuestionWrapper = props => {

@@ -156,7 +156,7 @@ export default class Playground extends Component {
             style={style.questionsWrapper}
             ref={ref => {this._questionRef = ref;}}
           >
-            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + '#x-2/x-3#' + this.getDifficulty(currentQuestion.difficulty)} />    
+            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + '*(x-2)^2|* ' + this.getDifficulty(currentQuestion.difficulty)} />    
             <View style={style.answerWrapper}>
               {currentQuestion.answers &&
                 currentQuestion.answers.map((e, i) => {
@@ -164,7 +164,7 @@ export default class Playground extends Component {
                     <AnswerTile
                       backgroundColor={alreadyPickedColors[i]}
                       key={e.key}
-                      text={`${e.key}. ${e.value} #x-2/x-3#`}
+                      text={`${e.key}. ${e.value} #*(x-2)^2|*/*(x-2)_2|*# `}
                       onTilePress={() => this._handleAnswerPress(e.key)}
                     />
                   );

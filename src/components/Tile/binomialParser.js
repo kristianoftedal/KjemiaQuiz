@@ -3,12 +3,11 @@ import { View, Text } from 'react-native';
 import CustomText from '../CustomText';
 import uuid from 'uuid';
 import styles from './index.style';
-import formulaParser from './formulaParser';
 
 const fractionParser = (question) => {
-  debugger;
-  if (question == null) return (<Text/>);
 
+  if (question == null) return (<Text/>);
+  
   const parts = question.split('#');
   const restructuredText = [];
   for (let i = 0; i < parts.length; i++) {
@@ -16,15 +15,15 @@ const fractionParser = (question) => {
       const fraction = parts[i].split('/');
       restructuredText.push(
         <View>
-          <View style={styles.fraction}>
-          <CustomText key={uuid.v4()} withShadow={true} size={14} style={styles.top}>
-            {formulaParser(fraction[0])}
-          </CustomText>
-          </View>
-          <View>
-          <CustomText key={uuid.v4()} withShadow={true} size={14} style={styles.bottom}>
-            {formulaParser(fraction[1])}
-          </CustomText>
+          <View style={styles.binomial}>
+            <CustomText key={uuid.v4()} withShadow={true} size={14} style={styles.top}>
+              {fraction[0]}
+            </CustomText>
+            </View>
+            <View>
+            <CustomText key={uuid.v4()} withShadow={true} size={14} style={styles.bottom}>
+              {fraction[1]}
+            </CustomText>
           </View>
         </View>
       );

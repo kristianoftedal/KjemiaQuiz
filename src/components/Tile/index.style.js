@@ -24,7 +24,7 @@ export default StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 4,
+    fontSize: 10,
     lineHeight: 14,
     marginTop: 10,
   },
@@ -33,9 +33,13 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     lineHeight: 14,
-    fontSize: 4,
+    fontSize: 10,
     marginBottom: 10,
     textAlignVertical: 'top',
+  },
+  fraction: {
+    borderBottomColor: 'white',
+    borderBottomWidth: 1,
   },
   top: {
     color: 'white',
@@ -51,8 +55,13 @@ export default StyleSheet.create({
     lineHeight: 12,
     marginTop: 1,
   },
-  fraction: {
-    borderBottomColor: 'white',
-    borderBottomWidth: 1,
+  binomial: {
   },
+  squareRoot: {
+    fontSize: 23,
+  },
+  postSquareRoot: {
+    borderTopColor: 'white',
+    borderTopWidth: 1,
+  }
 });

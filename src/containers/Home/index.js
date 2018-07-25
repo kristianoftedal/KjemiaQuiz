@@ -18,7 +18,6 @@ import audioService from '../../services/audio';
   navigateToSelection: allStores.router.navigateToSelection,
   navigateToAbout: allStores.router.navigateToAbout,
   navigateToBadges: allStores.router.navigateToBadges,
-  navigateToChemForm: allStores.router.navigateToChemForm,
   navigateToSubscription: allStores.router.navigateToSubscription,
   progress: allStores.game.levelUpProgress,
   level: allStores.game.currentLevel,
@@ -78,14 +77,6 @@ export default class Home extends Component {
       await Promise.all([this._headerRef.fadeOutLeft(500), this._bodyRef.fadeOutRight(400)]);
     }
     this.props.navigateToAbout();
-  };
-
-  _handleChemFormPress = async () => {
-    this.setState({ hasPressedButton: true }); // Prevents button presses while animating to the new screen
-    if (this._headerRef && this._bodyRef) {
-      await Promise.all([this._headerRef.fadeOutLeft(500), this._bodyRef.fadeOutRight(400)]);
-    }
-    this.props.navigateToChemForm();
   };
 
   _handleBadgesPress = async () => {

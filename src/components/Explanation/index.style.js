@@ -42,6 +42,24 @@ export default StyleSheet.create({
     lineHeight: 18,
     marginBottom: 1,
   },
+  subscript: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    fontSize: 10,
+    lineHeight: 14,
+  },
+  superscript: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    lineHeight: 14,
+    fontSize: 10,
+  },
+  fraction: {
+    borderBottomColor: 'white',
+    borderBottomWidth: 1,
+  },
   top: {
     color: 'white',
     fontWeight: 'bold',
@@ -56,22 +74,13 @@ export default StyleSheet.create({
     lineHeight: 12,
     marginTop: 1,
   },
-  fraction: {
-    borderBottomColor: 'white',
-    borderBottomWidth: 1,
+  binomial: {
   },
-  subscript: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontFamily: 'Raleway-Regular',
-    fontSize: 10,
-    lineHeight: 14,
+  squareRoot: {
+    fontSize: 23,
   },
-  superscript: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontFamily: 'Raleway-Regular',
-    lineHeight: 14,
-    fontSize: 10,
-  }
+  postSquareRoot: {
+    borderTopColor: 'white',
+    borderTopWidth: 1,
+  },
 });

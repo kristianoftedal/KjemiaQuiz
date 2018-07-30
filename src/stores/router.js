@@ -28,7 +28,7 @@ export default class RouterStore {
 
   navigateToBadges = () => {
     this.currentScreen = 'BADGES';
-  }
+  };
 
   navigateToSubscription = () => {
     this.currentScreen = 'SUBSCRIPTION';

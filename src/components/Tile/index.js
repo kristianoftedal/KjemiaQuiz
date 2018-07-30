@@ -7,13 +7,13 @@
 import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { View } from 'react-native-animatable';
 import { observer } from 'mobx-react/native';
-import { TouchableWithoutFeedback, LayoutAnimation, UIManager, Platform } from 'react-native';
+import { Platform, TouchableWithoutFeedback, LayoutAnimation, UIManager } from 'react-native';
 import CustomText from '../CustomText';
 import colorUtils from '../../utils/colorUtils';
 import metrics from '../../config/metrics';
 import audioService from '../../services/audio';
 import styles from './index.style';
-import answerParser from './answerParser';
+import prettyPrint from './prettyPrint';
 
 @observer
 export default class Tile extends Component {
@@ -60,10 +60,11 @@ export default class Tile extends Component {
   };
 
   printAnswer(answer) {
-    if (answer.indexOf('*') > -1) {
-      return answerParser(answer);
-    }
-    return (<CustomText withShadow={true} style={styles.text}>{answer}</CustomText>);
+    // if (answer.indexOf('*') > -1) {
+    //   return formulaParser(answer);
+    // }
+    return prettyPrint(answer);
+    // return (<CustomText withShadow={true} style={styles.text}>{answer}</CustomText>);
   }
 
   render() {

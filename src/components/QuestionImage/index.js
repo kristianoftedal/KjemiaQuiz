@@ -8,7 +8,7 @@ import style from './index.style';
 
 const QuestionImage = props => {
   const { imageName, ...otherProps } = props;
-  return <Image style={style.image} source={imageName} />;
+  return <Image style={style.image} source={imageName} resizeMode="contain"/>;
 };
 
 export default QuestionImage;

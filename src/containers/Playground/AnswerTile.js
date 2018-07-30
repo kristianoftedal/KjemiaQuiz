@@ -3,6 +3,7 @@
  * A HOC on src/component/Tile that customizes it a bit for the board.  
  * It adds styles and animations when the Tile appears/disappears.
  */
+<<<<<<< HEAD
 import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { View } from 'react-native';
 import Tile from '../../components/Tile';
@@ -10,6 +11,13 @@ import { observer } from 'mobx-react/native';
 import metrics from '../../config/metrics';
 import uuid from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/uuid';
 import styles from './index.style';
+=======
+import React, { Component } from 'react';
+import { View, Platform } from 'react-native';
+import Tile from '../../components/Tile';
+import { observer } from 'mobx-react/native';
+import uuid from 'uuid';
+>>>>>>> master
 
 @observer
 export default class AnswerTile extends Component {
@@ -32,7 +40,7 @@ export default class AnswerTile extends Component {
   };
 
   render() {
-    const { left, bottom, backgroundColor, text } = this.props;
+    const { backgroundColor, text } = this.props;
     return (
       <View key={uuid.v4()} >
         <Tile

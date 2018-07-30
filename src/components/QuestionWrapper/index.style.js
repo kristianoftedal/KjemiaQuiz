@@ -37,7 +37,34 @@ export default StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    lineHeight: 16,
-    fontSize: 4,
+    lineHeight: 10,
+    fontSize: 10,
+  },
+  fraction: {
+    borderBottomColor: 'white',
+    borderBottomWidth: 1,
+  },
+  top: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    lineHeight: 12,
+    textAlignVertical: 'top',
+  },
+  bottom: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontFamily: 'Raleway-Regular',
+    lineHeight: 12,
+    marginTop: 1,
+  },
+  binomial: {
+  },
+  squareRoot: {
+    fontSize: 23,
+  },
+  postSquareRoot: {
+    borderTopColor: 'white',
+    borderTopWidth: 1,
   }
 });

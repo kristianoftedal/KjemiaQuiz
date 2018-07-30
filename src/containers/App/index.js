@@ -14,7 +14,6 @@ import Home from '../Home';
 import Endgame from '../Endgame';
 import Selection from '../Selection';
 import About from '../About';
-import ChemForm from '../ChemForm';
 import Subscription from '../Subscription';
 import Badges from '../Badges';
 import styles from './index.style';

@@ -8,7 +8,7 @@ export default StyleSheet.create({
     height: 30,
     flex: 4,
     flexGrow: 4,
-    paddingRight: 30,
+    paddingRight: 0,
     marginBottom: 15,
   },
   text: {

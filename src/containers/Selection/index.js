@@ -4,8 +4,13 @@
  * @flow
  */
 
+<<<<<<< HEAD
 import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
 import { StatusBar, Text, Switch, Platform, UIManager, LayoutAnimation } from 'react-native';
+=======
+import React, { Component } from 'react';
+import { Text, Switch, Platform, UIManager, LayoutAnimation } from 'react-native';
+>>>>>>> master
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';

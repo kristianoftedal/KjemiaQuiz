@@ -4,12 +4,15 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import PropTypes from 'prop-types';
 import { Text, Alert, Image, Platform } from 'react-native';
+=======
+import { Platform } from 'react-native';
+>>>>>>> master
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
-import Button from 'apsl-react-native-button';
 import DropdownAlert from 'react-native-dropdownalert';
 import QuestionWrapper from '../../components/QuestionWrapper';
 import LevelUp from '../../components/LevelUp';
@@ -158,7 +161,7 @@ export default class Playground extends Component {
             style={style.questionsWrapper}
             ref={ref => {this._questionRef = ref;}}
           >
-            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + this.getDifficulty(currentQuestion.difficulty)} />    
+            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + '*(x-2)^2|* ' + this.getDifficulty(currentQuestion.difficulty)} />    
             <View style={style.answerWrapper}>
               {currentQuestion.answers &&
                 currentQuestion.answers.map((e, i) => {
@@ -166,7 +169,7 @@ export default class Playground extends Component {
                     <AnswerTile
                       backgroundColor={alreadyPickedColors[i]}
                       key={e.key}
-                      text={`${e.key}. ${e.value}`}
+                      text={`${e.key}. ${e.value} #*(x-2)^2|*/*(x-2)_2|*# `}
                       onTilePress={() => this._handleAnswerPress(e.key)}
                     />
                   );

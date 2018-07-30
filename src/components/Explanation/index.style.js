@@ -1,24 +1,46 @@
 import { StyleSheet } from 'react-native';
+import metrics from '../../config/metrics';
+
+const width = metrics.DEVICE_WIDTH * 0.80;
+const height = metrics.DEVICE_HEIGHT * 0.80;
 
 export default StyleSheet.create({
-  tile: {
-    zIndex: 2,
+  container: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
-  depth: {
-    zIndex: 1,
+  overlayWrapper: {
+    backgroundColor: '#3498db',
+    borderRadius: 20,
   },
-  textWrapper: {
-    flexDirection: 'row', 
-    alignItems: 'flex-start',
+  wrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
     flexWrap: 'wrap',
-    margin: 4,
-    padding: 4,
+    justifyContent: 'flex-start',
+    marginBottom: 10,
+    borderRadius: 20,
+    marginTop: 10,
+    padding: 10,
+    width: width,
+    height: height,
+  },
+  headerWrapper: {
+    alignSelf: 'stretch',
+    width: metrics.DEVICE_WIDTH * 0.80
+  },
+  header: {
+    fontFamily: 'Permanent Marker',
+    color: 'white',
+    fontSize: 20,
+    textAlign: 'center',
   },
   text: {
     color: 'white',
-    fontWeight: 'bold',
+    //fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 18,
+    fontSize: 14,
+    lineHeight: 18,
+    marginBottom: 1,
   },
   subscript: {
     color: 'white',
@@ -26,7 +48,6 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     fontSize: 10,
     lineHeight: 14,
-    marginTop: 10,
   },
   superscript: {
     color: 'white',
@@ -34,8 +55,6 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     lineHeight: 14,
     fontSize: 10,
-    marginBottom: 10,
-    textAlignVertical: 'top',
   },
   fraction: {
     borderBottomColor: 'white',
@@ -63,5 +82,5 @@ export default StyleSheet.create({
   postSquareRoot: {
     borderTopColor: 'white',
     borderTopWidth: 1,
-  }
+  },
 });

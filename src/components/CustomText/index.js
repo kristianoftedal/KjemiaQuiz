@@ -10,8 +10,8 @@ import metrics from '../../config/metrics';
 import styles from './index.style';
 
 const CustomText = props => {
-  const { onPress, style, children, withShadow, ...otherProps } = props;
-  const fontSize = 18;
+  const { onPress, style, children, withShadow, size, ...otherProps } = props;
+  const fontSize = size || 16;
   const scaledFontSize = Math.round(fontSize * metrics.DEVICE_WIDTH / 375);
   const shadowStyle = {
     textShadowColor: 'rgba(0, 0, 0, 0.3)',

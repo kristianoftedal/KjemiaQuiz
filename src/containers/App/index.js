@@ -3,12 +3,13 @@
  * Main application component, handles the routing.
  */
 
-import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
+import React, { Component } from 'react';
 import { StatusBar, ImageBackground } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import backgroundImg from '../../images/bg7.png';
 import playgroundImg from '../../images/playground.png';
+import GameMenu from '../GameMenu';
 import Playground from '../Playground';
 import Home from '../Home';
 import Endgame from '../Endgame';
@@ -41,6 +42,9 @@ export default class App extends Component {
     switch (this.props.currentScreen) {
       case 'HOME':
         content = <Home />;
+        break;
+      case 'GAMEMENU':
+        content = <GameMenu />;
         break;
       case 'PLAYGROUND':
         bgImg = playgroundImg;

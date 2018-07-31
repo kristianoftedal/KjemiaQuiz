@@ -4,8 +4,8 @@
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 <<<<<<< HEAD
-import React, { Component } from '../../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
-import PropTypes from '../../../../../../Library/Caches/typescript/2.9/node_modules/@types/prop-types';
+import React, { Component } from '../.react';
+import PropTypes from '../.prop-types';
 =======
 import React, { Component } from 'react';
 >>>>>>> master
@@ -13,7 +13,7 @@ import { inject, observer } from 'mobx-react/native';
 import { Image, Text } from 'react-native';
 import { View } from 'react-native-animatable';
 <<<<<<< HEAD
-import PhotoView from '../../../../../../Library/Caches/typescript/2.9/node_modules/@types/react-native-photo-view';
+import PhotoView from '../.react-native-photo-view';
 =======
 >>>>>>> master
 import Button from 'apsl-react-native-button';

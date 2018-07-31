@@ -1,12 +1,12 @@
 <<<<<<< HEAD:src/components/Tile/answerParser.js
-import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
+import React, { Component } from 'react';
 import { Text, Linking, } from 'react-native';
 =======
 import React from 'react';
 import { Text } from 'react-native';
 >>>>>>> master:src/components/Tile/formulaParser.js
 import CustomText from '../CustomText';
-import uuid from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/uuid';
+import uuid from '.uuid';
 import styles from './index.style';
 
 const formulaParser = (question, size) => {

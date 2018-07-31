@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
+import React, { Component } from 'react';
 import { StatusBar, Text, Linking, Platform, UIManager, LayoutAnimation } from 'react-native';
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';

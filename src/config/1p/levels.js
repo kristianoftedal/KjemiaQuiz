@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import photon from '../images/levels/AMMONIAKK.png';
 import electron from '../images/levels/BENZEN.png';
 import proton from '../images/levels/EDDIK.png';
@@ -14,23 +13,6 @@ import hjerte from '../images/levels/O4.png';
 import menneske from '../images/levels/OKSONIUM.png';
 import nuclear from '../images/levels/OKSYGEN.png';
 import moon from '../images/levels/VANN.png';
-=======
-import photon from '../images/levels/Hcl.png';
-import electron from '../images/levels/AMMONIAKK.png';
-import proton from '../images/levels/Proton3.png';
-import atom from '../images/levels/Atomkjerne2.png';
-import hydrogen from '../images/levels/Hydrogen.png';
-import karbon from '../images/levels/karbon.png';
-import aminosyre from '../images/levels/Molekyl.png';
-import protein from '../images/levels/Protein2.png';
-import dna from '../images/levels/DNA3.png';
-import cellekjerne from '../images/levels/Cellekjerne.png';
-import celle from '../images/levels/Celle.png';
-import hjerte from '../images/levels/Hjerte2.png';
-import menneske from '../images/levels/Menneske2.png';
-import nuclear from '../images/levels/Kjernekraftverk2.png';
-import moon from '../images/levels/moon.png';
->>>>>>> master
 import jorda from '../images/levels/jord2.png';
 import planet from '../images/levels/Planetene.png'; 
 import sol from '../images/levels/Sol2.png';

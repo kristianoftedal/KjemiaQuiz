@@ -21,7 +21,6 @@ export default class Subscription extends Component {
 
   products = [
     'no.kjemia.naturfagsappen',
-    'no.kjemia.naturfagsappen.1',
   ];
 
   constructor(props) {

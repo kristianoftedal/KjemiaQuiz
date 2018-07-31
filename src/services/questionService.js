@@ -1,4 +1,4 @@
-import { find } from '../../../../Library/Caches/typescript/2.9/node_modules/@types/lodash';
+import { find } from 'lodash';
 import questionImages from '../questions/questionImages';
 import shuffle from '../utils/shuffle';
 import questions from './questions.json';

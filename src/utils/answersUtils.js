@@ -1,5 +1,5 @@
 /* @flow */
-import { random } from '../../../../Library/Caches/typescript/2.9/node_modules/@types/lodash';
+import { random } from 'lodash';
 import colors from '../config/colors';
 
 /**

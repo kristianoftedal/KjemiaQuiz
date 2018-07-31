@@ -4,3 +4,6 @@ export const KJEMI2 = 'KJEMI2';
 export const GEO = 'GEO';
 export const S1 = 'S1';
 export const ONET = 'ONET';
+export const FYSIKK1 = 'FYSIKK1';
+export const R1 = 'R1';
+export const ONEP = '1P';

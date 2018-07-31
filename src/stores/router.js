@@ -10,6 +10,10 @@ export default class RouterStore {
     this.currentScreen = 'HOME';
   };
 
+  navigateToGameMenu = () => {
+    this.currentScreen = 'GAMEMENU';
+  };
+
   navigateToPlayground = () => {
     this.currentScreen = 'PLAYGROUND';
   };

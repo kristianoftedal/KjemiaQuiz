@@ -1,7 +1,7 @@
 <<<<<<< HEAD:src/components/QuestionWrapper/questionParser.js
-import React, { Component } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
+import React, { Component } from 'react';
 import { Text, Linking, } from 'react-native';
-import uuid from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/uuid';
+import uuid from '.uuid';
 =======
 import React from 'react';
 import { Text } from 'react-native';

@@ -3,7 +3,7 @@
  * This component does, and it also provides a nice interface for using custom fonts and style.
  */
 import React, { Component } from 'react';
-import PropTypes from '.prop-types';
+import PropTypes from 'prop-types';
 import { View, Image } from 'react-native';
 import { Text } from 'react-native-animatable';
 import Overlay from 'react-native-modal-overlay';

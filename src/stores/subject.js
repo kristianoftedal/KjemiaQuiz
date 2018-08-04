@@ -1,7 +1,7 @@
 /**
  * A super-simple MobX routing solution.
  */
-import { observable } from 'mobx';
+import { observable, action} from 'mobx';
 import { NATURFAG, KJEMI1, KJEMI2, S1, ONET, GEO, FYSIKK1 } from './constants';
 import getLevels from '../config/levelProvider';
 import getProduct from '../config/productProvider';
@@ -14,11 +14,30 @@ export default class RouterStore {
   @observable levels = null;
   @observable freeQuestions = null;
   @observable questions = null;
-  @observable hasSubscription = null;
   @observable questionImages = null;
   @observable categories = null;
   @observable product = null;
   @observable images = null;
+
+  @action
+  getProduct = () => {
+    return this.product;
+  }
+
+  @action
+  getLevels = () => {
+    return this.levels;
+  }
+
+  @action
+  getQuestions = () => {
+    return this.questions;
+  }
+
+  @action
+  getFreeQuestions = () => {
+    return this.freeQuestions;
+  }
 
   selectSubject = (subject) => {
     this.subject = subject;

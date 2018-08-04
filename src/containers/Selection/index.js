@@ -4,19 +4,13 @@
  * @flow
  */
 
-<<<<<<< HEAD
-import React, { Component } from 'react';
-import { StatusBar, Text, Switch, Platform, UIManager, LayoutAnimation } from 'react-native';
-=======
 import React, { Component } from 'react';
 import { Text, Switch, Platform, UIManager, LayoutAnimation } from 'react-native';
->>>>>>> master
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
 import audioService from '../../services/audio';
-import categories from '../../questions/categories';
 import RadioButton from '../../components/RadioButton';
 
 @inject(allStores => ({
@@ -25,6 +19,7 @@ import RadioButton from '../../components/RadioButton';
   navigateToEndgame: allStores.router.navigateToEndgame,
   setCustomizedGame: allStores.game.setCustomizedGame,
   hasSubscription: allStores.subscription.hasSubscription,
+  categories: allStores.subject.categories,
 }))
 
 @observer

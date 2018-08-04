@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { View } from 'react-native-animatable';
-import PropTypes from '.prop-types';
+import PropTypes from 'prop-types';
 import style from './index.style';
 
 const DEFAULT_SIZE_MULTIPLIER = 0.7;

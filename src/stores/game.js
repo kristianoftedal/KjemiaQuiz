@@ -3,10 +3,10 @@
  * Here you can find the entire logic of the game.
  */
 import { action, computed, observable } from 'mobx';
-import { getQuestionsSet, getQuestionsSetByCriterias } from '../questions/questionService';
+import { getQuestionsSet, getQuestionsSetByCriterias } from '../questions/questionHelper';
 import metrics from '../config/metrics';
-import levels from '../config/levels';
-import { getXp, getLevelIndex, setXp, setLevelIndex } from '../questions/xpService';
+import subjectStore from './subject';
+import { getXp, getLevelIndex, setXp, setLevelIndex } from '../services/xpService';
 
 export default class GameStore {
   @observable isGameRunning = false;
@@ -27,6 +27,7 @@ export default class GameStore {
   @observable hasSubscription = false;
   @observable levelUpProgress = 0;
   @observable answeredQuestions = [];
+  @observable levels = [];
 
   @action
   setBaseline() {
@@ -41,6 +42,7 @@ export default class GameStore {
     this.totalByCategory = {};
     this.isLevelUp = false;
     this.isAdTime = false;
+    this.levels = subjectStore.getLevels();
   }
 
   getLevels = async () => {
@@ -119,7 +121,7 @@ export default class GameStore {
           this.score += 50;
           this.currentXp += 50;
         }
-        let nextScore = levels[this.currentLevelIndex + 1].score;
+        let nextScore = this.levels[this.currentLevelIndex + 1].score;
         let test = this.currentXp >= nextScore;
         if (this.currentXp >= nextScore) {
           this.currentLevelIndex += 1;
@@ -167,7 +169,7 @@ export default class GameStore {
 
   @computed
   get currentLevel() {
-    return levels[this.currentLevelIndex];
+    return this.levels[this.currentLevelIndex];
   }
   @computed
   get getProgress() {
@@ -179,10 +181,10 @@ export default class GameStore {
   }
 
   nextLevelThreshold = () => {
-    if (this.currentLevelIndex + 1 > levels.length || this.currentLevelIndex === 0) {
-      return levels[this.currentLevelIndex].score;
+    if (this.currentLevelIndex + 1 > this.levels.length || this.currentLevelIndex === 0) {
+      return this.levels[this.currentLevelIndex].score;
     }
-    const nextLevelThreshold = levels[this.currentLevelIndex + 1].score;
+    const nextLevelThreshold = this.levels[this.currentLevelIndex + 1].score;
     return nextLevelThreshold;
   };
 
@@ -190,7 +192,7 @@ export default class GameStore {
     if (this.currentLevelIndex === 0) {
       return 0;
     }
-    const prev = levels[this.currentLevelIndex].score;
+    const prev = this.levels[this.currentLevelIndex].score;
     return prev;
   }
 

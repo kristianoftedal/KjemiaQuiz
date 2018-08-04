@@ -2,9 +2,9 @@
 /**
  * The time left bar at the top of the Playground screen.
  */
-import React, { Component } from '../.react';
+import React, { Component } from 'react';
 import { View } from 'react-native-animatable';
-import { Animated, Easing } from 'react-native';
+import { Animated } from 'react-native';
 import { inject } from 'mobx-react/native';
 import styles from './index.style';
 import metrics from '../../../config/metrics';

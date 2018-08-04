@@ -1,18 +1,14 @@
-/* @flow */
 /**
  * The core of the game.
  * It links the Board to the MobX store and navigates to the Endgame screen when needed.
  */
 import React, { Component } from 'react';
-<<<<<<< HEAD
-import PropTypes from 'prop-types';
-import { Text, Alert, Image, Platform } from 'react-native';
-=======
-import { Platform } from 'react-native';
->>>>>>> master
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import { times } from 'lodash';
+import {
+  AdMobInterstitial,
+} from 'react-native-admob'
 import DropdownAlert from 'react-native-dropdownalert';
 import QuestionWrapper from '../../components/QuestionWrapper';
 import LevelUp from '../../components/LevelUp';
@@ -22,10 +18,7 @@ import AnswerTile from './AnswerTile';
 import audioService from '../../services/audio';
 import ProgressBar from './ProgressBar';
 import Footer from './Footer';
-import {
-  AdMobInterstitial,
-  AdMobRewarded
-} from 'react-native-admob'
+import env from '../../config/env';
 
 @inject(allStores => ({
   navigateToEndgame: allStores.router.navigateToEndgame,
@@ -42,6 +35,7 @@ import {
   level: allStores.game.currentLevel,
   hasSubscription: allStores.subscription.hasSubscription,
 }))
+
 @observer
 export default class Playground extends Component {
   _questionRef = null;
@@ -57,11 +51,13 @@ export default class Playground extends Component {
     this.props.startGame(this.props.hasSubscription);
   }
 
-  componentDidUpdate(prevProps, nextProps) {
+  componentDidUpdate(prevProps) {
     if (this.props.isAdTime && !this.props.hasSubscription) {
-      //AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-      AdMobInterstitial.setAdUnitID(Platform.OS === 'android' ? 'ca-app-pub-4545695212875309/2834033827': 'ca-app-pub-4545695212875309/4606308438');
-      // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
+      if (env.IS_ENV_DEVELOPMENT) {
+        AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
+      } else {
+        AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
+      }
       AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd())
       .catch(error => {
         console.log(error);
@@ -144,7 +140,7 @@ export default class Playground extends Component {
       questionImage = currentQuestion.image;
     }
     const alreadyPickedColors = [];
-    times(4, n => {
+    times(4, () => {
       const color = answersUtils.getRandomTileColor(alreadyPickedColors);
       alreadyPickedColors.push(color);
     });

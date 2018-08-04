@@ -10,18 +10,13 @@ import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
-<<<<<<< HEAD
-import levels from '../../config/levels';
 import Level from '../../components/LevelUp';
 import locked from '../../images/padlock.png';
-=======
-import levels from '../../config/levels';;
-import Level from './Level';
->>>>>>> master
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
   currentLevelIndex: allStores.game.currentLevelIndex,
+  levels: allStores.subject.levels,
 }))
 @observer
 export default class Badges extends Component {
@@ -53,11 +48,7 @@ export default class Badges extends Component {
       this.setState({showLevel: false});
       return;
     }
-<<<<<<< HEAD
-  // if (index > this.props.currentLevelIndex) return;
-=======
     // if (index > this.props.currentLevelIndex) return;
->>>>>>> master
     this.setState({showLevel: !this.state.showLevel, selectedLevel})
   }
 
@@ -78,14 +69,9 @@ export default class Badges extends Component {
       <TouchableOpacity onPress={() => this._onLevelPress(item, index)}>
         <View style={style.levelItem} key={item.value}>
           <Image
-<<<<<<< HEAD
-            style={style.thumbnail}
-            source={item.imageSource}/>
-=======
             style={index > this.props.currentLevelIndex ? style.thumbnail : style.thumbnail}
-            source={index > this.props.currentLevelIndex ? item.imageSource : item.imageSource}
+            source={index > this.props.currentLevelIndex ? locked : item.imageSource}
             resizeMode="contain"/>
->>>>>>> master
           <Text style={style.levelTitle}>{index > this.props.currentLevelIndex ? '' : item.value}</Text>
         </View>
       </TouchableOpacity>

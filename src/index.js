@@ -9,6 +9,7 @@ import App from './containers/App';
 const gameStore = new GameStore();
 const routerStore = new RouterStore();
 const subscriptionStore = new SubscriptionStore();
+const subjectStore = new subjectStore();
 
 export class KjemiaQuiz extends Component {
   
@@ -18,7 +19,7 @@ export class KjemiaQuiz extends Component {
 
   render() {
     return (
-      <Provider router={routerStore} game={gameStore} subscription={subscriptionStore}>
+      <Provider router={routerStore} game={gameStore} subscription={subscriptionStore} subject={subjectStore}>
         <App />
       </Provider>
     );

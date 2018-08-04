@@ -1,9 +1,7 @@
 import { find } from 'lodash';
 import questionImages from '../questions/questionImages';
 import shuffle from '../utils/shuffle';
-import questions from './questions.json';
-import freeQuestions from './freeQuestions.json';
-
+import subjectStore from '../stores/subject';
 
 const getRandomNumber = (max, blackList) => {
   const randomNumber = Math.floor(Math.random() * max);

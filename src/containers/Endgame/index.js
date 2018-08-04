@@ -11,11 +11,6 @@ import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
 import style from './index.style';
 import audioService from '../../services/audio';
-import categories from '../../questions/categories';
-import AnimateNumber from '../../components/AnimateNumber';
-import {
-  AdMobInterstitial
-} from 'react-native-admob'
 
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,
@@ -28,7 +23,9 @@ import {
   totalByCategory: allStores.game.totalByCategory,
   resetGame: allStores.game.resetGame,
   isCustomizedGame: allStores.game.isCustomizedGame,
+  categories: allStores.subject.categories,
 }))
+
 @observer
 export default class Endgame extends Component {
   _headerRef;

@@ -12,20 +12,6 @@ import Tile from '../../components/Tile';
 import {
   observer
 } from 'mobx-react/native';
-import metrics from '../../config/metrics';
-import uuid from 'uuid';
-import styles from './index.style';
-import React, {
-  Component
-} from 'react';
-import {
-  View,
-  Platform
-} from 'react-native';
-import Tile from '../../components/Tile';
-import {
-  observer
-} from 'mobx-react/native';
 import uuid from 'uuid';
 
 @observer
@@ -53,12 +39,10 @@ export default class AnswerTile extends Component {
       backgroundColor,
       text
     } = this.props;
-    return ( <
-      View key = {
+    return ( <View key = {
         uuid.v4()
       } >
-      <
-      Tile ref = {
+      <Tile ref = {
         ref => {
           this._tileRef = ref;
         }
@@ -75,8 +59,8 @@ export default class AnswerTile extends Component {
       onPressOut = {
         this._handlePressOut
       }
-      /> <
-      /View>
+      /> 
+      </View>
     );
   }
 }

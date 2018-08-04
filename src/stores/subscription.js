@@ -5,8 +5,8 @@ import { action, computed, observable } from 'mobx';
 import { Platform, NativeModules, Alert } from 'react-native';
 import iapReceiptValidator from 'iap-receipt-validator';
 import { getReceipt, setReceipt } from '../services/subscriptionStorage';
-import InAppBilling from "react-native-billing";
-
+import InAppBilling from 'react-native-billing';
+import subjectStore from './subject';
 const { InAppUtils } = NativeModules
 const password = 'ec294a7077574dea8f1bd66395171f0a'; // Shared Secret from iTunes connect
 const production = true; // use sandbox or production url for validation
@@ -22,7 +22,7 @@ export default class SubscriptionStore {
         await InAppBilling.close();
         await InAppBilling.open();
         await InAppBilling.loadOwnedPurchasesFromGoogle();
-        this.hasSubscription = await InAppBilling.isSubscribed('no.kjemia.naturfagsappen.1');
+        this.hasSubscription = await InAppBilling.isSubscribed(subjectStore.getProduct());
         if (!this.hasSubscription) {
           InAppBilling.listOwnedSubscriptions().then(list => {
             this.hasSubscription = list.includes(this.products[0]);
@@ -58,7 +58,7 @@ export default class SubscriptionStore {
             return;
           }
           response.forEach((purchase) => {
-            if (purchase.productIdentifier === 'no.kjemia.naturfagsappen') {
+            if (purchase.productIdentifier === subjectStore.product) {
               Alert.alert('Gjenopprettelse gikk fint', 'Vi har gjenopprettet dine kjøp.');
               // Handle purchased product.
               setReceipt(purchase.transactionReceipt);

@@ -12,6 +12,7 @@ const InAppUtils = require('NativeModules').InAppUtils;
   navigateToHome: allStores.router.navigateToHome,
   purchaseMade: allStores.subscription.purchaseMade,
   restore: allStores.subscription.restore,
+  product: allStores.subject.product,
 }))
 
 @observer
@@ -20,7 +21,7 @@ export default class Subscription extends Component {
   _bodyRef;
 
   products = [
-    'no.kjemia.naturfagsappen',
+    this.props.product,
   ];
 
   constructor(props) {

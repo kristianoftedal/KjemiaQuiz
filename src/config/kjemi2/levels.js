@@ -1,23 +1,23 @@
-import photon from '../images/levels/AMMONIAKK.png';
-import electron from '../images/levels/BENZEN.png';
-import proton from '../images/levels/EDDIK.png';
-import atom from '../images/levels/ETANOL.png';
-import hydrogen from '../images/levels/ETYLBUTANAT.png';
-import karbon from '../images/levels/Hcl.png';
-import aminosyre from '../images/levels/HYDROGEN 2.png';
-import protein from '../images/levels/KARBON 2.png';
-import dna from '../images/levels/METAN.png';
-import cellekjerne from '../images/levels/NaCl.png';
-import celle from '../images/levels/NaOH.png';
-import hjerte from '../images/levels/O4.png';
-import menneske from '../images/levels/OKSONIUM.png';
-import nuclear from '../images/levels/OKSYGEN.png';
-import moon from '../images/levels/VANN.png';
-import jorda from '../images/levels/jord2.png';
-import planet from '../images/levels/Planetene.png'; 
-import sol from '../images/levels/Sol2.png';
-import milky from '../images/levels/Melkeveien2.png';
-import univers from '../images/levels/Universet2.png';
+import photon from '../../images/levels/kjemi2/AMMONIAKK.png';
+import electron from '../../images/levels/kjemi2/BENZEN.png';
+import proton from '../../images/levels/kjemi2/EDDIK.png';
+import atom from '../../images/levels/kjemi2/ETANOL.png';
+import hydrogen from '../../images/levels/kjemi2/ETYLBUTANAT.png';
+import karbon from '../../images/levels/kjemi2/Hcl.png';
+import aminosyre from '../../images/levels/kjemi2/HYDROGEN 2.png';
+import protein from '../../images/levels/kjemi2/KARBON 2.png';
+import dna from '../../images/levels/kjemi2/METAN.png';
+import cellekjerne from '../../images/levels/kjemi2/NaCl.png';
+import celle from '../../images/levels/kjemi2/NaOH.png';
+import hjerte from '../../images/levels/kjemi2/O4.png';
+import menneske from '../../images/levels/kjemi2/OKSONIUM.png';
+import nuclear from '../../images/levels/kjemi2/OKSYGEN.png';
+import moon from '../../images/levels/kjemi2/VANN.png';
+import jorda from '../../images/levels/kjemi2/jord2.png';
+import planet from '../../images/levels/kjemi2/Planetene.png'; 
+import sol from '../../images/levels/kjemi2/Sol2.png';
+import milky from '../../images/levels/kjemi2/Melkeveien2.png';
+import univers from '../../images/levels/kjemi2/Universet2.png';
 
 const levels = [
   {

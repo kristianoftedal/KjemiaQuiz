@@ -1,23 +1,23 @@
-import photon from '../images/levels/AMMONIAKK.png';
-import electron from '../images/levels/BENZEN.png';
-import proton from '../images/levels/EDDIK.png';
-import atom from '../images/levels/ETANOL.png';
-import hydrogen from '../images/levels/ETYLBUTANAT.png';
-import karbon from '../images/levels/Hcl.png';
-import aminosyre from '../images/levels/HYDROGEN 2.png';
-import protein from '../images/levels/KARBON 2.png';
-import dna from '../images/levels/METAN.png';
-import cellekjerne from '../images/levels/NaCl.png';
-import celle from '../images/levels/NaOH.png';
-import hjerte from '../images/levels/O4.png';
-import menneske from '../images/levels/OKSONIUM.png';
-import nuclear from '../images/levels/OKSYGEN.png';
-import moon from '../images/levels/VANN.png';
-import jorda from '../images/levels/jord2.png';
-import planet from '../images/levels/Planetene.png'; 
-import sol from '../images/levels/Sol2.png';
-import milky from '../images/levels/Melkeveien2.png';
-import univers from '../images/levels/Universet2.png';
+import photon from '../../images/levels/AMMONIAKK.png';
+import electron from '../../images/levels/BENZEN.png';
+import proton from '../../images/levels/EDDIK.png';
+import atom from '../../images/levels/ETANOL.png';
+import hydrogen from '../../images/levels/ETYLBUTANAT.png';
+import karbon from '../../images/levels/Hcl.png';
+import aminosyre from '../../images/levels/HYDROGEN 2.png';
+import protein from '../../images/levels/KARBON 2.png';
+import dna from '../../images/levels/METAN.png';
+import cellekjerne from '../../images/levels/NaCl.png';
+import celle from '../../images/levels/NaOH.png';
+import hjerte from '../../images/levels/O4.png';
+import menneske from '../../images/levels/OKSONIUM.png';
+import nuclear from '../../images/levels/OKSYGEN.png';
+import moon from '../../images/levels/VANN.png';
+import jorda from '../../images/levels/jord2.png';
+import planet from '../../images/levels/Planetene.png'; 
+import sol from '../../images/levels/Sol2.png';
+import milky from '../../images/levels/Melkeveien2.png';
+import univers from '../../images/levels/Universet2.png';
 
 const levels = [
   {

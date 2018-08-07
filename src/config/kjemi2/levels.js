@@ -1,23 +1,23 @@
-import photon from '../../images/levels/kjemi2/AMMONIAKK.png';
-import electron from '../../images/levels/kjemi2/BENZEN.png';
-import proton from '../../images/levels/kjemi2/EDDIK.png';
-import atom from '../../images/levels/kjemi2/ETANOL.png';
-import hydrogen from '../../images/levels/kjemi2/ETYLBUTANAT.png';
-import karbon from '../../images/levels/kjemi2/Hcl.png';
-import aminosyre from '../../images/levels/kjemi2/HYDROGEN 2.png';
-import protein from '../../images/levels/kjemi2/KARBON 2.png';
-import dna from '../../images/levels/kjemi2/METAN.png';
-import cellekjerne from '../../images/levels/kjemi2/NaCl.png';
-import celle from '../../images/levels/kjemi2/NaOH.png';
-import hjerte from '../../images/levels/kjemi2/O4.png';
-import menneske from '../../images/levels/kjemi2/OKSONIUM.png';
-import nuclear from '../../images/levels/kjemi2/OKSYGEN.png';
-import moon from '../../images/levels/kjemi2/VANN.png';
-import jorda from '../../images/levels/kjemi2/jord2.png';
-import planet from '../../images/levels/kjemi2/Planetene.png'; 
-import sol from '../../images/levels/kjemi2/Sol2.png';
-import milky from '../../images/levels/kjemi2/Melkeveien2.png';
-import univers from '../../images/levels/kjemi2/Universet2.png';
+import photon from '../../images/levels/naturfag/Foton3.png';
+import electron from '../../images/levels/naturfag/Elektron.png';
+import proton from '../../images/levels/naturfag/Proton3.png';
+import atom from '../../images/levels/naturfag/Atomkjerne2.png';
+import hydrogen from '../../images/levels/naturfag/Hydrogen.png';
+import karbon from '../../images/levels/naturfag/karbon.png';
+import aminosyre from '../../images/levels/naturfag/Molekyl.png';
+import protein from '../../images/levels/naturfag/Protein2.png';
+import dna from '../../images/levels/naturfag/DNA3.png';
+import cellekjerne from '../../images/levels/naturfag/Cellekjerne.png';
+import celle from '../../images/levels/naturfag/Celle.png';
+import hjerte from '../../images/levels/naturfag/Hjerte2.png';
+import menneske from '../../images/levels/naturfag/Menneske2.png';
+import nuclear from '../../images/levels/naturfag/Kjernekraftverk2.png';
+import moon from '../../images/levels/naturfag/moon.png';
+import jorda from '../../images/levels/naturfag/jord2.png';
+import planet from '../../images/levels/naturfag/Planetene.png'; 
+import sol from '../../images/levels/naturfag/Sol2.png';
+import milky from '../../images/levels/naturfag/Melkeveien2.png';
+import univers from '../../images/levels/naturfag/Universet2.png';
 
 const levels = [
   {

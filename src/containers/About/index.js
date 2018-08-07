@@ -59,7 +59,7 @@ export default class About extends Component {
             }}
           >
           <View style={style.imageWrapper}>
-            <Image source={about} style={style.image} />
+            <Image source={about} style={style.image} resizeMode="contain"/>
           </View>
             <View style={style.textPart}>
               <View>

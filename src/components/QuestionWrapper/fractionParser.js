@@ -6,7 +6,6 @@ import styles from './index.style';
 import formulaParser from './formulaParser';
 
 const fractionParser = (question) => {
-  debugger;
   if (question == null) return (<Text/>);
 
   const parts = question.split('#');

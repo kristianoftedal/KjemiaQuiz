@@ -5,7 +5,6 @@ import binomialParser from './binomialParser';
 import squareRootParser from './squareRootParser';
 
 const prettyPrint = (text) => {
-  debugger;
   if (!text) {
     return (<Text></Text>);
   }

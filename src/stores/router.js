@@ -3,7 +3,7 @@
  */
 import { observable } from 'mobx';
 
-export default class RouterStore {
+class RouterStore {
   @observable currentScreen = 'HOME';
 
   navigateToHome = () => {
@@ -38,3 +38,5 @@ export default class RouterStore {
     this.currentScreen = 'SUBSCRIPTION';
   };
 }
+
+export default new RouterStore();

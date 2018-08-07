@@ -25,10 +25,11 @@ import audioService from '../../services/audio';
   initPlayer: allStores.game.initPlayer,
   resetGame: allStores.game.resetGame,
   hasSubscription: allStores.subscription.hasSubscription,
+  title: allStores.subject.title,
 }))
 
 @observer
-export default class Home extends Component {
+export default class GameMenu extends Component {
   _headerRef;
   _bodyRef;
 
@@ -107,7 +108,7 @@ export default class Home extends Component {
             this._headerRef = ref;
           }}
         >
-          <Text style={style.header}>Naturfagsappen</Text>
+          <Text style={style.header}>{this.props.title}</Text>
         </View>
         {hasHeaderAppeared && (
           <View

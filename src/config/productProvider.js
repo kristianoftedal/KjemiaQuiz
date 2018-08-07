@@ -31,4 +31,4 @@ const getProduct = (topic) => {
   return 'no.kjemia.naturfagsappen';
 };
 
-export default getLevels
+export default getProduct;

@@ -14,7 +14,7 @@ const printQuestion = (question) => {
   if (question == null) {
     return (<Text/>);
   }
-  debugger;
+  
   return (<View style={styles.textWrapper}>
       {prettyPrint(question)}
   </View>);

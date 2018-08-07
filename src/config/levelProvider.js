@@ -9,7 +9,7 @@ import geografiLevels from './geografi/levels';
 import onePLevels from './1p/levels';
 import r1Levels from './r1/levels';
 
-const getLevels = (topic) => {
+const levelProvider = (topic) => {
   if (topic === NATURFAG) {
     return naturfagLevels;
   }
@@ -40,4 +40,4 @@ const getLevels = (topic) => {
   return naturfagLevels;
 };
 
-export default getLevels
+export default levelProvider;

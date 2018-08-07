@@ -1,5 +1,4 @@
 import { find } from 'lodash';
-import questionImages from '../questions/questionImages';
 import shuffle from '../utils/shuffle';
 import subjectStore from '../stores/subject';
 
@@ -9,6 +8,10 @@ const getRandomNumber = (max, blackList) => {
 };
 
 export const getQuestionsSet = (max, hasSubscription) => {
+  debugger;
+  const freeQuestions = subjectStore.freeQuestions;
+  const questions = subjectStore.questions;
+  const questionImages = subjectStore.images;
   const ceiling = max || questions.length;
   
   let questionsSet = [];
@@ -39,6 +42,9 @@ export const getQuestionsSet = (max, hasSubscription) => {
 };
 
 export const getQuestionsSetByCriterias = (categories, difficulty, count, hasSubscription) => {
+  const freeQuestions = subjectStore.freeQuestions;
+  const questions = subjectStore.questions;
+  const questionImages = subjectStore.images;
   let questionList = [];
   if (!hasSubscription) {
     questionList = shuffle(freeQuestions);

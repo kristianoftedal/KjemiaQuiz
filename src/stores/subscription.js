@@ -12,7 +12,7 @@ const password = 'ec294a7077574dea8f1bd66395171f0a'; // Shared Secret from iTune
 const production = true; // use sandbox or production url for validation
 const validateReceipt = iapReceiptValidator(password, production);
 
-export default class SubscriptionStore {
+class SubscriptionStore {
   @observable hasSubscription = false;
   @observable subscriptionId = null;
 
@@ -106,3 +106,5 @@ export default class SubscriptionStore {
     }
   }
 }
+
+export default new SubscriptionStore();

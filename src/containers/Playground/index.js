@@ -34,6 +34,7 @@ import env from '../../config/env';
   isLevelUp: allStores.game.isLevelUp,
   level: allStores.game.currentLevel,
   hasSubscription: allStores.subscription.hasSubscription,
+  title: allStores.subject.title,
 }))
 
 @observer

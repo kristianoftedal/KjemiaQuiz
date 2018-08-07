@@ -70,7 +70,7 @@ export default class App extends Component {
         break;
     }
     return (
-      <ImageBackground source={bgImg} style={styles.container}>
+      <ImageBackground source={bgImg} style={styles.container} >
         <StatusBar hidden={true} />
         {content}
       </ImageBackground>

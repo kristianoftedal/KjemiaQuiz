@@ -3,12 +3,12 @@
  * Here you can find the entire logic of the game.
  */
 import { action, computed, observable } from 'mobx';
-import { getQuestionsSet, getQuestionsSetByCriterias } from '../questions/questionHelper';
+import { getQuestionsSet, getQuestionsSetByCriterias } from '../services/questionService';
 import metrics from '../config/metrics';
-import subjectStore from './subject';
 import { getXp, getLevelIndex, setXp, setLevelIndex } from '../services/xpService';
+import subjectStore from './subject';
 
-export default class GameStore {
+class GameStore {
   @observable isGameRunning = false;
   @observable isEndgame = false;
   @observable level = 1;
@@ -45,9 +45,10 @@ export default class GameStore {
     this.levels = subjectStore.getLevels();
   }
 
+  @action
   getLevels = async () => {
-    this.currentXp = await getXp();
-    this.currentLevelIndex = await getLevelIndex();
+    this.currentXp = await getXp(subjectStore.subject);
+    this.currentLevelIndex = await getLevelIndex(subjectStore.subject);
   };
 
   @action
@@ -209,3 +210,5 @@ export default class GameStore {
     return correctPercentage;
   }
 }
+
+export default new GameStore();

@@ -1,17 +1,10 @@
-<<<<<<< HEAD:src/components/QuestionWrapper/questionParser.js
-import React, { Component } from 'react';
-import { Text, Linking, } from 'react-native';
-import uuid from '.uuid';
-=======
 import React from 'react';
 import { Text } from 'react-native';
 import uuid from 'uuid';
->>>>>>> master:src/components/QuestionWrapper/formulaParser.js
 import styles from './index.style';
 
 const formulaParser = (question) => {
   if (question == null) return (<Text/>);
-  debugger;
   const parts = question.split('*');
   const restructuredText = [];
   for (let i = 0; i < parts.length; i++) {

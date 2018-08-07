@@ -1,4 +1,5 @@
 const shuffle = (array) => {
+  debugger;
   let currentIndex = array.length, temporaryValue, randomIndex;
 
   while (0 !== currentIndex) {

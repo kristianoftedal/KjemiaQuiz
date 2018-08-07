@@ -1,4 +1,4 @@
-/* @flow */
+
 /**
  * A HOC on src/component/Tile that customizes it a bit for the board.  
  * It adds styles and animations when the Tile appears/disappears.
@@ -19,7 +19,7 @@ import style from './index.style';
 
 @inject(allStores => ({
   navigateToHome: allStores.router.navigateToHome,
-}));
+}))
 
 @observer
 export default class QuitButton extends Component {
@@ -45,17 +45,13 @@ export default class QuitButton extends Component {
   };
 
   render() {
-    return ( <
-      Button onPress = {
-        this._handleBackPress
-      }
+    return ( 
+      <Button onPress = {this._handleBackPress}
       style = {
         style.backButton
       } >
-      <
-      Text style = {
-        style.buttonText
-      } > x < /Text> <
-      /Button>);
+      <Text style = {style.buttonText} > x 
+      </Text> 
+      </Button>);
     }
   }

@@ -42,7 +42,7 @@ class GameStore {
     this.totalByCategory = {};
     this.isLevelUp = false;
     this.isAdTime = false;
-    this.levels = subjectStore.getLevels();
+    this.levels = subjectStore.levels;
   }
 
   @action
@@ -55,10 +55,10 @@ class GameStore {
   resetGame = () => {
     this.setBaseline();
     this.isCustomizedGame = false;
-  }
+  };
 
   @action
-  startGame = (hasSubscription) => {
+  startGame = hasSubscription => {
     this.hasSubscription = hasSubscription;
     this.setBaseline();
     this.buildQuiz();
@@ -76,7 +76,12 @@ class GameStore {
     this.setBaseline();
     this.isCustomizedGame = true;
     this.correctCount = 0;
-    this.questions = getQuestionsSetByCriterias(categories, difficulty, count, this.hasSubscription);
+    this.questions = getQuestionsSetByCriterias(
+      categories,
+      difficulty,
+      count,
+      this.hasSubscription
+    );
   };
 
   @action
@@ -87,7 +92,7 @@ class GameStore {
   };
 
   @action
-  handleGoBack= () => {
+  handleGoBack = () => {
     if (this.currentIndex - 1 >= 0) {
       this.currentIndex--;
     }
@@ -146,7 +151,14 @@ class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-    if (!this.hasSubscription && !this.isLevelUp && this.currentIndex !== 0 && this.currentIndex % 6 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
+    if (
+      !this.hasSubscription &&
+      !this.isLevelUp &&
+      this.currentIndex !== 0 &&
+      this.currentIndex % 6 === 0 &&
+      this.currentIndex !== this.questions.length &&
+      this.currentIndex - 1 !== this.questions.length
+    ) {
       this.isAdTime = true;
     } else {
       this.isAdTime = false;
@@ -195,13 +207,13 @@ class GameStore {
     }
     const prev = this.levels[this.currentLevelIndex].score;
     return prev;
-  }
+  };
 
   computeLevelUpProgress() {
     const threshold = this.nextLevelThreshold();
     const currentVal = this.currentXp - this.currentLevelThreshold();
-    const levelUpPercentage = (currentVal / threshold) * 100;
-    this.levelUpProgress = ((levelUpPercentage * (metrics.DEVICE_WIDTH - 70))/ 100);
+    const levelUpPercentage = currentVal / threshold * 100;
+    this.levelUpProgress = levelUpPercentage * (metrics.DEVICE_WIDTH - 70) / 100;
   }
 
   @computed

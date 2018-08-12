@@ -8,23 +8,21 @@ const getRandomNumber = (max, blackList) => {
 };
 
 export const getQuestionsSet = (max, hasSubscription) => {
-  debugger;
   const freeQuestions = subjectStore.freeQuestions;
   const questions = subjectStore.questions;
   const questionImages = subjectStore.images;
   const ceiling = max || questions.length;
-  
+
   let questionsSet = [];
   const alreadyPickedNumbers = [];
   let number = 0;
-  let questionList = [] 
-  
+  let questionList = [];
   if (!hasSubscription) {
     questionList = shuffle(freeQuestions);
   } else {
     questionList = shuffle(questions);
   }
-  
+
   for (let i = 0; i < ceiling; i++) {
     number = getRandomNumber(ceiling, alreadyPickedNumbers);
     let question = questionList[number];

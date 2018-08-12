@@ -16,13 +16,14 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     flexWrap: 'wrap',
+    marginBottom: 3,
   },
   text: {
     color: 'white',
     //fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     fontSize: 18,
-    lineHeight: 18,
+    lineHeight: 20,
     marginBottom: 1,
   },
   subscript: {

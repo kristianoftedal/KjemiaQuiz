@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
 import metrics from '../../config/metrics';
 
-const width = metrics.DEVICE_WIDTH * 0.80;
-const height = metrics.DEVICE_HEIGHT * 0.80;
+const width = metrics.DEVICE_WIDTH * 0.7;
+const height = metrics.DEVICE_HEIGHT * 0.7;
 
 export default StyleSheet.create({
   container: {
@@ -26,7 +26,7 @@ export default StyleSheet.create({
   },
   headerWrapper: {
     alignSelf: 'stretch',
-    width: metrics.DEVICE_WIDTH * 0.80
+    width: metrics.DEVICE_WIDTH * 0.7,
   },
   header: {
     fontFamily: 'Permanent Marker',
@@ -73,11 +73,6 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     lineHeight: 12,
     marginTop: 1,
-  },
-  binomial: {
-  },
-  squareRoot: {
-    fontSize: 23,
   },
   postSquareRoot: {
     borderTopColor: 'white',

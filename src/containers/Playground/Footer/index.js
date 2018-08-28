@@ -26,7 +26,6 @@ import periodicIcon from '../../../images/periodicIcon.png';
 }))
 @observer
 export default class Playground extends Component {
-  
   constructor(props) {
     super();
     this.state = {
@@ -38,13 +37,13 @@ export default class Playground extends Component {
 
   _togglePeriodicTable = () => {
     const visible = !this.state.visible;
-    this.setState({visible: visible});
-  }
+    this.setState({ visible: visible });
+  };
 
   _toggleExplanation = () => {
     const visible = !this.state.showExplanation;
-    this.setState({showExplanation: visible});
-  }
+    this.setState({ showExplanation: visible });
+  };
 
   render() {
     const { previousScore, score, dialog } = this.props;
@@ -66,21 +65,24 @@ export default class Playground extends Component {
           <Button
             title="Periodisk tabell"
             onPress={() => this._toggleExplanation()}
-            style={style.explanationButton}>
-             <Text style={style.buttonText}>?</Text>
+            style={style.explanationButton}
+          >
+            <Text style={style.buttonText}>?</Text>
           </Button>
           <Button
             title="Periodisk tabell"
             onPress={() => this._togglePeriodicTable()}
-            style={style.periodicButton}>
-            <Image style={style.periodicIcon} source={periodicIcon}/>
+            style={style.periodicButton}
+          >
+            <Image style={style.periodicIcon} source={periodicIcon} />
           </Button>
         </View>
-        <PeriodicTable visible={this.state.visible} onClose={this._togglePeriodicTable}/>
-        <Explanation 
+        <PeriodicTable visible={this.state.visible} onClose={this._togglePeriodicTable} />
+        <Explanation
           visible={this.state.showExplanation}
-          text="5,00 g er massen til *Zn(OH)_2|*. Det første du må gjøre er å finne ut hvor mange mol 5,00 g *Zn(OH)_2|* tilsvarer. Husk: veien om mol er veien til mål. Dette finner du ved å dele 5,00 g på den molare massen til *Zn(OH)_2|*. 5,00 g ÷ 99,424 g/mol = 0,050 mol. 0,050 er stoffmengden *Zn(OH)_2|*. Stoffmengden av hydrogen er dobbelt så stor som stoffmengden *Zn(OH)_2|*, fordi det er tilsammen 2 *OH^-|*-ioner som begge inneholder ett hydrogen i *Zn(OH)_2|*. Først ganger du stoffmengden med 2, deretter ganger du med den molare massen til hydrogen. Da får du: 2 ∙ 0.050 mol = 0.101 mol. 0.101 mol ∙ 1.008 g/mol = 1,109 g." 
-          onClose={this._toggleExplanation} />
+          text={this.props.currentQuestion.explanation}
+          onClose={this._toggleExplanation}
+        />
       </View>
     );
   }

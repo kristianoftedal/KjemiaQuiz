@@ -7,28 +7,28 @@ import { View } from 'react-native';
 import { Text } from 'react-native-animatable';
 import styles from './index.style';
 import QuestionImage from '../QuestionImage';
-import prettyPrint from './prettyPrint';
+import questionParser from './questionParser';
 
-
-const printQuestion = (question) => {
-  if (question == null) {
-    return (<Text/>);
+const printQuestion = question => {
+  if (question == null) return <Text />;
+  if (question.indexOf('*') > -1) {
+    return <View style={styles.textWrapper}>{questionParser(question)}</View>;
   }
-  debugger;
-  return (<View style={styles.textWrapper}>
-      {prettyPrint(question)}
-  </View>);
-}
+  return (
+    <View style={styles.textWrapper}>
+      <Text style={styles.text}>{question}</Text>
+    </View>
+  );
+};
 
 const QuestionWrapper = props => {
   const { children, image, text, ...otherProps } = props;
-  const prettyText = 
-      printQuestion(text);
+  const prettyText = printQuestion(text);
   if (image) {
     const questionImage = <QuestionImage imageName={image} />;
     return (
       <View style={styles.wrapper}>
-          {prettyText}
+        {prettyText}
         {questionImage}
       </View>
     );

@@ -2,9 +2,9 @@ import { StyleSheet } from 'react-native';
 import metrics from '../../config/metrics';
 
 const width = metrics.DEVICE_WIDTH * 0.95;
-const height = metrics.DEVICE_HEIGHT * 0.70;
+const height = metrics.DEVICE_HEIGHT * 0.7;
 const imageWidth = metrics.DEVICE_WIDTH * 0.7;
-const imageHeight = metrics.DEVICE_HEIGHT * 0.30;
+const imageHeight = metrics.DEVICE_HEIGHT * 0.3;
 
 export default StyleSheet.create({
   container: {
@@ -24,7 +24,6 @@ export default StyleSheet.create({
     padding: 10,
     width: width,
     height: height,
-    alignItems: 'center',
   },
   header: {
     fontFamily: 'Permanent Marker',

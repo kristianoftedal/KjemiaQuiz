@@ -21,7 +21,6 @@ import RadioButton from '../../components/RadioButton';
   setCustomizedGame: allStores.game.setCustomizedGame,
   hasSubscription: allStores.subscription.hasSubscription,
 }))
-
 @observer
 export default class Selection extends Component {
   _headerRef;
@@ -30,7 +29,7 @@ export default class Selection extends Component {
     super();
     this.state = {
       difficulty: '',
-      categories: categories.map(e => ({...e})),
+      categories: categories.map(e => ({ ...e })),
       hasHeaderAppeared: false,
       count: 0,
     };
@@ -38,23 +37,33 @@ export default class Selection extends Component {
 
   componentDidMount() {
     if (this._headerRef) {
-        if (Platform.OS === 'android') {
-          UIManager.setLayoutAnimationEnabledExperimental &&
-            UIManager.setLayoutAnimationEnabledExperimental(true);
-        }
-        LayoutAnimation.spring();
-        this.setState({ hasHeaderAppeared: true });
-        audioService.initSounds();
+      if (Platform.OS === 'android') {
+        UIManager.setLayoutAnimationEnabledExperimental &&
+          UIManager.setLayoutAnimationEnabledExperimental(true);
+      }
+      LayoutAnimation.spring();
+      this.setState({ hasHeaderAppeared: true });
+      audioService.initSounds();
     }
   }
 
   _handleStartPress = async () => {
-    if (!this.state.difficulty || this.state.count === 0 || this.state.categories.filter(x => x.isSelected).length === 0) return;
+    if (
+      !this.state.difficulty ||
+      this.state.count === 0 ||
+      this.state.categories.filter(x => x.isSelected).length === 0
+    )
+      return;
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
-    this.props.setCustomizedGame(this.state.categories, this.state.difficulty, this.state.count, this.props.hasSubscription);
-    this.setState({ categories: categories.map(e => ({...e}))});
+    this.props.setCustomizedGame(
+      this.state.categories,
+      this.state.difficulty,
+      this.state.count,
+      this.props.hasSubscription
+    );
+    this.setState({ categories: categories.map(e => ({ ...e })) });
     this.props.navigateToPlayground();
   };
 
@@ -62,7 +71,7 @@ export default class Selection extends Component {
     if (this._headerRef && this._bodyRef) {
       await Promise.all([this._headerRef.fadeOutLeft(400), this._bodyRef.fadeOutRight(400)]);
     }
-    this.setState({ categories: categories.map(e => ({...e}))});
+    this.setState({ categories: categories.map(e => ({ ...e })) });
     this.props.navigateToHome();
   };
 
@@ -141,7 +150,10 @@ export default class Selection extends Component {
               <RadioButton
                 isSelected={this.state.count === 30}
                 onPress={() => this.setState({ count: 30 })}
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length < 2}
+                disabled={
+                  this.state.difficulty === 'Vanskelig' &&
+                  this.state.categories.filter(x => x.isSelected).length < 2
+                }
                 innerColor="white"
                 outerColor="white"
               />
@@ -151,8 +163,10 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 40 });
                 }}
-
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
+                disabled={
+                  this.state.difficulty === 'Vanskelig' &&
+                  this.state.categories.filter(x => x.isSelected).length <= 2
+                }
                 innerColor="white"
                 outerColor="white"
               />
@@ -162,7 +176,10 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 50 });
                 }}
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 2}
+                disabled={
+                  this.state.difficulty === 'Vanskelig' &&
+                  this.state.categories.filter(x => x.isSelected).length <= 2
+                }
                 innerColor="white"
                 outerColor="white"
               />
@@ -172,17 +189,14 @@ export default class Selection extends Component {
                 onPress={() => {
                   this.setState({ count: 60 });
                 }}
-                disabled={this.state.difficulty === 'Vanskelig' && this.state.categories.filter(x => x.isSelected).length <= 3}
+                disabled={
+                  this.state.difficulty === 'Vanskelig' &&
+                  this.state.categories.filter(x => x.isSelected).length <= 3
+                }
                 innerColor="white"
                 outerColor="white"
               />
             </View>
-            {!this.hasSubscription &&
-              <Text style={style.textFree}>
-              I gratisversjonen vil kun 10% av spørsmålene være tilgjengelige
-              </Text>
-
-            }
             <Button style={style.button} onPressOut={this._handleStartPress}>
               <Text style={style.buttonText}>Start</Text>
             </Button>

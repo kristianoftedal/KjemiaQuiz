@@ -9,7 +9,6 @@ import Overlay from 'react-native-modal-overlay';
 import PropTypes from 'prop-types';
 import styles from './level.style';
 
-
 export default class Level extends Component {
   static propTypes = {
     level: PropTypes.object,
@@ -18,22 +17,23 @@ export default class Level extends Component {
   };
 
   render() {
-    if (!this.props.level) return <View/>
+    if (!this.props.level) return <View />;
     return (
-      <Overlay visible={this.props.visible}
-        closeOnTouchOutside animationType="zoomIn"
+      <Overlay
+        visible={this.props.visible}
+        closeOnTouchOutside
+        animationType="zoomIn"
         containerStyle={styles.container}
         childrenWrapperStyle={styles.overlayWrapper}
         animationDuration={500}
-        onClose={() => this.props.onClose()}>
+        onClose={() => this.props.onClose()}
+      >
         <View style={styles.wrapper}>
           <Text style={styles.header}>{this.props.level.value}</Text>
           <Image style={styles.image} source={this.props.level.imageSource} resizeMode="contain" />
-          <Text style={styles.text}>
-            {this.props.level.text}
-          </Text>
+          <Text style={styles.text}>{this.props.level.text}</Text>
         </View>
       </Overlay>
     );
   }
-};
+}

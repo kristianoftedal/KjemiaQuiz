@@ -20,25 +20,16 @@ import styles from './index.style';
 
 @inject(allStores => ({
   currentScreen: allStores.router.currentScreen,
-  init: allStores.subscription.init,
 }))
-
 @observer
 export default class App extends Component {
   static defaultProps = {
     currentScreen: 'HOME',
   };
-  
-  componentDidMount() {
-    setTimeout(() => {
-      this.props.init();
-    }, 1500);
-  }
 
   render() {
     let content;
     let bgImg = backgroundImg;
-    let bgImgStyle = styles.container;
     switch (this.props.currentScreen) {
       case 'HOME':
         content = <Home />;
@@ -58,9 +49,6 @@ export default class App extends Component {
         break;
       case 'BADGES':
         content = <Badges />;
-        break;
-      case 'SUBSCRIPTION':
-        content = <Subscription />;
         break;
       default:
         content = <View />;

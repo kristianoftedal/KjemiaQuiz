@@ -8,7 +8,7 @@ export default StyleSheet.create({
     zIndex: 1,
   },
   textWrapper: {
-    flexDirection: 'row', 
+    flexDirection: 'row',
     alignItems: 'flex-start',
     flexWrap: 'wrap',
     margin: 4,
@@ -24,7 +24,7 @@ export default StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
-    fontSize: 10,
+    fontSize: 4,
     lineHeight: 14,
     marginTop: 10,
   },
@@ -33,35 +33,8 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'Raleway-Regular',
     lineHeight: 14,
-    fontSize: 10,
+    fontSize: 4,
     marginBottom: 10,
     textAlignVertical: 'top',
   },
-  fraction: {
-    borderBottomColor: 'white',
-    borderBottomWidth: 1,
-  },
-  top: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontFamily: 'Raleway-Regular',
-    lineHeight: 12,
-    textAlignVertical: 'top',
-  },
-  bottom: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontFamily: 'Raleway-Regular',
-    lineHeight: 12,
-    marginTop: 1,
-  },
-  binomial: {
-  },
-  squareRoot: {
-    fontSize: 23,
-  },
-  postSquareRoot: {
-    borderTopColor: 'white',
-    borderTopWidth: 1,
-  }
 });

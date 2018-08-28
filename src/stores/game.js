@@ -24,7 +24,7 @@ export default class GameStore {
   @observable currentLevelIndex = 0;
   @observable isLevelUp = false;
   @observable isAdTime = false;
-  @observable hasSubscription = false;
+  @observable hasSubscription = true;
   @observable levelUpProgress = 0;
   @observable answeredQuestions = [];
 

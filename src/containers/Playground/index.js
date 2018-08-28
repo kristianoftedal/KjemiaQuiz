@@ -17,10 +17,7 @@ import AnswerTile from './AnswerTile';
 import audioService from '../../services/audio';
 import ProgressBar from './ProgressBar';
 import Footer from './Footer';
-import {
-  AdMobInterstitial,
-  AdMobRewarded
-} from 'react-native-admob'
+import { AdMobInterstitial, AdMobRewarded } from 'react-native-admob';
 
 @inject(allStores => ({
   navigateToEndgame: allStores.router.navigateToEndgame,
@@ -41,10 +38,10 @@ import {
 export default class Playground extends Component {
   _questionRef = null;
   _playRef = null;
-  
+
   constructor(props) {
     super(props);
-    this.state = { isLevelUp: false};
+    this.state = { isLevelUp: false };
   }
 
   componentDidMount() {
@@ -55,11 +52,26 @@ export default class Playground extends Component {
   componentDidUpdate(prevProps, nextProps) {
     if (this.props.isAdTime && !this.props.hasSubscription) {
       //AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/4411468910');
-      AdMobInterstitial.setAdUnitID(Platform.OS === 'android' ? 'ca-app-pub-4545695212875309/2834033827': 'ca-app-pub-4545695212875309/4606308438');
+      AdMobInterstitial.setAdUnitID(
+        Platform.OS === 'android'
+          ? 'ca-app-pub-4545695212875309/2834033827'
+          : 'ca-app-pub-4545695212875309/4606308438'
+      );
       // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
-      AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd())
-      .catch(error => {
-        console.log(error);
+      AdMobInterstitial.requestAd()
+        .then(() => AdMobInterstitial.showAd())
+        .catch(error => {
+          console.log(error);
+          if (this.props.isCorrectAnswer) {
+            dropdown.alertWithType('success', 'Riktig 😀', '');
+            audioService.playSuccessSound();
+          } else {
+            dropdown.alertWithType('error', 'Feil 😮', '');
+            audioService.playFailureSound();
+          }
+        });
+      const dropdown = this.dropdown;
+      AdMobInterstitial.addEventListener('adClosed', () => {
         if (this.props.isCorrectAnswer) {
           dropdown.alertWithType('success', 'Riktig 😀', '');
           audioService.playSuccessSound();
@@ -68,23 +80,13 @@ export default class Playground extends Component {
           audioService.playFailureSound();
         }
       });
-      const dropdown = this.dropdown;
-      AdMobInterstitial.addEventListener('adClosed',
-        () => {
-          if (this.props.isCorrectAnswer) {
-            dropdown.alertWithType('success', 'Riktig 😀', '');
-            audioService.playSuccessSound();
-          } else {
-            dropdown.alertWithType('error', 'Feil 😮', '');
-            audioService.playFailureSound();
-          }
-        }
-      );
     }
     if (prevProps.currentIndex > this.props.currentIndex) {
       this._questionRef.fadeInLeft(500);
-    }
-    else if (prevProps.currentIndex !== this.props.currentIndex && this.props.currentIndex !== 0) {
+    } else if (
+      prevProps.currentIndex !== this.props.currentIndex &&
+      this.props.currentIndex !== 0
+    ) {
       if (this.props.isEndgame) {
         this.dropdown.closeDirectly();
         this.props.navigateToEndgame();
@@ -92,7 +94,7 @@ export default class Playground extends Component {
       if (this.props.isCorrectAnswer && !this.props.isAdTime) {
         this.dropdown.alertWithType('success', 'Riktig 😀', '');
         audioService.playSuccessSound();
-      } else if (!this.props.isAdTime){
+      } else if (!this.props.isAdTime) {
         this.dropdown.alertWithType('error', 'Feil 😮', '');
         audioService.playFailureSound();
       }
@@ -134,7 +136,7 @@ export default class Playground extends Component {
   render() {
     const { currentQuestion } = this.props;
     let questionImage = null;
-    
+
     if (currentQuestion.image) {
       questionImage = currentQuestion.image;
     }
@@ -149,14 +151,23 @@ export default class Playground extends Component {
       <View>
         <View
           style={style.container}
-          ref={ref => { this._playRef = ref;}}
+          ref={ref => {
+            this._playRef = ref;
+          }}
         >
           <ProgressBar />
           <View
             style={style.questionsWrapper}
-            ref={ref => {this._questionRef = ref;}}
+            ref={ref => {
+              this._questionRef = ref;
+            }}
           >
-            <QuestionWrapper image={questionImage} text={currentQuestion.questionText + '*(x-2)^2|* ' + this.getDifficulty(currentQuestion.difficulty)} />    
+            <QuestionWrapper
+              image={questionImage}
+              text={
+                currentQuestion.questionText + ' ' + this.getDifficulty(currentQuestion.difficulty)
+              }
+            />
             <View style={style.answerWrapper}>
               {currentQuestion.answers &&
                 currentQuestion.answers.map((e, i) => {
@@ -164,21 +175,26 @@ export default class Playground extends Component {
                     <AnswerTile
                       backgroundColor={alreadyPickedColors[i]}
                       key={e.key}
-                      text={`${e.key}. ${e.value} #*(x-2)^2|*/*(x-2)_2|*# `}
+                      text={`${e.key}. ${e.value}`}
                       onTilePress={() => this._handleAnswerPress(e.key)}
                     />
                   );
                 })}
             </View>
-            <LevelUp visible={isLevelUp} level={this.props.level} onClose={() => this.setState({isLevelUp: false})} key={currentQuestion.id}/>
+            <LevelUp
+              visible={isLevelUp}
+              level={this.props.level}
+              onClose={() => this.setState({ isLevelUp: false })}
+              key={currentQuestion.id}
+            />
           </View>
-          <Footer dialog={this.popupDialog}/>
+          <Footer dialog={this.popupDialog} />
         </View>
         <DropdownAlert
-          ref={ref => this.dropdown = ref}
+          ref={ref => (this.dropdown = ref)}
           closeInterval={1000}
           titleStyle={style.questionFeedback}
-          imageStyle={{display: 'none'}}
+          imageStyle={{ display: 'none' }}
           successColor="#2ecc71"
           errorColor="#e74c3c"
         />

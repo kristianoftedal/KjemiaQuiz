@@ -23,7 +23,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: metrics.DEVICE_WIDTH,
-    height: metrics.DEVICE_HEIGHT * 0.80
+    height: metrics.DEVICE_HEIGHT * 0.8,
   },
   list: {
     width: metrics.DEVICE_WIDTH,

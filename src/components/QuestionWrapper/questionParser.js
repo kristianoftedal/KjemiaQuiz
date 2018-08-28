@@ -3,8 +3,9 @@ import { Text } from 'react-native';
 import uuid from 'uuid';
 import styles from './index.style';
 
-const formulaParser = question => {
+const questionParser = question => {
   if (question == null) return <Text />;
+
   const parts = question.split('*');
   const restructuredText = [];
   for (let i = 0; i < parts.length; i++) {
@@ -36,10 +37,7 @@ const formulaParser = question => {
             </Text>
           );
         } else {
-          const broken = tempParts[j].split(' ');
-          for (let k = 0; k < broken.length; k++) {
-            restructuredText.push(<Text key={uuid.v4()}>{broken[k] + ' '}</Text>);
-          }
+          restructuredText.push(<Text key={uuid.v4()}>{tempParts[j]}</Text>);
         }
       }
     } else if (parts[i].indexOf('_') > -1) {
@@ -81,24 +79,22 @@ const formulaParser = question => {
             </Text>
           );
         } else {
-          const broken = tempParts[j].split(' ');
-          for (let k = 0; k < broken.length; k++) {
-            restructuredText.push(<Text key={uuid.v4()}>{broken[k] + ' '}</Text>);
-          }
+          restructuredText.push(
+            <Text key={uuid.v4()} style={styles.text}>
+              {tempParts[j]}
+            </Text>
+          );
         }
       }
     } else {
-      const broken = parts[i].split(' ');
-      for (let k = 0; k < broken.length; k++) {
-        restructuredText.push(
-          <Text key={uuid.v4()} style={styles.text}>
-            {broken[k] + ' '}
-          </Text>
-        );
-      }
+      restructuredText.push(
+        <Text key={uuid.v4()} style={styles.text}>
+          {parts[i]}
+        </Text>
+      );
     }
   }
   return restructuredText;
 };
 
-export default formulaParser;
+export default questionParser;

@@ -4,7 +4,6 @@
  */
 import React from 'react';
 import { View, Text} from 'react-native';
-import PhotoView from 'react-native-photo-view';
 import Overlay from 'react-native-modal-overlay';
 import styles from './index.style';
 import prettyPrint from './prettyPrint';
@@ -12,12 +11,15 @@ import prettyPrint from './prettyPrint';
 export default explanantion = props => {
   const prettyText = prettyPrint(props.text);
   return (
-    <Overlay visible={props.visible}
-      closeOnTouchOutside animationType="zoomIn"
+    <Overlay
+      visible={props.visible}
+      closeOnTouchOutside
+      animationType="zoomIn"
       containerStyle={styles.container}
       childrenWrapperStyle={styles.overlayWrapper}
       animationDuration={500}
-      onClose={() => props.onClose()}>
+      onClose={() => props.onClose()}
+    >
       <View style={styles.wrapper}>
         <View style={styles.headerWrapper}>
           <Text style={styles.header}>Forklaring:</Text>

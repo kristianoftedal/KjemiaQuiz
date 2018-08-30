@@ -1,25 +1,26 @@
 import { StyleSheet } from 'react-native';
 import metrics from '../../config/metrics';
 
-const width = metrics.DEVICE_WIDTH * 0.7;
+const width = metrics.DEVICE_WIDTH * 0.8;
 const height = metrics.DEVICE_HEIGHT * 0.7;
 
 export default StyleSheet.create({
   container: {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    alignItems: 'center',
   },
   overlayWrapper: {
     backgroundColor: '#3498db',
     borderRadius: 20,
+    width: width,
+    height: height,
   },
   wrapper: {
     flexDirection: 'row',
     alignItems: 'center',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
-    marginBottom: 10,
     borderRadius: 20,
-    marginTop: 10,
     padding: 10,
     width: width,
     height: height,

@@ -35,6 +35,5 @@ export default StyleSheet.create({
     lineHeight: 14,
     fontSize: 4,
     marginBottom: 10,
-    textAlignVertical: 'top',
   },
 });

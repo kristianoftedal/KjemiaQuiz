@@ -9,13 +9,10 @@ import { StatusBar, Text, Linking, Platform, UIManager, LayoutAnimation } from '
 import { View } from 'react-native-animatable';
 import { inject, observer } from 'mobx-react/native';
 import Button from 'apsl-react-native-button';
+import { AdMobInterstitial } from 'react-native-admob';
 import style from './index.style';
 import audioService from '../../services/audio';
 import categories from '../../questions/categories';
-import AnimateNumber from '../../components/AnimateNumber';
-import {
-  AdMobInterstitial
-} from 'react-native-admob'
 
 @inject(allStores => ({
   navigateToPlayground: allStores.router.navigateToPlayground,

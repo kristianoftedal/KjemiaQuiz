@@ -5,7 +5,10 @@ import RouterStore from './stores/router';
 import SubscriptionStore from './stores/subscription';
 import GameStore from './stores/game';
 import App from './containers/App';
-import SubjectStore from './stores/subject';
+
+const gameStore = new GameStore();
+const routerStore = new RouterStore();
+const subscriptionStore = new SubscriptionStore();
 
 export class KjemiaQuiz extends Component {
   componentDidMount() {
@@ -14,12 +17,7 @@ export class KjemiaQuiz extends Component {
 
   render() {
     return (
-      <Provider
-        router={RouterStore}
-        game={GameStore}
-        subscription={SubscriptionStore}
-        subject={SubjectStore}
-      >
+      <Provider router={routerStore} game={gameStore} subscription={subscriptionStore}>
         <App />
       </Provider>
     );

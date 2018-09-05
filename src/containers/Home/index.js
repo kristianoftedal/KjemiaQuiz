@@ -25,7 +25,6 @@ import audioService from '../../services/audio';
   resetGame: allStores.game.resetGame,
   hasSubscription: allStores.subscription.hasSubscription,
 }))
-
 @observer
 export default class Home extends Component {
   _headerRef;

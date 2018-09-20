@@ -9,24 +9,42 @@ import levels from '../config/levels';
 import { getXp, getLevelIndex, setXp, setLevelIndex } from '../questions/xpService';
 
 export default class GameStore {
-  @observable isGameRunning = false;
-  @observable isEndgame = false;
-  @observable level = 1;
-  @observable score = 0;
-  @observable previousScore = 0;
-  @observable questions = [];
-  @observable currentIndex = 0;
-  @observable isCorrectAnswer = false;
-  @observable correctCount = 0;
-  @observable isCustomizedGame = false;
-  @observable totalByCategory = {};
-  @observable currentXp = 0;
-  @observable currentLevelIndex = 0;
-  @observable isLevelUp = false;
-  @observable isAdTime = false;
-  @observable hasSubscription = true;
-  @observable levelUpProgress = 0;
-  @observable answeredQuestions = [];
+  @observable
+  isGameRunning = false;
+  @observable
+  isEndgame = false;
+  @observable
+  level = 1;
+  @observable
+  score = 0;
+  @observable
+  previousScore = 0;
+  @observable
+  questions = [];
+  @observable
+  currentIndex = 0;
+  @observable
+  isCorrectAnswer = false;
+  @observable
+  correctCount = 0;
+  @observable
+  isCustomizedGame = false;
+  @observable
+  totalByCategory = {};
+  @observable
+  currentXp = 0;
+  @observable
+  currentLevelIndex = 0;
+  @observable
+  isLevelUp = false;
+  @observable
+  isAdTime = false;
+  @observable
+  hasSubscription = true;
+  @observable
+  levelUpProgress = 0;
+  @observable
+  answeredQuestions = [];
 
   @action
   setBaseline() {
@@ -52,10 +70,10 @@ export default class GameStore {
   resetGame = () => {
     this.setBaseline();
     this.isCustomizedGame = false;
-  }
+  };
 
   @action
-  startGame = (hasSubscription) => {
+  startGame = hasSubscription => {
     this.hasSubscription = hasSubscription;
     this.setBaseline();
     this.buildQuiz();
@@ -73,7 +91,12 @@ export default class GameStore {
     this.setBaseline();
     this.isCustomizedGame = true;
     this.correctCount = 0;
-    this.questions = getQuestionsSetByCriterias(categories, difficulty, count, this.hasSubscription);
+    this.questions = getQuestionsSetByCriterias(
+      categories,
+      difficulty,
+      count,
+      this.hasSubscription
+    );
   };
 
   @action
@@ -84,7 +107,7 @@ export default class GameStore {
   };
 
   @action
-  handleGoBack= () => {
+  handleGoBack = () => {
     if (this.currentIndex - 1 >= 0) {
       this.currentIndex--;
     }
@@ -143,7 +166,14 @@ export default class GameStore {
     if (this.currentIndex === this.questions.length) {
       this.isEndgame = true;
     }
-    if (!this.hasSubscription && !this.isLevelUp && this.currentIndex !== 0 && this.currentIndex % 6 === 0 && this.currentIndex !== this.questions.length && this.currentIndex - 1 !== this.questions.length) {
+    if (
+      !this.hasSubscription &&
+      !this.isLevelUp &&
+      this.currentIndex !== 0 &&
+      this.currentIndex % 6 === 0 &&
+      this.currentIndex !== this.questions.length &&
+      this.currentIndex - 1 !== this.questions.length
+    ) {
       this.isAdTime = true;
     } else {
       this.isAdTime = false;
@@ -174,8 +204,8 @@ export default class GameStore {
     if (this.questions.length === 0) {
       return 0;
     }
-    const quizProgress = this.currentIndex / this.questions.length * 100;
-    return quizProgress * metrics.DEVICE_WIDTH / 100;
+    const quizProgress = (this.currentIndex / this.questions.length) * 100;
+    return (quizProgress * metrics.DEVICE_WIDTH) / 100;
   }
 
   nextLevelThreshold = () => {
@@ -192,18 +222,18 @@ export default class GameStore {
     }
     const prev = levels[this.currentLevelIndex].score;
     return prev;
-  }
+  };
 
   computeLevelUpProgress() {
     const threshold = this.nextLevelThreshold();
     const currentVal = this.currentXp - this.currentLevelThreshold();
     const levelUpPercentage = (currentVal / threshold) * 100;
-    this.levelUpProgress = ((levelUpPercentage * (metrics.DEVICE_WIDTH - 70))/ 100);
+    this.levelUpProgress = (levelUpPercentage * (metrics.DEVICE_WIDTH - 70)) / 100;
   }
 
   @computed
   get correctPercentage() {
-    const correctPercentage = this.correctCount / this.questions.length * 100 || 0;
+    const correctPercentage = (this.correctCount / this.questions.length) * 100 || 0;
     return correctPercentage;
   }
 }

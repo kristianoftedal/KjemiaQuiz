@@ -26,7 +26,7 @@ export default StyleSheet.create({
     fontFamily: 'Raleway-Regular',
     fontSize: 4,
     lineHeight: 14,
-    marginTop: 10,
+    marginTop: 7,
   },
   superscript: {
     color: 'white',

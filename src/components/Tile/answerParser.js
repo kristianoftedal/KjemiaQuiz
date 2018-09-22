@@ -21,7 +21,7 @@ const questionParser = question => {
             </CustomText>
           );
           restructuredText.push(
-            <CustomText key={uuid.v4()} withShadow={true} style={styles.subscript}>
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.subscript} size={12}>
               {x[1]}
             </CustomText>
           );
@@ -33,7 +33,7 @@ const questionParser = question => {
             </CustomText>
           );
           restructuredText.push(
-            <CustomText key={uuid.v4()} withShadow={true} style={styles.superscript}>
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.superscript} size={12}>
               {y[1]}
             </CustomText>
           );
@@ -56,7 +56,7 @@ const questionParser = question => {
             </CustomText>
           );
           restructuredText.push(
-            <CustomText key={uuid.v4()} withShadow={true} style={styles.subscript}>
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.subscript} size={12}>
               {x[1]}
             </CustomText>
           );
@@ -79,7 +79,7 @@ const questionParser = question => {
             </CustomText>
           );
           restructuredText.push(
-            <CustomText key={uuid.v4()} withShadow={true} style={styles.superscript}>
+            <CustomText key={uuid.v4()} withShadow={true} style={styles.superscript} size={12}>
               {y[1]}
             </CustomText>
           );

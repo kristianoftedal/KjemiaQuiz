@@ -19,7 +19,7 @@ const formulaParser = question => {
             </Text>
           );
           restructuredText.push(
-            <Text key={uuid.v4()} style={styles.subscript}>
+            <Text key={uuid.v4()} style={styles.subscript} size={styles.subscript.fontSize}>
               {x[1]}
             </Text>
           );
@@ -31,14 +31,19 @@ const formulaParser = question => {
             </Text>
           );
           restructuredText.push(
-            <Text key={uuid.v4()} style={styles.superscript}>
+            <Text key={uuid.v4()} style={styles.superscript} size={styles.superscript.fontSize}>
               {y[1]}
             </Text>
           );
         } else {
           const broken = tempParts[j].split(' ');
           for (let k = 0; k < broken.length; k++) {
-            restructuredText.push(<Text key={uuid.v4()}>{broken[k] + ' '}</Text>);
+            if (broken[k] !== ' ')
+              restructuredText.push(
+                <Text key={uuid.v4()} style={styles.text}>
+                  {broken[k] + ' '}
+                </Text>
+              );
           }
         }
       }
@@ -53,16 +58,21 @@ const formulaParser = question => {
             </Text>
           );
           restructuredText.push(
-            <Text key={uuid.v4()} style={styles.subscript}>
+            <Text key={uuid.v4()} style={styles.subscript} size={styles.subscript.fontSize}>
               {x[1]}
             </Text>
           );
         } else {
-          restructuredText.push(
-            <Text key={uuid.v4()} style={styles.text}>
-              {tempParts[j]}
-            </Text>
-          );
+          if (tempParts[j] !== ' ')
+            restructuredText.push(
+              <Text key={uuid.v4()} style={styles.text}>
+                {tempParts[j] + ' '}
+              </Text>
+            );
+          if (tempParts[j] === '\n') {
+            restructuredText.pop();
+            restructuredText.push(<Text key={uuid.v4()} style={styles.newLine} />);
+          }
         }
       }
     } else if (parts[i].indexOf('^') > -1) {
@@ -76,25 +86,39 @@ const formulaParser = question => {
             </Text>
           );
           restructuredText.push(
-            <Text key={uuid.v4()} style={styles.superscript}>
+            <Text key={uuid.v4()} style={styles.superscript} size={styles.superscript.fontSize}>
               {y[1]}
             </Text>
           );
         } else {
           const broken = tempParts[j].split(' ');
           for (let k = 0; k < broken.length; k++) {
-            restructuredText.push(<Text key={uuid.v4()}>{broken[k] + ' '}</Text>);
+            if (broken[k] !== ' ')
+              restructuredText.push(
+                <Text key={uuid.v4()} style={styles.text}>
+                  {broken[k] + ' '}
+                </Text>
+              );
+            if (broken[k] === '\n') {
+              restructuredText.pop();
+              restructuredText.push(<Text key={uuid.v4()} style={styles.newLine} />);
+            }
           }
         }
       }
     } else {
       const broken = parts[i].split(' ');
       for (let k = 0; k < broken.length; k++) {
-        restructuredText.push(
-          <Text key={uuid.v4()} style={styles.text}>
-            {broken[k] + ' '}
-          </Text>
-        );
+        if (broken[k] !== '')
+          restructuredText.push(
+            <Text key={uuid.v4()} style={styles.text}>
+              {broken[k] + ' '}
+            </Text>
+          );
+        if (broken[k] === '\n') {
+          restructuredText.pop();
+          restructuredText.push(<Text key={uuid.v4()} style={styles.newLine} />);
+        }
       }
     }
   }

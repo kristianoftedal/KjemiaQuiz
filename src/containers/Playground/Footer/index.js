@@ -79,6 +79,7 @@ export default class Playground extends Component {
         </View>
         <PeriodicTable visible={this.state.visible} onClose={this._togglePeriodicTable} />
         <Explanation
+          key={this.props.currentQuestion.id}
           visible={this.state.showExplanation}
           text={this.props.currentQuestion.explanation}
           onClose={this._toggleExplanation}

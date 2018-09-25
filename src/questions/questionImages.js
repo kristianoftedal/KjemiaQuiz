@@ -10,7 +10,7 @@ import fourB from './media/4B.png';
 import fourC from './media/4C.png';
 import fourE from './media/4E.png';
 import fiveA from './media/5A.png';
-import fiveB from './media/5B.jpg';
+import fiveB from './media/5B.png';
 import fiveC from './media/5C.png';
 import fiveD from './media/5D.png';
 import fiveF from './media/5F.bmp';
